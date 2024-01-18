@@ -16,7 +16,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+alias cd="z"
+alias zz="z -"
 alias ls="eza"
+alias tree="eza --tree"
 alias cat="bat"
 alias zela="zellij attach"
 alias zels="zellij -s"
@@ -52,3 +55,4 @@ eval
 eval $(thefuck --alias)
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
