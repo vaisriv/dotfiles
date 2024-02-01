@@ -5,7 +5,7 @@ export DOTFILES="$HOME/files/dotfiles/"
 export ZSH="$HOME/.oh-my-zsh"
 export TERM=nsterm
 export GPG_TTY=$(tty)
-export EDITOR=lvim
+export EDITOR=nvim
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 plugins=(
@@ -28,12 +28,16 @@ alias ql="qlmanage -p"
 alias yrs="yabai --restart-service"
 alias curl="curl -JLO"
 alias e="nvim"
+alias tt="taskwarrior-tui"
 alias dots="$DOTFILES"
 alias cfg="cd $HOME/.config"
 alias zrc="e $HOME/.zshrc"
 
+alias zeld='echo "to detach from a zellij session, use the \"Ctrl+o\" command to open the session view, then press \"d\" to detach"'
+
 export PATH=$PATH:$HOME/.scripts
 export PATH=$PATH:$HOME/.spicetify
+export PATH=$PATH:$HOME/.local/bin
 
 eval 
     fuck () {

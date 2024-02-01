@@ -197,7 +197,7 @@ plugins {
 //   - detach (Default)
 //   - quit
 //
-// on_force_close "quit"
+on_force_close "detach"
 
 //  Send a request for a simplified ui (without arrow fonts) to plugins
 //  Options:
@@ -226,7 +226,7 @@ pane_frames false
 //   - true (default)
 //   - false
 //
-auto_layout false
+auto_layout true
 
 // Define color themes for Zellij
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes

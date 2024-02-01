@@ -129,16 +129,6 @@ lvim.plugins = {
     "jalvesaq/Nvim-R"
   },
   {
-    'wfxr/minimap.vim',
-    build = "cargo install --locked code-minimap",
-    -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
-    config = function()
-      vim.cmd("let g:minimap_width = 10")
-      vim.cmd("let g:minimap_auto_start = 1")
-      vim.cmd("let g:minimap_auto_start_win_enter = 1")
-    end,
-  },
-  {
     "metakirby5/codi.vim",
     cmd = "Codi",
   },
@@ -156,6 +146,23 @@ lvim.plugins = {
   },
   {
     "sheerun/vim-polyglot"
+  },
+  {
+    "lervag/vimtex",
+    config = function()
+      vim.cmd("let g:tex_flavor='latex'")
+      vim.cmd("let g:vimtex_view_method='zathura'")
+      vim.cmd("let g:vimtex_quickfix_mode=0")
+      vim.cmd("set conceallevel=1")
+      vim.cmd("let g:tex_conceal='abdmg'")
+    end,
+  },
+  {
+    "iurimateus/luasnip-latex-snippets.nvim",
+    config = function()
+      require'luasnip-latex-snippets'.setup( {use_treesitter = true} )
+      require("luasnip").config.setup { enable_autosnippets = true }
+  end,
   },
 }
 local formatters = require "lvim.lsp.null-ls.formatters"
