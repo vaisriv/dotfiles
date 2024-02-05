@@ -1,1 +1,1 @@
-return { path = "/Users/vsrivastava/files/uni", documents = {["type"]="leaf",["active_view"]=1,["views"]={[1]={["scroll"]={["x"]=0,["y"]=0,["to"]={["y"]=0,["x"]=0}},["type"]="view",["active"]=true,["module"]="core.emptyview"}}}, directories = {} }
+return { path = "/Users/vsrivastava/files/uni", documents = {["views"]={[1]={["scroll"]={["to"]={["x"]=0,["y"]=0},["x"]=0,["y"]=0},["module"]="core.emptyview",["type"]="view",["active"]=false}},["type"]="leaf",["active_view"]=1}, directories = {} }
