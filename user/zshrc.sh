@@ -32,13 +32,17 @@ alias tt="taskwarrior-tui"
 alias dots="$DOTFILES"
 alias cfg="cd $HOME/.config"
 alias zrc="e $HOME/.zshrc"
-alias ttoday='task scheduled:today'
+alias ttoday="task scheduled:today"
+alias tmuxs="tmux-session"
+alias todo="e ~/files/todo.md"
 
-alias zeld='echo "to detach from a zellij session, use the \"Ctrl+o\" command to open the session view, then press \"d\" to detach"'
+alias zeld="echo 'to detach from a zellij session, use the \"Ctrl+o\" command to open the session view, then press \"d\" to detach'"
 
 export PATH=$PATH:$HOME/.scripts
 export PATH=$PATH:$HOME/.spicetify
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:/Applications/Julia-1.8.app/Contents/Resources/julia/bin
+export PATH=$PATH:/Users/vsrivastava/Library/Python/3.9/bin
 
 eval 
     fuck () {
