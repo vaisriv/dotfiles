@@ -31,10 +31,11 @@ alias e="nvim"
 alias tt="taskwarrior-tui"
 alias dots="$DOTFILES"
 alias cfg="cd $HOME/.config"
-alias zrc="e $HOME/.zshrc"
+alias zrc="e $HOME/.zshrc && source $HOME/.zshrc"
 alias ttoday="task scheduled:today"
 alias tmuxs="tmux-session"
 alias todo="e ~/files/todo.md"
+alias keka="/Applications/Keka.app/Contents/MacOS/Keka --cli"
 
 alias zeld="echo 'to detach from a zellij session, use the \"Ctrl+o\" command to open the session view, then press \"d\" to detach'"
 
