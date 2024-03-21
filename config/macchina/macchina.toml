@@ -1,0 +1,3 @@
+theme = "Argon"
+
+show = ["Host", "Machine", "Terminal", "Shell"]
