@@ -30,4 +30,6 @@ starship init fish | source
 thefuck --alias | source
 
 # init
-macchina --config $HOME/.config/macchina/macchina-lite.toml
+if not set -q DOTBOTLIVE; or test "$DOTBOTLIVE" != 1
+    macchina --config $HOME/.config/macchina/macchina-lite.toml
+end

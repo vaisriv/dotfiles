@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ["~", "~/.config", "~/.scripts"]
+
+- link:
+    ~/.config/bat:            ./user/config/bat
+    ~/.config/btop:           ./user/config/btop
+    ~/.config/fish:           ./user/config/fish
+    ~/.config/jrnl:           ./user/config/jrnl
+    ~/.config/macchina:       ./user/config/macchina
+    ~/.config/mpv:            ./user/config/mpv
+    ~/.config/nvim:           ./user/config/nvim
+    ~/.config/rstudio:        ./user/config/rstudio
+    ~/.config/spicetify:      ./user/config/spicetify
+    ~/.config/spotify-tui:    ./user/config/spotify-tui
+    ~/.config/starship:       ./user/config/starship
+    ~/.config/tmux:           ./user/config/tmux
+    ~/.config/wezterm:        ./user/config/wezterm
+    ~/.scripts:               ./user/scripts

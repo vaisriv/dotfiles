@@ -1,0 +1,31 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+    shell:
+      stdin:  true
+      stdout: true
+      stderr: true
+      quiet:  true
+
+- clean: ["~", "~/.config", "~/.scripts"]
+
+- link:
+    ~/.config/bat:            ./config/bat
+    ~/.config/btop:           ./config/btop
+    ~/.config/fish:           ./config/fish
+    ~/.config/jrnl:           ./config/jrnl
+    ~/.config/macchina:       ./config/macchina
+    ~/.config/mpv:            ./config/mpv
+    ~/.config/nvim:           ./config/nvim
+    ~/.config/rstudio:        ./config/rstudio
+    ~/.config/spicetify:      ./config/spicetify
+    ~/.config/spotify-tui:    ./config/spotify-tui
+    ~/.config/starship:       ./config/starship
+    ~/.config/tmux:           ./config/tmux
+    ~/.config/wezterm:        ./config/wezterm
+    ~/.scripts:               ./scripts
+
+- shell:
+    - [git submodule update --init --recursive, updating submodules...]
+    - [./bootstrap/boostrap.sh, setting up machine...]

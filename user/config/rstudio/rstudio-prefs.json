@@ -1,0 +1,21 @@
+{
+    "jobs_tab_visibility": "shown",
+    "initial_working_directory": "~",
+    "soft_wrap_r_files": true,
+    "highlight_selected_line": true,
+    "relative_line_numbers": true,
+    "scroll_past_end_of_document": true,
+    "highlight_r_function_calls": true,
+    "rainbow_parentheses": true,
+    "auto_append_newline": true,
+    "strip_trailing_whitespace": true,
+    "tab_multiline_completion": true,
+    "line_ending_conversion": "posix",
+    "editor_keybindings": "vim",
+    "indent_guides": "gray",
+    "syntax_color_console": true,
+    "real_time_spellchecking": false,
+    "posix_terminal_shell": "zsh",
+    "text_rendering": "geometricPrecision",
+    "editor_theme": "Monokai"
+}

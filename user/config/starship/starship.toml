@@ -1,0 +1,10 @@
+# A minimal left prompt
+format = """$all$character"""
+
+# move the rest of the prompt to the right
+right_format = """$time"""
+
+continuation_prompt = '▶▶ '
+
+[time]
+disabled = false
