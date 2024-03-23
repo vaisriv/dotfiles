@@ -1,3 +1,0 @@
-#!/bin/zsh
-
-pdflatex ${1%.*} && biber ${1%.*} && pdflatex ${1%.*} && clear && echo "latex compilation of ${1%.*} finished" && qlmanage -p ${1%.*}.pdf
