@@ -1,5 +1,6 @@
 # env vars
 set EDITOR nvim
+set VISUAL nvim
 set GPG_TTY $(tty)
 set STARSHIP_CONFIG $HOME/.config/starship/starship.toml
 set fish_greeting
@@ -9,7 +10,6 @@ fish_add_path $HOME/.scripts $HOME/.spicetify $HOME/.local/bin $HOME/.cargo/bin
 
 # aliases
 alias ls="eza"
-alias tree="eza --tree"
 alias cat="bat"
 alias e="nvim"
 alias tmuxs="tmux-session"
@@ -30,7 +30,4 @@ zoxide init fish --cmd cd | source
 starship init fish | source
 thefuck --alias | source
 
-# init
-if not set -q DOTBOTLIVE; or test "$DOTBOTLIVE" != 1
-    macchina --config $HOME/.config/macchina/macchina-lite.toml
-end
+# macchina --config $HOME/.config/macchina/macchina-lite.toml

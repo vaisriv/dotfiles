@@ -9,6 +9,7 @@ gcc
 git
 jrnl
 julia
+lazygit
 macchina
 mpv
 neovim

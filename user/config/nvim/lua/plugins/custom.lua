@@ -93,13 +93,6 @@ return {
                 "sheerun/vim-polyglot",
         },
         {
-                "iurimateus/luasnip-latex-snippets.nvim",
-                config = function()
-                        require("luasnip-latex-snippets").setup({ use_treesitter = true })
-                        require("luasnip").config.setup({ enable_autosnippets = true })
-                end,
-        },
-        {
                 "LazyVim/LazyVim",
                 opts = {
                         colorscheme = "catppuccin-mocha",
@@ -116,5 +109,21 @@ return {
                 require("notify").setup({
                         background_colour = "#000000",
                 }),
+        },
+        --[[
+        {
+                "iurimateus/luasnip-latex-snippets.nvim",
+                dependencies = {
+                        "L3MON4D3/LuaSnip",
+                        "lervag/vimtex",
+                },
+                opts = {
+                        enable_autosnippets = true,
+                },
+        },
+        --]]
+        {
+                "evesdropper/luasnip-latex-snippets.nvim",
+                require("luasnip.loaders.from_lua").lazy_load({ paths = "~/.config/nvim/lua/snippets/" }),
         },
 }

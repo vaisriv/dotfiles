@@ -15,7 +15,7 @@
     "indent_guides": "gray",
     "syntax_color_console": true,
     "real_time_spellchecking": false,
-    "posix_terminal_shell": "zsh",
+    "posix_terminal_shell": "custom",
     "text_rendering": "geometricPrecision",
-    "editor_theme": "Monokai"
+    "custom_shell_command": "/opt/homebrew/Cellar/fish/3.7.1/bin/fish"
 }
