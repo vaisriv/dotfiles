@@ -3,7 +3,7 @@ local config = {}
 
 -- color scheme settings
 config.color_scheme = "nord"
-config.window_background_opacity = 0.85
+-- config.window_background_opacity = 0.85
 
 -- tab bar
 config.use_fancy_tab_bar = false
