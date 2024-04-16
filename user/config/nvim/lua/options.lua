@@ -7,6 +7,11 @@ vim.g.have_nerd_font = true
 
 -- Make line numbers default
 vim.opt.relativenumber = true
+vim.opt.number = true
+
+-- Enable word wrap
+vim.opt.wrap = true
+vim.opt.linebreak = true
 
 -- Enable mouse mode
 vim.opt.mouse = "a"
