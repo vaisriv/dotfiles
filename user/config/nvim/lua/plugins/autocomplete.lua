@@ -61,7 +61,7 @@ return {
 				-- Manually trigger a completion from nvim-cmp.
 				--  Generally you don't need this, because nvim-cmp will display
 				--  completions whenever it has completion options available.
-				["<C-Shift-Tab>"] = cmp.mapping.complete({}),
+				["<C-Tab>"] = cmp.mapping.complete({}),
 
 				-- Think of <c-l> as moving to the right of your snippet expansion.
 				--  So if you have a snippet that's like:
@@ -81,18 +81,6 @@ return {
 						luasnip.jump(-1)
 					end
 				end, { "i", "s" }),
-
-				["<Tab>"] = cmp.mapping(function()
-					if luasnip.expand_or_locally_jumpable() then
-						luasnip.expand_or_jump()
-					end
-				end, { "i", "s" }),
-				["<Shift-Tab>"] = cmp.mapping(function()
-					if luasnip.locally_jumpable(-1) then
-						luasnip.jump(-1)
-					end
-				end, { "i", "s" }),
-
 				-- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
 				--    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
 			}),

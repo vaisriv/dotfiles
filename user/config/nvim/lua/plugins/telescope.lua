@@ -32,6 +32,7 @@ return {
 					require("telescope.themes").get_dropdown(),
 				},
 			},
+			db_safe_mode = off,
 		})
 
 		-- Enable Telescope extensions if they are installed
