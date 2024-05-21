@@ -1,5 +1,5 @@
 return {
-	{
+	--[[ {
 		"R-nvim/R.nvim",
 		config = function()
 			-- Create a table with the options to be passed to setup()
@@ -34,7 +34,7 @@ return {
 			end
 			require("r").setup(opts)
 		end,
-		lazy = false,
+		lazy = true,
 	},
 	"R-nvim/cmp-r",
 	{
@@ -43,5 +43,5 @@ return {
 			require("cmp").setup({ sources = { { name = "cmp_r" } } })
 			require("cmp_r").setup({})
 		end,
-	},
+	}, ]]
 }

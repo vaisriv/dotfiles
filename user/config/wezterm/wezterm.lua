@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = {}
 
 -- color scheme settings
-config.color_scheme = "nord"
+config.color_scheme = "Catppuccin Mocha"
 -- config.window_background_opacity = 0.85
 
 -- tab bar

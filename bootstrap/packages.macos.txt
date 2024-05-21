@@ -26,3 +26,4 @@ gcc
 prettierd
 r
 texlive
+xplr

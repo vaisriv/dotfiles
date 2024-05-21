@@ -31,6 +31,9 @@ return {
 			cmdline = {
 				view = "cmdline",
 			},
+			notify = {
+				view = "mini",
+			},
 		})
 	end,
 }

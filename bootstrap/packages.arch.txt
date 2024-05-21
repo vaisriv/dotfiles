@@ -24,5 +24,6 @@ texlive-basic
 thefuck
 tldr
 tmux
+xplr
 zathura
 zoxide

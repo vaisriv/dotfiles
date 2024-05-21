@@ -65,7 +65,7 @@ return {
 	}, fmta("\\unit{<>}", { i(1) })),
 	s(
 		{
-			trig = "problem",
+			trig = "hwkProblem",
 			dscr = "Homework problem autoformat",
 		},
 		fmta(

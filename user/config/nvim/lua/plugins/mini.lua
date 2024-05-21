@@ -28,7 +28,9 @@ return {
 			},
 		})
 
-		require("mini.notify").setup()
+		require("mini.notify").setup({
+			timeout = 5000,
+		})
 
 		require("mini.starter").setup({
 			header = " ⟋|､\n(°､ ｡ 7\n |､  ~ヽ\n じしf_,)ノ\n",

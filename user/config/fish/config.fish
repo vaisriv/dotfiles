@@ -13,6 +13,7 @@ alias ls="eza"
 alias cat="bat"
 alias e="nvim"
 alias tmuxs="tmux-session"
+alias fetch="macchina -t Boron -c ~/.config/macchina/macchina-lite.toml"
 
 # dots and files
 alias dots="cd $HOME/files/dotfiles"

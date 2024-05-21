@@ -1,3 +1,15 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+
+[submodule "tpm"]
+	path = user/config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+
+[submodule "tmnux-sessionx"]
+	path = user/config/tmux/plugins/tmux-sessionx
+	url = https://github.com/omerxx/tmux-sessionx
+
+[submodule "tpm"]
+	path = user/config/tmux/plugins/tmux
+	url = https://github.com/catppuccin/tmux
