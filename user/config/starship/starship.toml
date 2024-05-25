@@ -1,4 +1,0 @@
-# A minimal left prompt
-format = """$all$character"""
-
-continuation_prompt = '▶▶ '
