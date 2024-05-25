@@ -15,7 +15,6 @@
     ~/.config/nvim: ./user/config/nvim
     ~/.config/rstudio: ./user/config/rstudio
     ~/.config/spicetify: ./user/config/spicetify
-    ~/.config/spotify-tui: ./user/config/spotify-tui
     ~/.config/starship: ./user/config/starship
     ~/.config/tmux: ./user/config/tmux
     ~/.config/wezterm: ./user/config/wezterm

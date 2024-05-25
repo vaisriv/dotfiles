@@ -1,4 +1,4 @@
-7zip
+p7zip
 bat
 btop
 docker

@@ -6,10 +6,10 @@
 	path = user/config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
 
-[submodule "tmnux-sessionx"]
+[submodule "tmux-sessionx"]
 	path = user/config/tmux/plugins/tmux-sessionx
 	url = https://github.com/omerxx/tmux-sessionx
 
-[submodule "tpm"]
+[submodule "tmux"]
 	path = user/config/tmux/plugins/tmux
 	url = https://github.com/catppuccin/tmux
