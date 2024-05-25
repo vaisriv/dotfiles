@@ -1,6 +1,7 @@
 7zip
 bat
 btop
+croc
 docker
 dust
 eza

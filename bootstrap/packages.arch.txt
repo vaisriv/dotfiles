@@ -1,5 +1,6 @@
 bat
 btop
+croc
 docker
 dust
 eza
@@ -11,7 +12,6 @@ jrnl
 julia
 lazygit
 macchina
-mpv
 neovim
 p7zip
 prettierd

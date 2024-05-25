@@ -9,11 +9,16 @@ set fish_greeting
 fish_add_path $HOME/.scripts $HOME/.spicetify $HOME/.local/bin $HOME/.cargo/bin
 
 # aliases
-alias ls="eza"
+alias ls="eza --git --icons"
 alias cat="bat"
 alias e="nvim"
 alias tmuxs="tmux-session"
 alias fetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
+
+function tree
+	eza --git --icons -T $argv
+	printf '%d directories, %d files\n' "$(math $(eza -T -D $argv | wc -l) + 1)" "$(eza -T -f $argv | wc -l)"
+end
 
 # dots and files
 alias dots="cd $HOME/files/dotfiles"
