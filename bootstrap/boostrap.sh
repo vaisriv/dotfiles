@@ -7,7 +7,7 @@ while true; do
 	read -r input
 	if [ "$input" = "y" ]; then
 		cd ./bootstrap
-		echo "installing package manager (brew/yay)"
+		echo "installing package manager (yay)"
 		/bin/bash ./manager.sh
 		echo "installing dev packages..."
 		/bin/bash ./packages.sh

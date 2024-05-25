@@ -1,3 +1,0 @@
-bacon
-clock-tui
-speedtest-rs
