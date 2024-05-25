@@ -1,4 +1,2 @@
 .DS_Store
-user/config/spotify-tui/.spotify_token_cache.json
-user/config/spotify-tui/client.yml
 user/config/mpv/watch_later/
