@@ -7,7 +7,6 @@ if grep -q "Arch Linux" /etc/os-release 2>/dev/null; then
 	else
 		echo "installing yay..."
 		cd /tmp || exit 1
-		pacman -S --needed git base-devel
 		git clone https://aur.archlinux.org/yay.git
 		cd yay || exit 1
 		makepkg -si
