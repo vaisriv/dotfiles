@@ -9,15 +9,16 @@
     ~/.config/bat: ./user/config/bat
     ~/.config/btop: ./user/config/btop
     ~/.config/fish: ./user/config/fish
+    ~/.config/hypr: ./user/config/hypr
     ~/.config/jrnl: ./user/config/jrnl
     ~/.config/macchina: ./user/config/macchina
     ~/.config/mpv: ./user/config/mpv
     ~/.config/nvim: ./user/config/nvim
     ~/.config/rstudio: ./user/config/rstudio
-    ~/.config/spicetify: ./user/config/spicetify
-    ~/.config/spotify-tui: ./user/config/spotify-tui
     ~/.config/starship: ./user/config/starship
     ~/.config/tmux: ./user/config/tmux
+    ~/.config/waybar: ./user/config/waybar
     ~/.config/wezterm: ./user/config/wezterm
+    ~/.config/wofi: ./user/config/wofi
     ~/.scripts: ./user/scripts
-    ~/Library/TeXShop/Templates: ./user/latex/templates
+    ~/files/uni/templates: ./user/latex/templates
