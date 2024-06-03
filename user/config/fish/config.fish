@@ -29,7 +29,6 @@ alias ql="qlmanage -p"
 
 # function setup
 zoxide init fish --cmd cd | source
-starship init fish | source
 thefuck --alias | source
 
 # macchina --config $HOME/.config/macchina/macchina-lite.toml
