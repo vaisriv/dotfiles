@@ -1,3 +1,4 @@
 .DS_Store
 user/config/mpv/watch_later/
 user/config/fish/fish_variables
+user/config/fish/local.fish

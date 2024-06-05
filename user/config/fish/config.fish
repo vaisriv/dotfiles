@@ -13,7 +13,8 @@ alias ls="eza --icons --git"
 alias cat="bat"
 alias e="nvim"
 alias tmuxs="tmux-session"
-alias fetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
+alias fetch="macchina -t Argon -c $HOME/.config/macchina/macchina.toml"
+alias pfetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
 alias tree="eza --tree --icons --git"
 
 # dots and files
@@ -31,4 +32,5 @@ alias ql="qlmanage -p"
 zoxide init fish --cmd cd | source
 thefuck --alias | source
 
-# macchina --config $HOME/.config/macchina/macchina-lite.toml
+# local (aka unsynced) fish config file
+source $HOME/.config/fish/local.fish
