@@ -11,6 +11,7 @@ brave-browser
 citrix-workspace
 daisydisk
 discord
+emanote
 epic-games
 firefox
 google-drive

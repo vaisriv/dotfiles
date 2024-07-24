@@ -1,4 +1,4 @@
-#!/bin/zsh
+#! /usr/bin/env bash
 
 # Check if the user has supplied a session name
 if [ "$#" -ne 1 ]; then

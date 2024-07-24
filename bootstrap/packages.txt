@@ -26,4 +26,5 @@ gcc
 prettierd
 r
 texlive
-xplr
+yazi
+zk

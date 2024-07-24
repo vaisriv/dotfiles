@@ -1,6 +1,9 @@
 local wezterm = require("wezterm")
 local config = {}
 
+-- default font size
+config.font_size = 18.0
+
 -- color scheme settings
 config.color_scheme = "Catppuccin Mocha"
 -- config.window_background_opacity = 0.85
