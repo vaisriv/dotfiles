@@ -10,7 +10,6 @@
     ~/.config/btop: ./user/config/btop
     ~/.config/fish: ./user/config/fish
     ~/.config/jrnl: ./user/config/jrnl
-    ~/.config/kitty: ./user/config/kitty
     ~/.config/macchina: ./user/config/macchina
     ~/.config/mpv: ./user/config/mpv
     ~/.config/nvim: ./user/config/nvim
