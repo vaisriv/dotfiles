@@ -7,7 +7,6 @@ eza
 fish
 fzf
 git
-jrnl
 lazygit
 macchina
 mpv

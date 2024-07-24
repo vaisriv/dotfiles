@@ -9,7 +9,6 @@
     ~/.config/bat: ./user/config/bat
     ~/.config/btop: ./user/config/btop
     ~/.config/fish: ./user/config/fish
-    ~/.config/jrnl: ./user/config/jrnl
     ~/.config/macchina: ./user/config/macchina
     ~/.config/mpv: ./user/config/mpv
     ~/.config/nvim: ./user/config/nvim

@@ -1,23 +1,27 @@
 # env vars
+set fish_greeting
 set -x EDITOR nvim
 set -x VISUAL nvim
 set -x PAGER less
 set -x GPG_TTY $(tty)
-set STARSHIP_CONFIG $HOME/.config/starship/starship.toml
-set fish_greeting
 
-# path
+# user env vars
+set -x ZK_NOTEBOOK_DIR $HOME/files/notes
+
+# userpath
 fish_add_path $HOME/.scripts $HOME/.local/bin $HOME/.cargo/bin
 
 # aliases
+alias e="$EDITOR"
+alias cat="bat -f"
 alias ls="eza --icons --git"
-alias cat="bat"
-alias e="nvim"
-alias hmm="h-m-m"
-alias tmuxs="tmux-session"
+alias tree="eza --tree --icons --git"
+
+# fetch fun
 alias fetch="macchina -t Argon -c $HOME/.config/macchina/macchina.toml"
 alias pfetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
-alias tree="eza --tree --icons --git"
+
+# cat+fzf helper
 function cf
 	set root_dir $argv[1]
 	if test -z "$root_dir"
@@ -29,21 +33,6 @@ function cf
 	end
 end
 
-# dots and files
-alias dots="cd $HOME/files/dotfiles"
-alias cfg="cd $HOME/.config"
-alias todo="e $HOME/files/todo.md"
-alias chtodo="hmm $HOME/files/notes/todo-chart"
-
-# macos
-fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
-fish_add_path /Applications/Julia-1.8.app/Contents/Resources/julia/bin
-alias keka="/Applications/Keka.app/Contents/MacOS/Keka --cli"
-
-# function setup
-zoxide init fish --cmd cd | source
-fzf --fish | source
-
 # yazi helper
 function yy
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
@@ -54,5 +43,14 @@ function yy
 	rm -f -- "$tmp"
 end
 
+# function setup
+zoxide init fish --cmd cd | source
+fzf --fish | source
+
 # local (aka unsynced) fish config file
 source $HOME/.config/fish/local.fish
+
+# macos stuff
+fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
+fish_add_path /Applications/Julia-1.8.app/Contents/Resources/julia/bin
+alias keka="/Applications/Keka.app/Contents/MacOS/Keka --cli"
