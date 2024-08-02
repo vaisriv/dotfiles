@@ -14,6 +14,7 @@
   "leap.nvim": { "branch": "main", "commit": "b1ecfb63c0b8babfd0dcd6b5ca6de37bbf3526cd" },
   "luasnip-latex-snippets.nvim": { "branch": "main", "commit": "4b91f28d91979f61a3e8aef1cee5b7c7f2c7beb8" },
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
+  "markdown.nvim": { "branch": "master", "commit": "dfa0d2def6dbf77e9206b16dc90cad4dd23d55d2" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "9ae570e206360e47d30b4c35a4550c165f4ea7b7" },
   "mason-tool-installer.nvim": { "branch": "main", "commit": "c1fbdcb0d8d1295314f1612c4a247253e70299d9" },
   "mason.nvim": { "branch": "main", "commit": "49ff59aded1047a773670651cfa40e76e63c6377" },
@@ -36,6 +37,5 @@
   "undotree": { "branch": "master", "commit": "56c684a805fe948936cda0d1b19505b84ad7e065" },
   "vim-sleuth": { "branch": "master", "commit": "1cc4557420f215d02c4d2645a748a816c220e99b" },
   "vimtex": { "branch": "master", "commit": "9665df7f51ee24aa81dbd81782e0a22480209753" },
-  "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" },
-  "zk-nvim": { "branch": "main", "commit": "1f331d994d90f1dc93d023508951be437d19813e" }
+  "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }
