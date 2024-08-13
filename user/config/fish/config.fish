@@ -52,5 +52,3 @@ source $HOME/.config/fish/local.fish
 
 # macos stuff
 fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
-fish_add_path /Applications/Julia-1.8.app/Contents/Resources/julia/bin
-alias keka="/Applications/Keka.app/Contents/MacOS/Keka --cli"
