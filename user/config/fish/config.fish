@@ -47,8 +47,8 @@ end
 zoxide init fish --cmd cd | source
 fzf --fish | source
 
-# local (aka unsynced) fish config file
-source $HOME/.config/fish/local.fish
-
 # macos stuff
 fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
+
+# local (aka unsynced) fish config file
+source $HOME/.config/fish/local.fish

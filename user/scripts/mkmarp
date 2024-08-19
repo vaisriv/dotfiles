@@ -1,0 +1,31 @@
+#! /usr/bin/env bash
+
+# INCOMPLETE!!
+
+exit 1
+
+echo -n "enter filename (defaults to slides.md):"
+read -r FILE
+
+echo -n "enter theme (defaults to academic.css):"
+read -r THEME
+
+if [[ ${THEME} == "academic" ]]; then
+	
+fi
+
+case ${3} in
+	PPTX|PPT|ppt|pptx)
+		marp
+		;;
+	HTML|html)
+		marp
+		;;
+	PDF|pdf)
+		marp
+		;;
+	*)
+		marp
+		;;
+
+pdflatex ${1%.*} && biber ${1%.*} && pdflatex ${1%.*} && clear && echo "latex compilation of ${1%.*} finished"

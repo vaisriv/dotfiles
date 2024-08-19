@@ -6,6 +6,7 @@
 - clean: ["~", "~/.config", "~/.scripts"]
 
 - link:
+    ~/.config/aerospace: ./user/config/aerospace
     ~/.config/bat: ./user/config/bat
     ~/.config/btop: ./user/config/btop
     ~/.config/fish: ./user/config/fish
