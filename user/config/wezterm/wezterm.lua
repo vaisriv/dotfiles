@@ -1,9 +1,6 @@
 local wezterm = require("wezterm")
 local config = {}
 
--- set default working dir to $HOME
-config.default_cwd = wezterm.home_dir
-
 -- default font size
 config.font_size = 18.0
 
