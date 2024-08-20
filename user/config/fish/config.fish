@@ -17,6 +17,11 @@ alias cat="bat -f"
 alias ls="eza --icons --git"
 alias tree="eza --tree --icons --git"
 
+# edit important configs
+alias conf_wez="e $HOME/.config/wezterm/wezterm.lua"
+alias conf_fish="e $HOME/.config/fish/config.fish"
+alias conf_local="e $HOME/.config/fish/local.fish"
+
 # fetch fun
 alias fetch="macchina -t Argon -c $HOME/.config/macchina/macchina.toml"
 alias pfetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
@@ -37,7 +42,7 @@ end
 function yy
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
 	yazi $argv --cwd-file="$tmp"
-	if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+	if set cwd (/bin/cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
 		builtin cd -- "$cwd"
 	end
 	rm -f -- "$tmp"
