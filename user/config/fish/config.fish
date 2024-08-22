@@ -51,6 +51,7 @@ end
 # function setup
 zoxide init fish --cmd cd | source
 fzf --fish | source
+starship init fish | source
 
 # macos stuff
 fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
