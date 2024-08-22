@@ -11,6 +11,9 @@ set -x ZK_NOTEBOOK_DIR $HOME/files/notes
 # userpath
 fish_add_path $HOME/.scripts $HOME/.local/bin $HOME/.cargo/bin
 
+# macos stuff
+fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
+
 # aliases
 alias e="$EDITOR"
 alias cat="bat -f"
@@ -48,13 +51,20 @@ function yy
 	rm -f -- "$tmp"
 end
 
+# starship prompt setup
+set -x STARSHIP_CONFIG $HOME/.config/starship/starship.toml
+function starship_transient_prompt_func
+	starship module character
+end
+function starship_transient_rprompt_func
+	starship module cmd_duration && starship module time
+end
+starship init fish | source
+enable_transience
+
 # function setup
 zoxide init fish --cmd cd | source
 fzf --fish | source
-starship init fish | source
-
-# macos stuff
-fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
 
 # local (aka unsynced) fish config file
 source $HOME/.config/fish/local.fish
