@@ -1,7 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """$all"""
-right_format = """$cmd_duration $time"""
+format = """$all $fill $cmd_duration $time$line_break$character"""
 
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
@@ -53,6 +52,9 @@ format = '\[[$symbol($version)]($style)\]'
 
 [fennel]
 format = '\[[$symbol($version)]($style)\]'
+
+[fill]
+symbol = " "
 
 [fossil_branch]
 format = '\[[$symbol$branch]($style)\]'
