@@ -20,10 +20,10 @@ alias cat="bat -f"
 alias ls="eza --icons --git"
 alias tree="eza --tree --icons --git"
 
-# edit important configs
-alias conf_wez="e $HOME/.config/wezterm/wezterm.lua"
-alias conf_fish="e $HOME/.config/fish/config.fish"
-alias conf_local="e $HOME/.config/fish/local.fish"
+# # edit important configs
+# alias conf_wez="e $HOME/.config/wezterm/wezterm.lua"
+# alias conf_fish="e $HOME/.config/fish/config.fish"
+# alias conf_local="e $HOME/.config/fish/local.fish"
 
 # fetch fun
 alias fetch="macchina -t Argon -c $HOME/.config/macchina/macchina.toml"

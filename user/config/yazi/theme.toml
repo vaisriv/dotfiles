@@ -1,2 +1,5 @@
 [flavor]
 use = "catppuccin-mocha"
+
+[filetype]
+rules = [{ name = "*/", is = "link", fg = "#94e2d5" }]

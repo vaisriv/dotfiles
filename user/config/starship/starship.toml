@@ -35,6 +35,9 @@ format = '\[[$symbol($version)]($style)\]'
 [deno]
 format = '\[[$symbol($version)]($style)\]'
 
+[directory]
+truncate_to_repo = false
+
 [docker_context]
 format = '\[[$symbol$context]($style)\]'
 

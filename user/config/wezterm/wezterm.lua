@@ -1,6 +1,9 @@
 local wezterm = require("wezterm")
 local config = {}
 
+-- set ~/files to be the default wd
+-- config.default_cwd = wezterm.home_dir .. "/files"
+
 -- default font size
 config.font_size = 18.0
 
