@@ -52,7 +52,7 @@ end
 echo (set_color -u)\n"file: $FILE"\n"theme: $THEME"\n"type: $TYPE"\n(set_color normal)
 marp --theme $THEME $FILE --allow-local-files $FILE_TYPE
 
-if test $status -eq 0
+if test "$status" -eq 0
     echo \n(set_color -u)"marp compilation of $FILE "(set_color -i -u green)"finished"(set_color normal)
 else
     echo \n(set_color -u)"marp compilation of $FILE "(set_color -i -u red)"failed"(set_color normal)
