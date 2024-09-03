@@ -1,3 +1,5 @@
-#! /usr/bin/env bash
+#!/usr/bin/env fish
 
-pdflatex ${1%.*} && biber ${1%.*} && pdflatex ${1%.*} && clear && echo "latex compilation of ${1%.*} finished"
+set filename (string replace -r '\.[^.]*$' '' $argv[1])
+
+pdflatex $filename; and biber $filename; and pdflatex $filename; and clear; and echo "latex compilation of $filename finished"

@@ -19,7 +19,5 @@ return {
 				r = { "<cmd>VimtexReload<cr>", "[R]eload" },
 			},
 		}, { prefix = "<leader>" })
-		local map = vim.keymap.set
-		map("i", "//", "\\", { desc = "backslash" })
 	end,
 }

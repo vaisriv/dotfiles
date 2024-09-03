@@ -19,4 +19,5 @@
     ~/.config/wezterm: ./user/config/wezterm
     ~/.config/yazi : ./user/config/yazi
     ~/.scripts: ./user/scripts
+    ~/.templates: ./user/templates
     ~/Library/TeXShop/Templates: ./user/latex/templates

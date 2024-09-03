@@ -6,7 +6,8 @@ set -x PAGER less
 set -x GPG_TTY $(tty)
 
 # user env vars
-set -x ZK_NOTEBOOK_DIR $HOME/files/notes
+set -x NOTES_DIR $HOME/files/notes
+set -x UNI_NOTES_DIR $HOME/files/uni/notes
 
 # userpath
 fish_add_path $HOME/.scripts $HOME/.local/bin $HOME/.cargo/bin
@@ -19,6 +20,7 @@ alias e="$EDITOR"
 alias cat="bat -f"
 alias ls="eza --icons --git"
 alias tree="eza --tree --icons --git"
+alias lg="lazygit"
 
 # # edit important configs
 # alias conf_wez="e $HOME/.config/wezterm/wezterm.lua"

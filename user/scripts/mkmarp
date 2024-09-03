@@ -1,31 +1,59 @@
-#! /usr/bin/env bash
+#!/usr/bin/env fish
 
-# INCOMPLETE!!
+# If no argv1, prompt for filename
+if test -z $argv[1]
+    read -f -P "enter filename (defaults to slide-deck.md):" FILE
+else
+    set -f FILE $argv[1]
+end
 
-exit 1
+# If no file, default to slide-deck.md
+if test -z "$FILE"
+    set -f FILE "slide-deck.md"
+end
 
-echo -n "enter filename (defaults to slides.md):"
-read -r FILE
+# If no argv2, prompt for theme
+if test -z $argv[2]
+    read -f -P "enter theme (defaults to academic.css):" THEME
+else
+    set -f THEME $argv[2]
+end
 
-echo -n "enter theme (defaults to academic.css):"
-read -r THEME
+# If no theme, default to academic.css
+if test -z "$THEME"
+    # set theme to academic.css
+    set -f THEME "academic.css"
+end
 
-if [[ ${THEME} == "academic" ]]; then
-	
-fi
+# If theme does not have .css at the end, then append .css
 
-case ${3} in
-	PPTX|PPT|ppt|pptx)
-		marp
-		;;
-	HTML|html)
-		marp
-		;;
-	PDF|pdf)
-		marp
-		;;
-	*)
-		marp
-		;;
+# If no argv3, prompt for type
+if test -z $argv[3]
+    read -f -P "enter output type (ex. pdf, pptx, html) (defaults to pdf):" TYPE
+else
+    set -f TYPE $argv[3]
+end
 
-pdflatex ${1%.*} && biber ${1%.*} && pdflatex ${1%.*} && clear && echo "latex compilation of ${1%.*} finished"
+if test -z "$TYPE"
+    set -f TYPE "pdf"
+end
+
+switch TYPE
+    case "PPTX" "PPT" "ppt" "pptx"
+        set -f FILE_TYPE "--pptx"
+    case "HTML" "html"
+        set -f FILE_TYPE "--html"
+    case "PDF" "pdf"
+        set -f FILE_TYPE "--pdf"
+    case '*'
+        set -f FILE_TYPE "--pdf"
+end
+
+echo (set_color -u)\n"file: $FILE"\n"theme: $THEME"\n"type: $TYPE"\n(set_color normal)
+marp --theme $THEME $FILE --allow-local-files $FILE_TYPE
+
+if test $status -eq 0
+    echo \n(set_color -u)"marp compilation of $FILE "(set_color -i -u green)"finished"(set_color normal)
+else
+    echo \n(set_color -u)"marp compilation of $FILE "(set_color -i -u red)"failed"(set_color normal)
+end

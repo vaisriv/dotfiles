@@ -1,0 +1,32 @@
+#! /usr/bin/env bash
+
+# INCOMPLETE!!
+
+echo -n "enter filename (defaults to slides.md):"
+read -r FILE
+
+echo -n "enter theme (defaults to academic.css):"
+read -r THEME
+
+# if no theme, set theme to academic.css
+if [[ ${THEME} != "" ]]; then
+	# theme = academic.css
+fi
+
+# if theme does not have .css at the end, then append .css
+
+case ${3} in
+	PPTX|PPT|ppt|pptx)
+		marp # actual build command
+		;;
+	HTML|html)
+		marp # actual build command
+		;;
+	PDF|pdf)
+		marp # actual build command
+		;;
+	*)
+		marp # actual build command
+		;;
+
+echo "marp compilation of ${1%.*} finished"

@@ -1,15 +1,15 @@
-#!/usr/bin/env fish
+#! /usr/bin/env bash
 
 # Check if the user has supplied a session name
-if test (count $argv) -ne 1
-    echo "Usage: $argv[0] <name of session>"
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <name of session>"
     exit 1
-end
+fi
 
-set SESSION_NAME $argv[1]
+SESSION_NAME=$1
 
 # Attempt to attach to the session if it exists
-if tmux has-session -t $SESSION_NAME ^/dev/null
+if tmux has-session -t $SESSION_NAME 2>/dev/null; then
     echo "Attaching to existing session '$SESSION_NAME'"
     tmux attach-session -t $SESSION_NAME
 else
@@ -17,4 +17,4 @@ else
     echo "Creating new session '$SESSION_NAME'"
     tmux new-session -d -s $SESSION_NAME
     tmux attach-session -t $SESSION_NAME
-end
+fi

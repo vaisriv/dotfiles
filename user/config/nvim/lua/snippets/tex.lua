@@ -22,6 +22,11 @@ local conds = require("luasnip.extras.expand_conditions")
 
 return {
 	s({
+		trig = "//",
+		dscr = "Backslash",
+		snippetType = "autosnippet",
+	}, fmta("\\<>", { i(1) })),
+	s({
 		trig = "()",
 		dscr = "Left and right matching parentheses",
 		snippetType = "autosnippet",
