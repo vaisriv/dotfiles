@@ -2,7 +2,7 @@
 
 # If no argv1, prompt for filename
 if test -z $argv[1]
-    read -f -P "enter filename (defaults to slide-deck.md):" FILE
+    read -f -P "enter filename (defaults to slide-deck.md): " FILE
 else
     set -f FILE $argv[1]
 end
@@ -14,7 +14,7 @@ end
 
 # If no argv2, prompt for theme
 if test -z $argv[2]
-    read -f -P "enter theme (defaults to academic.css):" THEME
+    read -f -P "enter theme (defaults to academic.css): " THEME
 else
     set -f THEME $argv[2]
 end
@@ -26,10 +26,13 @@ if test -z "$THEME"
 end
 
 # If theme does not have .css at the end, then append .css
+if not string match -r '\.css$' -- $THEME
+    set -f THEME "$THEME.css"
+end
 
 # If no argv3, prompt for type
 if test -z $argv[3]
-    read -f -P "enter output type (ex. pdf, pptx, html) (defaults to pdf):" TYPE
+    read -f -P "enter output type (ex. pdf, pptx, html) (defaults to pdf): " TYPE
 else
     set -f TYPE $argv[3]
 end
