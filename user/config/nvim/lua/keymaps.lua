@@ -19,4 +19,6 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right win
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
+-- Helpful bindings
 vim.keymap.set("n", "<leader>a", "<cmd>:%y+<cr>", { desc = "Y[A]nk entire buffer" })
+vim.keymap.set("n", "<leader>b", vim.cmd.bdelete, { desc = "Close [B]uffer" })

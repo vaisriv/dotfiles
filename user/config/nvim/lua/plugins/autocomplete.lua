@@ -1,4 +1,4 @@
--- Autocompletion
+-- Autocompletion via snippets and modules
 
 return {
 	"hrsh7th/nvim-cmp",
@@ -88,7 +88,6 @@ return {
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
 				{ name = "path" },
-				{ name = "cmp-r" },
 			},
 		})
 	end,

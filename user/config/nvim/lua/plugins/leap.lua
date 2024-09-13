@@ -1,4 +1,4 @@
--- Leap
+-- Leap to any spot in current buffer
 
 return {
 	"ggandor/leap.nvim",

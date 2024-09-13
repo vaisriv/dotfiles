@@ -1,4 +1,4 @@
--- Noice
+-- Nice looking notifcations and command line
 
 return {
 	"folke/noice.nvim",

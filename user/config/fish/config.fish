@@ -7,6 +7,7 @@ set -x GPG_TTY $(tty)
 
 # user env vars
 set -x NOTES_DIR $HOME/files/notes
+set -x UNI_DIR $HOME/files/uni
 set -x UNI_NOTES_DIR $HOME/files/uni/notes
 
 # userpath

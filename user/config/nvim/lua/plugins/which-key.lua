@@ -4,16 +4,34 @@ return {
 	"folke/which-key.nvim",
 	event = "VimEnter", -- Sets the loading event to 'VimEnter'
 	config = function() -- This is the function that runs, AFTER loading
-		require("which-key").setup()
+		local opts = {
+			icons = {
+				mappings = false,
+			},
+		}
 
-		-- Document existing key chains
-		require("which-key").register({
-			["<leader>c"] = { name = "[C]ode", _ = "which_key_ignore" },
-			["<leader>d"] = { name = "[D]ocument", _ = "which_key_ignore" },
-			["<leader>r"] = { name = "[R]ename", _ = "which_key_ignore" },
-			["<leader>s"] = { name = "[S]earch", _ = "which_key_ignore" },
-			["<leader>w"] = { name = "[W]orkspace", _ = "which_key_ignore" },
-			["<leader>z"] = { name = "[Z]ettel", _ = "which_key_ignore" },
+		local wk = require("which-key")
+		wk.setup(opts)
+		wk.add({
+			-- { "<leader>z", group = "[Z]ettel" },
+			{ "<leader>c", group = "[C]omment", mode = {"n", "v"} },
+			{
+				"<leader>l", group = "[L]SP",
+					{ "<leader>lg", group = "[G]o to" }
+			},
+			{ "<leader>p", group = "[P]arenthesis (surround)", mode = { "n", "v" } },
+			{ "<leader>s", group = "[S]earch" },
+			{ "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "[U]ndoTree" },
+			{
+				"<leader>v", group = "[V]imTeX",
+				{ "<leader>vb", "<cmd>VimtexCompile<cr>", desc = "[B]uild" },
+				{ "<leader>vc", "<cmd>VimtexClean<cr>", desc = "[C]lean" },
+				{ "<leader>ve", "<cmd>VimtexErrors<cr>", desc = "[E]rrors" },
+				{ "<leader>vl", "<cmd>VimtexLog<cr>", desc = "[L]og" },
+				{ "<leader>vm", "<cmd>VimtexToggleMain<cr>", desc = "[M]ain" },
+				{ "<leader>vr", "<cmd>VimtexReload<cr>", desc = "[R]eload" },
+				{ "<leader>vv", "<cmd>VimtexView<cr>", desc = "[V]iew" },
+			},
 		})
 	end,
 }
