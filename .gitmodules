@@ -13,6 +13,7 @@
 [submodule "tmux"]
 	path = user/config/tmux/plugins/tmux
 	url = https://github.com/catppuccin/tmux
+
 [submodule "user/config/yazi/flavors"]
 	path = user/config/yazi/flavors
 	url = https://github.com/yazi-rs/flavors
