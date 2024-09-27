@@ -140,15 +140,16 @@ alt-shift-semicolon = 'mode service'
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
-esc = ['reload-config', 'mode main']
-r = ['flatten-workspace-tree', 'mode main'] # reset layout
-#s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
+r = ['reload-config', 'mode main'] # [r]eload config
+d = ['flatten-workspace-tree', 'mode main'] # [d]efault layout
+#s = ['layout sticky tiling', 'mode main'] # [s]ticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
 f = [
 	'layout floating tiling',
 	'mode main',
-] # Toggle between floating and tiling layout
-backspace = ['close-all-windows-but-current', 'mode main']
-m = ['fullscreen', 'mode main']
+] # Toggle between [f]loating and tiling layout
+# backspace = ['close', 'mode main'] # [⌫] delete current window
+# shift-backspace = ['close-all-windows-but-current', 'mode main'] # [shift-⌫] delete all windows but current
+m = ['fullscreen', 'mode main'] # [m]aximize
 
 alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']

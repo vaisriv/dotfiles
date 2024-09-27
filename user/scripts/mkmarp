@@ -15,18 +15,21 @@ end
 # If no argv2, prompt for theme
 if test -z $argv[2]
     read -f -P "enter theme (defaults to academic.css): " THEME
+    set -f THEME_DISP $THEME
 else
     set -f THEME $argv[2]
+    set -f THEME_DISP $argv[2]
 end
 
 # If no theme, default to academic.css
 if test -z "$THEME"
     # set theme to academic.css
-    set -f THEME "academic.css"
+    set -f THEME "$HOME/.templates/academic.css"
+    set -f THEME_DISP "academic.css"
 end
 
 # If theme does not have .css at the end, then append .css
-if not string match -r '\.css$' -- $THEME
+if not string match --quiet -r '\.css$' -- $THEME
     set -f THEME "$THEME.css"
 end
 
@@ -41,18 +44,17 @@ if test -z "$TYPE"
     set -f TYPE "pdf"
 end
 
-switch TYPE
+switch $TYPE
     case "PPTX" "PPT" "ppt" "pptx"
         set -f FILE_TYPE "--pptx"
     case "HTML" "html"
         set -f FILE_TYPE "--html"
-    case "PDF" "pdf"
-        set -f FILE_TYPE "--pdf"
-    case '*'
+    case "PDF" "pdf" "*"
         set -f FILE_TYPE "--pdf"
 end
 
-echo (set_color -u)\n"file: $FILE"\n"theme: $THEME"\n"type: $TYPE"\n(set_color normal)
+echo (set_color -u)\n"file: $FILE"\n"theme: $THEME_DISP"\n"type: $TYPE"\n(set_color normal)
+echo marp --theme $THEME $FILE --allow-local-files $FILE_TYPE
 marp --theme $THEME $FILE --allow-local-files $FILE_TYPE
 
 if test "$status" -eq 0

@@ -6,6 +6,7 @@ local config = {}
 
 -- default font size
 config.font_size = 18.0
+config.font = wezterm.font "IosevkaTerm NF"
 
 -- color scheme settings
 config.color_scheme = "Catppuccin Mocha"
