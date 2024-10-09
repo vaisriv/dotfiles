@@ -18,5 +18,37 @@
     "posix_terminal_shell": "custom",
     "text_rendering": "geometricPrecision",
     "custom_shell_command": "/opt/homebrew/Cellar/fish/3.7.1/bin/fish",
-    "editor_theme": "Chaos"
+    "editor_theme": "Monokai",
+    "toolbar_visible": false,
+    "panes": {
+        "quadrants": [
+            "Source",
+            "Console",
+            "TabSet1",
+            "TabSet2"
+        ],
+        "tabSet1": [
+            "Environment",
+            "Files",
+            "Plots",
+            "VCS",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Presentations"
+        ],
+        "hiddenTabSet": [
+            "History",
+            "Connections",
+            "Packages",
+            "Help",
+            "Build",
+            "Tutorial",
+            "Viewer",
+            "Presentations"
+        ],
+        "console_left_on_top": false,
+        "console_right_on_top": true,
+        "additional_source_columns": 0
+    }
 }
