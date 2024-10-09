@@ -71,8 +71,8 @@ outer.right = 0
 # alt-enter = 'exec-and-forget open -n /System/Applications/Utilities/Terminal.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-alt-slash = 'layout tiles horizontal vertical'
-alt-comma = 'layout accordion horizontal vertical'
+# alt-slash = 'layout tiles horizontal vertical'
+# alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 ctrl-alt-h = 'focus left'
@@ -150,6 +150,8 @@ f = [
 # backspace = ['close', 'mode main'] # [⌫] delete current window
 # shift-backspace = ['close-all-windows-but-current', 'mode main'] # [shift-⌫] delete all windows but current
 m = ['fullscreen', 'mode main'] # [m]aximize
+space = ['layout tiles horizontal vertical', 'mode main'] # [␣] swap between horizontal and vertical
+esc = 'mode main'
 
 alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
