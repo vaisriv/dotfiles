@@ -15,6 +15,8 @@ vim.opt.linebreak = true
 
 -- Enable mouse mode
 vim.opt.mouse = "a"
+vim.cmd("aunmenu PopUp.How-to\\ disable\\ mouse")
+vim.cmd("aunmenu PopUp.-1-")
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false

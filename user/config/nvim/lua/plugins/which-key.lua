@@ -14,16 +14,18 @@ return {
 		wk.setup(opts)
 		wk.add({
 			-- { "<leader>z", group = "[Z]ettel" },
-			{ "<leader>c", group = "[C]omment", mode = {"n", "v"} },
+			{ "<leader>c", group = "[C]omment", mode = { "n", "v" } },
 			{
-				"<leader>l", group = "[L]SP",
-					{ "<leader>lg", group = "[G]o to" }
+				"<leader>l",
+				group = "[L]SP",
+				{ "<leader>lg", group = "[G]o to" },
 			},
 			{ "<leader>p", group = "[P]arenthesis (surround)", mode = { "n", "v" } },
 			{ "<leader>s", group = "[S]earch" },
 			{ "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "[U]ndoTree" },
 			{
-				"<leader>v", group = "[V]imTeX",
+				"<leader>v",
+				group = "[V]imTeX",
 				{ "<leader>vb", "<cmd>VimtexCompile<cr>", desc = "[B]uild" },
 				{ "<leader>vc", "<cmd>VimtexClean<cr>", desc = "[C]lean" },
 				{ "<leader>ve", "<cmd>VimtexErrors<cr>", desc = "[E]rrors" },
@@ -32,6 +34,13 @@ return {
 				{ "<leader>vr", "<cmd>VimtexReload<cr>", desc = "[R]eload" },
 				{ "<leader>vv", "<cmd>VimtexView<cr>", desc = "[V]iew" },
 			},
+
+			-- Remove 'g' bindings that do not conform to the [G]o intention
+			{ "gcc", "<Nop>", desc = "Built-In Linewise Comment", mode = { "n" }, hidden = true },
+			{ "gc", "<Nop>", desc = "Built-In Comment", mode = { "n", "v" }, hidden = true },
+			{ "gu", "<Nop>", desc = "Built-In Lowercase", mode = { "n", "v" }, hidden = true },
+			{ "gU", "<Nop>", desc = "Built-In Uppercase", mode = { "n", "v" }, hidden = true },
+			{ "g~", "<Nop>", desc = "Built-In ToggleCase", mode = { "n", "v" }, hidden = true },
 		})
 	end,
 }

@@ -1,4 +1,4 @@
--- Collection of various small independent plugins/modules
+-- Collection of various small, discrete plugins/modules
 
 return {
 	"echasnovski/mini.nvim",
@@ -39,13 +39,10 @@ return {
 
 		require("mini.tabline").setup()
 
-		-- Simple and easy statusline.
-		local statusline = require("mini.statusline")
-		-- set use_icons to true if you have a Nerd Font
-		statusline.setup({ use_icons = vim.g.have_nerd_font })
+		require("mini.statusline").setup({ use_icons = vim.g.have_nerd_font })
 
 		---@diagnostic disable-next-line: duplicate-set-field
-		statusline.section_location = function()
+		require("mini.statusline").section_location = function()
 			return "%2l:%-2v"
 		end
 	end,
