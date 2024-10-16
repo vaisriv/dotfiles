@@ -12,5 +12,3 @@ enable_transience
 # plugin setup
 zoxide init fish --cmd cd | source
 fzf --fish | source
-
-set -g fish_key_bindings fish_vi_key_bindings
