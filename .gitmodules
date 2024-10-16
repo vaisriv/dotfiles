@@ -17,3 +17,6 @@
 [submodule "user/config/yazi/flavors"]
 	path = user/config/yazi/flavors
 	url = https://github.com/yazi-rs/flavors
+[submodule "user/config/tmux/plugins/tmux-resurrect"]
+	path = user/config/tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
