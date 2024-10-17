@@ -14,6 +14,7 @@ abbr --add lg lazygit
 abbr --add wez_conf "$EDITOR $HOME/.config/wezterm/wezterm.lua"
 abbr --add nvim_conf "$EDITOR $HOME/.config/nvim/."
 abbr --add fish_conf "$EDITOR $HOME/.config/fish/conf.d/."
+abbr --add tmux_conf "$EDITOR $HOME/.config/tmux/tmux.conf"
 abbr --add aero_conf "$EDITOR $HOME/.config/aerospace/aerospace.toml"
 
 # recreate !!
