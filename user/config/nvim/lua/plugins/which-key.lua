@@ -35,6 +35,11 @@ return {
 				{ "<leader>vv", "<cmd>VimtexView<cr>", desc = "[V]iew" },
 			},
 
+			-- exit neovim with qq
+			{ "<leader>q", group = "[Q]uit",
+				{ "<leader>qq", vim.cmd.qa, desc = "Really [Q]uit"},
+			},
+
 			-- Remove 'g' bindings that do not conform to the [G]o intention
 			{ "gcc", "<Nop>", desc = "Built-In Linewise Comment", mode = { "n" }, hidden = true },
 			{ "gc", "<Nop>", desc = "Built-In Comment", mode = { "n", "v" }, hidden = true },

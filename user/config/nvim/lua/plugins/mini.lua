@@ -35,6 +35,19 @@ return {
 		require("mini.starter").setup({
 			header = " ⟋|､\n(°､ ｡ 7\n |､  ~ヽ\n じしf_,)ノ\n",
 			footer = "",
+			items = {
+				{
+					action = "<NOP>",
+					name = "   nvim",
+					section = "",
+				},
+			},
+			query_updaters = "",
+			silent = true,
+			content_hooks = {
+				require("mini.starter").gen_hook.adding_bullet(""),
+				require("mini.starter").gen_hook.aligning("center", "center"),
+			},
 		})
 
 		require("mini.tabline").setup()
