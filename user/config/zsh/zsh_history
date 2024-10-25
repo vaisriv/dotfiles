@@ -1,0 +1,79 @@
+zsh
+ls
+echo $SHELL
+exit
+exit
+ls
+echo $SHELL
+clear
+ls
+lab
+exit
+which lab
+exit
+brew install zsh-completions
+ls
+clear
+ls
+cd uni
+cd notes/Information  
+ls
+clear
+ls
+clear
+cd
+clear
+ls
+rm ~/.zcompdump*; compinit
+rm ~/.zcompdump*
+compinit
+exit
+exit
+clear
+brew install zsh-syntax-highlighting
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+clear
+exit
+cd .config/
+ls
+ls -la
+cd ..
+ls
+cd vsrivastava
+compinit
+compaudit
+sudo chmod -R 755 /opt/homebrew/share
+compaudit
+clear
+compinit
+clear
+nvim $CONFIG/zsh/.zshrc
+clear
+exit
+cd dow
+ls
+cp catppuccin_mocha-zsh-syntax-highlighting.zsh $CONFIG/zsh/
+ls
+rm *
+cd conf
+ls
+rm zsh-cgt zsh-old zsh-old2
+rm -r zsh-cgt zsh-old zsh-old2
+rm -rf zsh-cgt zsh-old zsh-old2
+ls
+clear
+exit
+zsh_conf
+clear
+exoty
+exit
+tmuxs
+clear
+sh ~/.scripts/tmuxs
+clear
+tmux
+exit
+nvim ~/.config/tmux
+clear
+fish
+exit
