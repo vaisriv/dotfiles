@@ -6,6 +6,10 @@
 	path = user/config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
 
+[submodule "tmux-resurrect"]
+	path = user/config/tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
+
 [submodule "tmux-sessionx"]
 	path = user/config/tmux/plugins/tmux-sessionx
 	url = https://github.com/omerxx/tmux-sessionx
@@ -14,9 +18,6 @@
 	path = user/config/tmux/plugins/tmux
 	url = https://github.com/catppuccin/tmux
 
-[submodule "user/config/yazi/flavors"]
+[submodule "flavors"]
 	path = user/config/yazi/flavors
 	url = https://github.com/yazi-rs/flavors
-[submodule "user/config/tmux/plugins/tmux-resurrect"]
-	path = user/config/tmux/plugins/tmux-resurrect
-	url = https://github.com/tmux-plugins/tmux-resurrect
