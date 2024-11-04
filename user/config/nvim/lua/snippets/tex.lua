@@ -41,6 +41,11 @@ return {
 		dscr = "Overhead dot for Newtonian notation",
 		snippetType = "autosnippet",
 	}, fmta("\\dot{<>}", { i(1) })),
+	s({
+		trig = "vec",
+		dscr = "Overhead vector arrow",
+		snippetType = "autosnippet",
+	}, fmta("\\vec{<>}", { i(1) })),
 	-- wanted to make subscript and superscript work, but currently are broken
 	--[[ s({
 		trig = "._",
@@ -75,7 +80,7 @@ return {
 		},
 		fmta(
 			[[
-		\begin{homeworkProblem}
+		\begin{hwkProblem}{<>}{<>}
 				
 			<>
 			
@@ -83,7 +88,34 @@ return {
 
 			<>
 
-		\end{homeworkProblem}
+		\end{hwkProblem}
+		]],
+			{ i(1), i(2), i(3), i(4) }
+		)
+	),
+	s(
+		{
+			trig = "hwk",
+			dscr = "Homework problem autoformat",
+		},
+		fmta(
+			[[
+		\begin{hwkProblem}{<>}{<>}
+		\end{hwkProblem}
+		]],
+			{ i(1), i(2) }
+		)
+	),
+	s(
+		{
+			trig = "listing",
+			dscr = "Code block autoformat",
+		},
+		fmta(
+			[[
+		\begin{lstlisting}[language=<>]
+			<>
+		\end{lstlisting}
 		]],
 			{ i(1), i(2) }
 		)
