@@ -23,6 +23,7 @@ return {
 			{ "<leader>p", group = "[P]arenthesis (surround)", mode = { "n", "v" } },
 			{ "<leader>s", group = "[S]earch" },
 			{ "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "[U]ndoTree" },
+			{ "<leader>U", "<cmd>UndotreeToggle<cr>", desc = "[U]ndoTree", hidden = true },
 			{
 				"<leader>v",
 				group = "[V]imTeX",

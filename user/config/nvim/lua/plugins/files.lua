@@ -1,7 +1,7 @@
 -- File Manager
 
 return {
-	{
+	--[[ {
 		"mikavilpas/yazi.nvim",
 		event = "VeryLazy",
 		keys = {
@@ -16,7 +16,7 @@ return {
 		opts = {
 			open_for_directories = false,
 		},
-	},
+	}, ]]
 	{
 		"stevearc/oil.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -24,11 +24,19 @@ return {
 			require("oil").setup({
 				columns = { "icon" },
 				keymaps = {
-					["<C-h>"] = false,
+					["q"] = "actions.close",
 					["<M-h>"] = "actions.select_split",
 				},
 				view_options = {
 					show_hidden = true,
+				},
+			})
+			require("which-key").add({
+				{
+					"<leader>-",
+					"<cmd>Oil --float<cr>",
+					desc = "[-] Open directory view in floating window",
+					mode = { "n", "v" },
 				},
 			})
 		end,
