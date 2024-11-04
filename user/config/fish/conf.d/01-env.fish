@@ -1,5 +1,6 @@
 # env vars
 set fish_greeting
+set fish_vi_key_bindings
 set -x EDITOR nvim
 set -x VISUAL nvim
 set -x PAGER less

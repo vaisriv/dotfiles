@@ -8,6 +8,7 @@ alias pfetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
 
 # useful abbreviations
 abbr -a e $EDITOR
+abbr -a o open
 abbr --add lg lazygit
 
 # edit important configs
