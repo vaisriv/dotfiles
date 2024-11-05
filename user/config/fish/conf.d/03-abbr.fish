@@ -11,6 +11,9 @@ abbr -a e $EDITOR
 abbr -a o open
 abbr --add lg lazygit
 
+# open pdfs in zathura
+alias pdf="open -a ~/Applications/zathura-client.app/"
+
 # edit important configs
 abbr --add wez_conf "$EDITOR $HOME/.config/wezterm/wezterm.lua"
 abbr --add nvim_conf "$EDITOR $HOME/.config/nvim/."
