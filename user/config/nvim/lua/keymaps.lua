@@ -20,7 +20,8 @@ vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower win
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 -- Helpful bindings
-vim.keymap.set("n", "<leader>a", "<cmd>:%y+<cr>", { desc = "Y[A]nk entire buffer" })
+vim.keymap.set("n", "<leader>a", "ggVG", { desc = "Select [A]ll" })
+vim.keymap.set("n", "<leader>y", "<cmd>:%y+<cr>", { desc = "[Y]ank entire buffer" })
 vim.keymap.set("n", "<leader>w", vim.cmd.write, { desc = "[W]rite buffer" })
 vim.keymap.set("n", "<leader>d", vim.cmd.bdelete, { desc = "[D]elete Buffer" })
 vim.keymap.set("n", "<leader>b", vim.cmd.bprevious, { desc = "[B]ack Buffer" })
