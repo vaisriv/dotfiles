@@ -10,16 +10,17 @@
     ~/.config/bat: ./user/config/bat
     ~/.config/btop: ./user/config/btop
     ~/.config/fish: ./user/config/fish
+    ~/.config/latexmk : ./user/config/latexmk
     ~/.config/macchina: ./user/config/macchina
     ~/.config/mpv: ./user/config/mpv
     ~/.config/nvim: ./user/config/nvim
     ~/.config/rstudio: ./user/config/rstudio
     ~/.config/starship: ./user/config/starship
     ~/.config/tmux: ./user/config/tmux
+    ~/.config/user-dirs.dirs: ./user/config/xdg-user-dirs.dirs
     ~/.config/wezterm: ./user/config/wezterm
     ~/.config/yazi: ./user/config/yazi
     ~/.config/zsh: ./user/config/zsh
-    ~/.config/user-dirs.dirs: ./user/config/xdg-user-dirs.dirs
     ~/.scripts: ./user/scripts
     ~/.templates: ./user/templates
     ~/Library/TeXShop/Templates: ./user/latex/templates
