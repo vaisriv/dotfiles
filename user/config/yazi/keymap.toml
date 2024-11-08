@@ -1,29 +1,63 @@
-[[manager.prepend_keymap]]
-on  = "k"
-run = "plugin --sync arrow --args=-1"
-
+# allow vertical movement [j, k] to wrap lists
 [[manager.prepend_keymap]]
 on  = "j"
 run = "plugin --sync arrow --args=1"
+desc = "[J] Cursor downwards wrap"
+[[manager.prepend_keymap]]
+on  = "k"
+run = "plugin --sync arrow --args=-1"
+desc = "[K] Cursor upwards wrap"
 
+# allow right [l] to open files and enter directories
+[[manager.prepend_keymap]]
+on   = "l"
+run  = "plugin --sync smart-enter"
+desc = "[L] Enter the child directory, or open the file"
+
+# fullscreen preview toggle
+[[manager.prepend_keymap]]
+on   = "P"
+run  = "plugin --sync max-preview"
+desc = "Toggle [P]review size"
+
+# macos quicklook preview
 [[manager.prepend_keymap]]
 on = "<C-p>"
 run = '''
   shell 'qlmanage -p "$@"' --confirm
 '''
+desc = "[P]review in separate window"
 
+# root of git repo helper func
 [[manager.prepend_keymap]]
 on = [ "g", "r" ]
 run = '''
 	shell 'ya pub dds-cd --str "$(git rev-parse --show-toplevel)"' --confirm
 '''
+desc = "[G]o to [R]oot of git repo"
 
+# frequent locations
 [[manager.prepend_keymap]]
-on   = "l"
-run  = "plugin --sync smart-enter"
-desc = "Enter the child directory, or open the file"
-
+on   = [ "g", "h" ]
+run  = "cd $HOME"
+desc = "[G]o to [H]ome"
 [[manager.prepend_keymap]]
-on   = "T"
-run  = "plugin --sync max-preview"
-desc = "Maximize or restore preview"
+on   = [ "g", "c" ]
+run  = "cd $HOME/.config"
+desc = "[G]o to [C]onfig"
+[[manager.prepend_keymap]]
+on   = [ "g", "d" ]
+run  = "cd $DOWNLOADS_DIR"
+desc = "[G]o to [D]ownloads"
+[[manager.prepend_keymap]]
+on   = [ "g", "f" ]
+run  = "cd $FILES_DIR"
+desc = "[G]o to [F]iles"
+[[manager.prepend_keymap]]
+on   = [ "g", "p" ]
+run  = "cd $PICTURES_DIR"
+desc = "[G]o to [P]ictures"
+[[manager.prepend_keymap]]
+on   = [ "g", "u" ]
+run  = "cd $UNI_DIR"
+desc = "[G]o to [U]ni"
