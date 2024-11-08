@@ -8,9 +8,10 @@ set -x GPG_TTY $(tty)
 
 # user env vars
 set -x FILES_DIR $HOME/files
+set -x DOTFILES_DIR $FILES_DIR/dotfiles
 set -x DOWNLOADS_DIR $FILES_DIR/downloads
-set -x PICTURES_DIR $FILES_DIR/pictures
 set -x NOTES_DIR $FILES_DIR/notes
+set -x PICTURES_DIR $FILES_DIR/pictures
 
 # xdg
 set XDG_DESKTOP_DIR $HOME/Desktop
