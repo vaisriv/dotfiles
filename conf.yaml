@@ -19,6 +19,7 @@
     ~/.config/wezterm: ./user/config/wezterm
     ~/.config/yazi: ./user/config/yazi
     ~/.config/zsh: ./user/config/zsh
+    ~/.config/user-dirs.dirs: ./user/config/xdg-user-dirs.dirs
     ~/.scripts: ./user/scripts
     ~/.templates: ./user/templates
     ~/Library/TeXShop/Templates: ./user/latex/templates
