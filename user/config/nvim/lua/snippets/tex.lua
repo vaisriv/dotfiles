@@ -81,13 +81,11 @@ return {
 		fmta(
 			[[
 		\begin{hwkProblem}{<>}{<>}
-				
 			<>
 			
-			\solution
+			\hwkSol
 
 			<>
-
 		\end{hwkProblem}
 		]],
 			{ i(1), i(2), i(3), i(4) }
