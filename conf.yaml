@@ -20,6 +20,7 @@
     ~/.config/user-dirs.dirs: ./user/config/xdg-user-dirs.dirs
     ~/.config/wezterm: ./user/config/wezterm
     ~/.config/yazi: ./user/config/yazi
+    ~/.config/zathura: ./user/config/zathura
     ~/.config/zsh: ./user/config/zsh
     ~/.scripts: ./user/scripts
     ~/.templates: ./user/templates
