@@ -15,11 +15,12 @@ abbr --add lg lazygit
 alias pdf="open -a ~/Applications/zathura-client.app/"
 
 # edit important configs
-abbr --add wez_conf "$EDITOR $HOME/.config/wezterm/wezterm.lua"
-abbr --add nvim_conf "$EDITOR $HOME/.config/nvim/."
-abbr --add fish_conf "$EDITOR $HOME/.config/fish/conf.d/."
-abbr --add tmux_conf "$EDITOR $HOME/.config/tmux/tmux.conf"
 abbr --add aero_conf "$EDITOR $HOME/.config/aerospace/aerospace.toml"
+abbr --add fish_conf "$EDITOR $HOME/.config/fish/conf.d/."
+abbr --add nvim_conf "$EDITOR $HOME/.config/nvim/."
+abbr --add tmux_conf "$EDITOR $HOME/.config/tmux/tmux.conf"
+abbr --add wez_conf "$EDITOR $HOME/.config/wezterm/wezterm.lua"
+abbr --add yazi_conf "$EDITOR $HOME/.config/yazi/."
 
 # recreate !!
 function last_history_item

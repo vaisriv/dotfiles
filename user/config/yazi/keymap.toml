@@ -16,17 +16,25 @@ desc = "[L] Enter the child directory, or open the file"
 
 # fullscreen preview toggle
 [[manager.prepend_keymap]]
-on   = "P"
+on   = [ "P", "t" ]
 run  = "plugin --sync max-preview"
-desc = "Toggle [P]review size"
+desc = "[P]review size [T]oggle"
 
 # macos quicklook preview
 [[manager.prepend_keymap]]
-on = "<C-p>"
+on = [ "P",  "l" ]
 run = '''
   shell 'qlmanage -p "$@"' --confirm
 '''
-desc = "[P]review in separate window"
+desc = "[P]review in Quick[L]ook"
+
+# open pdfs in zathura
+[[manager.prepend_keymap]]
+on = [ "P", "z" ]
+run = '''
+  shell 'zathura "$@"' --confirm
+'''
+desc = "[P]review in [Z]athura"
 
 # root of git repo helper func
 [[manager.prepend_keymap]]
