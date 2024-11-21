@@ -7,12 +7,10 @@ alias fetch="macchina -t Argon -c $HOME/.config/macchina/macchina.toml"
 alias pfetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
 
 # useful abbreviations
-abbr -a e $EDITOR
-abbr -a o open
+abbr --add e $EDITOR
+abbr --add o open
 abbr --add lg lazygit
-
-# open pdfs in zathura
-alias pdf="open -a ~/Applications/zathura-client.app/"
+abbr --add pdf zathura
 
 # edit important configs
 abbr --add aero_conf "$EDITOR $HOME/.config/aerospace/aerospace.toml"
