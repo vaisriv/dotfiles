@@ -10,7 +10,6 @@ alias pfetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
 abbr --add e $EDITOR
 abbr --add o open
 abbr --add lg lazygit
-abbr --add pdf zathura
 
 # edit important configs
 abbr --add aero_conf "$EDITOR $HOME/.config/aerospace/aerospace.toml"
@@ -19,6 +18,11 @@ abbr --add nvim_conf "$EDITOR $HOME/.config/nvim/."
 abbr --add tmux_conf "$EDITOR $HOME/.config/tmux/tmux.conf"
 abbr --add wez_conf "$EDITOR $HOME/.config/wezterm/wezterm.lua"
 abbr --add yazi_conf "$EDITOR $HOME/.config/yazi/."
+
+# make zathura more convenient
+function pdf
+    zathura $argv 2> /dev/null & disown
+end
 
 # recreate !!
 function last_history_item
