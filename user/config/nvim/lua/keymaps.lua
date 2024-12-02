@@ -26,3 +26,7 @@ vim.keymap.set("n", "<leader>w", vim.cmd.write, { desc = "[W]rite buffer" })
 vim.keymap.set("n", "<leader>d", vim.cmd.bdelete, { desc = "[D]elete Buffer" })
 vim.keymap.set("n", "<leader>b", vim.cmd.bprevious, { desc = "[B]ack Buffer" })
 vim.keymap.set("n", "<leader>n", vim.cmd.bnext, { desc = "[N]ext Buffer" })
+
+-- Exit neovim with qq
+vim.keymap.set("n", "<leader>qq", vim.cmd.quitall, { desc = "Really [Q]uit" })
+vim.keymap.set("n", "qq", vim.cmd.quitall, { desc = "[Q]uit" })
