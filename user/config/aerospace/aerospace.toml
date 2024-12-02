@@ -110,27 +110,27 @@ ctrl-alt-7 = 'workspace 17'
 ctrl-alt-8 = 'workspace 18'
 ctrl-alt-9 = 'workspace 19'
 
-# Fix workspaces 1-9 to main monitor and spaces 11-19 to secondary monitor
-# See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
-[workspace-to-monitor-force-assignment]
-1 = 'main'
-2 = 'main'
-3 = 'main'
-4 = 'main'
-5 = 'main'
-6 = 'main'
-7 = 'main'
-8 = 'main'
-9 = 'main'
-11 = 'secondary'
-12 = 'secondary'
-13 = 'secondary'
-14 = 'secondary'
-15 = 'secondary'
-16 = 'secondary'
-17 = 'secondary'
-18 = 'secondary'
-19 = 'secondary'
+# # Fix workspaces 1-9 to main monitor and spaces 11-19 to secondary monitor
+# # See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
+# [workspace-to-monitor-force-assignment]
+# 1 = 'main'
+# 2 = 'main'
+# 3 = 'main'
+# 4 = 'main'
+# 5 = 'main'
+# 6 = 'main'
+# 7 = 'main'
+# 8 = 'main'
+# 9 = 'main'
+# 11 = 'secondary'
+# 12 = 'secondary'
+# 13 = 'secondary'
+# 14 = 'secondary'
+# 15 = 'secondary'
+# 16 = 'secondary'
+# 17 = 'secondary'
+# 18 = 'secondary'
+# 19 = 'secondary'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = ['move-node-to-workspace 1']
