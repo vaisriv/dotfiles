@@ -84,8 +84,7 @@ return {
 
 		local servers = {
 			clangd = {},
-			gopls = {},
-			julials = {},
+			fortls = {},
 			lua_ls = {
 				-- cmd = {...},
 				-- filetypes = { ...},
@@ -101,7 +100,6 @@ return {
 			},
 			r_language_server = {},
 			pyright = {},
-			rust_analyzer = {},
 			stylua = {},
 			texlab = {},
 		}

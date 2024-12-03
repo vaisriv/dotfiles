@@ -9,12 +9,6 @@ end
 starship init fish | source
 enable_transience
 
-# fix zathura file completion
-function __zathura_complete_files
-    __fish_complete_path
-end
-complete -c zathura -f -a "(__zathura_complete_files)"
-
 # plugin setup
 zoxide init fish --cmd cd | source
 fzf --fish | source

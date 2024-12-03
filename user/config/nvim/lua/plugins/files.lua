@@ -24,7 +24,6 @@ return {
 			require("oil").setup({
 				columns = { "icon" },
 				keymaps = {
-					["q"] = "actions.close",
 					["<M-h>"] = "actions.select_split",
 				},
 				view_options = {

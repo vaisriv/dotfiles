@@ -14,7 +14,7 @@
     ~/.config/rstudio: ./user/config/rstudio
     ~/.config/starship: ./user/config/starship
     ~/.config/tmux: ./user/config/tmux
-    ~/.config/user-dirs.dirs: ./user/config/xdg-user-dirs.dirs
+    ~/.config/user-dirs.conf: ./user/config/xdg-user-dirs.conf
     ~/.config/yazi: ./user/config/yazi
     ~/.scripts: ./user/scripts
-    ~/texmf/templates: ./user/latex/templates
+    ~/.templates: ./user/templates

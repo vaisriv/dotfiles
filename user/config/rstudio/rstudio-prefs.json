@@ -17,7 +17,7 @@
     "real_time_spellchecking": false,
     "posix_terminal_shell": "custom",
     "text_rendering": "geometricPrecision",
-    "custom_shell_command": "/opt/homebrew/Cellar/fish/3.7.1/bin/fish",
+    "custom_shell_command": "/usr/bin/fish",
     "editor_theme": "Monokai",
     "toolbar_visible": false,
     "panes": {
