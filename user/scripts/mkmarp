@@ -24,7 +24,7 @@ end
 # If no theme, default to academic.css
 if test -z "$THEME"
     # set theme to academic.css
-    set -f THEME "$HOME/.templates/academic.css"
+    set -f THEME "$HOME/.templates/marp/academic.css"
     set -f THEME_DISP "academic.css"
 end
 

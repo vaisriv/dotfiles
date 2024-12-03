@@ -24,4 +24,3 @@
     ~/.config/zsh: ./user/config/zsh
     ~/.scripts: ./user/scripts
     ~/.templates: ./user/templates
-    ~/Library/TeXShop/Templates: ./user/latex/templates
