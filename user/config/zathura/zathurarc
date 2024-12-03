@@ -1,4 +1,0 @@
-set font 'monospace normal 12'
-set show-recent 0
-set selection-notification false
-map <C-o> feedkeys ":exec zathura $FILE<Return>"

@@ -6,22 +6,15 @@
 - clean: ["~", "~/.config", "~/.scripts"]
 
 - link:
-    ~/.config/aerospace: ./user/config/aerospace
     ~/.config/bat: ./user/config/bat
-    ~/.config/btop: ./user/config/btop
     ~/.config/fish: ./user/config/fish
+    ~/.config/kitty: ./user/config/kitty
     ~/.config/latexmk : ./user/config/latexmk
-    ~/.config/macchina: ./user/config/macchina
-    ~/.config/mpv: ./user/config/mpv
     ~/.config/nvim: ./user/config/nvim
     ~/.config/rstudio: ./user/config/rstudio
     ~/.config/starship: ./user/config/starship
     ~/.config/tmux: ./user/config/tmux
     ~/.config/user-dirs.dirs: ./user/config/xdg-user-dirs.dirs
-    ~/.config/wezterm: ./user/config/wezterm
     ~/.config/yazi: ./user/config/yazi
-    ~/.config/zathura: ./user/config/zathura
-    ~/.config/zsh: ./user/config/zsh
     ~/.scripts: ./user/scripts
-    ~/.templates: ./user/templates
-    ~/Library/TeXShop/Templates: ./user/latex/templates
+    ~/texmf/templates: ./user/latex/templates
