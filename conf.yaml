@@ -11,6 +11,7 @@
     ~/.config/btop: ./user/config/btop
     ~/.config/fish: ./user/config/fish
     ~/.config/latexmk : ./user/config/latexmk
+    ~/.config/lazygit/config.yml : ./user/config/lazygit/config.yml
     ~/.config/macchina: ./user/config/macchina
     ~/.config/mpv: ./user/config/mpv
     ~/.config/nvim: ./user/config/nvim
