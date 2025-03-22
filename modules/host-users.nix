@@ -1,23 +1,23 @@
-{
-  username,
-  hostname,
-  ...
-} @ args:
+
+{ hostname, username, pkgs, ... }:
+
 #############################################################
 #
 #  Host & Users configuration
 #
 #############################################################
+
 {
   networking.hostName = hostname;
   networking.computerName = hostname;
   system.defaults.smb.NetBIOSName = hostname;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users."${username}" = {
+  users.users."${username}"= {
     home = "/Users/${username}";
     description = username;
+    shell = pkgs.fish;
   };
+  programs.fish.enable = true;
 
-  nix.settings.trusted-users = [username];
+  nix.settings.trusted-users = [ username ];
 }
