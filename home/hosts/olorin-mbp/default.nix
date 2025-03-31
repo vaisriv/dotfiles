@@ -13,6 +13,6 @@
 		../../optional/user/darwin.nix
 
 		# Desktop Environment (greeter, gui apps, dm+wm, etc)
-		../../optional/desktop-env/aerospace
+		../../optional/desktop-env/darwin/wms/aerospace
 	];
 }

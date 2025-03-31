@@ -14,5 +14,8 @@
 
 		# Stow Dotfiles
 		./stow.nix
+
+		# Themeing
+		# ./stylix.nix
 	];
 }

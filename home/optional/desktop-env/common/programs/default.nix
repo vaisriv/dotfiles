@@ -6,8 +6,6 @@
 	...
 }: {
 	imports = [
-		# ./clipse.nix
-		./foot.nix
 		./zathura.nix
 	];
 }

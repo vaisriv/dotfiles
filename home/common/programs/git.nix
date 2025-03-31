@@ -3,8 +3,6 @@
 	pkgs,
 	inputs,
 	lib,
-	username,
-	email,
 	...
 }: {
 	programs = {
@@ -23,8 +21,8 @@
 					paging = "never";
 				};
 			};
-			userName = username;
-			userEmail = email;
+			userName = ${inputs.fullname};
+			userEmail = ${inputs.email};
 			signing = {
 				signByDefault = true;
 				key = "~/.ssh/personal.pub";
