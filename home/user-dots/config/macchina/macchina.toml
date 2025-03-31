@@ -1,0 +1,13 @@
+theme = "Argon"
+
+show = [
+	"Host",
+	"Distribution",
+	"Packages",
+	"Terminal",
+	"Shell",
+	"Uptime",
+	"Processor",
+	"Memory",
+	"Resolution",
+]
