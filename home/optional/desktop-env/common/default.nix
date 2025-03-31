@@ -11,8 +11,5 @@
 
 		# Service Configs
 		./services
-
-		# XDG (mime-apps, config-home, etc)
-		./xdg.nix
 	];
 }

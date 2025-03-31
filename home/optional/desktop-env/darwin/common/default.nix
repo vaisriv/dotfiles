@@ -6,7 +6,7 @@
 	...
 }: {
 	imports = [
-		# Generic for all hosts
+		# Generic for all Hosts
 		../../common
 
 		# App and Program Configs

@@ -5,37 +5,19 @@
 	lib,
 	...
 }: {
-	# work in progress packages
 	environment.systemPackages = with pkgs; [
-		neovim
+		# nix formatter
+		# inputs.alejandra.defaultPackage.${system}
+		alejandra
 
-		# apps to make home-manager configs for
-		clipse
-		# latexmk
-		macchina
-
-		# nvf (neovim config in nix module)
-		## lsp
-		ccls
-		gopls
-		lua-language-server
-		nil
-		rust-analyzer
-		rustc
-		texlab
-		nodejs_23
-		tree-sitter
-		## formatters
-		stylua
-	];
-
-	# shells
-	programs.bash.enable = true;
-	programs.zsh.enable = true;
-	programs.fish.enable = true;
-	environment.shells = with pkgs; [
-		bash
-		zsh
-		fish
+		# cli/term tools
+		dust
+		glow
+		gtrash
+		jq
+		lazysql
+		p7zip
+		ripgrep
+		testdisk
 	];
 }

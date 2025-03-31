@@ -6,14 +6,14 @@
 	...
 }: {
 	imports = [
-		# Nix Settings
+		# Configuration
 		./configuration.nix
 
-		# App and Program Configs
+		# Programs
 		./programs
 
-		# System Config
-		./system.nix
+		# System Settings
+		./system
 
 		# Users
 		./users.nix

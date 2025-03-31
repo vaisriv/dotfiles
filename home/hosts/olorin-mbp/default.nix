@@ -15,4 +15,6 @@
 		# Desktop Environment (greeter, gui apps, dm+wm, etc)
 		../../optional/desktop-env/darwin/wms/aerospace
 	];
+
+	home.stateVersion = "24.11";
 }
