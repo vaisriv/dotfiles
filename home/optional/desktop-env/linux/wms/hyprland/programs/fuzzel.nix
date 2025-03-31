@@ -3,6 +3,7 @@
 	pkgs,
 	inputs,
 	lib,
+	font,
 	...
 }: {
 	programs.fuzzel = {

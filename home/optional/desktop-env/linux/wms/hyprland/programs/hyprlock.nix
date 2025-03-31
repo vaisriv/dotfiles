@@ -3,6 +3,8 @@
 	pkgs,
 	inputs,
 	lib,
+	font,
+	profilepic,
 	...
 }: {
 	programs.hyprlock = {
@@ -20,7 +22,7 @@
 					text = "cmd[update:30000] echo \"$(date +\"%H:%M\")\"";
 					# color = text;
 					font_size = 90;
-					font_family = "${inputs.font.name} Nerd Font";
+					font_family = "${font.name} Nerd Font";
 					position = "-125, -100";
 					halign = "right";
 					valign = "top";
@@ -31,7 +33,7 @@
 			image = [
 				{
 					monitor = "";
-					path = "${inputs.profilepic}";
+					path = "${profilepic}";
 					position = "0, 250";
 					halign = "center";
 					valign = "center";

@@ -16,9 +16,5 @@
 			recursive = true;
 			executable = true;
 		};
-		file.".templates" = {
-			source = ../user-dots/templates;
-			recursive = true;
-		};
 	};
 }

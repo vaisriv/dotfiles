@@ -3,6 +3,7 @@
 	pkgs,
 	inputs,
 	lib,
+	username,
 	...
 }: {
 	nix = {
@@ -16,7 +17,7 @@
 
 			# Allow user and root to modify system
 			trusted-users = [
-				"${inputs.username}"
+				"${username}"
 				"root"
 			];
 

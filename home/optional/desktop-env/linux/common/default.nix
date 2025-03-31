@@ -6,7 +6,7 @@
 	...
 }: {
 	imports = [
-		# Generic for all hosts
+		# Generic for all Hosts
 		../../common
 
 		# App and Program Configs
@@ -14,5 +14,8 @@
 
 		# Service Configs
 		./services
+
+		# XDG (mime-apps, config-home, etc)
+		./xdg.nix
 	];
 }

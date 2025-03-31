@@ -24,8 +24,6 @@
 
 		# `brew install --cask`
 		casks = [
-			"firefox"
-			"zen-browser"
 		];
 	};
 }

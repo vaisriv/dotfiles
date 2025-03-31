@@ -3,10 +3,12 @@
 	pkgs,
 	inputs,
 	lib,
+	username,
+	fullname,
 	...
 }: {
-	users.users."${inputs.username}" = {
-		home = "/Users/${inputs.username}";
-		description = "${inputs.fullname}";
+	users.users."${username}" = {
+		home = "/Users/${username}";
+		description = "${fullname}";
 	};
 }
