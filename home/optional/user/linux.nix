@@ -2,13 +2,11 @@
 	config,
 	pkgs,
 	inputs,
-	username,
-	hostname,
 	...
 }: {
 	home = {
 		# User setup
-		inherit username;
-		homeDirectory = "/home/${username}";
+		username = ${inputs.username};
+		homeDirectory = "/home/${inputs.username}";
 	};
 }
