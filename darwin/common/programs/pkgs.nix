@@ -11,9 +11,11 @@
 		# alejandra
 
 		# cli/term tools
+		deno
 		dust
 		glow
 		gtrash
+		ffmpeg
 		jq
 		lazysql
 		p7zip

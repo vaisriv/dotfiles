@@ -11,6 +11,7 @@
 
 		casks = [
 			"firefox"
+			"kunkun"
 			"spotify"
 		];
 	};
