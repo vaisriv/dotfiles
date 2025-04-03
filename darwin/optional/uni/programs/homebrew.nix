@@ -8,7 +8,7 @@
 	homebrew = {
 		brews = [
 		];
-		
+
 		casks = [
 			"zen-browser"
 

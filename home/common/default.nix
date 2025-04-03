@@ -10,9 +10,12 @@
 		./home.nix
 
 		# App and Program Configs
-		# ./programs
+		./programs
 
 		# Stow Dotfiles
 		./stow.nix
+
+		# Theming
+		./theming.nix
 	];
 }

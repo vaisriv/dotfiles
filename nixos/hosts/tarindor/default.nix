@@ -15,7 +15,7 @@ in {
 		## Generic for all hosts
 		../../common
 		## Config for Laptop: HP-Omen (TODO: actually make this config lol)
-		 ../../optional/laptop/hp-omen
+		../../optional/laptop/hp-omen
 
 		# Features
 		## Desktop Environment (greeter, gui apps, dm+wm, etc)

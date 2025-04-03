@@ -19,6 +19,15 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+
+		alejandra = {
+			url = "github:kamadorueda/alejandra";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
+		stylix = {
+			url = "github:danth/stylix";
+		};
 	};
 
 	outputs = inputs @ {
@@ -27,6 +36,8 @@
 		darwin,
 		home-manager,
 		lix-module,
+		alejandra,
+		stylix,
 		...
 	}: let
 		username = "vai";
@@ -58,6 +69,8 @@
 							users.${username} = import ./home/hosts/olorin-mbp;
 						};
 					}
+
+					stylix.darwinModules.stylix
 				];
 			};
 	};

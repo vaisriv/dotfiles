@@ -10,5 +10,8 @@
 		./pkgs.nix
 
 		# Programs that can be configured
+
+		# Homebrew Apps
+		./homebrew.nix
 	];
 }
