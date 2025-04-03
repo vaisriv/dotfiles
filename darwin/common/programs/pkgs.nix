@@ -7,8 +7,8 @@
 }: {
 	environment.systemPackages = with pkgs; [
 		# nix formatter
-		# inputs.alejandra.defaultPackage.${system}
-		alejandra
+		inputs.alejandra.defaultPackage.${system}
+		# alejandra
 
 		# cli/term tools
 		dust

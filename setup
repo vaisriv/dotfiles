@@ -1,0 +1,97 @@
+#!/usr/bin/env fish
+
+if test -z "$MACHINE"
+	read -f -P "what is the hostname of the machine to set up?\n> " machine
+else
+	set -f machine $MACHINE
+end
+
+if test -z "$DOTFILES_DIR"
+	read -f -P "where is the config repository?\n> " config_location
+else
+	set -f config_location $DOTFILES_DIR
+end
+
+if test -z "$EDITOR"
+	echo "please make sure \$EDITOR is set"
+	exit 1
+end
+
+switch $argv[1]
+	case edit
+		if test (count $argv[2..]) -eq 0
+			$EDITOR $config_location/.
+		else
+			switch $argv[2]
+				case nix nixos
+					$EDITOR $config_location/nixos/.
+
+				case darwin macos
+					$EDITOR $config_location/darwin/.
+
+				case home home-manager
+					$EDITOR $config_location/home/.
+
+				case flake
+					$EDITOR $config_location/flake.nix
+
+				case wip-nixos
+					$EDITOR $config_location/nixos/common/programs/work-in-progress.nix
+
+				case wip-darwin
+					$EDITOR $config_location/darwin/common/programs/work-in-progress.nix
+
+				case '*'
+					$EDITOR $config_location/$argv[2..]
+			end
+		end
+
+	case switch
+		if test (count $argv[2..]) -eq 0
+			darwin-rebuild switch --flake $config_location/.#$machine --impure
+			# sudo nixos-rebuild switch --flake $config_location/.#$machine --impure
+			# home-manager switch --flake $config_location/.#$machine --impure
+		else
+			switch $argv[2]
+				case nix nixos
+					sudo nixos-rebuild switch --flake $config_location/.#$machine --impure
+
+				case darwin macos
+					darwin-rebuild switch --flake $config_location/.#$machine --impure
+
+				# case home home-manager
+				# 	home-manager switch --flake $config_location#$machine --impure
+				#
+				# case both
+				# 	sudo nixos-rebuild switch --flake $config_location/.#$machine --impure
+				# 	home-manager switch --flake $config_location/.#$machine --impure
+
+				case '*'
+					echo "Unrecognized input."
+			end
+		end
+
+	case cd
+		cd $config_location
+
+	case fzf find
+		set current_dir $(pwd)
+		cd $config_location
+		nvim (fzf)
+		cd $current_dir
+
+	case rg search
+		rg -g !user-dots $config_location -e $argv[2..]
+
+	case lg git
+		lazygit -p $config_location
+
+	case aj format
+		alejandra $config_location --experimental-config $config_location/alejandra.toml --exclude $config_location/home/user-dots
+
+	case self-edit
+		$EDITOR $config_location/setup
+
+	case '*'
+		echo "Unrecognized input."
+end

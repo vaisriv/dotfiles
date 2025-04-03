@@ -29,13 +29,13 @@
 			  set -g @catppuccin_date_time_text "%Y-%m-%d %H:%M:%S"
 			'';
 		}
-		/* {
+		{
 			plugin = inputs.tmux-sessionx.packages.${pkgs.system}.default;
 			extraConfig = ''
 			  # swap default session manager for sessionx
 			  unbind 's'
 			  set -g @sessionx-bind 's'
 			'';
-		} */
+		}
 	];
 }
