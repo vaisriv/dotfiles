@@ -6,7 +6,9 @@
 	...
 }: {
 	programs.tmux.plugins = with pkgs; [
-		tmuxPlugins.resurrect
+		{
+			plugin = tmuxPlugins.resurrect;
+		}
 		{
 			plugin = tmuxPlugins.catppuccin;
 			extraConfig = ''
