@@ -14,7 +14,7 @@ in {
 
 		# Features
 		## Desktop Environment (greeter, gui apps, dm+wm, etc)
-		# ../../optional/desktop-env/aerospace
+		../../optional/desktop-env/aerospace
 		## Uni
 		../../optional/uni
 	];

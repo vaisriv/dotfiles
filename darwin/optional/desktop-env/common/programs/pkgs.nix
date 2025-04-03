@@ -8,11 +8,8 @@
 	# gui apps
 	environment.systemPackages = with pkgs; [
 		bitwarden
-		firefox
-		imv
+		qview
 		# TODO: find an audio app and can stream spotify hopefully lol
-		spotify
 		vscodium
-		xarchiver
 	];
 }

@@ -31,4 +31,7 @@
 
 	# idk how to move these to home-manager or if that can even be done
 	programs.fish.enable = true;
+	environment.shells = with pkgs; [
+		fish
+	];
 }

@@ -6,9 +6,10 @@
 	...
 }: {
 	imports = [
-		# Programs needed for DM+WM
+		# Program list to install from nixpkgs
 		./pkgs.nix
 
-		# Programs that can be configured
+		# Homebrew Apps
+		./homebrew.nix
 	];
 }

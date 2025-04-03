@@ -13,7 +13,7 @@
 		./fzf.nix
 		./git.nix
 		./lazygit.nix
-		./mpv
+		# ./mpv
 		./starship.nix
 		./taskwarrior.nix
 		./tealdeer.nix
