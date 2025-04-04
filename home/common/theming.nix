@@ -12,8 +12,8 @@
 		package = pkgs.iosevka;
 		nerd-package = pkgs.nerd-fonts.iosevka;
 	};
-	wallpaper = ../../assets/wallpaper;
-	profilepic = ../../assets/profilepic;
+	wallpaper = ../../assets/wallpaper.png;
+	profilepic = ../../assets/profilepic.png;
 in {
 	stylix = {
 		enable = true;
