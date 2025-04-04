@@ -11,7 +11,10 @@
 
 		casks = [
 			"firefox"
-			"kunkun"
+			"bitwarden"
+			"vscodium"
+			"qview"
+			"raycast"
 			"spotify"
 		];
 	};
