@@ -14,7 +14,7 @@
 			"readest" # epub/ebook reader
 			# "skim" # pdf viewer
 			"spotify" # music
-			"vesktop" # chat app
+			"discord" # chat app
 			"vscodium" # backup text/code editor
 		];
 
