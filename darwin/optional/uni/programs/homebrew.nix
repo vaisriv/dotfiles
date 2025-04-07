@@ -7,7 +7,6 @@
 }: {
 	homebrew = {
 		brews = [
-			"openjdk"
 		];
 
 		casks = [
