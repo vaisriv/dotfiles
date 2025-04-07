@@ -13,7 +13,6 @@
 			"zen-browser"
 			"zotero"
 			"libreoffice"
-			"wolfram-engine"
 			"mathpix-snipping-tool"
 			"citrix-workspace"
 			# globalprotect-openconnect
