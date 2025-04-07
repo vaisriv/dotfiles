@@ -20,5 +20,9 @@
 			# NOTE: currently installed manually for testing preview
 			# "mouseless"
 		];
+
+		masApps = {
+			"Command X" = 6448461551;
+		};
 	};
 }

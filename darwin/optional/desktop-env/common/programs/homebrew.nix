@@ -11,12 +11,14 @@
 
 		casks = [
 			"firefox" # browser
+			"readest" # epub/ebook reader
+			# "skim" # pdf viewer
 			"spotify" # music
+			"vesktop" # chat app
 			"vscodium" # backup text/code editor
 		];
 
 		masApps = {
-			"Command X" = 6448461551;
 			"Bitwarden" = 1352778147;
 		};
 	};
