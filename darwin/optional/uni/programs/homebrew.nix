@@ -7,13 +7,14 @@
 }: {
 	homebrew = {
 		brews = [
+			"openjdk"
 		];
 
 		casks = [
 			"zen-browser"
 			"zotero"
 			"libreoffice"
-			# "wolfram-engine"
+			"wolfram-engine"
 			"mathpix-snipping-tool"
 			# globalprotect-openconnect
 		];
