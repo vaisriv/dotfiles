@@ -109,8 +109,10 @@
 					ctrl-alt-shift-9 = ["move-node-to-workspace 19"];
 
 					# cycle through workspaces
-					alt-tab = "exec-and-forget aerospace list-workspaces --monitor all --empty no | aerospace workspace --wrap-around next";
-					alt-shift-tab = "exec-and-forget aerospace list-workspaces --monitor all --empty no | aerospace workspace --wrap-around prev";
+					# alt-tab = "exec-and-forget aerospace list-workspaces --monitor all --empty no | aerospace workspace --wrap-around next";
+					# alt-shift-tab = "exec-and-forget aerospace list-workspaces --monitor all --empty no | aerospace workspace --wrap-around prev";
+					alt-tab = "workspace --wrap-around next";
+					alt-shift-tab = "workspace --wrap-around prev";
 
 					# swap workspace to monitor
 					ctrl-alt-shift-tab = "move-workspace-to-monitor --wrap-around next";
