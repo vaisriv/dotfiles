@@ -13,9 +13,10 @@
 		# cli/term tools
 		deno
 		dust
+		ffmpeg
+		fx
 		glow
 		gtrash
-		ffmpeg
 		jq
 		lazysql
 		p7zip

@@ -13,6 +13,7 @@
 		# cli/term tools
 		bitwarden-cli
 		dust
+		fx
 		glow
 		gtrash
 		jq
