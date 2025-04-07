@@ -10,11 +10,12 @@
 		];
 
 		casks = [
+			"discord" # chat app
 			"firefox" # browser
+			"iina" # media/video player
 			"readest" # epub/ebook reader
 			# "skim" # pdf viewer
 			"spotify" # music
-			"discord" # chat app
 			"vscodium" # backup text/code editor
 
 			"appcleaner" # used to uninstall non-homebrew apps
