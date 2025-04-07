@@ -11,10 +11,9 @@
 
 		casks = [
 			"alt-tab" # window switcher
-			"ice" # bar management
+			"jordanbaird-ice" # bar management
 			"qview" # image viewer
 			"raycast" # launcher
-			"skim" # pdf viewer
 		];
 	};
 }
