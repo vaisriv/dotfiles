@@ -16,6 +16,8 @@
 			"spotify" # music
 			"discord" # chat app
 			"vscodium" # backup text/code editor
+
+			"appcleaner" # used to uninstall non-homebrew apps
 		];
 
 		masApps = {
