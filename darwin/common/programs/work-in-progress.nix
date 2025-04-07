@@ -7,7 +7,6 @@
 }: {
 	environment.systemPackages = with pkgs; [
 		# apps to make home-manager configs for
-		# latexmk
 		macchina
 
 		# nvf (neovim config in nix module)
