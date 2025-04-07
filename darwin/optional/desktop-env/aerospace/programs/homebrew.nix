@@ -16,6 +16,7 @@
 			"raycast" # launcher
 			"linearmouse" # per-mouse settings
 			"karabiner-elements" # per-keyboard settings
+			"itsycal" # calendar/date bar widget
 
 			# NOTE: currently installed manually for testing preview
 			# "mouseless"

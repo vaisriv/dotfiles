@@ -8,10 +8,11 @@
 	system = {
 		defaults = {
 			menuExtraClock = {
-				Show24Hour = true;
-				ShowDayOfMonth = true;
-				ShowDayOfWeek = true;
-				ShowSeconds = true;
+				IsAnalog = true;
+				# Show24Hour = true;
+				# ShowDayOfMonth = true;
+				# ShowDayOfWeek = true;
+				# ShowSeconds = true;
 			};
 
 			NSGlobalDomain = {
