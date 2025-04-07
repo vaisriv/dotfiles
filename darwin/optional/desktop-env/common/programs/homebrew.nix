@@ -16,6 +16,9 @@
 			"qview"
 			"raycast"
 			"spotify"
+
+			# NOTE: currently installed manually for testing preview
+			# "mouseless"
 		];
 	};
 }
