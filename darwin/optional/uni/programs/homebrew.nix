@@ -10,6 +10,7 @@
 		];
 
 		casks = [
+			"julia"
 			"zen-browser"
 			"zotero"
 			"libreoffice"
