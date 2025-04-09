@@ -16,6 +16,10 @@
 			"mathpix-snipping-tool"
 			"citrix-workspace"
 			# globalprotect-openconnect
+
+			# NOTE: installed manually:
+			# "wolfram-engine"
+			# "matlab"
 		];
 	};
 }
