@@ -20,9 +20,6 @@
 				NSTextShowsControlCharacters = true;
 				"com.apple.springing.enabled" = true;
 
-				# volume for annoying beep
-				"com.apple.sound.beep.volume" = 0.0;
-
 				# scrolling
 				AppleShowScrollBars = "Automatic";
 				AppleScrollerPagingBehavior = true;
@@ -83,20 +80,6 @@
 				_FXShowPosixPathInTitle = true;
 				_FXSortFoldersFirst = true;
 				_FXSortFoldersFirstOnDesktop = true;
-			};
-
-			loginwindow = {
-				DisableConsoleAccess = false;
-				GuestEnabled = false;
-				LoginwindowText = "\\U03bb";
-				PowerOffDisabledWhileLoggedIn = false;
-				RestartDisabled = false;
-				RestartDisabledWhileLoggedIn = false;
-				SHOWFULLNAME = true;
-				ShutDownDisabled = false;
-				ShutDownDisabledWhileLoggedIn = false;
-				SleepDisabled = false;
-				# autoLoginUser = "Off";
 			};
 
 			universalaccess = {
