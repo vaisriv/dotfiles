@@ -13,15 +13,15 @@ else
 end
 
 if test -z "$EDITOR"
-	echo "please make sure \$EDITOR is set"
-	exit 1
+	# echo "please make sure \$EDITOR is set"
+	# exit 1
+	echo "it seems \$EDITOR is unset, defaulting to `vi`"
+	set -f EDITOR vi
 end
 
 switch $argv[1]
 	case edit
-		if test (count $argv[2..]) -eq 0
-			$EDITOR $config_location/.
-		else
+		if not test (count $argv[2..]) -eq 0
 			switch $argv[2]
 				case nix nixos
 					$EDITOR $config_location/nixos/.
@@ -35,6 +35,9 @@ switch $argv[1]
 				case flake
 					$EDITOR $config_location/flake.nix
 
+				case self setup script
+					$EDITOR $config_location/setup
+
 				case wip-nixos
 					$EDITOR $config_location/nixos/common/programs/work-in-progress.nix
 
@@ -44,14 +47,12 @@ switch $argv[1]
 				case '*'
 					$EDITOR $config_location/$argv[2..]
 			end
+		else
+			$EDITOR $config_location/.
 		end
 
 	case switch
-		if test (count $argv[2..]) -eq 0
-			darwin-rebuild switch --flake $config_location/.#$machine --impure
-			# sudo nixos-rebuild switch --flake $config_location/.#$machine --impure
-			# home-manager switch --flake $config_location/.#$machine --impure
-		else
+		if not test (count $argv[2..]) -eq 0
 			switch $argv[2]
 				case nix nixos
 					sudo nixos-rebuild switch --flake $config_location/.#$machine --impure
@@ -68,7 +69,17 @@ switch $argv[1]
 
 				case '*'
 					echo "Unrecognized input."
+					exit 1
 			end
+		else
+			# # nix-darwin entrypoint
+			# darwin-rebuild switch --flake $config_location/.#$machine --impure
+			# # nixos entrypoint
+			# sudo nixos-rebuild switch --flake $config_location/.#$machine --impure
+			# # home manager entrypoint
+			# home-manager switch --flake $config_location/.#$machine --impure
+			echo "Unrecognized input."
+			exit 1
 		end
 
 	case cd
@@ -89,9 +100,7 @@ switch $argv[1]
 	case aj format
 		alejandra $config_location --experimental-config $config_location/alejandra.toml --exclude $config_location/home/user-dots
 
-	case self-edit
-		$EDITOR $config_location/setup
-
 	case '*'
 		echo "Unrecognized input."
+		exit 1
 end
