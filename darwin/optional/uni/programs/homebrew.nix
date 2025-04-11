@@ -7,6 +7,7 @@
 }: {
 	homebrew = {
 		brews = [
+			"pandoc"
 		];
 
 		casks = [
