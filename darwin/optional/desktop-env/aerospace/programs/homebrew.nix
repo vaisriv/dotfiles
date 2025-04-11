@@ -17,10 +17,7 @@
 			"linearmouse" # per-mouse settings
 			"karabiner-elements" # per-keyboard settings
 			"itsycal" # calendar/date bar widget
-			"shottr" # screenshot tool
-
-			# NOTE: currently installed manually for testing preview
-			# "mouseless"
+			"batfi" # battery management widget
 		];
 
 		masApps = {
