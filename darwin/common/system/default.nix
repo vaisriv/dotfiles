@@ -10,5 +10,6 @@
 		# Settings
 		./keyboard.nix
 		./macos.nix
+		./msc.nix
 	];
 }
