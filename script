@@ -36,7 +36,7 @@ switch $argv[1]
 					$EDITOR $config_location/flake.nix
 
 				case self setup script
-					$EDITOR $config_location/setup
+					$EDITOR $config_location/script
 
 				case wip-nixos
 					$EDITOR $config_location/nixos/common/programs/work-in-progress.nix
