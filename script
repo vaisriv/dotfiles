@@ -55,17 +55,17 @@ switch $argv[1]
 		if not test (count $argv[2..]) -eq 0
 			switch $argv[2]
 				case nix nixos
-					sudo nixos-rebuild switch --flake $config_location/.#$machine --impure
+					sudo nixos-rebuild switch --flake $config_location/.#$machine
 
 				case darwin macos
-					darwin-rebuild switch --flake $config_location/.#$machine --impure
+					darwin-rebuild switch --flake $config_location/.#$machine
 
 				# case home home-manager
-				# 	home-manager switch --flake $config_location#$machine --impure
+				# 	home-manager switch --flake $config_location#$machine
 				#
 				# case both
-				# 	sudo nixos-rebuild switch --flake $config_location/.#$machine --impure
-				# 	home-manager switch --flake $config_location/.#$machine --impure
+				# 	sudo nixos-rebuild switch --flake $config_location/.#$machine
+				# 	home-manager switch --flake $config_location/.#$machine
 
 				case '*'
 					echo "Unrecognized input."
@@ -73,11 +73,11 @@ switch $argv[1]
 			end
 		else
 			# # nix-darwin entrypoint
-			# darwin-rebuild switch --flake $config_location/.#$machine --impure
+			# darwin-rebuild switch --flake $config_location/.#$machine
 			# # nixos entrypoint
-			# sudo nixos-rebuild switch --flake $config_location/.#$machine --impure
+			# sudo nixos-rebuild switch --flake $config_location/.#$machine
 			# # home manager entrypoint
-			# home-manager switch --flake $config_location/.#$machine --impure
+			# home-manager switch --flake $config_location/.#$machine
 			echo "Unrecognized input."
 			exit 1
 		end
