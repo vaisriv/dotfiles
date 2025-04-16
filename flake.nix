@@ -115,8 +115,6 @@
 						home-manager.nixosModules.home-manager
 						{
 							home-manager = {
-								useGlobalPkgs = true;
-								useUserPackages = true;
 								extraSpecialArgs = specialArgs;
 								backupFileExtension = "bak";
 								users.${username} = import ./home/hosts/olorin;
@@ -150,8 +148,6 @@
 						home-manager.nixosModules.home-manager
 						{
 							home-manager = {
-								useGlobalPkgs = true;
-								useUserPackages = true;
 								extraSpecialArgs = specialArgs;
 								backupFileExtension = "bak";
 								users.${username} = import ./home/hosts/tarindor;
@@ -177,8 +173,6 @@
 						home-manager.darwinModules.home-manager
 						{
 							home-manager = {
-								useGlobalPkgs = true;
-								useUserPackages = true;
 								extraSpecialArgs = specialArgs;
 								backupFileExtension = "bak";
 								users.${username} = import ./home/hosts/olorin-mbp;
