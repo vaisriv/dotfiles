@@ -8,10 +8,15 @@
 	programs.wezterm = {
 		enable = true;
 		extraConfig = ''
-			return {
+			local wezterm = require 'wezterm'
+			local config = wezterm.config_builder()
+
+			config = {
 				hide_tab_bar_if_only_one_tab = true,
-				font_size = 16,
+				font_size = 16
 			}
+			
+			return config
 		'';
 	};
 }
