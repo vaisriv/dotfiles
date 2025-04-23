@@ -28,7 +28,10 @@ return {
 		},
 		"saadparwaiz1/cmp_luasnip",
 		"hrsh7th/cmp-nvim-lsp",
+		"hrsh7th/cmp-nvim-lua",
 		"hrsh7th/cmp-path",
+		"hrsh7th/cmp-emoji",
+		"kdheepak/cmp-latex-symbols",
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -85,9 +88,22 @@ return {
 				--    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
 			}),
 			sources = {
-				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
+				{ name = "nvim_lsp" },
+				{ name = "nvim_lua" },
 				{ name = "path" },
+				{
+					name = "emoji",
+					option = {
+						insert = true,
+					},
+				},
+				{
+					name = "latex_symbols",
+					option = {
+						strategy = 0, -- mixed
+					},
+				},
 			},
 		})
 	end,
