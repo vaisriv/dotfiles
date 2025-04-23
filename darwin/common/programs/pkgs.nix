@@ -22,5 +22,6 @@
 		p7zip
 		ripgrep
 		testdisk
+		viu
 	];
 }
