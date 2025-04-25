@@ -9,12 +9,12 @@
 		manager.prepend_keymap = [
 			{
 				on = "j";
-				run = "plugin arrow --args=1";
+				run = "plugin arrow 1";
 				desc = "[J] Cursor downwards wrap";
 			}
 			{
 				on = "k";
-				run = "plugin arrow --args=-1";
+				run = "plugin arrow -1";
 				desc = "[K] Cursor upwards wrap";
 			}
 			{
