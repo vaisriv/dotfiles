@@ -5,13 +5,12 @@
 	lib,
 	...
 }: let
-	yazi-plugins =
-		pkgs.fetchFromGitHub {
-			owner = "vaisriv";
-			repo = "yazi-plugins";
-			rev = "bbbc17bec194ee7bf019704895bb6d5986c39d0c";
-			hash = "sha256-80SUupcPumymjWh7ke7KShPFU5D0tnuOwT451dg3EnU=";
-		};
+	yazi-plugins = pkgs.fetchFromGitHub {
+		owner = "vaisriv";
+		repo = "yazi-plugins";
+		rev = "2a20fc57e6557c96e80f2c8c0cf233ee4b8b557b";
+		hash = "sha256-vPrJD0iCNPUFjY+ranU+MxE5rF7OkGYWZnE7jYb9GOM=";
+	};
 in {
 	programs.yazi.plugins = {
 		"arrow" = "${yazi-plugins}/arrow.yazi";
