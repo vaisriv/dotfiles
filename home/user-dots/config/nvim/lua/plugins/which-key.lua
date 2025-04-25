@@ -35,6 +35,7 @@ return {
 				{ "<leader>vr", "<cmd>VimtexReload<cr>", desc = "[R]eload" },
 				{ "<leader>vv", "<cmd>VimtexView<cr>", desc = "[V]iew" },
 			},
+			{ "<leader>i", group = "[I]mage", mode = { "n", "v" } },
 
 			-- exit neovim with qq
 			-- { "<leader>q", group = "[Q]uit", mode = { "n", "v" } },

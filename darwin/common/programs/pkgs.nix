@@ -20,6 +20,7 @@
 		jq
 		lazysql
 		p7zip
+		pngpaste
 		ripgrep
 		testdisk
 		viu
