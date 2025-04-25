@@ -6,6 +6,8 @@ return {
 		dependencies = {
 			"lervag/vimtex",
 		},
+		-- ft = { "tex", "md" },
+		ft = "tex",
 		opts = {
 			use_treesitter = true,
 			allow_on_markdown = true,
