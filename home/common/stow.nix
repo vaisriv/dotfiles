@@ -7,7 +7,7 @@
 }: {
 	home = {
 		# Link dot-dirs
-		file.".config" = {
+		/* file.".config" = {
 			source = ../user-dots/config;
 			recursive = true;
 		};
@@ -15,6 +15,10 @@
 			source = ../user-dots/scripts;
 			recursive = true;
 			executable = true;
-		};
+		}; */
 	};
+
+	home.packages = with pkgs; [
+		stow
+	];
 }
