@@ -100,6 +100,19 @@ switch $argv[1]
 	case aj format
 		alejandra $config_location --experimental-config $config_location/alejandra.toml --exclude $config_location/home/user-dots
 
+	# temp lol hahaha why can i never get away from this
+	case stow
+		set current_dir $(pwd)
+		echo "Linking directories from $DOTFILES_DIR/home/user-dots as dot-dirs in $HOME."
+		cd $DOTFILES_DIR/home/user-dots
+		pwd
+		stow -v -R -t ~/.config config
+		stow -v -R -t ~/.scripts scripts
+		stow -v -R -t ~/.templates templates
+		echo "Config installation done!"
+
+		cd $current_dir
+
 	case '*'
 		echo "Unrecognized input."
 		exit 1
