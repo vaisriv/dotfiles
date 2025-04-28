@@ -1,6 +1,7 @@
 return {
 	--[[ {
 		"R-nvim/R.nvim",
+		ft = { "r", "rmd", "qmd" },
 		config = function()
 			-- Create a table with the options to be passed to setup()
 			local opts = {
@@ -36,7 +37,10 @@ return {
 		end,
 		lazy = true,
 	},
-	"R-nvim/cmp-r",
+	{
+		"R-nvim/cmp-r",
+		ft = { "r", "rmd", "qmd" },
+	},
 	{
 		"hrsh7th/nvim-cmp",
 		config = function()

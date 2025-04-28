@@ -25,17 +25,6 @@ return {
 			{ "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "[U]ndoTree" },
 			{ "<leader>U", "<cmd>UndotreeToggle<cr>", desc = "[U]ndoTree", hidden = true },
 			{
-				"<leader>v",
-				group = "[V]imTeX",
-				{ "<leader>vb", "<cmd>VimtexCompile<cr>", desc = "[B]uild" },
-				{ "<leader>vc", "<cmd>VimtexClean<cr>", desc = "[C]lean" },
-				{ "<leader>ve", "<cmd>VimtexErrors<cr>", desc = "[E]rrors" },
-				{ "<leader>vl", "<cmd>VimtexLog<cr>", desc = "[L]og" },
-				{ "<leader>vm", "<cmd>VimtexToggleMain<cr>", desc = "[M]ain" },
-				{ "<leader>vr", "<cmd>VimtexReload<cr>", desc = "[R]eload" },
-				{ "<leader>vv", "<cmd>VimtexView<cr>", desc = "[V]iew" },
-			},
-			{
 				"<leader>i",
 				group = "[I]mage",
 				{ "<leader>io", "<cmd>CarbonNow<cr>", desc = "[O]utput code as image" },
