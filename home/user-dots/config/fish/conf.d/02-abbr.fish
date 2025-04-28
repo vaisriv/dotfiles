@@ -1,5 +1,5 @@
 # new version of old tools
-alias tm="gtrash put"
+alias tm="trash"
 alias rm="echo -e 'If you really want to use rm, then use \"command rm\" instead.'; false"
 alias rmdir="echo -e 'If you really want to use rmdir, then use \"command rmdir\" instead.'; false"
 
