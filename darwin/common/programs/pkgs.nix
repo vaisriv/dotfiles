@@ -16,13 +16,13 @@
 		ffmpeg
 		fx
 		glow
-		gtrash
 		jq
 		lazysql
 		p7zip
 		pngpaste
 		ripgrep
 		testdisk
+		trash-cli
 		viu
 	];
 }
