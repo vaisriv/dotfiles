@@ -15,6 +15,7 @@
 		ccls
 		gopls
 		lua-language-server
+		matlab-language-server
 		nil
 		rust-analyzer
 		rustc
