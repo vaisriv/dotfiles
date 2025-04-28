@@ -13,7 +13,7 @@
 			};
 
 			SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
-			
+
 			loginwindow = {
 				DisableConsoleAccess = false;
 				GuestEnabled = false;

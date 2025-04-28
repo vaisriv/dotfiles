@@ -11,9 +11,10 @@
 			url = {
 				auto_search = true;
 			};
-			/* tabs = {
-				tabs_are_windows = false;
-			}; */
+
+			# tabs = {
+			# 	tabs_are_windows = false;
+			# };
 		};
 		searchEngines = {
 			DEFAULT = "https://unduck.astrophel.xyz/?q={}&default_bang=ddg";
