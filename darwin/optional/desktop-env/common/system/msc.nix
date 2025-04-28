@@ -12,7 +12,7 @@
 				AppleInterfaceStyle = "Dark";
 				AppleInterfaceStyleSwitchesAutomatically = false;
 				_HIHideMenuBar = false;
-				
+
 				# file/document settings
 				AppleShowAllExtensions = true;
 				NSDocumentSaveNewDocumentsToCloud = false;
@@ -42,7 +42,7 @@
 			};
 
 			SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
-			
+
 			WindowManager = {
 				AutoHide = true;
 

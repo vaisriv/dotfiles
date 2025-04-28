@@ -19,8 +19,6 @@
 		showhidden = true;
 		tilesize = 16;
 
-
-
 		dashboard-in-overlay = false;
 		expose-animation-duration = 0.2;
 		largesize = 16;
@@ -40,14 +38,14 @@
 
 		# apps to show in dock
 		persistent-apps = [
-			{ app = "/Applications/Firefox.app/"; }
-			{ app = "/Applications/Spotify.app/"; }
-			{ app = "/Applications/Discord.app/"; }
-			{ app = "/Applications/Zen.app/"; }
-			{ app = "/Users/vai/Applications/Home Manager Apps/Rio.app/"; }
-			{ app = "/Applications/MATLAB_R2024b.app/"; }
-			{ app = "/Applications/VSCodium.app/"; }
-			{ app = "/Applications/LibreOffice.app/"; }
+			{app = "/Applications/Firefox.app/";}
+			{app = "/Applications/Spotify.app/";}
+			{app = "/Applications/Discord.app/";}
+			{app = "/Applications/Zen.app/";}
+			{app = "/Users/vai/Applications/Home Manager Apps/Rio.app/";}
+			{app = "/Applications/MATLAB_R2024b.app/";}
+			{app = "/Applications/VSCodium.app/";}
+			{app = "/Applications/LibreOffice.app/";}
 		];
 	};
 }
