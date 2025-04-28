@@ -15,7 +15,6 @@
 		./latexmk.nix
 		./lazygit.nix
 		# ./mpv
-		./poetry.nix
 		./starship.nix
 		./taskwarrior.nix
 		./tealdeer.nix
