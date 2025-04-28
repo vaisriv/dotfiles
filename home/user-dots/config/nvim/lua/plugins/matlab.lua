@@ -3,8 +3,7 @@
 return {
 	{
 		"idossha/matlab.nvim",
-		-- ft = { "m", "mlx" },
-		ft = "m",
+		ft = "matlab",
 		config = function()
 			require("matlab").setup({
 				-- Path to MATLAB executable (should be full path)
@@ -17,7 +16,7 @@ return {
 				tmux_pane_focus = true, -- Make tmux pane visible when created
 
 				-- Behavior options
-				auto_start = true, -- Auto-start MATLAB when opening a .m file
+				auto_start = false, -- Auto-start MATLAB when opening a .m file
 				default_mappings = true, -- Enable default keymappings
 				force_nogui_with_breakpoints = true, -- Prevent MATLAB GUI from opening when breakpoints exist
 
