@@ -5,9 +5,9 @@ return {
 		"iurimateus/luasnip-latex-snippets.nvim",
 		dependencies = {
 			"lervag/vimtex",
+			"folke/which-key.nvim",
 		},
-		-- ft = { "tex", "md" },
-		ft = "tex",
+		ft = { "tex", "markdown" },
 		opts = {
 			use_treesitter = true,
 			allow_on_markdown = true,
@@ -16,6 +16,23 @@ return {
 			-- vimtex config
 			vim.g.vimtex_fold_enabled = false
 			vim.g.vimtex_view_method = "zathura"
+
+			-- which-key config
+			local wk = require("which-key")
+			wk.setup(opts)
+			wk.add({
+				{
+					"<leader>v",
+					group = "[V]imTeX",
+					{ "<leader>vb", "<cmd>VimtexCompile<cr>", desc = "[B]uild" },
+					{ "<leader>vc", "<cmd>VimtexClean<cr>", desc = "[C]lean" },
+					{ "<leader>ve", "<cmd>VimtexErrors<cr>", desc = "[E]rrors" },
+					{ "<leader>vl", "<cmd>VimtexLog<cr>", desc = "[L]og" },
+					{ "<leader>vm", "<cmd>VimtexToggleMain<cr>", desc = "[M]ain" },
+					{ "<leader>vr", "<cmd>VimtexReload<cr>", desc = "[R]eload" },
+					{ "<leader>vv", "<cmd>VimtexView<cr>", desc = "[V]iew" },
+				},
+			})
 
 			-- luasnip-latex-snippets config
 			require("luasnip-latex-snippets").setup(opts)
@@ -200,33 +217,34 @@ return {
 			})
 		end,
 	},
-	{
-		"ryleelyman/latex.nvim",
-		opts = {
-			conceals = {
-				enabled = {
-					"greek",
-					"math",
-					-- "script",
-					-- "delim",
-					"font",
-				},
-				add = {},
-			},
-			imaps = {
-				enabled = false,
-				add = {},
-				default_leader = "`",
-			},
-			surrounds = {
-				enabled = false,
-				command = "c",
-				environment = "e",
-			},
-		},
-		config = function()
-			require("latex").setup(opts)
-			vim.opt.conceallevel = 2
-		end,
-	},
+	-- {
+	-- 	"ryleelyman/latex.nvim",
+	-- 	opts = {
+	-- 		conceals = {
+	-- 			enabled = {
+	-- 				"greek",
+	-- 				"math",
+	-- 				-- "script",
+	-- 				-- "delim",
+	-- 				"font",
+	-- 			},
+	-- 			add = {},
+	-- 		},
+	-- 		imaps = {
+	-- 			enabled = false,
+	-- 			add = {},
+	-- 			default_leader = "`",
+	-- 		},
+	-- 		surrounds = {
+	-- 			enabled = false,
+	-- 			command = "c",
+	-- 			environment = "e",
+	-- 		},
+	-- 	},
+	-- 	ft = { "tex", "markdown" },
+	-- 	config = function()
+	-- 		require("latex").setup(opts)
+	-- 		vim.opt.conceallevel = 2
+	-- 	end,
+	-- },
 }
