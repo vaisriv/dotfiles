@@ -24,5 +24,6 @@
 		testdisk
 		trash-cli
 		viu
+		uv
 	];
 }
