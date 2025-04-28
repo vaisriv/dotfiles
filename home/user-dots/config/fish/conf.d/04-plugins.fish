@@ -4,9 +4,6 @@ function __zathura_complete_files
 end
 complete -c zathura -f -a "(__zathura_complete_files)"
 
-# enable gtrash
-gtrash completion fish | source
-
 # enable glow
 glow completion fish | source
 
