@@ -21,65 +21,61 @@ end
 
 switch $argv[1]
 	case edit
-		if not test (count $argv[2..]) -eq 0
-			switch $argv[2]
-				case nix nixos
-					$EDITOR $config_location/nixos/.
+		switch $argv[2]
+			case nix nixos
+				$EDITOR $config_location/nixos/.
 
-				case darwin macos
-					$EDITOR $config_location/darwin/.
+			case darwin macos
+				$EDITOR $config_location/darwin/.
 
-				case home home-manager
-					$EDITOR $config_location/home/.
+			case home home-manager
+				$EDITOR $config_location/home/.
 
-				case flake
-					$EDITOR $config_location/flake.nix
+			case flake
+				$EDITOR $config_location/flake.nix
 
-				case self setup script
-					$EDITOR $config_location/script
+			case self setup script
+				$EDITOR $config_location/script
 
-				case wip-nixos
-					$EDITOR $config_location/nixos/common/programs/work-in-progress.nix
+			case wip-nixos
+				$EDITOR $config_location/nixos/common/programs/work-in-progress.nix
 
-				case wip-darwin
-					$EDITOR $config_location/darwin/common/programs/work-in-progress.nix
+			case wip-darwin
+				$EDITOR $config_location/darwin/common/programs/work-in-progress.nix
 
-				case '*'
-					$EDITOR $config_location/$argv[2..]
-			end
-		else
-			$EDITOR $config_location/.
+			case ''
+				$EDITOR $config_location/.
+
+			case '*'
+				$EDITOR $config_location/$argv[2..]
 		end
 
 	case switch
-		if not test (count $argv[2..]) -eq 0
-			switch $argv[2]
-				case nix nixos
-					sudo nixos-rebuild switch --flake $config_location/.#$machine
+		switch $argv[2]
+			case nix nixos
+				sudo nixos-rebuild switch --flake $config_location/.#$machine
 
-				case darwin macos
-					darwin-rebuild switch --flake $config_location/.#$machine
+			case darwin macos
+				darwin-rebuild switch --flake $config_location/.#$machine
 
-				# case home home-manager
-				# 	home-manager switch --flake $config_location#$machine
-				#
-				# case both
-				# 	sudo nixos-rebuild switch --flake $config_location/.#$machine
-				# 	home-manager switch --flake $config_location/.#$machine
+			# case home home-manager
+			# 	home-manager switch --flake $config_location#$machine
+			#
+			# case both
+			# 	sudo nixos-rebuild switch --flake $config_location/.#$machine
+			# 	home-manager switch --flake $config_location/.#$machine
+			#
+			# case ''
+			# 	# nix-darwin entrypoint
+			# 	darwin-rebuild switch --flake $config_location/.#$machine
+			# 	# nixos entrypoint
+			# 	sudo nixos-rebuild switch --flake $config_location/.#$machine
+			# 	# home manager entrypoint
+			# 	home-manager switch --flake $config_location/.#$machine
 
-				case '*'
-					echo "Unrecognized input."
-					exit 1
-			end
-		else
-			# # nix-darwin entrypoint
-			# darwin-rebuild switch --flake $config_location/.#$machine
-			# # nixos entrypoint
-			# sudo nixos-rebuild switch --flake $config_location/.#$machine
-			# # home manager entrypoint
-			# home-manager switch --flake $config_location/.#$machine
-			echo "Unrecognized input."
-			exit 1
+			case '*'
+				echo "Unrecognized input."
+				exit 1
 		end
 
 	case cd
