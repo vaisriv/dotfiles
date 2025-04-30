@@ -6,13 +6,6 @@
 	...
 }: {
 	nix = {
-		# Enable auto cleanup of week-old files in nix-store
-		gc = {
-			automatic = true;
-			dates = "daily";
-			options = "--delete-older-than 7d";
-		};
-
 		settings = {
 			# Auto reuse pre-existing binaries/paths in nix-store
 			auto-optimise-store = true;
