@@ -12,11 +12,12 @@ alias cat="bat"
 alias ls="eza"
 zoxide init fish --cmd cd | source
 
-starship init fish | source
 function starship_transient_prompt_func
 	starship module character
 end
 function starship_transient_rprompt_func
-	starship module cmd_duration && starship module time && echo " "
+	starship module cmd_duration -d $CMD_DURATION && starship module time && echo " "
+	# starship module cmd_duration -d $CMD_DURATION && starship module time
 end
+starship init fish | source
 enable_transience
