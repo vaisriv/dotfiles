@@ -25,6 +25,12 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
+		## Nix Helper
+		nh = {
+			url = "github:nix-community/nh";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
 		## Better Nix Implementation - Lix
 		lix-module = {
 			url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0.tar.gz";
