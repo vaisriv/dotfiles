@@ -6,3 +6,6 @@ set -x HW_TEX_TEMPLATE $UNI_DIR/msc/tex/HWTemplate.tex
 
 # needed for marp-cli
 # set -x CHROME_PATH $(which chromium)
+
+# for uv-python
+set -x UV_PYTHON_DOWNLOADS never
