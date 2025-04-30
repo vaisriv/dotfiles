@@ -1,0 +1,3 @@
+{
+	clipse = import ./clipse.nix;
+}
