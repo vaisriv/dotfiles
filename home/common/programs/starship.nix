@@ -11,18 +11,20 @@
 		enableFishIntegration = true;
 		enableTransience = true;
 		settings = {
-			format = lib.concatStrings [
-				"$all"
-				"$git_metrics"
-				"$git_status"
-				"$line_break"
-				"$character"
-			];
-			right_format = lib.concatStrings [
-				"$cmd_duration"
-				"$time"
-				" "
-			];
+			format =
+				lib.concatStrings [
+					"$all"
+					"$git_metrics"
+					"$git_status"
+					"$line_break"
+					"$character"
+				];
+			right_format =
+				lib.concatStrings [
+					"$cmd_duration"
+					"$time"
+					" "
+				];
 			directory = {
 				truncate_to_repo = false;
 				truncation_length = 10;
