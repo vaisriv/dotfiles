@@ -51,30 +51,18 @@ switch $argv[1]
 		end
 
 	case switch
-		switch $argv[2]
+		switch (uname)
 			case nix nixos
-				sudo nixos-rebuild switch --flake $config_location/.#$machine
+				nh os switch $config_location -H $machine
 
-			case darwin macos
-				darwin-rebuild switch --flake $config_location/.#$machine
+			case Darwin macos
+				nh darwin switch $config_location -H $machine
 
-			# case home home-manager
-			# 	home-manager switch --flake $config_location#$machine
-			#
-			# case both
-			# 	sudo nixos-rebuild switch --flake $config_location/.#$machine
-			# 	home-manager switch --flake $config_location/.#$machine
-			#
-			# case ''
-			# 	# nix-darwin entrypoint
-			# 	darwin-rebuild switch --flake $config_location/.#$machine
-			# 	# nixos entrypoint
-			# 	sudo nixos-rebuild switch --flake $config_location/.#$machine
-			# 	# home manager entrypoint
-			# 	home-manager switch --flake $config_location/.#$machine
+			case linux
+				nh home switch $config_location -H $machine
 
 			case '*'
-				echo "Unrecognized input."
+				echo "Unrecognized/unsupported OS."
 				exit 1
 		end
 
