@@ -8,9 +8,10 @@
 	environment.systemPackages = with pkgs; [
 		# nix formatter
 		inputs.alejandra.defaultPackage.${system}
-		# alejandra
 
 		# cli/term tools
+		asciinema
+		asciinema-scenario
 		deno
 		dust
 		ffmpeg
