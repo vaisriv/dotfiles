@@ -17,6 +17,8 @@ in {
 		../../optional/desktop-env/aerospace
 		## Uni
 		../../optional/uni
+		## Gaming
+		../../optional/gaming
 	];
 
 	networking = {
