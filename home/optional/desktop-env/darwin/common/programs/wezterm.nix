@@ -40,7 +40,7 @@
 	];
 
 	programs.wezterm = {
-		enable = true;
+		enable = false;
 		package = pkgs.wezterm-nightly;
 		extraConfig = ''
 		  local wezterm = require 'wezterm'
