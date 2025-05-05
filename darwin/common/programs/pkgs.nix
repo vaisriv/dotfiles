@@ -22,6 +22,7 @@
 		p7zip
 		pngpaste
 		ripgrep
+		repgrep
 		testdisk
 		trash-cli
 		viu
