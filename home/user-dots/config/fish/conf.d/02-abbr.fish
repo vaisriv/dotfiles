@@ -19,12 +19,7 @@ abbr --add lg lazygit
 abbr --add fish_conf   "$EDITOR $CONF_DIR/fish/."
 abbr --add nvim_conf   "$EDITOR $CONF_DIR/nvim/."
 
-# make zathura more convenient
-function pdf
-    zathura $argv 2> /dev/null & disown
-end
-
-# recreate !!
+# recreate `!!`
 function last_history_item
     echo $history[1]
 end
