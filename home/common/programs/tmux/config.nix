@@ -6,9 +6,12 @@
 	...
 }: {
 	programs.tmux = {
-		escapeTime = 0;
 		baseIndex = 1;
-		mouse = true;
+		clock24 = true;
+		escapeTime = 0;
 		# keyMode = "vi";
+		mouse = true;
+		newSession = true;
+		secureSocket = false;
 	};
 }
