@@ -67,3 +67,6 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- Force Neovide to use Alt as `<M>` on MacOS
+vim.g.neovide_input_macos_option_key_is_meta = "both"

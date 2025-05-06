@@ -6,6 +6,7 @@
 	...
 }: {
 	imports = [
+		./neovide.nix
 		./qutebrowser.nix
 		./zathura.nix
 	];
