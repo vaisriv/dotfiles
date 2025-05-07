@@ -16,6 +16,7 @@
 		./lazygit.nix
 		# ./mpv
 		./nh.nix
+		./nvf
 		./starship.nix
 		./taskwarrior.nix
 		./tealdeer.nix
