@@ -5,7 +5,7 @@
 	lib,
 	...
 }: {
-	programs.nvf.enable = true;
+	programs.nvf.enable = false;
 
 	imports = [
 		./config.nix

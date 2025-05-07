@@ -6,11 +6,11 @@
 	...
 }: {
 	programs.nvf = {
-		enableManPages = true;
 		settings = {
 			vim = {
 				viAlias = false;
 				vimAlias = true;
+				enableLuaLoader = true;
 				autocomplete = {
 					enableSharedCmpSources = true;
 					blink-cmp = {
@@ -20,12 +20,12 @@
 				};
 				spellcheck = {
 					enable = true;
-					ignoredFileTypes = [
+					ignoredFiletypes = [
 						"gitignore"
 						"gitcommit"
 					];
 					languages = [ "en" ];
-					programmingWordList.enable = true;
+					programmingWordlist.enable = true;
 				};
 				lsp = {
 					enable = true;
@@ -44,7 +44,7 @@
 					};
 					bash.enable = true;
 					html.enable = true;
-					julia.enable = true;
+					julia.enable = false; # unfortunate but wont build on darwin
 					lua.enable = true;
 					markdown = {
 						enable = true;
