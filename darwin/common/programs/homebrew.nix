@@ -10,10 +10,11 @@
 
 		onActivation = {
 			autoUpdate = false;
-			# 'zap': uninstalls all formulae(and related files) not listed here.
+			# brew `zap`: uninstalls all formulae(and related files) not listed in config
 			cleanup = "zap";
 		};
 
+		# `brew tap`
 		taps = [
 			"homebrew/services"
 		];
