@@ -34,4 +34,12 @@
 	environment.shells = with pkgs; [
 		fish
 	];
+
+	homebrew = {
+		brews = [];
+
+		casks = [
+			"julia"
+		];
+	};
 }

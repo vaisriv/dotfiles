@@ -11,17 +11,20 @@
 		];
 
 		casks = [
-			"julia"
-			"zen-browser"
-			"zotero"
+			"adobe-creative-cloud"
+			"citrix-workspace"
+			"jupyterlab"
 			"libreoffice"
 			"mathpix-snipping-tool"
-			"citrix-workspace"
-			# globalprotect-openconnect
+			"wljs-notebook"
+			"wolfram-engine"
+			"zen-browser"
+			"zotero"
 
 			# NOTE: installed manually:
-			# "wolfram-engine"
-			# "matlab"
+			# umd vpn: palo alto globalprotect-openconnect
+			# cisco packet tracer
+			# matlab
 		];
 	};
 }
