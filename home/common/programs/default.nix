@@ -18,7 +18,7 @@
 		./nh.nix
 		./nvf
 		./starship.nix
-		./taskwarrior.nix
+		./taskwarrior
 		./tealdeer.nix
 		./tmux
 		./yazi
