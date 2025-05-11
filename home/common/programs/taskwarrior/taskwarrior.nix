@@ -8,18 +8,18 @@
 	programs = {
 		taskwarrior = {
 			enable = true;
-			package = pkgs.taskwarrior3;
 			config = {
 				journal.time = "on";
 				search.case.sensitive = "no";
 			};
+			colorTheme = "dark-256";
 		};
 	};
 
 	# services = {
 	# 	taskwarrior-sync = {
 	# 		enable = true;
-	#               frequency = "*:0/5";
+	# 		frequency = "*:0/5";
 	# 	};
 	# };
 
