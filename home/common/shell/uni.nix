@@ -18,6 +18,8 @@
 			# needed for uv-python
 			UV_PYTHON_DOWNLOADS = "never";
 		};
+	};
+	programs.fish = {
 		shellAliases = {
 			jl = "julia --project=. -i";
 		};
