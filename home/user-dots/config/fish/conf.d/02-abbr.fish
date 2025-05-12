@@ -4,7 +4,7 @@ alias rm="echo -e 'If you really want to use rm, then use \"command rm\" instead
 alias rmdir="echo -e 'If you really want to use rmdir, then use \"command rmdir\" instead.'; false"
 
 # fetch fun
-alias fetch="macchina -t Argon -c $HOME/.config/macchina/macchina.toml"
+alias mfetch="macchina -t Argon -c $HOME/.config/macchina/macchina.toml"
 alias pfetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
 
 # history management
@@ -16,8 +16,8 @@ abbr --add e $EDITOR
 abbr --add lg lazygit
 
 # edit important configs
-abbr --add fish_conf   "$EDITOR $CONF_DIR/fish/."
-abbr --add nvim_conf   "$EDITOR $CONF_DIR/nvim/."
+abbr --add fishrc  "$EDITOR $CONF_DIR/fish/."
+abbr --add nvimrc  "$EDITOR $CONF_DIR/nvim/."
 
 # recreate `!!`
 function last_history_item
