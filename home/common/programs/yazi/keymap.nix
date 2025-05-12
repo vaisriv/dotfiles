@@ -29,7 +29,7 @@
 			}
 			{
 				on = ["O" "z"];
-				run = "shell 'zathura \"$@\"' --confirm";
+				run = "shell 'pdf \"$@\"' --confirm";
 				desc = "[O]pen in [Z]athura";
 			}
 			{
