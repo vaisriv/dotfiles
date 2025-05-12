@@ -13,6 +13,6 @@
 			extraArgs = "--keep-since 7d --keep 3";
 			dates = "daily";
 		};
-		flake = "/home/vai/files/dotfiles";
+		flake = "$DOTFILES_DIR";
 	};
 }
