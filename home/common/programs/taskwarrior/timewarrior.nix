@@ -13,7 +13,7 @@
 		timewarrior-hook = {
 			enable = true;
 			executable = true;
-			target = "$HOME/.local/share/task/hooks/on-modify.timewarrior";
+			target = ".local/share/task/hooks/on-modify.timewarrior";
 			source = "${pkgs.timewarrior}/share/doc/timew/ext/on-modify.timewarrior";
 		};
 	};
