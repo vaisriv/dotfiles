@@ -12,5 +12,6 @@
 		./uni.nix
 		./plugins.nix
 		./functions.nix
+		./theme.nix
 	];
 }

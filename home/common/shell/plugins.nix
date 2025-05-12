@@ -7,6 +7,9 @@
 }: {
 	programs.fish = {
 		interactiveShellInit = ''
+			# turn off fish greeting
+			set fish_greeting
+
 			# enable plugins
 			glow completion fish | source
 
