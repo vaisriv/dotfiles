@@ -22,7 +22,8 @@ alias man="batman"
 ## enable bat
 alias cat="bat"
 ## enable eza
-alias ls="eza --icons --git --group-directories-first"
+alias ls="eza --icons --git --group-directories-first --header"
+alias l="ls -la"
 ## enable zoxide
 zoxide init fish --cmd cd | source
 
