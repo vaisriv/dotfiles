@@ -37,7 +37,7 @@
 				body = ''
 					set file (git diff HEAD --name-only | fzf)
 					if test -n "$file"
-					    nvim "$file"
+						nvim "$file"
 					end
 				'';
 				description = "nvim+git helper";
@@ -55,6 +55,17 @@
 					echo \n$dir_count "directories," $file_count "files"
 				'';
 				description = "recreate tree command but with eza";
+			};
+			weather = {
+				body = ''
+					if test (count $argv) -eq 0
+						curl "wttr.in/College+Park"
+					else
+						set location (string join '+' $argv)
+						curl "wttr.in/$location"
+					end
+				'';
+				description = "weather in terminal!";
 			};
 		};
 	};
