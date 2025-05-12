@@ -10,7 +10,7 @@
 		enableFishIntegration = true;
 		icons = "always";
 		git = true;
-		colors = true;
+		colors = "always";
 		extraOptions = [
 			"--group-directories-first"
 			"--header"
