@@ -18,7 +18,7 @@
 		sessionVariables = {
 			# general env vars
 			EDITOR = "nvim";
-			VISUAL = "neovide";
+			VISUAL = "nvim";
 			PAGER = "less";
 			BROWSER = "zen";
 			GPG_TTY = "$(tty)";
