@@ -18,17 +18,21 @@
 
 			# history management
 			hr="history --merge";  # read and merge history from disk
+
+			# scripts
+			olorin = "source $DOTFILES_DIR/script";
+			uni = "source $UNI_DIR/script";
 		};
 		shellAbbrs = {
-			e = "$EDITOR";
+			# helpful shorthands
+			e = "nvim";
 			lg = "lazygit";
+
+			# recreation of `!!`
 			"!!" = {
 				position = "anywhere";
 				expansion = "echo $history[1]";
-				description = "recreation of `!!`";
 			};
-			olorin = "source $DOTFILES_DIR/script";
-			uni = "source $UNI_DIR/script";
 		};
 	};
 }
