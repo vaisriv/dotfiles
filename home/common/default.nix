@@ -12,6 +12,9 @@
 		# App and Program Configs
 		./programs
 
+		# User Shell Config
+		./shell
+
 		# Stow Dotfiles
 		./stow.nix
 
