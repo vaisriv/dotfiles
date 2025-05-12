@@ -8,8 +8,7 @@ alias mfetch="macchina -t Argon -c $HOME/.config/macchina/macchina.toml"
 alias pfetch="macchina -t Boron -c $HOME/.config/macchina/macchina-lite.toml"
 
 # history management
-alias hr 'history --merge'  # read and merge history from disk
-bind \e\[A 'history --merge ; up-or-search'
+alias hr="history --merge"  # read and merge history from disk
 
 # useful abbreviations
 abbr --add e $EDITOR
@@ -20,7 +19,4 @@ abbr --add fishrc  "$EDITOR $CONF_DIR/fish/."
 abbr --add nvimrc  "$EDITOR $CONF_DIR/nvim/."
 
 # recreate `!!`
-function last_history_item
-    echo $history[1]
-end
-abbr --add !! --position anywhere --function last_history_item
+abbr --add !! --position anywhere "echo $history[1]"
