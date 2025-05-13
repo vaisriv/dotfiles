@@ -28,21 +28,6 @@
 				desc = "[P]review size [T]oggle";
 			}
 			{
-				on = ["O" "z"];
-				run = "shell 'pdf \"$@\"' --confirm";
-				desc = "[O]pen in [Z]athura";
-			}
-			{
-				on = ["O" "m"];
-				run = "shell 'mpv \"$@\"' --confirm";
-				desc = "[O]pen in [M]pv";
-			}
-			{
-				on = ["O" "i"];
-				run = "shell 'imv \"$@\"' --confirm";
-				desc = "[O]pen in [I]mv";
-			}
-			{
 				on = ["g" "r"];
 				run = "shell 'ya pub dds-cd --str \"$(git rev-parse --show-toplevel)\"' --confirm";
 				desc = "[G]o to [R]oot of git repo";
