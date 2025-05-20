@@ -19,6 +19,7 @@
 			"vscodium" # backup text/code editor
 
 			"appcleaner" # used to uninstall non-homebrew apps
+			"chromium" # browser
 		];
 
 		masApps = {
