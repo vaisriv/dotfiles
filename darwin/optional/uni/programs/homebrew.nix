@@ -16,8 +16,6 @@
 			"jupyterlab"
 			"libreoffice"
 			"mathpix-snipping-tool"
-			"wljs-notebook"
-			"wolfram-engine"
 			"zen-browser"
 			"zotero"
 
@@ -25,6 +23,7 @@
 			# umd vpn: palo alto globalprotect-openconnect
 			# cisco packet tracer
 			# matlab
+			# wolfram
 		];
 	};
 }
