@@ -20,6 +20,10 @@
 
 			"appcleaner" # used to uninstall non-homebrew apps
 			"chromium" # browser
+			"qutebrowser" # browser
+			"mullvadvpn" # vpn
+			"altserver" # sideloading for ios
+			"transmission" # qbitorrent
 		];
 
 		masApps = {
