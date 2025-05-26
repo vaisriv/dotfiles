@@ -8,5 +8,6 @@
 	imports = [
 		# ./clipse.nix
 		./foot.nix
+		# ./qutebrowser.nix
 	];
 }
