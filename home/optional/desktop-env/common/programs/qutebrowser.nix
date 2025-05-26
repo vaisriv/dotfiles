@@ -9,7 +9,8 @@
 		enable = true;
 		settings = {
 			url = {
-				auto_search = true;
+				auto_search = "naive";
+				default_page = "about:blank";
 			};
 
 			# tabs = {
