@@ -42,7 +42,7 @@
 			{app = "/Applications/Spotify.app/";}
 			{app = "/Applications/Discord.app/";}
 			{app = "/Applications/Zen.app/";}
-			{app = "/Users/vai/Applications/Home Manager Apps/Rio.app/";}
+			{app = "/Users/vai/Applications/Home Manager Apps/WezTerm.app/";}
 			{app = "/Applications/MATLAB_R2024b.app/";}
 			{app = "/Applications/VSCodium.app/";}
 			{app = "/Applications/LibreOffice.app/";}

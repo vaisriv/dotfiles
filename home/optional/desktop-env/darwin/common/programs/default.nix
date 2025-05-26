@@ -6,7 +6,6 @@
 	...
 }: {
 	imports = [
-		./rio.nix
 		./wezterm.nix
 	];
 }
