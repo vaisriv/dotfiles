@@ -28,7 +28,7 @@
 				AppleEnableMouseSwipeNavigateWithScrolls = true;
 
 				# window settings
-				AppleWindowTabbingMode = "always";
+				AppleWindowTabbingMode = "disallowed";
 				NSAutomaticWindowAnimationsEnabled = false;
 				NSDisableAutomaticTermination = false;
 				NSWindowResizeTime = 0.2;
