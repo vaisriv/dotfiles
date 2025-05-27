@@ -14,7 +14,6 @@
 		asciinema-scenario
 		deno
 		dust
-		evil-helix
 		fd
 		ffmpeg
 		fx
