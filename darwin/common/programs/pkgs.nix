@@ -14,19 +14,25 @@
 		asciinema-scenario
 		deno
 		dust
-		ffmpeg
+		evil-helix
 		fd
+		ffmpeg
 		fx
 		glow
+		hyperfine
 		jq
 		lazysql
+		ncspot
 		p7zip
 		pngpaste
-		ripgrep
+		presenterm
 		repgrep
+		ripgrep
 		testdisk
+		tokei
 		trash-cli
-		viu
 		uv
+		viu
+		wiki-tui
 	];
 }
