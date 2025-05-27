@@ -11,8 +11,5 @@
 
 		# Homebrew Apps
 		./homebrew.nix
-
-		# wip lol
-		./work-in-progress.nix
 	];
 }

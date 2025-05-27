@@ -6,6 +6,7 @@
 	...
 }: {
 	imports = [
+		# ./mpv
 		./neovide.nix
 		./zathura.nix
 	];

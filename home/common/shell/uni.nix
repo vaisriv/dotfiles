@@ -14,9 +14,7 @@
 			UNI_NOTES_DIR = "$HOME/files/uni/notes";
 
 			# needed for marp-cli
-			CHROME_PATH = "$(which chrome)";
-			# needed for uv-python
-			UV_PYTHON_DOWNLOADS = "never";
+			CHROME_PATH = "/Applications/Chromium.app/Contents/MacOS/Chromium";
 		};
 	};
 	programs.fish = {

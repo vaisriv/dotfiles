@@ -15,8 +15,12 @@
 		./helix.nix
 		./latexmk.nix
 		./lazygit.nix
-		# ./mpv
 		./nh.nix
+		./ncspot.nix
+		./fd.nix
+		./ripgrep.nix
+		./jq.nix
+		./uv.nix
 		./starship.nix
 		./taskwarrior
 		./tealdeer.nix

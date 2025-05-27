@@ -14,23 +14,20 @@
 		asciinema-scenario
 		deno
 		dust
-		fd
 		ffmpeg
 		fx
 		glow
+		hexyl
 		hyperfine
-		jq
 		lazysql
-		ncspot
 		p7zip
+		pastel
 		pngpaste
+		poppler_utils
 		presenterm
-		repgrep
-		ripgrep
 		testdisk
 		tokei
 		trash-cli
-		uv
 		viu
 		wiki-tui
 	];
