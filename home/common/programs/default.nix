@@ -1,27 +1,27 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+	config,
+	pkgs,
+	inputs,
+	lib,
+	...
 }: {
-  imports = [
-    ./bat.nix
-    ./btop.nix
-    ./direnv.nix
-    ./eza.nix
-    ./fzf.nix
-    ./git.nix
-    ./helix.nix
-    ./latexmk.nix
-    ./lazygit.nix
-    # ./mpv
-    ./nh.nix
-    ./starship.nix
-    ./taskwarrior
-    ./tealdeer.nix
-    ./tmux
-    ./yazi
-    ./zoxide.nix
-  ];
+	imports = [
+		./bat.nix
+		./btop.nix
+		./direnv.nix
+		./eza.nix
+		./fzf.nix
+		./git.nix
+		./helix.nix
+		./latexmk.nix
+		./lazygit.nix
+		# ./mpv
+		./nh.nix
+		./starship.nix
+		./taskwarrior
+		./tealdeer.nix
+		./tmux
+		./yazi
+		./zoxide.nix
+	];
 }
