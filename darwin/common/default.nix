@@ -15,6 +15,9 @@
 		# System Settings
 		./system
 
+		# Shell
+		./shell.nix
+
 		# Users
 		./users.nix
 	];

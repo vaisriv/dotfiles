@@ -5,20 +5,19 @@
 	lib,
 	...
 }: {
-	imports = [
-		# Home Manager Setup
-		./home.nix
+	programs.home-manager.enable = true;
 
+	imports = [
 		# App and Program Configs
 		./programs
 
 		# User Shell Config
 		./shell
 
-		# Stow Dotfiles
-		./stow.nix
-
 		# Theming
 		./theming.nix
+
+		# wip lol
+		./wip.nix
 	];
 }
