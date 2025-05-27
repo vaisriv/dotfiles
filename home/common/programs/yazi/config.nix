@@ -15,12 +15,19 @@
 			};
 			open = {
 				rules = [
-					{ mime = "application/pdf"; use = [ "pdf" "open" ]; }
+					{
+						mime = "application/pdf";
+						use = ["pdf" "open"];
+					}
 				];
 			};
 			opener = {
 				pdf = [
-					{ run = "zathura \"$@\""; orphan = true; for = "unix"; }
+					{
+						run = "zathura \"$@\"";
+						orphan = true;
+						for = "unix";
+					}
 				];
 			};
 		};

@@ -26,10 +26,10 @@
 		functions = {
 			jls = {
 				body = ''
-					set jlfile (string join \'\' "./code/" $argv[1] ".jl")
-					set outfile (string join \'\' "./code/" $argv[1] ".txt")
-					echo "\$ julia --project=. $jlfile $argv[2..] | tee $outfile"
-					julia --project=. $jlfile $argv[2..] | tee $outfile
+				  set jlfile (string join \'\' "./code/" $argv[1] ".jl")
+				  set outfile (string join \'\' "./code/" $argv[1] ".txt")
+				  echo "\$ julia --project=. $jlfile $argv[2..] | tee $outfile"
+				  julia --project=. $jlfile $argv[2..] | tee $outfile
 				'';
 			};
 		};
