@@ -50,12 +50,6 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-		# NVF Neovim Nix Module
-		nvf = {
-			url = "github:notashelf/nvf";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
-
 		## Stylix Themeing
 		stylix = {
 			url = "github:danth/stylix";
@@ -130,9 +124,7 @@
 								extraSpecialArgs = specialArgs;
 								backupFileExtension = "bak";
 								users.${username} = import ./home/hosts/olorin;
-								sharedModules = [
-									inputs.nvf.homeManagerModules.default
-								];
+								sharedModules = [];
 							};
 						}
 
@@ -166,9 +158,7 @@
 								extraSpecialArgs = specialArgs;
 								backupFileExtension = "bak";
 								users.${username} = import ./home/hosts/tarindor;
-								sharedModules = [
-									inputs.nvf.homeManagerModules.default
-								];
+								sharedModules = [];
 							};
 						}
 
@@ -194,9 +184,7 @@
 								extraSpecialArgs = specialArgs;
 								backupFileExtension = "bak";
 								users.${username} = import ./home/hosts/olorin-mbp;
-								sharedModules = [
-									inputs.nvf.homeManagerModules.default
-								];
+								sharedModules = [];
 							};
 						}
 

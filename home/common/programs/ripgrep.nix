@@ -5,15 +5,16 @@
 	lib,
 	...
 }: {
-	programs.ripgrep-all = {
-		enable = true;
-		custom_adapters = {
-			# custom ripgrep-all adapters (aka filetype2text converters) here
+	programs = {
+		ripgrep = {
+			enable = true;
+		};
+		ripgrep-all = {
+			enable = true;
 		};
 	};
 
 	home.packages = with pkgs; [
 		repgrep
-		ripgrep
 	];
 }
