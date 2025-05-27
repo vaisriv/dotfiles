@@ -12,9 +12,6 @@
 		# App and Program Configs
 		./programs
 
-		# Service Configs
-		./services
-
 		# User Shell Config
 		./shell
 
