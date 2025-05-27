@@ -81,7 +81,7 @@ switch $argv[1]
 	case lg git
 		lazygit -p $config_location
 
-	case aj format
+	case aj fmt format
 		alejandra $config_location --experimental-config $config_location/alejandra.toml --exclude $config_location/home/user-dots
 
 	case '*'
