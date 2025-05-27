@@ -7,18 +7,18 @@
 }: {
 	programs.fish = {
 		interactiveShellInit = ''
-		  # turn off fish greeting
-		  set fish_greeting
+			# turn off fish greeting
+			set fish_greeting
 
-		  # enable plugins
-		  glow completion fish | source
+			# enable plugins
+			glow completion fish | source
 
-		  # fix zathura file completion
-		  complete -c zathura -f -a "(__zathura_complete_files)"
+			# fix zathura file completion
+			complete -c zathura -f -a "(__zathura_complete_files)"
 
-		  # enable bat-extras
-		  eval (batpipe)
-		  set -x BATDIFF_USE_DELTA true
+			# enable bat-extras
+			eval (batpipe)
+			set -x BATDIFF_USE_DELTA true
 		'';
 		functions = {
 			pdf = {

@@ -20,7 +20,6 @@
 		rust-analyzer
 		rustc
 		texlab
-		nodejs_23
 		tree-sitter
 		## formatters
 		stylua

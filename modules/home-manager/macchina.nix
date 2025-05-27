@@ -18,13 +18,13 @@ in {
 				default = {};
 				example =
 					lib.literalExpression ''
-					  {}
+						{}
 					'';
 				description = ''
-				  Configuration written to {file}`$XDG_CONFIG_HOME/macchina/macchina.toml`.
+					Configuration written to {file}`$XDG_CONFIG_HOME/macchina/macchina.toml`.
 
-				  See <https://github.com/Macchina-CLI/macchina/wiki/Configuration> for
-				  available options and documentation.
+					See <https://github.com/Macchina-CLI/macchina/wiki/Configuration> for
+					available options and documentation.
 				'';
 			};
 
@@ -34,13 +34,13 @@ in {
 				default = {};
 				example =
 					lib.literalExpression ''
-					  {}
+						{}
 					'';
 				description = ''
-				  Theme written to {file}`$XDG_CONFIG_HOME/macchina/themes/theme.toml`.
+					Theme written to {file}`$XDG_CONFIG_HOME/macchina/themes/theme.toml`.
 
-				  See <https://github.com/Macchina-CLI/macchina/wiki/Customization> for
-				  available options and documentation.
+					See <https://github.com/Macchina-CLI/macchina/wiki/Customization> for
+					available options and documentation.
 				'';
 			};
 	};
