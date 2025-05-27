@@ -12,6 +12,7 @@
 		./eza.nix
 		./fzf.nix
 		./git.nix
+		./helix.nix
 		./latexmk.nix
 		./lazygit.nix
 		# ./mpv
