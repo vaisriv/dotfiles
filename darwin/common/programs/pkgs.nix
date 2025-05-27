@@ -7,7 +7,7 @@
 }: {
 	environment.systemPackages = with pkgs; [
 		# nix formatter
-		inputs.alejandra.defaultPackage.${system}
+		inputs.nixpkgs-unstable.legacyPackages.${system}.alejandra
 
 		# cli/term tools
 		asciinema

@@ -33,13 +33,7 @@
 
 		## Better Nix Implementation - Lix
 		lix-module = {
-			url = "https://git.lix.systems/lix-project/nixos-module/archive/main.tar.gz";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
-
-		## Nix Formatter -Alejandra
-		alejandra = {
-			url = "github:kamadorueda/alejandra";
+			url = "https://git.lix.systems/lix-project/nixos-module/archive/2.93.0.tar.gz";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
@@ -89,7 +83,8 @@
 		darwinModules = import ./modules/darwin;
 		homeManagerModules = import ./modules/home-manager;
 
-		formatter = forAllSystems (system: inputs.alejandra.defaultPackage.${system});
+		formatter = forAllSystems (system: inputs.nixpkgs-unstable.legacyPackages.${system}.alejandra);
+
 		devShells =
 			forAllSystems (
 				system: let

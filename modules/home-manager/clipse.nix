@@ -18,47 +18,47 @@ in {
 				default = {};
 				example =
 					lib.literalExpression ''
-					  {
-					    "allowDuplicates": false,
-					    "historyFile": "clipboard_history.json",
-					    "maxHistory": 10000,
-					    "logFile": "clipse.log",
-					    "themeFile": "custom_theme.json",
-					    "tempDir": "tmp_files",
-					    "keyBindings": {
-					      "choose": "enter",
-					      "clearSelected": "S",
-					      "down": "down",
-					      "end": "end",
-					      "filter": "/",
-					      "home": "home",
-					      "more": "?",
-					      "nextPage": "right",
-					      "prevPage": "left",
-					      "preview": " ",
-					      "quit": "q",
-					      "remove": "x",
-					      "selectDown": "ctrl+down",
-					      "selectSingle": "s",
-					      "selectUp": "ctrl+up",
-					      "togglePin": "p",
-					      "togglePinned": "tab",
-					      "up": "up",
-					      "yankFilter": "ctrl+s"
-					    },
-					    "imageDisplay": {
-					      "type": "basic",
-					      "scaleX": 9,
-					      "scaleY": 9,
-					      "heightCut": 2
-					    }
-					  }
+						{
+						  "allowDuplicates": false,
+						  "historyFile": "clipboard_history.json",
+						  "maxHistory": 10000,
+						  "logFile": "clipse.log",
+						  "themeFile": "custom_theme.json",
+						  "tempDir": "tmp_files",
+						  "keyBindings": {
+						    "choose": "enter",
+						    "clearSelected": "S",
+						    "down": "down",
+						    "end": "end",
+						    "filter": "/",
+						    "home": "home",
+						    "more": "?",
+						    "nextPage": "right",
+						    "prevPage": "left",
+						    "preview": " ",
+						    "quit": "q",
+						    "remove": "x",
+						    "selectDown": "ctrl+down",
+						    "selectSingle": "s",
+						    "selectUp": "ctrl+up",
+						    "togglePin": "p",
+						    "togglePinned": "tab",
+						    "up": "up",
+						    "yankFilter": "ctrl+s"
+						  },
+						  "imageDisplay": {
+						    "type": "basic",
+						    "scaleX": 9,
+						    "scaleY": 9,
+						    "heightCut": 2
+						  }
+						}
 					'';
 				description = ''
-				  Configuration written to {file}`$XDG_CONFIG_HOME/clipse/config.json`.
+					Configuration written to {file}`$XDG_CONFIG_HOME/clipse/config.json`.
 
-				  See <https://github.com/savedra1/clipse?tab=readme-ov-file#configuration> for
-				  available options and documentation.
+					See <https://github.com/savedra1/clipse?tab=readme-ov-file#configuration> for
+					available options and documentation.
 				'';
 			};
 	};
