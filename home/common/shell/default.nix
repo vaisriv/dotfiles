@@ -6,7 +6,7 @@
 	...
 }: {
 	programs.fish.enable = true;
-	
+
 	imports = [
 		./env.nix
 		./abbrs.nix

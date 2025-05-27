@@ -11,4 +11,5 @@
 		home = "/Users/${username}";
 		description = "${fullname}";
 	};
+	system.primaryUser = "${username}";
 }
