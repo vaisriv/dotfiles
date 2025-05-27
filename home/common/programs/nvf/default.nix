@@ -5,7 +5,7 @@
 	lib,
 	...
 }: {
-	programs.nvf.enable = false;
+	programs.nvf.enable = true;
 
 	imports = [
 		./autocommands.nix
