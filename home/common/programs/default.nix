@@ -12,8 +12,8 @@
 		./eza.nix
 		./fzf.nix
 		./git.nix
+		./gitui.nix
 		./latexmk.nix
-		./lazygit.nix
 		# ./mpv
 		./nh.nix
 		./nvf

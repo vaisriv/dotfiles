@@ -33,7 +33,7 @@
 						"gitignore"
 						"gitcommit"
 					];
-					languages = [ "en" ];
+					languages = ["en"];
 					programmingWordlist.enable = true;
 				};
 			};

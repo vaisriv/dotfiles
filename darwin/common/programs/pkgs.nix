@@ -15,6 +15,7 @@
 		deno
 		dust
 		ffmpeg
+		fd
 		fx
 		glow
 		jq
