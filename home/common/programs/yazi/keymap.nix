@@ -23,12 +23,12 @@
 				desc = "[L] Enter the child directory, or open the file";
 			}
 			{
-				on = ["P" "h"];
+				on = ["p" "h"];
 				run = "plugin toggle-pane min-preview";
 				desc = "[P]review [H]ide";
 			}
 			{
-				on = ["P" "t"];
+				on = ["p" "t"];
 				run = "plugin toggle-pane max-preview";
 				desc = "[P]review size [T]oggle";
 			}
@@ -41,11 +41,6 @@
 				on = ["f"];
 				run = "plugin jump-to-char";
 				desc = "Jump [f]orward to file with [<>] name";
-			}
-			{
-				on = ["g" "r"];
-				run = "shell 'ya pub dds-cd --str \"$(git rev-parse --show-toplevel)\"' --confirm";
-				desc = "[G]o to [R]oot of git repo";
 			}
 			{
 				on = ["g" "h"];

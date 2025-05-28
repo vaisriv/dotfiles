@@ -14,7 +14,7 @@
 				show_hidden = false;
 			};
 			open = {
-				rules = [
+				prepend_rules = [
 					{
 						mime = "application/pdf";
 						use = ["pdf" "open"];
