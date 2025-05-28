@@ -11,8 +11,8 @@
 		# App and Program Configs
 		./programs
 
-		# User Shell Config
-		./shell
+		# Service Configs
+		./services
 
 		# Theming
 		./theming.nix

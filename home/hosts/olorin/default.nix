@@ -9,6 +9,9 @@
 		# Generic for all hosts
 		../../common
 
+		# User Shell Config
+		../../optional/shell/linux
+
 		# User Settings
 		../../optional/user/linux.nix
 
