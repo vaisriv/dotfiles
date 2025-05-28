@@ -32,5 +32,9 @@
 				ui.Span(" "),
 			}
 		end, 500, Status.RIGHT)
+
+		require("smart-enter"):setup {
+			open_multi = true,
+		}
 	'';
 }
