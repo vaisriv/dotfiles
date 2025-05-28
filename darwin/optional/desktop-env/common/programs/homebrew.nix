@@ -23,6 +23,7 @@
 			"altserver" # sideloading for ios
 			"appcleaner" # used to remove/clean manually-installed apps
 			"mullvadvpn" # vpn client
+			"qbittorrent" # bitorrent
 		];
 
 		masApps = {
