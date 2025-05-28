@@ -11,17 +11,17 @@
 
 		casks = [
 			"alt-tab" # window switcher
+			"batfi" # battery management widget
+			"itsycal" # calendar/date bar widget
 			"jordanbaird-ice" # bar management
+			"linearmouse" # per-mouse settings
 			"qview" # image viewer
 			"raycast" # launcher
-			"linearmouse" # per-mouse settings
-			"karabiner-elements" # per-keyboard settings
-			"itsycal" # calendar/date bar widget
-			"batfi" # battery management widget
 		];
 
 		masApps = {
-			# "Command X" = 6448461551;
+			"Command X" = 6448461551; # cut (and paste) functionality in Finder
+			"Velja" = 1607635845; # browser picker
 		};
 	};
 }

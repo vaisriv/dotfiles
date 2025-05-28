@@ -14,20 +14,19 @@
 			"firefox" # browser
 			"iina" # media/video player
 			"readest" # epub/ebook reader
-			# "skim" # pdf viewer
 			"spotify" # music
 			"vscodium" # backup text/code editor
 
-			"appcleaner" # used to uninstall non-homebrew apps
-			"chromium" # browser
-			"qutebrowser" # browser
-			"mullvadvpn" # vpn
+			"chromium" # alt browser
+			"qutebrowser" # alt browser
+
 			"altserver" # sideloading for ios
-			"transmission" # qbitorrent
+			"appcleaner" # used to remove/clean manually-installed apps
+			"mullvadvpn" # vpn client
 		];
 
 		masApps = {
-			# "Bitwarden" = 1352778147;
+			"Bitwarden" = 1352778147;
 		};
 	};
 }
