@@ -18,10 +18,9 @@
 				set -g @catppuccin_window_middle_separator " | "
 
 				set -g @catppuccin_window_default_fill "none"
-
 				set -g @catppuccin_window_current_fill "all"
 
-				set -g @catppuccin_window_default_text "#W"
+				set -g @catppuccin_window_text "#W"
 				set -g @catppuccin_window_current_text "#W"
 
 				set -g @catppuccin_status_modules_right "directory session"
