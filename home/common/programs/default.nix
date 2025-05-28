@@ -17,6 +17,7 @@
 		./lazygit.nix
 		./nh.nix
 		./ncspot.nix
+		./ncmpcpp.nix
 		./fd.nix
 		./ripgrep.nix
 		./jq.nix
