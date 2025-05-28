@@ -61,5 +61,11 @@ in {
 		# 	light = "Papirus-Light";
 		# 	package = pkgs.catppuccin-papirus-folders.override {inherit accent flavor;};
 		# };
+
+		# targets.nvf = {
+		# 	enable = true;
+		# 	plugin = "mini-base16";
+		# 	transparentBackground = false;
+		# };
 	};
 }
