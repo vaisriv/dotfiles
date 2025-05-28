@@ -9,12 +9,12 @@
 		manager.prepend_keymap = [
 			{
 				on = "j";
-				run = "plugin arrow 1";
+				run = "arrow next";
 				desc = "[J] Cursor downwards wrap";
 			}
 			{
 				on = "k";
-				run = "plugin arrow -1";
+				run = "arrow prev";
 				desc = "[K] Cursor upwards wrap";
 			}
 			{
@@ -23,9 +23,24 @@
 				desc = "[L] Enter the child directory, or open the file";
 			}
 			{
+				on = ["P" "h"];
+				run = "plugin toggle-pane min-preview";
+				desc = "[P]review [H]ide";
+			}
+			{
 				on = ["P" "t"];
-				run = "plugin max-preview";
+				run = "plugin toggle-pane max-preview";
 				desc = "[P]review size [T]oggle";
+			}
+			{
+				on = ["u"];
+				run = "plugin restore";
+				desc = "[U]ndo deletion of last file(s)/folder(s)";
+			}
+			{
+				on = ["f"];
+				run = "plugin jump-to-char";
+				desc = "Jump [f]orward to file with [<>] name";
 			}
 			{
 				on = ["g" "r"];

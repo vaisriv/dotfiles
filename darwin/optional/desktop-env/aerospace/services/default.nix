@@ -6,6 +6,5 @@
 	...
 }: {
 	imports = [
-		./karabiner-elements.nix
 	];
 }

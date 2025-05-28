@@ -14,6 +14,7 @@
 			"batfi" # battery management widget
 			"itsycal" # calendar/date bar widget
 			"jordanbaird-ice" # bar management
+			"karabiner-elements" # per-keyboard settings
 			"linearmouse" # per-mouse settings
 			"qview" # image viewer
 			"raycast" # launcher
