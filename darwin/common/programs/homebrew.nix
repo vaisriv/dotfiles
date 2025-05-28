@@ -9,7 +9,7 @@
 		enable = true;
 
 		onActivation = {
-			autoUpdate = false;
+			autoUpdate = true;
 			# brew `zap`: uninstalls all formulae(and related files) not listed in config
 			cleanup = "zap";
 		};

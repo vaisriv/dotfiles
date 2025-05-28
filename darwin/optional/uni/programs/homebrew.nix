@@ -16,7 +16,7 @@
 			"jupyterlab"
 			"libreoffice"
 			"mathpix-snipping-tool"
-			"zen-browser"
+			"zen"
 			"zotero"
 
 			# TODO: want to eventually be handled by nix need to figure out shell.nix/flake.nix fhs-env or similar to get packages/libraries to actually work and not have linking errors
