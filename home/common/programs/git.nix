@@ -41,6 +41,9 @@
 				# Thumbnails
 				"._*"
 
+				# Nix Direnv Dir
+				"**.direnv/"
+
 				# Files that might appear in the root of a volume
 				".DocumentRevisions-V100"
 				".fseventsd"
