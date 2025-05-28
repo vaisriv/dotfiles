@@ -9,6 +9,9 @@
 		# Generic for all hosts
 		../../common
 
+		# User Shell Config
+		../../optional/shell/darwin
+
 		# User Settings
 		../../optional/user/darwin.nix
 
