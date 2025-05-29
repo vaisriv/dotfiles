@@ -55,6 +55,11 @@
 			url = "github:omerxx/tmux-sessionx";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+
+		## mopidy patched on nix-darwin
+		mopidy-darwin = {
+			url = "github:amadejkastelic/nixpkgs/mopidy-darwin";
+		};
 	};
 
 	outputs = inputs @ {

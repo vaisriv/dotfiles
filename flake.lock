@@ -406,6 +406,22 @@
         "url": "https://git.lix.systems/lix-project/nixos-module/archive/main.tar.gz"
       }
     },
+    "mopidy-darwin": {
+      "locked": {
+        "lastModified": 1747666561,
+        "narHash": "sha256-TqmaHR2bDjwO0hrTcmsNRkgKuH4X1IVR2KMV15m8cyg=",
+        "owner": "amadejkastelic",
+        "repo": "nixpkgs",
+        "rev": "611928326ecae103563d6b288482da83f118beb4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "amadejkastelic",
+        "ref": "mopidy-darwin",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nh": {
       "inputs": {
         "nixpkgs": [
@@ -548,6 +564,7 @@
         "home-manager": "home-manager",
         "hyprpanel": "hyprpanel",
         "lix-module": "lix-module",
+        "mopidy-darwin": "mopidy-darwin",
         "nh": "nh",
         "nix-darwin": "nix-darwin",
         "nixos-apple-silicon": "nixos-apple-silicon",

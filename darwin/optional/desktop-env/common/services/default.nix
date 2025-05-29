@@ -6,5 +6,6 @@
 	...
 }: {
 	imports = [
+		./mopidy.nix
 	];
 }
