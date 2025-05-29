@@ -76,7 +76,7 @@ switch $argv[1]
 		cd $current_dir
 
 	case rg search
-		rg -g !user-dots $config_location -e $argv[2..]
+		rg  --glob=!user-dots $argv[2] $config_location
 
 	case lg git
 		lazygit -p $config_location
