@@ -22,6 +22,7 @@
 		lazysql
 		p7zip
 		pastel
+		procs
 		pngpaste
 		poppler_utils
 		presenterm
