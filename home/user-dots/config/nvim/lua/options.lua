@@ -14,8 +14,12 @@ vim.opt.wrap = true
 vim.opt.linebreak = true
 
 -- Tabs and Spaces
-vim.opt.tabstop = 8
-vim.opt.shiftwidth = 8
+-- vim.opt.tabstop = 8
+-- vim.opt.shiftwidth = 0
+-- vim.opt.softtabstop = 0
+vim.opt.shiftround = true
+vim.opt.expandtab = true
+-- vim.opt.autoindent = true
 
 -- Enable mouse mode
 vim.opt.mouse = "a"
