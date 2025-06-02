@@ -13,5 +13,8 @@
 		mouse = true;
 		newSession = true;
 		secureSocket = false;
+
+		# enable tmuxinator tool for auto-launching configured tmux windows/panes/session when in projects
+		tmuxinator.enable = true;
 	};
 }
