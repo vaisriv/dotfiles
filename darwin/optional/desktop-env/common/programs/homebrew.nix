@@ -22,7 +22,7 @@
 
 			"altserver" # sideloading for ios
 			"appcleaner" # used to remove/clean manually-installed apps
-			"mullvadvpn" # vpn client
+			"mullvad-vpn" # vpn client
 			"qbittorrent" # bitorrent
 		];
 
