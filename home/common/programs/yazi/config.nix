@@ -6,7 +6,7 @@
 	...
 }: {
 	programs.yazi = {
-		enableFishIntegration = true;
+		enableFishIntegration = false;
 		settings = {
 			manager = {
 				sort_by = "natural";
