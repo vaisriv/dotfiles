@@ -1,11 +1,11 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	services.upower = {
-		enable = true;
-	};
+  services.upower = {
+    enable = true;
+  };
 }

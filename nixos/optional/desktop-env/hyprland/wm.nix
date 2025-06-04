@@ -1,7 +1,7 @@
 {
-	pkgs,
-	inputs,
-	...
+  pkgs,
+  inputs,
+  ...
 }: {
-	programs.hyprland.enable = true;
+  programs.hyprland.enable = true;
 }

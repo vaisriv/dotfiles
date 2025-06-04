@@ -1,15 +1,15 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	services.logind = {
-		powerKey = "hybrid-sleep";
-		powerKeyLongPress = "poweroff";
+  services.logind = {
+    powerKey = "hybrid-sleep";
+    powerKeyLongPress = "poweroff";
 
-		lidSwitch = "hybrid-sleep";
-		lidSwitchDocked = "ignore";
-	};
+    lidSwitch = "hybrid-sleep";
+    lidSwitchDocked = "ignore";
+  };
 }

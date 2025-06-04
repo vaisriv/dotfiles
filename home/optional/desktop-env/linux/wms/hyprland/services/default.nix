@@ -1,12 +1,12 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	imports = [
-		./hypridle.nix
-		./hyprpaper.nix
-	];
+  imports = [
+    ./hypridle.nix
+    ./hyprpaper.nix
+  ];
 }

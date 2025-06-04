@@ -1,24 +1,24 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	imports = [
-		# Configuration
-		./configuration.nix
+  imports = [
+    # Configuration
+    ./configuration.nix
 
-		# Programs
-		./programs
+    # Programs
+    ./programs
 
-		# System Settings
-		./system
+    # System Settings
+    ./system
 
-		# Shell
-		./shell.nix
+    # Shell
+    ./shell.nix
 
-		# Users
-		./users.nix
-	];
+    # Users
+    ./users.nix
+  ];
 }

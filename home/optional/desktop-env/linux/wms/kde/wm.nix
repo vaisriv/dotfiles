@@ -1,9 +1,9 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	# KDE settings here
+  # KDE settings here
 }
