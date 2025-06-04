@@ -1,8 +1,8 @@
 {
-	pkgs,
-	inputs,
-	...
+  pkgs,
+  inputs,
+  ...
 }: {
-	imports = [
-	];
+  imports = [
+  ];
 }

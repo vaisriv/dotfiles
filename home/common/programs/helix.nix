@@ -1,12 +1,12 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	programs.helix = {
-		enable = true;
-		package = pkgs.evil-helix;
-	};
+  programs.helix = {
+    enable = true;
+    package = pkgs.evil-helix;
+  };
 }

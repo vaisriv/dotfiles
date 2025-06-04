@@ -1,16 +1,16 @@
 {
-	pkgs,
-	inputs,
-	...
+  pkgs,
+  inputs,
+  ...
 }: {
-	imports = [
-		# App and Program Configs
-		./programs
+  imports = [
+    # App and Program Configs
+    ./programs
 
-		# Service Configs
-		./services
+    # Service Configs
+    ./services
 
-		# MacOS/System Settings
-		./system
-	];
+    # MacOS/System Settings
+    ./system
+  ];
 }

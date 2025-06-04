@@ -1,21 +1,21 @@
 {
-	inputs,
-	lib,
-	config,
-	pkgs,
-	...
+  inputs,
+  lib,
+  config,
+  pkgs,
+  ...
 }: {
-	imports = [
-		# Apple Silicon Support
-		../../asahi.nix
+  imports = [
+    # Apple Silicon Support
+    ../../asahi.nix
 
-		# Generic for all laptops
-		../common
+    # Generic for all laptops
+    ../common
 
-		# Programs
-		./programs
+    # Programs
+    ./programs
 
-		# Services
-		./services
-	];
+    # Services
+    ./services
+  ];
 }

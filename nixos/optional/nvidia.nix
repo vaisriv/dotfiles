@@ -1,26 +1,26 @@
 {
-	config,
-	lib,
-	pkgs,
-	modulesPath,
-	...
+  config,
+  lib,
+  pkgs,
+  modulesPath,
+  ...
 }: {
-	hardware = {
-		graphics.enable = true;
+  hardware = {
+    graphics.enable = true;
 
-		nvidia = {
-			modesetting.enable = true;
+    nvidia = {
+      modesetting.enable = true;
 
-			powerManagement = {
-				enable = false;
-				finegrained = false;
-			};
+      powerManagement = {
+        enable = false;
+        finegrained = false;
+      };
 
-			open = false;
+      open = false;
 
-			nvidiaSettings = true;
+      nvidiaSettings = true;
 
-			package = config.boot.kernelPackages.nvidiaPackages.stable;
-		};
-	};
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
+    };
+  };
 }

@@ -1,9 +1,9 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
 	# TODO: actually implement latexmk and its rc in home-manager
 	# programs.latexmk = {

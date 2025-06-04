@@ -1,12 +1,12 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	imports = [
-		./greetd.nix
-		./upower.nix
-	];
+  imports = [
+    ./greetd.nix
+    ./upower.nix
+  ];
 }

@@ -1,16 +1,16 @@
 {
-	pkgs,
-	inputs,
-	...
+  pkgs,
+  inputs,
+  ...
 }: {
-	imports = [
-		# App and Program Configs
-		./programs
+  imports = [
+    # App and Program Configs
+    ./programs
 
-		# Service Configs
-		./services
+    # Service Configs
+    ./services
 
-		# XDG
-		./xdg.nix
-	];
+    # XDG
+    ./xdg.nix
+  ];
 }

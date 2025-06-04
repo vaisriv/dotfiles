@@ -1,15 +1,15 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	programs.zoxide = {
-		enable = true;
-		enableFishIntegration = true;
-		options = [
-			"--cmd cd"
-		];
-	};
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+    options = [
+      "--cmd cd"
+    ];
+  };
 }

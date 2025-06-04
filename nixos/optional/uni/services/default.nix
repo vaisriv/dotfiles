@@ -1,9 +1,9 @@
 {
-	pkgs,
-	inputs,
-	...
+  pkgs,
+  inputs,
+  ...
 }: {
-	imports = [
-		./globalprotect.nix
-	];
+  imports = [
+    ./globalprotect.nix
+  ];
 }

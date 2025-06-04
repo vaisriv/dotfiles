@@ -1,12 +1,12 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	imports = [
-		./taskwarrior.nix
-		./timewarrior.nix
-	];
+  imports = [
+    ./taskwarrior.nix
+    ./timewarrior.nix
+  ];
 }

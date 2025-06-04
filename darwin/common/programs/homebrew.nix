@@ -1,35 +1,35 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	homebrew = {
-		enable = true;
+  homebrew = {
+    enable = true;
 
-		onActivation = {
-			autoUpdate = true;
-			# brew `zap`: uninstalls all formulae(and related files) not listed in config
-			cleanup = "zap";
-		};
+    onActivation = {
+      autoUpdate = true;
+      # brew `zap`: uninstalls all formulae(and related files) not listed in config
+      cleanup = "zap";
+    };
 
-		# `brew tap`
-		taps = [
-			"homebrew/services"
-		];
+    # `brew tap`
+    taps = [
+      "homebrew/services"
+    ];
 
-		# `brew install`
-		brews = [
-			{
-				name = "mpd";
-				link = true;
-				restart_service = true;
-			}
-		];
+    # `brew install`
+    brews = [
+      {
+        name = "mpd";
+        link = true;
+        restart_service = true;
+      }
+    ];
 
-		# `brew install --cask`
-		casks = [
-		];
-	};
+    # `brew install --cask`
+    casks = [
+    ];
+  };
 }

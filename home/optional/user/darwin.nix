@@ -1,13 +1,13 @@
 {
-	config,
-	pkgs,
-	inputs,
-	username,
-	...
+  config,
+  pkgs,
+  inputs,
+  username,
+  ...
 }: {
-	home = {
-		# User setup
-		inherit username;
-		homeDirectory = "/Users/${username}";
-	};
+  home = {
+    # User setup
+    inherit username;
+    homeDirectory = "/Users/${username}";
+  };
 }

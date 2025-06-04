@@ -1,19 +1,19 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	programs.eza = {
-		enable = true;
-		enableFishIntegration = true;
-		icons = "always";
-		git = true;
-		colors = "always";
-		extraOptions = [
-			"--group-directories-first"
-			"--header"
-		];
-	};
+  programs.eza = {
+    enable = true;
+    enableFishIntegration = true;
+    icons = "always";
+    git = true;
+    colors = "always";
+    extraOptions = [
+      "--group-directories-first"
+      "--header"
+    ];
+  };
 }

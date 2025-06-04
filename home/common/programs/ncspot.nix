@@ -1,11 +1,11 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	programs.ncspot = {
-		enable = true;
-	};
+  programs.ncspot = {
+    enable = true;
+  };
 }

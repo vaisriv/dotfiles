@@ -1,18 +1,18 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	imports = [
-		# Generic for all Hosts
-		../../common
+  imports = [
+    # Generic for all Hosts
+    ../../common
 
-		# App and Program Configs
-		./programs
+    # App and Program Configs
+    ./programs
 
-		# Service Configs
-		./services
-	];
+    # Service Configs
+    ./services
+  ];
 }
