@@ -43,6 +43,11 @@
 		bind -n 'C-8' select-window -t 8
 		bind -n 'C-9' select-window -t 9
 
+		# switch to previous and next window
+		bind n select-window -n
+		bind b select-window -p
+		unbind p
+
 		# set tmux color settings
 		set -g default-terminal "tmux-256color"
 		set-option -ga terminal-overrides ",xterm-256color:Tc"
