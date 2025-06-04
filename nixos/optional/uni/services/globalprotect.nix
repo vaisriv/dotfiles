@@ -1,11 +1,11 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	services.globalprotect = {
-		enable = true;
-	};
+  services.globalprotect = {
+    enable = true;
+  };
 }

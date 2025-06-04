@@ -1,11 +1,11 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	programs.clipse = {
-		enable = true;
-	};
+  programs.clipse = {
+    enable = true;
+  };
 }

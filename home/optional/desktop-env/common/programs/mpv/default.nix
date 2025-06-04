@@ -1,15 +1,15 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	programs.mpv.enable = true;
+  programs.mpv.enable = true;
 
-	imports = [
-		./config.nix
-		./bindings.nix
-		./scripts.nix
-	];
+  imports = [
+    ./config.nix
+    ./bindings.nix
+    ./scripts.nix
+  ];
 }

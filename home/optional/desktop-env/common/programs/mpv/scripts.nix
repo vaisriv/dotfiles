@@ -1,14 +1,14 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	programs.mpv.scripts = with pkgs.mpvScripts; [
-		uosc
-		thumbfast
-		autosub
-		sponsorblock-minimal
-	];
+  programs.mpv.scripts = with pkgs.mpvScripts; [
+    uosc
+    thumbfast
+    autosub
+    sponsorblock-minimal
+  ];
 }

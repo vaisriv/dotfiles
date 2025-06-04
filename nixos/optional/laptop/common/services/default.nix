@@ -1,10 +1,10 @@
 {
-	pkgs,
-	inputs,
-	...
+  pkgs,
+  inputs,
+  ...
 }: {
-	imports = [
-		./autocpufreq.nix
-		./logind.nix
-	];
+  imports = [
+    ./autocpufreq.nix
+    ./logind.nix
+  ];
 }

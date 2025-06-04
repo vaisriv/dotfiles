@@ -1,13 +1,13 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	imports = [
-		# ./mpv
-		./neovide.nix
-		./zathura.nix
-	];
+  imports = [
+    # ./mpv
+    ./neovide.nix
+    ./zathura.nix
+  ];
 }

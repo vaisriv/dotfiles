@@ -1,20 +1,20 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	programs = {
-		ripgrep = {
-			enable = true;
-		};
-		ripgrep-all = {
-			enable = true;
-		};
-	};
+  programs = {
+    ripgrep = {
+      enable = true;
+    };
+    ripgrep-all = {
+      enable = true;
+    };
+  };
 
-	home.packages = with pkgs; [
-		repgrep
-	];
+  home.packages = with pkgs; [
+    repgrep
+  ];
 }

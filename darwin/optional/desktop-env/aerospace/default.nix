@@ -1,24 +1,24 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	imports = [
-		# Generic for all DM+WM (gui apps, etc)
-		../common
+  imports = [
+    # Generic for all DM+WM (gui apps, etc)
+    ../common
 
-		# Apps and Programs
-		./programs
+    # Apps and Programs
+    ./programs
 
-		# Services
-		./services
+    # Services
+    ./services
 
-		# MacOS/System Settings
-		./system
+    # MacOS/System Settings
+    ./system
 
-		# Aerospace
-		./wm.nix
-	];
+    # Aerospace
+    ./wm.nix
+  ];
 }

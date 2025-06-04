@@ -1,24 +1,24 @@
 {
-	inputs,
-	lib,
-	config,
-	pkgs,
-	...
+  inputs,
+  lib,
+  config,
+  pkgs,
+  ...
 }: {
-	imports = [
-		# NVIDIA Hardware Support
-		../../nvidia.nix
+  imports = [
+    # NVIDIA Hardware Support
+    ../../nvidia.nix
 
-		# Generic for all laptops
-		../common
+    # Generic for all laptops
+    ../common
 
-		# Specific laptop config
-		./configuration.nix
+    # Specific laptop config
+    ./configuration.nix
 
-		# Programs
-		./programs
+    # Programs
+    ./programs
 
-		# Services
-		./services
-	];
+    # Services
+    ./services
+  ];
 }

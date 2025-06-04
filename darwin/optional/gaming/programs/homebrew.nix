@@ -1,16 +1,16 @@
 {
-	config,
-	pkgs,
-	inputs,
-	lib,
-	...
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-	homebrew = {
-		brews = [
-		];
+  homebrew = {
+    brews = [
+    ];
 
-		casks = [
-			"steam"
-		];
-	};
+    casks = [
+      "steam"
+    ];
+  };
 }
