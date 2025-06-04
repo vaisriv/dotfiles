@@ -32,6 +32,11 @@
 		bind -n M-j select-pane -D
 		bind -n M-k select-pane -U
 
+		# switch to previous and next window
+		bind n select-window -n
+		bind b select-window -p
+		unbind p
+
 		# set tmux color settings
 		set -g default-terminal "tmux-256color"
 		set-option -ga terminal-overrides ",xterm-256color:Tc"
