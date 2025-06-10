@@ -40,7 +40,7 @@
     persistent-apps = [
       {app = "/Users/vai/Applications/Home Manager Apps/LibreWolf.app/";}
       {app = "/Applications/Nix Apps/Spotify.app/";}
-      {app = "/Applications/Nix Apps/Discord.app/";}
+      {app = "/Applications/Discord.app/";}
       {app = "/Applications/Zen.app/";}
       {app = "/Users/vai/Applications/Home Manager Apps/WezTerm.app/";}
       {app = "/Applications/MATLAB_R2024b.app/";}
