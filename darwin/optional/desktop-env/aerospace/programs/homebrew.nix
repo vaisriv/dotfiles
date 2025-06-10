@@ -12,6 +12,7 @@
     casks = [
       "batfi" # battery management widget
       "jordanbaird-ice" # bar management
+      "itsycal" # calendar/date bar widget
 
       # TODO: package and upstream to homebrew/nixpkgs
       "altserver" # sideloading for ios
