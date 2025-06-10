@@ -16,8 +16,5 @@
 
     # Theming
     ./theming.nix
-
-    # wip lol
-    ./wip.nix
   ];
 }

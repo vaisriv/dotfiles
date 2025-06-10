@@ -10,14 +10,15 @@
     ];
 
     casks = [
-      "alt-tab" # window switcher
       "batfi" # battery management widget
-      "itsycal" # calendar/date bar widget
       "jordanbaird-ice" # bar management
-      "karabiner-elements" # per-keyboard settings
+
+      # TODO: package and upstream to homebrew/nixpkgs
+      "altserver" # sideloading for ios
       "linearmouse" # per-mouse settings
-      "qview" # image viewer
-      "raycast" # launcher
+      "readest" # epub/ebook reader
+      # "vencord-installer" # discord client mod installer
+      # "zathura-wrapper" # apple automator "app" to open pdfs with zathura
     ];
 
     masApps = {

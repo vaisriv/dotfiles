@@ -10,22 +10,25 @@
     ./btop.nix
     ./direnv.nix
     ./eza.nix
+    ./fd.nix
     ./fzf.nix
     ./git.nix
-    ./helix.nix
+    ./glow.nix
+    # ./helix.nix
+    ./jq.nix
     ./latexmk.nix
     ./lazygit.nix
-    ./nh.nix
-    ./ncspot.nix
+    ./macchina.nix
     ./ncmpcpp.nix
-    ./fd.nix
+    ./ncspot.nix
+    ./nh.nix
+    ./nvim.nix
     ./ripgrep.nix
-    ./jq.nix
-    ./uv.nix
     ./starship.nix
     ./taskwarrior
     ./tealdeer.nix
     ./tmux
+    # ./uv.nix
     ./yazi
     ./zoxide.nix
   ];
