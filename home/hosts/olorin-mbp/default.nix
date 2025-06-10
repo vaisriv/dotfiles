@@ -6,8 +6,8 @@
   ...
 }: {
   imports = [
-    # Generic for all hosts
-    ../../common
+    # Generic System config
+    ../../common/darwin
 
     # User Shell Config
     ../../optional/shell/darwin

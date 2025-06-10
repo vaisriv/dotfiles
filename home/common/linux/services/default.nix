@@ -6,6 +6,6 @@
   ...
 }: {
   imports = [
-    ./karabiner-elements.nix
+    ./taskwarrior-sync.nix
   ];
 }

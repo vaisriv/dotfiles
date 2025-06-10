@@ -20,6 +20,7 @@
     hexyl
     hyperfine
     lazysql
+    mkalias
     p7zip
     pastel
     procs
