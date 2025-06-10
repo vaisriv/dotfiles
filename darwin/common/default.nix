@@ -12,6 +12,9 @@
     # Programs
     ./programs
 
+    # Services
+    ./services
+
     # System Settings
     ./system
 

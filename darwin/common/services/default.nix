@@ -6,6 +6,6 @@
   ...
 }: {
   imports = [
-    ./karabiner-elements.nix
+    ./mopidy.nix
   ];
 }

@@ -12,20 +12,13 @@
       config = {
         journal.time = "on";
         search.case.sensitive = "no";
+        alias.clear = "!clear";
       };
       colorTheme = "dark-256";
     };
   };
 
-  # services = {
-  # 	taskwarrior-sync = {
-  # 		enable = true;
-  # 		frequency = "*:0/5";
-  # 	};
-  # };
-
   home.packages = with pkgs; [
-    taskwarrior-tui
     tasksh
   ];
 }

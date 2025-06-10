@@ -10,20 +10,13 @@
     ];
 
     casks = [
+      # "firefox" # browser
       "discord" # chat app
-      "firefox" # browser
-      "iina" # media/video player
-      "readest" # epub/ebook reader
-      "spotify" # music
-      "vscodium" # backup text/code editor
 
+      # WARN: currently broken on nix :)
       "chromium" # alt browser
-      "qutebrowser" # alt browser
-
-      "altserver" # sideloading for ios
-      "appcleaner" # used to remove/clean manually-installed apps
+      "karabiner-elements" # per-keyboard settings
       "mullvad-vpn" # vpn client
-      "qbittorrent" # bitorrent
     ];
 
     masApps = {

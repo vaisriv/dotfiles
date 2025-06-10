@@ -6,8 +6,8 @@
   ...
 }: {
   imports = [
-    # Generic for all hosts
-    ../../common
+    # Generic System config
+    ../../common/linux
 
     # User Shell Config
     ../../optional/shell/linux
