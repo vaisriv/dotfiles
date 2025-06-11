@@ -1,13 +1,13 @@
 {
-  pkgs,
-  inputs,
-  ...
+    pkgs,
+    inputs,
+    ...
 }: {
-  imports = [
-    # Program list to install from nixpkgs
-    ./pkgs.nix
+    imports = [
+        # Program list to install from nixpkgs
+        ./pkgs.nix
 
-    # Programs that can be configured
-    ./steam.nix
-  ];
+        # Programs that can be configured
+        ./steam.nix
+    ];
 }

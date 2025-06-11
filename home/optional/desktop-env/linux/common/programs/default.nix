@@ -1,12 +1,12 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  imports = [
-    # ./clipse.nix
-    # ./foot.nix
-  ];
+    imports = [
+        # ./clipse.nix
+        # ./foot.nix
+    ];
 }

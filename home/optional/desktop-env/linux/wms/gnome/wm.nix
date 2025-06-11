@@ -1,9 +1,9 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  # GNOME settings here
+    # GNOME settings here
 }

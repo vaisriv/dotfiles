@@ -1,7 +1,7 @@
 {
-  pkgs,
-  inputs,
-  ...
+    pkgs,
+    inputs,
+    ...
 }: {
-  # GNOME install goes here
+    # GNOME install goes here
 }

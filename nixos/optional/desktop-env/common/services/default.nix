@@ -1,13 +1,13 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  imports = [
-    ./blueman.nix
-    ./greetd.nix
-    ./mullvad.nix
-  ];
+    imports = [
+        ./blueman.nix
+        ./greetd.nix
+        ./mullvad.nix
+    ];
 }

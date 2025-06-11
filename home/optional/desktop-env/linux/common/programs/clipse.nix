@@ -1,12 +1,12 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  # TODO: make home-manager module for clipse
-  /*
+    # TODO: make home-manager module for clipse
+    /*
      programs.clipse = {
     enable = true;
   };

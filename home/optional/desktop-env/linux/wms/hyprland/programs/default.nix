@@ -1,12 +1,12 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  imports = [
-    ./fuzzel.nix
-    ./hyprlock.nix
-  ];
+    imports = [
+        ./fuzzel.nix
+        ./hyprlock.nix
+    ];
 }

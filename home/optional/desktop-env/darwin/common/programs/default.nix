@@ -1,11 +1,11 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  imports = [
-    # ./rio.nix
-  ];
+    imports = [
+        # ./rio.nix
+    ];
 }

@@ -1,17 +1,17 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  programs.yazi.enable = true;
+    programs.yazi.enable = true;
 
-  imports = [
-    ./config.nix
-    ./keymap.nix
-    ./plugins.nix
-    ./theme.nix
-    ./lua.nix
-  ];
+    imports = [
+        ./config.nix
+        ./keymap.nix
+        ./plugins.nix
+        ./theme.nix
+        ./lua.nix
+    ];
 }

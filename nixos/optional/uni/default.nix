@@ -1,18 +1,18 @@
 {
-  inputs,
-  lib,
-  config,
-  pkgs,
-  ...
+    inputs,
+    lib,
+    config,
+    pkgs,
+    ...
 }: {
-  imports = [
-    # Programs
-    ./programs
+    imports = [
+        # Programs
+        ./programs
 
-    # Services
-    ./services
+        # Services
+        ./services
 
-    # Eduroam
-    ./eduroam
-  ];
+        # Eduroam
+        ./eduroam
+    ];
 }

@@ -1,18 +1,18 @@
 {
-  inputs,
-  lib,
-  config,
-  pkgs,
-  ...
+    inputs,
+    lib,
+    config,
+    pkgs,
+    ...
 }: {
-  imports = [
-    # Generic for all systems
-    ../common
+    imports = [
+        # Generic for all systems
+        ../common
 
-    # Programs
-    ./programs
+        # Programs
+        ./programs
 
-    # Services
-    ./services
-  ];
+        # Services
+        ./services
+    ];
 }

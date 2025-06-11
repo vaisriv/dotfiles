@@ -1,15 +1,15 @@
 {
-  pkgs,
-  inputs,
-  ...
+    pkgs,
+    inputs,
+    ...
 }: {
-  imports = [
-    # Configuration
-    ./configuration.nix
+    imports = [
+        # Configuration
+        ./configuration.nix
 
-    # Settings
-    ./keyboard.nix
-    ./macos.nix
-    ./msc.nix
-  ];
+        # Settings
+        ./keyboard.nix
+        ./macos.nix
+        ./msc.nix
+    ];
 }

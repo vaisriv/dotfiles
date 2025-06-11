@@ -1,11 +1,11 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  # programs.aerospace = {
-  # 	enable = true;
-  # };
+    # programs.aerospace = {
+    # 	enable = true;
+    # };
 }

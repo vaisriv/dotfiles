@@ -1,33 +1,33 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  environment.systemPackages = with pkgs; [
-    # cli/term tools
-    asciinema
-    asciinema-scenario
-    deno
-    dust
-    ffmpeg
-    fx
-    glow
-    hexyl
-    hyperfine
-    lazysql
-    mkalias
-    p7zip
-    pastel
-    procs
-    pngpaste
-    poppler_utils
-    presenterm
-    testdisk
-    tokei
-    trash-cli
-    viu
-    wiki-tui
-  ];
+    environment.systemPackages = with pkgs; [
+        # cli/term tools
+        asciinema
+        asciinema-scenario
+        deno
+        dust
+        ffmpeg
+        fx
+        glow
+        hexyl
+        hyperfine
+        lazysql
+        mkalias
+        p7zip
+        pastel
+        procs
+        pngpaste
+        poppler_utils
+        presenterm
+        testdisk
+        tokei
+        trash-cli
+        viu
+        wiki-tui
+    ];
 }

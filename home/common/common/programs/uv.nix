@@ -1,16 +1,16 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  programs.uv = {
-    enable = true;
-    settings = {
-      python-downloads = "never";
-      python-preference = "only-system";
-      pip.index-url = "https://test.pypi.org/simple";
+    programs.uv = {
+        enable = true;
+        settings = {
+            python-downloads = "never";
+            python-preference = "only-system";
+            pip.index-url = "https://test.pypi.org/simple";
+        };
     };
-  };
 }

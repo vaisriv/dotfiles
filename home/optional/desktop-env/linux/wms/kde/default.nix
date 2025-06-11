@@ -1,21 +1,21 @@
 {
-  inputs,
-  lib,
-  config,
-  pkgs,
-  ...
+    inputs,
+    lib,
+    config,
+    pkgs,
+    ...
 }: {
-  imports = [
-    # Generic for all Linux
-    ../../common
+    imports = [
+        # Generic for all Linux
+        ../../common
 
-    # App and Program Configs
-    ./programs
+        # App and Program Configs
+        ./programs
 
-    # Service Configs
-    ./services
+        # Service Configs
+        ./services
 
-    # KDE Config
-    ./wm.nix
-  ];
+        # KDE Config
+        ./wm.nix
+    ];
 }

@@ -1,7 +1,7 @@
 {
-  pkgs,
-  inputs,
-  ...
+    pkgs,
+    inputs,
+    ...
 }: {
-  # KDE install goes here
+    # KDE install goes here
 }

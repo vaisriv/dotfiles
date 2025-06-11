@@ -1,19 +1,19 @@
 {
-  config,
-  username,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    username,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  # IPFS
-  services.kubo = {
-    enable = true;
-  };
+    # IPFS
+    services.kubo = {
+        enable = true;
+    };
 
-  users.users."${username}" = {
-    extraGroups = [
-      config.services.kubo.group
-    ];
-  };
+    users.users."${username}" = {
+        extraGroups = [
+            config.services.kubo.group
+        ];
+    };
 }
