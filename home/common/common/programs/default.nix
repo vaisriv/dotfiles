@@ -1,35 +1,35 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  imports = [
-    ./bat.nix
-    ./btop.nix
-    ./direnv.nix
-    ./eza.nix
-    ./fd.nix
-    ./fzf.nix
-    ./git.nix
-    ./glow.nix
-    # ./helix.nix
-    ./jq.nix
-    ./latexmk.nix
-    ./lazygit.nix
-    ./macchina.nix
-    ./ncmpcpp.nix
-    ./ncspot.nix
-    ./nh.nix
-    ./nvim.nix
-    ./ripgrep.nix
-    ./starship.nix
-    ./taskwarrior
-    ./tealdeer.nix
-    ./tmux
-    # ./uv.nix
-    ./yazi
-    ./zoxide.nix
-  ];
+    imports = [
+        ./bat.nix
+        ./btop.nix
+        ./direnv.nix
+        ./eza.nix
+        ./fd.nix
+        ./fzf.nix
+        ./git.nix
+        ./glow.nix
+        # ./helix.nix
+        ./jq.nix
+        ./latexmk.nix
+        ./lazygit.nix
+        ./macchina.nix
+        ./ncmpcpp.nix
+        ./ncspot.nix
+        ./nh.nix
+        ./nvim.nix
+        ./ripgrep.nix
+        ./starship.nix
+        ./taskwarrior
+        ./tealdeer.nix
+        ./tmux
+        # ./uv.nix
+        ./yazi
+        ./zoxide.nix
+    ];
 }

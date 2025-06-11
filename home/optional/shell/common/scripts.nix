@@ -1,21 +1,21 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  home = {
-    file = {
-      user-scripts = {
-        enable = true;
+    home = {
+        file = {
+            user-scripts = {
+                enable = true;
 
-        executable = true;
+                executable = true;
 
-        target = ".local/bin";
-        source = ./scripts;
-        recursive = true;
-      };
+                target = ".local/bin";
+                source = ./scripts;
+                recursive = true;
+            };
+        };
     };
-  };
 }

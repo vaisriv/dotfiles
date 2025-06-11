@@ -1,14 +1,14 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  imports = [
-    # Programs needed for DM+WM
-    ./pkgs.nix
+    imports = [
+        # Programs needed for DM+WM
+        ./pkgs.nix
 
-    # Programs that can be configured
-  ];
+        # Programs that can be configured
+    ];
 }

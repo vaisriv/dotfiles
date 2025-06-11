@@ -1,4 +1,3 @@
 # (experimental) Configuration options for Alejandra
 
-# indentation = "FourSpaces" # Or: TwoSpaces, Tabs
-indentation = "TwoSpaces" # Or: FourSpaces, Tabs
+indentation = "FourSpaces" # Or: TwoSpaces, Tabs

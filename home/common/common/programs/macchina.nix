@@ -1,27 +1,27 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  # TODO: make home-manager module for macchina
-  # programs.macchina = {
-  #   enable = true;
-  # };
+    # TODO: make home-manager module for macchina
+    # programs.macchina = {
+    #   enable = true;
+    # };
 
-  home = {
-    packages = with pkgs; [
-      macchina
-    ];
-    file = {
-      macchina-config = {
-        enable = true;
-        recursive = true;
+    home = {
+        packages = with pkgs; [
+            macchina
+        ];
+        file = {
+            macchina-config = {
+                enable = true;
+                recursive = true;
 
-        target = ".config/macchina";
-        source = ../../../user-dots/config/macchina;
-      };
+                target = ".config/macchina";
+                source = ../../../user-dots/config/macchina;
+            };
+        };
     };
-  };
 }

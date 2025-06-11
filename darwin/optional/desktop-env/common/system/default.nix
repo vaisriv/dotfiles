@@ -1,12 +1,12 @@
 {
-  pkgs,
-  inputs,
-  ...
+    pkgs,
+    inputs,
+    ...
 }: {
-  imports = [
-    ./bar.nix
-    ./dock.nix
-    ./keyboard.nix
-    ./msc.nix
-  ];
+    imports = [
+        ./bar.nix
+        ./dock.nix
+        ./keyboard.nix
+        ./msc.nix
+    ];
 }

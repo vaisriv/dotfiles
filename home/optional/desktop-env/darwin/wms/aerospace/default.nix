@@ -1,21 +1,21 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  imports = [
-    # Generic for all Darwin
-    ../../common
+    imports = [
+        # Generic for all Darwin
+        ../../common
 
-    # App and Program Configs
-    ./programs
+        # App and Program Configs
+        ./programs
 
-    # Service Configs
-    ./services
+        # Service Configs
+        ./services
 
-    # Aerospace Config
-    ./wm.nix
-  ];
+        # Aerospace Config
+        ./wm.nix
+    ];
 }

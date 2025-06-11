@@ -1,11 +1,11 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  services.mullvad-vpn = {
-    enable = true;
-  };
+    services.mullvad-vpn = {
+        enable = true;
+    };
 }

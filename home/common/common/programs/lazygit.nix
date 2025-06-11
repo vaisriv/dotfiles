@@ -1,20 +1,20 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  programs.lazygit = {
-    enable = true;
-    settings = {
-      git = {
-        paging = {
-          colorArg = "always";
-          pager = "delta";
+    programs.lazygit = {
+        enable = true;
+        settings = {
+            git = {
+                paging = {
+                    colorArg = "always";
+                    pager = "delta";
+                };
+                overrideGpg = true;
+            };
         };
-        overrideGpg = true;
-      };
     };
-  };
 }
