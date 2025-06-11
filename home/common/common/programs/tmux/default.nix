@@ -1,14 +1,14 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  programs.tmux.enable = true;
-  imports = [
-    ./config.nix
-    ./plugins.nix
-    ./extraConfig.nix
-  ];
+    programs.tmux.enable = true;
+    imports = [
+        ./config.nix
+        ./plugins.nix
+        ./extraConfig.nix
+    ];
 }

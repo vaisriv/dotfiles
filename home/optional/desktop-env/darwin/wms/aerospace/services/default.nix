@@ -1,11 +1,11 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  imports = [
-    ./karabiner-elements.nix
-  ];
+    imports = [
+        ./karabiner-elements.nix
+    ];
 }

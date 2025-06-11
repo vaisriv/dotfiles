@@ -1,9 +1,9 @@
 {
-  pkgs,
-  inputs,
-  ...
+    pkgs,
+    inputs,
+    ...
 }: {
-  imports = [
-    ./keyd.nix
-  ];
+    imports = [
+        ./keyd.nix
+    ];
 }

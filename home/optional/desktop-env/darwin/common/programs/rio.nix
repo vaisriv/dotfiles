@@ -1,14 +1,14 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  programs.rio = {
-    enable = true;
-    settings = {
-      option-as-alt = "both";
+    programs.rio = {
+        enable = true;
+        settings = {
+            option-as-alt = "both";
+        };
     };
-  };
 }

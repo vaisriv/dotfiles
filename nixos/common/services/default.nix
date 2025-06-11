@@ -1,11 +1,11 @@
 {
-  pkgs,
-  inputs,
-  ...
+    pkgs,
+    inputs,
+    ...
 }: {
-  imports = [
-    ./keyd.nix
-    ./kubo.nix
-    ./transmission.nix
-  ];
+    imports = [
+        ./keyd.nix
+        ./kubo.nix
+        ./transmission.nix
+    ];
 }

@@ -1,12 +1,12 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  font,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    font,
+    ...
 }: {
-  services.blueman = {
-    enable = true;
-  };
+    services.blueman = {
+        enable = true;
+    };
 }

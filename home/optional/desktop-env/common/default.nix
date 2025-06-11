@@ -1,15 +1,15 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  imports = [
-    # App and Program Configs
-    ./programs
+    imports = [
+        # App and Program Configs
+        ./programs
 
-    # Service Configs
-    ./services
-  ];
+        # Service Configs
+        ./services
+    ];
 }

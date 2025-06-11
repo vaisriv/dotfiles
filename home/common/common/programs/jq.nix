@@ -1,11 +1,11 @@
 {
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+    config,
+    pkgs,
+    inputs,
+    lib,
+    ...
 }: {
-  programs.jq = {
-    enable = true;
-  };
+    programs.jq = {
+        enable = true;
+    };
 }
