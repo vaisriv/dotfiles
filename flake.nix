@@ -84,10 +84,10 @@
 
     specialArgs = {inherit self inputs username fullname email;};
   in {
-    overlays = import ./overlays/nixpkgs;
-    nixosModules = import ./modules/nixos;
-    darwinModules = import ./modules/darwin;
-    homeManagerModules = import ./modules/home-manager;
+    overlays = import ./nix/overlays/nixpkgs;
+    nixosModules = import ./nix/modules/nixos;
+    darwinModules = import ./nix/modules/darwin;
+    homeManagerModules = import ./nix/modules/home-manager;
 
     formatter = forAllSystems (
       system: let
@@ -100,7 +100,7 @@
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
       in
-        import ./shell.nix {inherit pkgs;}
+        import ./nix/shell {inherit pkgs;}
     );
 
     nixosConfigurations = {
@@ -112,6 +112,7 @@
             system = "aarch64-linux";
             config.allowUnfree = true;
             overlays = [
+              inputs.self.overlays.default
               inputs.nixos-apple-silicon.overlays.default
               inputs.hyprpanel.overlay
             ];
@@ -145,6 +146,7 @@
             system = "x86_64-linux";
             config.allowUnfree = true;
             overlays = [
+              inputs.self.overlays.default
               inputs.nixos-apple-silicon.overlays.default
               inputs.hyprpanel.overlay
             ];
@@ -179,6 +181,9 @@
           {
             system = "aarch64-darwin";
             config.allowUnfree = true;
+            overlays = [
+              inputs.self.overlays.default
+            ];
           };
 
         inherit specialArgs;
