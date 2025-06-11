@@ -31,7 +31,7 @@
             echo "copying $src" >&2
               ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
           done
-      '';
+        '';
     };
   };
 

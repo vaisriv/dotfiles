@@ -84,11 +84,17 @@
 
     specialArgs = {inherit self inputs username fullname email;};
   in {
+    overlays = import ./overlays/nixpkgs;
     nixosModules = import ./modules/nixos;
     darwinModules = import ./modules/darwin;
     homeManagerModules = import ./modules/home-manager;
 
-    formatter = forAllSystems (system: inputs.nixpkgs-unstable.legacyPackages.${system}.alejandra);
+    formatter = forAllSystems (
+      system: let
+        pkgs = nixpkgs.legacyPackages.${system};
+      in
+        pkgs.treefmt
+    );
 
     devShells = forAllSystems (
       system: let
