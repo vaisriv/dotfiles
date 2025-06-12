@@ -52,6 +52,40 @@
                                         "vendor_id": 13991
                                     },
                                     "ignore": true
+                                },
+                                {
+                                    "identifiers": {
+                                        "is_keyboard": true,
+                                        "product_id": 8455,
+                                        "vendor_id": 16700
+                                    },
+                                    "simple_modifications": [
+                                        {
+                                            "from": { "key_code": "left_option" },
+                                            "to": [{ "key_code": "left_command" }]
+                                        },
+                                        {
+                                            "from": { "key_code": "left_command" },
+                                            "to": [{ "key_code": "left_option" }]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "identifiers": {
+                                        "is_keyboard": true,
+                                        "product_id": 24729,
+                                        "vendor_id": 6127
+                                    },
+                                    "simple_modifications": [
+                                        {
+                                            "from": { "key_code": "left_command" },
+                                            "to": [{ "key_code": "left_option" }]
+                                        },
+                                        {
+                                            "from": { "key_code": "left_option" },
+                                            "to": [{ "key_code": "left_command" }]
+                                        }
+                                    ]
                                 }
                             ],
                             "name": "Default profile",
