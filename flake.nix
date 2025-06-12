@@ -76,7 +76,17 @@
             "aarch64-darwin"
             "x86_64-darwin"
         ];
-        forAllSystems = nixpkgs.lib.genAttrs systems;
+        forEachSystem = f: nixpkgs.lib.genAttrs systems (system: f (pkgsFor system));
+        pkgsFor = system:
+            import nixpkgs {
+                inherit system;
+                config.allowUnfree = true;
+                overlays = [
+                    # inputs.self.overlays.default
+                    inputs.nixos-apple-silicon.overlays.default
+                    inputs.hyprpanel.overlay
+                ];
+            };
 
         username = "vai";
         fullname = "Vai Srivastava";
@@ -89,33 +99,12 @@
         darwinModules = import ./nix/modules/darwin;
         homeManagerModules = import ./nix/modules/home-manager;
 
-        formatter = forAllSystems (
-            system: let
-                pkgs = nixpkgs.legacyPackages.${system};
-            in
-                pkgs.treefmt
-        );
-
-        devShells = forAllSystems (
-            system: let
-                pkgs = nixpkgs.legacyPackages.${system};
-            in
-                import ./nix/shell {inherit pkgs;}
-        );
+        formatter = forEachSystem (pkgs: pkgs.treefmt);
+        devShells = forEachSystem (pkgs: import ./nix/shell {inherit pkgs;});
 
         nixosConfigurations = {
             olorin = nixpkgs.lib.nixosSystem {
-                system = "aarch64-linux";
-                pkgs = import nixpkgs
-                {
-                    system = "aarch64-linux";
-                    config.allowUnfree = true;
-                    overlays = [
-                        inputs.self.overlays.default
-                        inputs.nixos-apple-silicon.overlays.default
-                        inputs.hyprpanel.overlay
-                    ];
-                };
+                pkgs = pkgsFor "aarch64-linux";
 
                 inherit specialArgs;
 
@@ -138,17 +127,7 @@
                 ];
             };
             tarindor = nixpkgs.lib.nixosSystem {
-                system = "x86_64-linux";
-                pkgs = import nixpkgs
-                {
-                    system = "x86_64-linux";
-                    config.allowUnfree = true;
-                    overlays = [
-                        inputs.self.overlays.default
-                        inputs.nixos-apple-silicon.overlays.default
-                        inputs.hyprpanel.overlay
-                    ];
-                };
+                pkgs = pkgsFor "x86_64-linux";
 
                 inherit specialArgs;
 
@@ -173,15 +152,7 @@
 
         darwinConfigurations = {
             olorin-mbp = nix-darwin.lib.darwinSystem {
-                system = "aarch64-darwin";
-                pkgs = import nixpkgs
-                {
-                    system = "aarch64-darwin";
-                    config.allowUnfree = true;
-                    overlays = [
-                        inputs.self.overlays.default
-                    ];
-                };
+                pkgs = pkgsFor "aarch64-darwin";
 
                 inherit specialArgs;
 
