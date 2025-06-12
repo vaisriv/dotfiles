@@ -11,15 +11,18 @@
 
         casks = [
             "batfi" # battery management widget
-            "jordanbaird-ice" # bar management
-            "itsycal" # calendar/date bar widget
 
             # TODO: package and upstream to homebrew/nixpkgs
             "altserver" # sideloading for ios
+            "jordanbaird-ice" # bar management
             "linearmouse" # per-mouse settings
             "readest" # epub/ebook reader
             # "vencord-installer" # discord client mod installer
             # "zathura-wrapper" # apple automator "app" to open pdfs with zathura
+
+            # NOTE: broken on nixpkgs
+            "itsycal" # calendar/date bar widget
+            "qview" # image viewer
         ];
 
         masApps = {
