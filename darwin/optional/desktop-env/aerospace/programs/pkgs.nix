@@ -7,7 +7,6 @@
 }: {
     environment.systemPackages = with pkgs; [
         alt-tab-macos # window switcher
-        qview # image viewer
         raycast # launcher
     ];
 }
