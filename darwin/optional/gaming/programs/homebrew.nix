@@ -11,6 +11,7 @@
 
         casks = [
             "steam"
+            "dolphin"
         ];
     };
 }
