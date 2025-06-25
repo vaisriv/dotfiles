@@ -7,7 +7,7 @@
 }: {
     imports = [
         ./librewolf.nix
-        # ./mpv
+        ./mpv
         ./neovide.nix
         # ./qutebrowser.nix
         ./wezterm.nix
