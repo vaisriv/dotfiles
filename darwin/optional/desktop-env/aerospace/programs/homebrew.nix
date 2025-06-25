@@ -23,6 +23,7 @@
             # NOTE: broken on nixpkgs
             "itsycal" # calendar/date bar widget
             "qview" # image viewer
+            "filebot" # movie/tv show renamer
         ];
 
         masApps = {
