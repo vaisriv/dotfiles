@@ -15,6 +15,7 @@
             "/Applications/qutebrowser.app/Contents/MacOS" # alt browser
             "/Applications/VSCodium.app/Contents/MacOS" # backup text/code editor
             "/Applications/IINA.app/Contents/MacOS" # media player
+            "/Applications/mpv.app/Contents/MacOS" # media player
             "/Applications/qView.app/Contents/MacOS" # image viewer
         ];
         sessionVariables = {
