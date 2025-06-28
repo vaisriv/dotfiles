@@ -45,7 +45,7 @@
             {app = "/Users/vai/Applications/Home Manager Apps/WezTerm.app/";}
             {app = "/Applications/MATLAB_R2024b.app/";}
             {app = "/Applications/Nix Apps/VSCodium.app/";}
-            {app = "/Applications/LibreOffice.app/";}
+            {app = "/Applications/Nix Apps/LibreOffice.app/";}
         ];
     };
 }

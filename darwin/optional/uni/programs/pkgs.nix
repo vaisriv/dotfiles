@@ -6,8 +6,10 @@
     ...
 }: {
     environment.systemPackages = with pkgs; [
-        texliveFull
-        zk
+        libreoffice-bin
+        zotero
+
+        # java
         jdk8
         jdk11
         jdk23
