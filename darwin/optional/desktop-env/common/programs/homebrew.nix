@@ -13,6 +13,9 @@
             # "firefox" # browser
             "discord" # chat app
 
+            # TODO: package and upstream to nixpkgs
+            "altserver" # sideloading for ios
+
             # WARN: currently broken on nix :)
             "chromium" # alt browser
             "karabiner-elements" # per-keyboard settings
