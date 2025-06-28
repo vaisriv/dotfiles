@@ -23,6 +23,9 @@
             "itsycal" # calendar/date bar widget
             "filebot" # movie/tv show renamer
             "qview" # image viewer
+
+            # NOTE: installed manually
+            # "daisydisk"
         ];
 
         masApps = {
