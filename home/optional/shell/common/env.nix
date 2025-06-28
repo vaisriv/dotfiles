@@ -14,25 +14,20 @@
             GPG_TTY = "$(tty)";
             MACHINE = "$(hostname)";
 
-            # general sorting scheme
-            FILES_DIR = "$HOME/files";
-            MEDIA_DIR = "$HOME/media";
-
             # user dirs
             ## files
-            CODE_DIR = "${config.home.sessionVariables.FILES_DIR}/code";
-            DESKTOP_DIR = "${config.home.sessionVariables.FILES_DIR}/desktop";
-            DOCUMENTS_DIR = "${config.home.sessionVariables.FILES_DIR}/documents";
-            DOTFILES_DIR = "${config.home.sessionVariables.FILES_DIR}/dotfiles";
-            DOWNLOADS_DIR = "${config.home.sessionVariables.FILES_DIR}/downloads";
-            NOTES_DIR = "${config.home.sessionVariables.FILES_DIR}/notes";
-            PROJECTS_DIR = "${config.home.sessionVariables.FILES_DIR}/projects";
-            TEMPLATES_DIR = "${config.home.sessionVariables.FILES_DIR}/templates";
-            ## media
-            MUSIC_DIR = "${config.home.sessionVariables.MEDIA_DIR}/music";
-            PICTURES_DIR = "${config.home.sessionVariables.MEDIA_DIR}/pictures";
-            SCREENSHOTS_DIR = "${config.home.sessionVariables.MEDIA_DIR}/pictures/screenshots";
-            VIDEOS_DIR = "${config.home.sessionVariables.MEDIA_DIR}/videos";
+            CODE_DIR = "$HOME/files/code";
+            DESKTOP_DIR = "$HOME/files/desktop";
+            DOCUMENTS_DIR = "$HOME/files/documents";
+            DOTFILES_DIR = "$HOME/files/dotfiles";
+            DOWNLOADS_DIR = "$HOME/files/downloads";
+            MUSIC_DIR = "$HOME/files/music";
+            NOTES_DIR = "$HOME/files/notes";
+            PICTURES_DIR = "$HOME/files/pictures";
+            PROJECTS_DIR = "$HOME/files/projects";
+            SCREENSHOTS_DIR = "$HOME/files/pictures/screenshots";
+            TEMPLATES_DIR = "$HOME/files/templates";
+            VIDEOS_DIR = "$HOME/files/videos";
 
             # xdg dirs
             ## homes
