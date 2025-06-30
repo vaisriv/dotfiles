@@ -16,14 +16,27 @@
             open = {
                 prepend_rules = [
                     {
+                        mime = "inode/directory";
+                        use = ["open" "play"];
+                    }
+                    {
                         mime = "application/pdf";
                         use = ["pdf" "open"];
                     }
                 ];
             };
             opener = {
+                play = [
+                    {
+                        desc = "Play in MPV";
+                        run = "mpv \"$@\"";
+                        orphan = true;
+                        for = "unix";
+                    }
+                ];
                 pdf = [
                     {
+                        desc = "Open in Zathura";
                         run = "zathura \"$@\"";
                         orphan = true;
                         for = "unix";
