@@ -12,6 +12,7 @@
         casks = [
             "steam"
             "dolphin"
+            "lunar-client"
         ];
     };
 }
