@@ -24,6 +24,7 @@
         ./nh.nix
         ./nvim.nix
         ./ripgrep.nix
+        ./rmpc.nix
         ./starship.nix
         ./taskwarrior
         ./tealdeer.nix
