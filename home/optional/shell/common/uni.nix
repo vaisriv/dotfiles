@@ -25,11 +25,13 @@
         functions = {
             jl = {
                 description = "run julia script and drop into interactive shell for given problem using local project environment";
-                body = ''
-                    set jlfile (string join \'\' "./code/" $prob".jl")
-                    echo "\$ julia --project=. -i $jlfile $args"
-                    julia --project=. -i $jlfile $args
-                '';
+                body =
+                    # fish
+                    ''
+                        set jlfile (string join \'\' "./code/" $prob".jl")
+                        echo "\$ julia --project=. -i $jlfile $args"
+                        julia --project=. -i $jlfile $args
+                    '';
                 argumentNames = [
                     "prob"
                     "args"
@@ -37,12 +39,14 @@
             };
             jls = {
                 description = "run and log output of julia script for given problem using local project environment";
-                body = ''
-                    set jlfile (string join \'\' "./code/" $prob ".jl")
-                    set outfile (string join \'\' "./code/" $prob ".txt")
-                    echo "\$ julia --project=. $jlfile $args | tee $outfile"
-                    julia --project=. $jlfile $args | tee $outfile
-                '';
+                body =
+                    # fish
+                    ''
+                        set jlfile (string join \'\' "./code/" $prob ".jl")
+                        set outfile (string join \'\' "./code/" $prob ".txt")
+                        echo "\$ julia --project=. $jlfile $args | tee $outfile"
+                        julia --project=. $jlfile $args | tee $outfile
+                    '';
                 argumentNames = [
                     "prob"
                     "args"
