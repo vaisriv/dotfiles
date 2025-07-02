@@ -6,27 +6,29 @@
     ...
 }: {
     programs.fish = {
-        interactiveShellInit = ''
-            # turn off fish greeting
-            set fish_greeting
+        interactiveShellInit =
+            # fish
+            ''
+                # turn off fish greeting
+                set fish_greeting
 
-            # fish vi key mode
-            ## load default (emacs) binds for insert mode (using `-M insert` flag)
-            fish_default_key_bindings -M insert
-            ## load vi binds on top of default bindings (using `no-erase` flag)
-            ## and set default mode to insert-mode (using `insert` arg)
-            fish_vi_key_bindings --no-erase insert
+                # fish vi key mode
+                ## load default (emacs) binds for insert mode (using `-M insert` flag)
+                fish_default_key_bindings -M insert
+                ## load vi binds on top of default bindings (using `no-erase` flag)
+                ## and set default mode to insert-mode (using `insert` arg)
+                fish_vi_key_bindings --no-erase insert
 
-            # enable plugins
-            glow completion fish | source
+                # enable plugins
+                glow completion fish | source
 
-            # fix zathura file completion
-            complete -c zathura -f -a "(__zathura_complete_files)"
+                # fix zathura file completion
+                complete -c zathura -f -a "(__zathura_complete_files)"
 
-            # enable bat-extras
-            eval (batpipe)
-            set -x BATDIFF_USE_DELTA true
-        '';
+                # enable bat-extras
+                eval (batpipe)
+                set -x BATDIFF_USE_DELTA true
+            '';
         functions = {
             pdf = {
                 body = "zathura $argv 2> /dev/null & disown";
