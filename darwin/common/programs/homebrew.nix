@@ -23,11 +23,6 @@
 
         # `brew install`
         brews = [
-            {
-                name = "mpd";
-                link = true;
-                restart_service = true;
-            }
         ];
 
         # `brew install --cask`
