@@ -15,6 +15,7 @@
 
             # TODO: package and upstream to nixpkgs
             "altserver" # sideloading for ios
+            "obs" # screen recording software
 
             # WARN: currently broken on nix :)
             "chromium" # alt browser
