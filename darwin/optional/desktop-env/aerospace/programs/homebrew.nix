@@ -16,6 +16,7 @@
             "jordanbaird-ice" # bar management
             "linearmouse" # per-mouse settings
             "readest" # epub/ebook reader
+            "jdownloader" # download manager
             # "vencord-installer" # discord client mod installer
             # "zathura-wrapper" # apple automator "app" to open pdfs with zathura
 
