@@ -6,7 +6,7 @@
     ...
 }: {
     programs.tmux.extraConfig = ''
-        # split panes u# remap prefix from 'C-b' to 'C-\'
+        # remap prefix from 'C-b' to 'C-\'
         unbind C-b
         set-option -g prefix 'C-\'
         bind 'C-\' send-prefix
@@ -31,17 +31,6 @@
         bind -n M-l select-pane -R
         bind -n M-j select-pane -D
         bind -n M-k select-pane -U
-
-        # switch windows using Ctrl-# without prefix
-        bind -n 'C-1' select-window -t 1
-        bind -n 'C-2' select-window -t 2
-        bind -n 'C-3' select-window -t 3
-        bind -n 'C-4' select-window -t 4
-        bind -n 'C-5' select-window -t 5
-        bind -n 'C-6' select-window -t 6
-        bind -n 'C-7' select-window -t 7
-        bind -n 'C-8' select-window -t 8
-        bind -n 'C-9' select-window -t 9
 
         # switch to previous and next window
         bind n select-window -n
