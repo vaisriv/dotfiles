@@ -41,8 +41,14 @@
                 # Thumbnails
                 "._*"
 
-                # Nix Direnv Dir
-                "**.direnv/"
+                # Nix Artifacts
+                ".direnv"
+                "result"
+                "result-*"
+
+                # LaTeX aux/sync files
+                "**/.texaux"
+                "**/*.synctex.gz"
 
                 # Files that might appear in the root of a volume
                 ".DocumentRevisions-V100"
