@@ -31,6 +31,7 @@
         ./tmux
         # ./uv.nix
         ./yazi
+        ./yt-dlp.nix
         ./zoxide.nix
     ];
 }
