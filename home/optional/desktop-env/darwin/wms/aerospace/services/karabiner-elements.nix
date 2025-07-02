@@ -21,6 +21,28 @@
                             "complex_modifications": {
                                 "rules": [
                                     {
+                                        "description": "set caps_lock to f3 in minecraft",
+                                        "manipulators": [
+                                            {
+                                                "conditions": [
+                                                    {
+                                                        "file_paths": ["lunarclient.*java$", "PrismLauncher.*java$"],
+                                                        "type": "frontmost_application_if"
+                                                    }
+                                                ],
+                                                "from": {
+                                                    "key_code": "caps_lock",
+                                                    "modifiers": {}
+                                                },
+                                                "to": {
+                                                    "key_code": "f3",
+                                                    "modifiers": []
+                                                },
+                                                "type": "basic"
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "description": "Caps Lock to Esc and Ctrl",
                                         "manipulators": [
                                             {
@@ -61,12 +83,12 @@
                                     },
                                     "simple_modifications": [
                                         {
-                                            "from": { "key_code": "left_option" },
-                                            "to": [{ "key_code": "left_command" }]
-                                        },
-                                        {
                                             "from": { "key_code": "left_command" },
                                             "to": [{ "key_code": "left_option" }]
+                                        },
+                                        {
+                                            "from": { "key_code": "left_option" },
+                                            "to": [{ "key_code": "left_command" }]
                                         }
                                     ]
                                 },
