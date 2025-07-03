@@ -60,6 +60,12 @@
         mopidy-darwin = {
             url = "github:amadejkastelic/nixpkgs/mopidy-darwin";
         };
+
+        ## personal neovim configuration (using nvf)
+        nvf-config = {
+            url = "github:vaisriv/nvf";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = inputs @ {
