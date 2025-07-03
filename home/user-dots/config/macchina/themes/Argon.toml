@@ -31,7 +31,7 @@ y = 1
 
 [custom_ascii]
 color = "#DDDDDD"
-path = "~/.config/macchina/ascii/logo"
+path = "~/.config/macchina/ascii/feyn"
 
 [randomize]
 key_color = false
