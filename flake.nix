@@ -1,5 +1,5 @@
 {
-    description = "vai's nixos, nix-darwin, and home-manager flake";
+    description = "vai's nix configuration flake";
 
     inputs = {
         # Nix
@@ -32,18 +32,21 @@
         };
 
         ## Better Nix Implementation - Lix
+        lix = {
+            url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
+            flake = false;
+        };
+
+        ## Lix Module
         lix-module = {
             url = "https://git.lix.systems/lix-project/nixos-module/archive/main.tar.gz";
-            inputs.nixpkgs.follows = "nixpkgs";
+            inputs = {
+                nixpkgs.follows = "nixpkgs";
+                lix.follows = "lix";
+            };
         };
 
         # Unstable Programs (not yet upstreamed in nixpkgs)
-        ## Hyprpanel Bar
-        hyprpanel = {
-            url = "github:Jas-SinghFSU/HyprPanel";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
         ## Stylix Themeing
         stylix = {
             url = "github:danth/stylix";
@@ -71,8 +74,6 @@
     outputs = inputs @ {
         self,
         nixpkgs,
-        nix-darwin,
-        home-manager,
         ...
     }: let
         systems = [
@@ -89,8 +90,8 @@
                 config.allowUnfree = true;
                 overlays = [
                     # inputs.self.overlays.default
+                    inputs.lix-module.overlays.lixFromNixpkgs
                     inputs.nixos-apple-silicon.overlays.default
-                    inputs.hyprpanel.overlay
                 ];
             };
 
@@ -109,7 +110,7 @@
         devShells = forEachSystem (pkgs: import ./nix/shell {inherit pkgs;});
 
         nixosConfigurations = {
-            olorin = nixpkgs.lib.nixosSystem {
+            olorin = inputs.nixpkgs.lib.nixosSystem {
                 pkgs = pkgsFor "aarch64-linux";
 
                 inherit specialArgs;
@@ -117,7 +118,7 @@
                 modules = [
                     ./nixos/hosts/olorin
 
-                    home-manager.nixosModules.home-manager
+                    inputs.home-manager.nixosModules.home-manager
                     {
                         home-manager = {
                             extraSpecialArgs = specialArgs;
@@ -132,7 +133,7 @@
                     inputs.stylix.nixosModules.stylix
                 ];
             };
-            tarindor = nixpkgs.lib.nixosSystem {
+            tarindor = inputs.nixpkgs.lib.nixosSystem {
                 pkgs = pkgsFor "x86_64-linux";
 
                 inherit specialArgs;
@@ -140,7 +141,7 @@
                 modules = [
                     ./nixos/hosts/tarindor
 
-                    home-manager.nixosModules.home-manager
+                    inputs.home-manager.nixosModules.home-manager
                     {
                         home-manager = {
                             extraSpecialArgs = specialArgs;
@@ -157,7 +158,7 @@
         };
 
         darwinConfigurations = {
-            olorin-mbp = nix-darwin.lib.darwinSystem {
+            olorin-mbp = inputs.nix-darwin.lib.darwinSystem {
                 pkgs = pkgsFor "aarch64-darwin";
 
                 inherit specialArgs;
@@ -165,7 +166,7 @@
                 modules = [
                     ./darwin/hosts/olorin-mbp
 
-                    home-manager.darwinModules.home-manager
+                    inputs.home-manager.darwinModules.home-manager
                     {
                         home-manager = {
                             extraSpecialArgs = specialArgs;
