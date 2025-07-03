@@ -18,7 +18,7 @@
         ./jq.nix
         ./latexmk.nix
         ./lazygit.nix
-        ./macchina.nix
+        ./macchina
         ./ncmpcpp.nix
         ./ncspot.nix
         ./nh.nix

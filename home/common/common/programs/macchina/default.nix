@@ -20,7 +20,7 @@
                 recursive = true;
 
                 target = ".config/macchina";
-                source = ../../../user-dots/config/macchina;
+                source = ./macchina;
             };
         };
     };
