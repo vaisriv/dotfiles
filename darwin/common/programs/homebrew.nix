@@ -23,6 +23,7 @@
 
         # `brew install`
         brews = [
+            "mas"
         ];
 
         # `brew install --cask`
