@@ -9,7 +9,7 @@
         mpd = {
             enable = true;
 
-            musicDirectory = "~/files/music/library";
+            musicDirectory = "~/files/media/music";
             network = {
                 listenAddress = "localhost";
                 port = 6600;
