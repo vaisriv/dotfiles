@@ -23,6 +23,75 @@
                                 "complex_modifications": {
                                     "rules": [
                                         {
+                                            "description": "right_command plus hjkl -> arrow keys",
+                                            "manipulators": [
+                                                {
+                                                    "from": {
+                                                        "key_code": "h",
+                                                        "modifiers": {
+                                                            "mandatory": ["right_command"],
+                                                            "optional": ["any"]
+                                                        }
+                                                    },
+                                                    "to": [
+                                                        {
+                                                            "key_code": "left_arrow",
+                                                            "modifiers": []
+                                                        }
+                                                    ],
+                                                    "type": "basic"
+                                                },
+                                                {
+                                                    "from": {
+                                                        "key_code": "j",
+                                                        "modifiers": {
+                                                            "mandatory": ["right_command"],
+                                                            "optional": ["any"]
+                                                        }
+                                                    },
+                                                    "to": [
+                                                        {
+                                                            "key_code": "down_arrow",
+                                                            "modifiers": []
+                                                        }
+                                                    ],
+                                                    "type": "basic"
+                                                },
+                                                {
+                                                    "from": {
+                                                        "key_code": "k",
+                                                        "modifiers": {
+                                                            "mandatory": ["right_command"],
+                                                            "optional": ["any"]
+                                                        }
+                                                    },
+                                                    "to": [
+                                                        {
+                                                            "key_code": "up_arrow",
+                                                            "modifiers": []
+                                                        }
+                                                    ],
+                                                    "type": "basic"
+                                                },
+                                                {
+                                                    "from": {
+                                                        "key_code": "l",
+                                                        "modifiers": {
+                                                            "mandatory": ["right_command"],
+                                                            "optional": ["any"]
+                                                        }
+                                                    },
+                                                    "to": [
+                                                        {
+                                                            "key_code": "right_arrow",
+                                                            "modifiers": []
+                                                        }
+                                                    ],
+                                                    "type": "basic"
+                                                }
+                                            ]
+                                        },
+                                        {
                                             "description": "set caps_lock to f3 in minecraft",
                                             "manipulators": [
                                                 {
