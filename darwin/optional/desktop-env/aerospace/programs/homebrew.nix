@@ -15,13 +15,13 @@
             # TODO: package and upstream to nixpkgs
             "jordanbaird-ice" # bar management
             "linearmouse" # per-mouse settings
-            "readest" # epub/ebook reader
             "jdownloader" # download manager
             # "vencord-installer" # discord client mod installer
             # "zathura-wrapper" # apple automator "app" to open pdfs with zathura
 
             # WARN: currently broken on nix :)
             "itsycal" # calendar/date bar widget
+            "calibre" # ebook manager
             "filebot" # movie/tv show renamer
             "qview" # image viewer
 
