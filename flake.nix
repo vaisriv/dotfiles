@@ -99,7 +99,7 @@
         overlays = import ./nix/overlays/nixpkgs;
         nixosModules = import ./nix/modules/nixos;
         darwinModules = import ./nix/modules/darwin;
-        homeManagerModules = import ./nix/modules/home-manager;
+        homeModules = import ./nix/modules/home-manager;
 
         formatter = forEachSystem (pkgs: pkgs.treefmt);
         devShells = forEachSystem (pkgs: import ./nix/shell {inherit pkgs;});
@@ -119,13 +119,14 @@
                             extraSpecialArgs = specialArgs;
                             backupFileExtension = "bak";
                             users.${username} = import ./home/hosts/olorin;
-                            sharedModules = [];
+                            sharedModules = [
+                                inputs.stylix.homeModules.stylix
+                            ];
                         };
                     }
 
                     inputs.lix-module.nixosModules.default
                     inputs.nixos-apple-silicon.nixosModules.default
-                    inputs.stylix.nixosModules.stylix
                 ];
             };
             tarindor = inputs.nixpkgs.lib.nixosSystem {
@@ -142,12 +143,13 @@
                             extraSpecialArgs = specialArgs;
                             backupFileExtension = "bak";
                             users.${username} = import ./home/hosts/tarindor;
-                            sharedModules = [];
+                            sharedModules = [
+                                inputs.stylix.homeModules.stylix
+                            ];
                         };
                     }
 
                     inputs.lix-module.nixosModules.default
-                    inputs.stylix.nixosModules.stylix
                 ];
             };
         };
@@ -167,12 +169,13 @@
                             extraSpecialArgs = specialArgs;
                             backupFileExtension = "bak";
                             users.${username} = import ./home/hosts/olorin-mbp;
-                            sharedModules = [];
+                            sharedModules = [
+                                inputs.stylix.homeModules.stylix
+                            ];
                         };
                     }
 
                     inputs.lix-module.nixosModules.default
-                    inputs.stylix.darwinModules.stylix
                 ];
             };
         };
