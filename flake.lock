@@ -437,22 +437,6 @@
         "type": "github"
       }
     },
-    "mopidy-darwin": {
-      "locked": {
-        "lastModified": 1748956563,
-        "narHash": "sha256-SWiDKu5cMLJ9A8szqIror+j0Z4ZGR/phLTSkFLHoOS4=",
-        "owner": "amadejkastelic",
-        "repo": "nixpkgs",
-        "rev": "2f08dad0d10c6a41a6a9a70215cbe5da29262e17",
-        "type": "github"
-      },
-      "original": {
-        "owner": "amadejkastelic",
-        "ref": "mopidy-darwin",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nh": {
       "inputs": {
         "nixpkgs": [
@@ -695,7 +679,6 @@
         "home-manager": "home-manager",
         "lix": "lix",
         "lix-module": "lix-module",
-        "mopidy-darwin": "mopidy-darwin",
         "nh": "nh",
         "nix-darwin": "nix-darwin",
         "nixos-apple-silicon": "nixos-apple-silicon",

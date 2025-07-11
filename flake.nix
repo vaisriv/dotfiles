@@ -59,11 +59,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        ## mopidy patched on nix-darwin
-        mopidy-darwin = {
-            url = "github:amadejkastelic/nixpkgs/mopidy-darwin";
-        };
-
         ## personal neovim configuration (using nvf)
         nvf-config = {
             url = "github:vaisriv/nvf";
