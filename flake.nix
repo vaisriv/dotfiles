@@ -4,8 +4,7 @@
     inputs = {
         # Nix
         ## Nix Packages
-        nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-        nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+        nixpkgs.url = "github:nixos/nixpkgs";
 
         ## Apple Silicon support
         nixos-apple-silicon = {
@@ -16,7 +15,7 @@
         ## Nix for MacOS
         nix-darwin = {
             url = "github:lnl7/nix-darwin";
-            inputs.nixpkgs.follows = "nixpkgs-unstable";
+            inputs.nixpkgs.follows = "nixpkgs";
         };
 
         ## Home Manager
