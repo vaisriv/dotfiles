@@ -33,13 +33,13 @@
 
         ## Better Nix Implementation - Lix
         lix = {
-            url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
+            url = "https://git.lix.systems/lix-project/lix/archive/2.91.1.tar.gz";
             flake = false;
         };
 
         ## Lix Module
         lix-module = {
-            url = "https://git.lix.systems/lix-project/nixos-module/archive/main.tar.gz";
+            url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1.tar.gz";
             inputs = {
                 nixpkgs.follows = "nixpkgs";
                 lix.follows = "lix";
