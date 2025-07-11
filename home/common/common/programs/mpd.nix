@@ -31,4 +31,9 @@
             '';
         };
     };
+    home = {
+        packages = with pkgs; [
+            mpc
+        ];
+    };
 }
