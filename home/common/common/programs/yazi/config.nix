@@ -8,7 +8,7 @@
     programs.yazi = {
         enableFishIntegration = false;
         settings = {
-            manager = {
+            mgr = {
                 sort_by = "natural";
                 sort_dir_first = true;
                 show_hidden = false;

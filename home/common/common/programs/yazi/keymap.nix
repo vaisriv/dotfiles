@@ -6,7 +6,7 @@
     ...
 }: {
     programs.yazi.keymap = {
-        manager.prepend_keymap = [
+        mgr.prepend_keymap = [
             {
                 on = "j";
                 run = "arrow next";
