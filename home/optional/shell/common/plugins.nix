@@ -36,12 +36,12 @@
             __zathura_complete_files = {
                 body = "__fish_complete_path";
             };
-            starship_transient_prompt_func = {
-                body = "starship module character";
-            };
-            starship_transient_rprompt_func = {
-                body = "starship module cmd_duration -d $CMD_DURATION && starship module time && echo \" \"";
-            };
+            # starship_transient_prompt_func = {
+            #     body = "starship module character";
+            # };
+            # starship_transient_rprompt_func = {
+            #     body = "starship module status -s $status && starship module cmd_duration -d $CMD_DURATION && starship module time && echo \" \"";
+            # };
         };
         shellAliases = {
             cat = "bat";
