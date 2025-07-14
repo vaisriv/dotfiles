@@ -9,7 +9,7 @@
         enable = true;
         enableInteractive = true;
         enableFishIntegration = true;
-        enableTransience = true;
+        enableTransience = false;
         settings = {
             format = lib.concatStrings [
                 "$all"
@@ -19,6 +19,7 @@
                 "$character"
             ];
             right_format = lib.concatStrings [
+                "$status"
                 "$cmd_duration"
                 "$time"
                 " "
@@ -45,6 +46,14 @@
             cmd_duration = {
                 format = "\\[[⏱ $duration]($style)\\]";
                 min_time = 0;
+            };
+            status = {
+                format = "\\[[$symbol $status]($style)\\]";
+                symbol = "✘";
+                failure_style = "bold red";
+                success_symbol = "✔";
+                success_style = "bold green";
+                disabled = false;
             };
         };
     };
