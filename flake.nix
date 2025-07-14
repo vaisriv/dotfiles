@@ -52,12 +52,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        ## Tmux Plugin
-        tmux-sessionx = {
-            url = "github:omerxx/tmux-sessionx";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
         ## personal neovim configuration (using nvf)
         nvf-config = {
             url = "github:vaisriv/nvf";
