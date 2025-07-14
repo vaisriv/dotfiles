@@ -33,11 +33,6 @@
                 desc = "[P]review size [T]oggle";
             }
             {
-                on = ["u"];
-                run = "plugin restore";
-                desc = "[U]ndo deletion of last file(s)/folder(s)";
-            }
-            {
                 on = ["f"];
                 run = "plugin jump-to-char";
                 desc = "Jump [f]orward to file with [<>] name";

@@ -26,7 +26,7 @@
         presenterm
         testdisk
         tokei
-        trash-cli
+        # darwin.trash
         viu
         wiki-tui
     ];
