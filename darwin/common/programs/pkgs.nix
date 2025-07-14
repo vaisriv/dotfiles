@@ -14,6 +14,8 @@
         ffmpeg
         fx
         glow
+        gtrash
+        gum
         hexyl
         hyperfine
         lazysql
@@ -26,7 +28,6 @@
         presenterm
         testdisk
         tokei
-        # darwin.trash
         viu
         wiki-tui
     ];
