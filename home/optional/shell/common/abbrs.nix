@@ -8,7 +8,7 @@
     programs.fish = {
         shellAliases = {
             # new versions of old tools
-            tm = "trash";
+            tm = "gtrash put";
             rm = "echo -e 'If you really want to use rm, then use \"command rm\" instead.'; false";
             rmdir = "echo -e 'If you really want to use rmdir, then use \"command rmdir\" instead.'; false";
 
