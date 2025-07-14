@@ -31,7 +31,7 @@
             '';
         }
         {
-            plugin = inputs.tmux-sessionx.packages.${pkgs.system}.default;
+            plugin = tmuxPlugins.tmux-sessionx;
             extraConfig = ''
                 # swap default session manager for sessionx
                 unbind 's'
