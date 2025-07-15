@@ -547,7 +547,8 @@
         "nixos-apple-silicon": "nixos-apple-silicon",
         "nixpkgs": "nixpkgs",
         "nvf-config": "nvf-config",
-        "stylix": "stylix"
+        "stylix": "stylix",
+        "vai-nixpkgs": "vai-nixpkgs"
       }
     },
     "stylix": {
@@ -758,6 +759,21 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "vai-nixpkgs": {
+      "locked": {
+        "lastModified": 1752543731,
+        "narHash": "sha256-D6Y0nlL0748H6LLtbw0XR5g9exY9Aop9Z1EhwhBoigc=",
+        "owner": "vaisriv",
+        "repo": "nixpkgs",
+        "rev": "43f212f907aae045696d9b290949d2edc30c8f0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vaisriv",
+        "repo": "nixpkgs",
         "type": "github"
       }
     }

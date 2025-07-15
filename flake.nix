@@ -52,6 +52,11 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
+        ## Custom Packages
+        vai-nixpkgs = {
+            url = "github:vaisriv/nixpkgs";
+        };
+
         ## personal neovim configuration (using nvf)
         nvf-config = {
             url = "github:vaisriv/nvf";
