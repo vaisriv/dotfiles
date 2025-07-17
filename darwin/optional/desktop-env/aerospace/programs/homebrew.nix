@@ -10,9 +10,8 @@
         ];
 
         casks = [
-            "batfi" # battery management widget
-
             # TODO: package and upstream to nixpkgs
+            "batfi" # battery management widget
             "jordanbaird-ice" # bar management
             "linearmouse" # per-mouse settings
             "jdownloader" # download manager

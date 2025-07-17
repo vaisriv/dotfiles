@@ -6,6 +6,7 @@
     ...
 }: {
     environment.systemPackages = with pkgs; [
+        discord # chat app
         iina # media/video player
         spotify # music
         vscodium # backup text/code editor

@@ -10,9 +10,6 @@
         ];
 
         casks = [
-            # "firefox" # browser
-            "discord" # chat app
-
             # TODO: package and upstream to nixpkgs
             "altserver" # sideloading for ios
             "obs" # screen recording software

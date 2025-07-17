@@ -38,14 +38,14 @@
 
         # apps to show in dock
         persistent-apps = [
-            {app = "/Users/vai/Applications/Home Manager Apps/LibreWolf.app/";}
-            {app = "/Applications/Nix Apps/Spotify.app/";}
-            {app = "/Applications/Discord.app/";}
+            {app = "${pkgs.librewolf}/Applications/LibreWolf.app/";}
+            {app = "${pkgs.spotify}/Applications/Spotify.app";}
+            {app = "${pkgs.discord}/Applications/Discord.app/";}
             {app = "/Applications/Zen.app/";}
-            {app = "/Users/vai/Applications/Home Manager Apps/WezTerm.app/";}
+            {app = "${pkgs.wezterm}/Applications/Wezterm.app";}
             {app = "/Applications/MATLAB_R2024b.app/";}
-            {app = "/Applications/Nix Apps/VSCodium.app/";}
-            {app = "/Applications/Nix Apps/LibreOffice.app/";}
+            {app = "${pkgs.vscodium}/Applications/VSCodium.app";}
+            {app = "${pkgs.libreoffice-bin}/Applications/LibreOffice.app/";}
         ];
     };
 }
