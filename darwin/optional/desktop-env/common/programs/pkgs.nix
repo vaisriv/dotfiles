@@ -12,5 +12,6 @@
 
         appcleaner # used to remove/clean manually-installed apps
         qbittorrent # bitorrent
+        musescore # music transcription tool
     ];
 }
