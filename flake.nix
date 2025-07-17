@@ -94,10 +94,10 @@
 
         specialArgs = {inherit self inputs username fullname email;};
     in {
-        overlays = import ./nix/overlays/nixpkgs;
-        nixosModules = import ./nix/modules/nixos;
-        darwinModules = import ./nix/modules/darwin;
-        homeModules = import ./nix/modules/home-manager;
+        overlays = import ./nix/overlays;
+        nixosModules = import ./nix/nixosModules;
+        darwinModules = import ./nix/darwinModules;
+        homeModules = import ./nix/homeModules;
 
         formatter = forEachSystem (pkgs: pkgs.treefmt);
         devShells = forEachSystem (pkgs: import ./nix/shell {inherit pkgs;});
