@@ -25,9 +25,7 @@
 
             # NOTE: installed manually:
             # umd vpn - palo-alto globalprotect-openconnect # umd's custom build of palo-alt vpn
-            # cisco packet tracer # closed-source
             # matlab # closed-source
-            # wolfram # homebrew/nix installers do not handle licensing properly
         ];
     };
 }
