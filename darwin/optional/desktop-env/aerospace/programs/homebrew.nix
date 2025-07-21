@@ -14,18 +14,17 @@
             "batfi" # battery management widget
             "jordanbaird-ice" # bar management
             "linearmouse" # per-mouse settings
-            "jdownloader" # download manager
+            "motrix" # download manager
+            "jdownloader" # download manager (alt)
             # "vencord-installer" # discord client mod installer
-            # "zathura-wrapper" # apple automator "app" to open pdfs with zathura
 
             # WARN: currently broken on nix :)
             "itsycal" # calendar/date bar widget
-            "calibre" # ebook manager
-            "filebot" # movie/tv show renamer
             "qview" # image viewer
 
             # NOTE: installed manually
             # "daisydisk"
+            # "zathura-wrapper" # apple automator "app" to open pdfs with zathura
         ];
 
         masApps = {
