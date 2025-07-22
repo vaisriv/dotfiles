@@ -9,7 +9,7 @@
         # recommended
         iina # media/video player
         spotify # music
-        vesktop # chat app (discord with vencord client mod)
+        # vesktop # chat app (discord with vencord client mod)
         vscodium # backup text/code editor
 
         # optional

@@ -40,7 +40,7 @@
         persistent-apps = [
             {app = "${pkgs.librewolf}/Applications/LibreWolf.app/";} # home-manager
             {app = "${pkgs.spotify}/Applications/Spotify.app";} # nixpkgs
-            {app = "${pkgs.discord}/Applications/Discord.app/";} # nixpkgs
+            # {app = "${pkgs.vesktop}/Applications/Vesktop.app/";} # nixpkgs
             {app = "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app/";} # nur
             {app = "${pkgs.wezterm}/Applications/Wezterm.app";} # home-manager
             {app = "/Applications/MATLAB_R2024b.app/";} # manual
