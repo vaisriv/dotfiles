@@ -57,9 +57,9 @@
             url = "github:vaisriv/nixpkgs";
         };
 
-        ## personal neovim configuration (using nvf)
+        ## neovim config (using nvf)
         nvf-config = {
-            url = "github:vaisriv/nvf";
+            url = "github:vaisriv/nvf-config";
             inputs.nixpkgs.follows = "nixpkgs";
         };
     };
