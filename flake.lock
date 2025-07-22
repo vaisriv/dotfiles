@@ -527,13 +527,13 @@
         "lastModified": 1752278448,
         "narHash": "sha256-Ufgcdtgq72BS5MZ/aQQxauoTKDYTS9q/UCDVGehtoLg=",
         "owner": "vaisriv",
-        "repo": "nvf",
+        "repo": "nvf-config",
         "rev": "6a7969f15a302cf670e3f2d2da5ed13aca8ac4a2",
         "type": "github"
       },
       "original": {
         "owner": "vaisriv",
-        "repo": "nvf",
+        "repo": "nvf-config",
         "type": "github"
       }
     },
