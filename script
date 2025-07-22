@@ -22,26 +22,20 @@ end
 switch $argv[1]
 	case edit
 		switch $argv[2]
-			case nix nixos
+			case nixos
 				$EDITOR $config_location/nixos/.
 
-			case darwin macos
+			case darwin
 				$EDITOR $config_location/darwin/.
 
-			case home home-manager
+			case home
 				$EDITOR $config_location/home/.
 
 			case flake
 				$EDITOR $config_location/flake.nix
 
-			case self setup script
+			case script
 				$EDITOR $config_location/script
-
-			case wip-nixos
-				$EDITOR $config_location/nixos/common/programs/work-in-progress.nix
-
-			case wip-darwin
-				$EDITOR $config_location/darwin/common/programs/work-in-progress.nix
 
 			case ''
 				$EDITOR $config_location/.
@@ -51,11 +45,12 @@ switch $argv[1]
 		end
 
 	case switch
+		# WARN: these cases be wrong, as i am only sure of macos' uname output
 		switch (uname)
 			case nix nixos
 				nh os switch $config_location -H $machine
 
-			case Darwin macos
+			case Darwin
 				nh darwin switch $config_location -H $machine
 
 			case linux
