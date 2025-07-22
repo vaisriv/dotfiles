@@ -13,7 +13,6 @@
         casks = [
             "adobe-creative-cloud"
             "autodesk-fusion"
-            "zen"
 
             # TODO: package and upstream to nixpkgs
             "citrix-workspace"
