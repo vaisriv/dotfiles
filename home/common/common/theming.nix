@@ -28,7 +28,7 @@ in {
 
         fonts = {
             monospace = {
-                name = "${font.name}Term Nerd Font";
+                name = "${font.name}Term Nerd Font Propo";
                 package = "${font.nerd-package}";
             };
             sansSerif = {
