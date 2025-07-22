@@ -8,6 +8,7 @@
     environment.systemPackages = with pkgs; [
         libreoffice-bin
         zotero
+        nur.repos.natsukium.zen-browser
 
         # java
         jdk8

@@ -6,6 +6,12 @@
         ## Nix Packages
         nixpkgs.url = "github:nixos/nixpkgs";
 
+        ## Nix User Repository
+        nur = {
+            url = "github:nix-community/nur";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+
         ## Apple Silicon support
         nixos-apple-silicon = {
             url = "github:tpwrules/nixos-apple-silicon";
@@ -84,6 +90,7 @@
                 overlays = [
                     # inputs.self.overlays.default
                     inputs.lix-module.overlays.default
+                    inputs.nur.overlays.default
                     inputs.nixos-apple-silicon.overlays.default
                 ];
             };
