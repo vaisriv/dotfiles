@@ -38,14 +38,14 @@
 
         # apps to show in dock
         persistent-apps = [
-            {app = "${pkgs.librewolf}/Applications/LibreWolf.app/";}
-            {app = "${pkgs.spotify}/Applications/Spotify.app";}
-            {app = "${pkgs.vesktop}/Applications/Vesktop.app/";}
-            {app = "/Applications/Zen.app/";}
-            {app = "${pkgs.wezterm}/Applications/Wezterm.app";}
-            {app = "/Applications/MATLAB_R2024b.app/";}
-            {app = "${pkgs.vscodium}/Applications/VSCodium.app";}
-            {app = "${pkgs.libreoffice-bin}/Applications/LibreOffice.app/";}
+            {app = "${pkgs.librewolf}/Applications/LibreWolf.app/";} # home-manager
+            {app = "${pkgs.spotify}/Applications/Spotify.app";} # nixpkgs
+            {app = "${pkgs.discord}/Applications/Discord.app/";} # nixpkgs
+            {app = "/Applications/Zen.app/";} # homebrew
+            {app = "${pkgs.wezterm}/Applications/Wezterm.app";} # home-manager
+            {app = "/Applications/MATLAB_R2024b.app/";} # manual
+            {app = "${pkgs.vscodium}/Applications/VSCodium.app";} # nixpkgs
+            {app = "${pkgs.libreoffice-bin}/Applications/LibreOffice.app/";} # nixpkgs
         ];
     };
 }
