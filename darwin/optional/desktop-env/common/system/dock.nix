@@ -40,7 +40,7 @@
         persistent-apps = [
             {app = "${pkgs.librewolf}/Applications/LibreWolf.app/";}
             {app = "${pkgs.spotify}/Applications/Spotify.app";}
-            {app = "${pkgs.discord}/Applications/Discord.app/";}
+            {app = "${pkgs.vesktop}/Applications/Vesktop.app/";}
             {app = "/Applications/Zen.app/";}
             {app = "${pkgs.wezterm}/Applications/Wezterm.app";}
             {app = "/Applications/MATLAB_R2024b.app/";}

@@ -16,7 +16,6 @@
             "linearmouse" # per-mouse settings
             "motrix" # download manager
             "jdownloader" # download manager (alt)
-            # "vencord-installer" # discord client mod installer
 
             # WARN: currently broken on nix :)
             "itsycal" # calendar/date bar widget
