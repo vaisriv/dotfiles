@@ -528,11 +528,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1753227605,
-        "narHash": "sha256-9n05ZIaT67sAda+gz4cn1Ang65hBIm2gzpuctY2tx/I=",
+        "lastModified": 1753296760,
+        "narHash": "sha256-bV3KiZoUIjPppKa8iGUA1G0/uJvOb5rCYm1GvTJMrgM=",
         "owner": "vaisriv",
         "repo": "nvf-config",
-        "rev": "a2499d64dc823110ff57d9247e8953b2d535e4f9",
+        "rev": "5be40ac6edf2eb3ef20ed05c8af9d0b0a11ba981",
         "type": "github"
       },
       "original": {
