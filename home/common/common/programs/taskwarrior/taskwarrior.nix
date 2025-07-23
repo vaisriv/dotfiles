@@ -28,7 +28,7 @@
                 report.next.filter = "status:pending -WAITING limit:page project.not:personal.someday";
                 report.ready.filter = "+READY project.not:personal.someday";
                 report.ls.columns = "id,start.active,depends.indicator,project,tags,recur.indicator,wait.remaining,scheduled.countdown,due.countdown,until.countdown,description";
-                report.ls.filter  = "status:pending -WAITING project.not:personal.someday";
+                report.ls.filter = "status:pending -WAITING project.not:personal.someday";
             };
             colorTheme = "dark-256";
         };
