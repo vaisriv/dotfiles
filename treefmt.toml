@@ -1,9 +1,0 @@
-# global
-excludes = ["assets/*", "**/user-dots/*"]
-
-# lang-specific
-[formatter.nix]
-command = "alejandra"
-options = ["--experimental-config", "./nix/fmt/alejandra.toml"]
-includes = [ "*.nix" ]
-excludes = []
