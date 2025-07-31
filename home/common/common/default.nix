@@ -1,8 +1,4 @@
 {
-    config,
-    pkgs,
-    inputs,
-    lib,
     ...
 }: {
     programs.home-manager.enable = true;

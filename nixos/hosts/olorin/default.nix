@@ -1,12 +1,6 @@
 {
-    inputs,
-    lib,
-    config,
-    pkgs,
     ...
-}: let
-    hostname = "olorin";
-in {
+}: {
     imports = [
         # WARN: Do not remove
         ./hardware-configuration.nix

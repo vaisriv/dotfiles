@@ -1,8 +1,5 @@
 {
-    config,
     pkgs,
-    inputs,
-    lib,
     ...
 }: {
     # TODO: make sure these are the right paths lol

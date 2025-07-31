@@ -1,8 +1,6 @@
 {
-    config,
     username,
     hostname,
-    pkgs,
     ...
 }: {
     networking = {

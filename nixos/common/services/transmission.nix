@@ -1,9 +1,5 @@
 {
-    config,
     username,
-    pkgs,
-    inputs,
-    lib,
     ...
 }: {
     services.transmission = {

@@ -138,7 +138,10 @@
                             {
                                 "conditions": [
                                     {
-                                        "file_paths": ["lunarclient.*java$", "PrismLauncher.*java$"],
+                                        "file_paths": [
+                                            "lunarclient.*java$",
+                                            "PrismLauncher.*java$"
+                                        ],
                                         "type": "frontmost_application_if"
                                     }
                                 ],

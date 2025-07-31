@@ -1,8 +1,5 @@
 {
-    config,
     pkgs,
-    inputs,
-    lib,
     ...
 }: let
     yazi-flavors = pkgs.fetchFromGitHub {

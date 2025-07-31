@@ -1,8 +1,4 @@
 {
-    config,
-    pkgs,
-    inputs,
-    lib,
     ...
 }: {
     # Remap CAPS lock to ESC

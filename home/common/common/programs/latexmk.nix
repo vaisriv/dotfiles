@@ -1,8 +1,4 @@
 {
-    config,
-    pkgs,
-    inputs,
-    lib,
     ...
 }: {
     # TODO: actually implement latexmk and its rc in home-manager
