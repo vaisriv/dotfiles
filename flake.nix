@@ -51,6 +51,23 @@
             };
         };
 
+        # flake tools (thanks numtide)
+        ## flake blueprint
+        blueprint = {
+            url = "github:numtide/blueprint";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+        ## nix-shell configuration
+        devshell = {
+            url = "github:numtide/devshell";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+        ## declarative formatter
+        treefmt-nix = {
+            url = "github:numtide/treefmt-nix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+
         # Unstable Programs (not yet upstreamed in nixpkgs)
         ## Stylix Themeing
         stylix = {
@@ -109,8 +126,8 @@
         darwinModules = import ./nix/darwinModules;
         homeModules = import ./nix/homeModules;
 
-        formatter = forEachSystem (pkgs: pkgs.treefmt);
-        devShells = forEachSystem (pkgs: import ./nix/shell {inherit pkgs;});
+        formatter = forEachSystem (pkgs: import ./nix/formatter.nix {inherit pkgs;});
+        # devShells = forEachSystem (pkgs: import ./nix/devshell.nix {inherit pkgs;});
 
         nixosConfigurations = {
             olorin = inputs.nixpkgs.lib.nixosSystem {

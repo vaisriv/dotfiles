@@ -70,10 +70,31 @@
     "blueprint": {
       "inputs": {
         "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1753215027,
+        "narHash": "sha256-JvMF7CODUM3C475oApJ8oQ0ym3tvBWkL7C5M2SDAW2g=",
+        "owner": "numtide",
+        "repo": "blueprint",
+        "rev": "9f47c131a6bcc8796df7c76450e7883247339dc6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "blueprint",
+        "type": "github"
+      }
+    },
+    "blueprint_2": {
+      "inputs": {
+        "nixpkgs": [
           "nvf-config",
           "nixpkgs"
         ],
-        "systems": "systems_2"
+        "systems": "systems_3"
       },
       "locked": {
         "lastModified": 1744632722,
@@ -90,6 +111,26 @@
       }
     },
     "devshell": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1741473158,
+        "narHash": "sha256-kWNaq6wQUbUMlPgw8Y+9/9wP0F8SHkjy24/mN3UAppg=",
+        "owner": "numtide",
+        "repo": "devshell",
+        "rev": "7c9e793ebe66bcba8292989a68c0419b737a22a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "devshell",
+        "type": "github"
+      }
+    },
+    "devshell_2": {
       "inputs": {
         "nixpkgs": [
           "nvf-config",
@@ -203,7 +244,7 @@
     },
     "flake-utils": {
       "inputs": {
-        "systems": "systems"
+        "systems": "systems_2"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -221,7 +262,7 @@
     },
     "flake-utils_2": {
       "inputs": {
-        "systems": "systems_3"
+        "systems": "systems_4"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -501,7 +542,7 @@
           "nvf-config",
           "nixpkgs"
         ],
-        "systems": "systems_4"
+        "systems": "systems_5"
       },
       "locked": {
         "lastModified": 1751186226,
@@ -519,8 +560,8 @@
     },
     "nvf-config": {
       "inputs": {
-        "blueprint": "blueprint",
-        "devshell": "devshell",
+        "blueprint": "blueprint_2",
+        "devshell": "devshell_2",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -543,6 +584,8 @@
     },
     "root": {
       "inputs": {
+        "blueprint": "blueprint",
+        "devshell": "devshell",
         "home-manager": "home-manager",
         "lix": "lix",
         "lix-module": "lix-module",
@@ -553,6 +596,7 @@
         "nur": "nur",
         "nvf-config": "nvf-config",
         "stylix": "stylix",
+        "treefmt-nix": "treefmt-nix_2",
         "vai-nixpkgs": "vai-nixpkgs"
       }
     },
@@ -571,7 +615,7 @@
         "nur": [
           "nur"
         ],
-        "systems": "systems_5",
+        "systems": "systems_6",
         "tinted-foot": "tinted-foot",
         "tinted-kitty": "tinted-kitty",
         "tinted-schemes": "tinted-schemes",
@@ -653,6 +697,21 @@
       }
     },
     "systems_5": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_6": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
@@ -761,6 +820,26 @@
         "owner": "numtide",
         "repo": "treefmt-nix",
         "rev": "ac8e6f32e11e9c7f153823abc3ab007f2a65d3e1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "treefmt-nix_2": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1753772294,
+        "narHash": "sha256-8rkd13WfClfZUBIYpX5dvG3O9V9w3K9FPQ9rY14VtBE=",
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "rev": "6b9214fffbcf3f1e608efa15044431651635ca83",
         "type": "github"
       },
       "original": {
