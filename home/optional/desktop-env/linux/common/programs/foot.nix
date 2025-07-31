@@ -1,9 +1,4 @@
 {
-    config,
-    pkgs,
-    inputs,
-    lib,
-    font,
     ...
 }: {
     programs.foot = {

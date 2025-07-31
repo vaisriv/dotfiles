@@ -1,10 +1,5 @@
 {
-    config,
     pkgs,
-    inputs,
-    lib,
-    username,
-    fullname,
     ...
 }: {
     programs.fish.enable = true;

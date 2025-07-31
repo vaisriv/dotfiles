@@ -1,9 +1,6 @@
 {
     config,
     username,
-    pkgs,
-    inputs,
-    lib,
     ...
 }: {
     # IPFS

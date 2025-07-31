@@ -1,8 +1,5 @@
 {
-    config,
     pkgs,
-    inputs,
-    lib,
     ...
 }: {
     # TODO: actually setup librewolf

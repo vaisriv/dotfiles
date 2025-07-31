@@ -1,12 +1,9 @@
 {
     config,
     pkgs,
-    inputs,
-    lib,
     ...
 }: let
     flavor = "mocha";
-    accent = "lavender";
     font = {
         name = "Iosevka";
         nerd-package = pkgs.nerd-fonts.iosevka-term;
@@ -16,7 +13,6 @@
         };
     };
     wallpaper = ../../../assets/wallpaper.png;
-    profilepic = ../../../assets/profilepic.png;
 in {
     stylix = {
         enable = true;

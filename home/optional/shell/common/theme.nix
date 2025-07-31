@@ -1,8 +1,5 @@
 {
-    config,
     pkgs,
-    inputs,
-    lib,
     ...
 }: let
     catppuccin-fish-src = pkgs.fetchFromGitHub {
