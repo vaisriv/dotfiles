@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     programs.fish = {
         shellAliases = {
             # new versions of old tools
@@ -14,9 +12,6 @@
 
             # history management
             hr = "history --merge"; # read and merge history from disk
-
-            # allow dotfiles shell script to cd user
-            olorin = "source $DOTFILES_DIR/script";
         };
         shellAbbrs = {
             # helpful shorthands
@@ -26,7 +21,7 @@
             # recreation of `!!`
             "!!" = {
                 position = "anywhere";
-                expansion = "echo $history[1]";
+                function = "last_history_item";
             };
         };
     };

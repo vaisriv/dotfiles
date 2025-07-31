@@ -1,89 +1,29 @@
-{
-    ...
-}: {
+{...}: {
     programs.fish = {
         functions = {
             cf = {
-                body =
-                    # fish
-                    ''
-                        set root_dir $argv[1]
-                        if test -z "$root_dir"
-                        	set root_dir "."
-                        end
-                        set file (fzf --walker-root=$root_dir)
-                        if test -n "$file"
-                        	cat "$file"
-                        end
-                    '';
+                body = builtins.readFile ./functions/cf.fish;
                 description = "cat+fzf helper";
             };
             nf = {
-                body =
-                    # fish
-                    ''
-                        set root_dir $argv[1]
-                        if test -z "$root_dir"
-                        	set root_dir "."
-                        end
-                        set file (fzf --walker-root=$root_dir)
-                        if test -n "$file"
-                        	nvim "$file"
-                        end
-                    '';
+                body = builtins.readFile ./functions/nf.fish;
                 description = "nvim+fzf helper";
             };
             ng = {
-                body =
-                    # fish
-                    ''
-                        set file (git diff HEAD --name-only | fzf)
-                        if test -n "$file"
-                        	nvim "$file"
-                        end
-                    '';
+                body = builtins.readFile ./functions/ng.fish;
                 description = "nvim+git helper";
             };
+            last_history_item = {
+                body = builtins.readFile ./functions/last_history_item.fish;
+                description = "get the previous history item";
+            };
             save_history = {
-                body = "history --save";
-                description = "history across fishes";
+                body = builtins.readFile ./functions/save_history.fish;
+                description = "history across instances of fish";
                 onEvent = "fish_preexec";
             };
-            tree = {
-                body =
-                    # fish
-                    ''
-                        set dir_count (math (eza --tree -D $argv | wc -l))
-                        set file_count (math (eza --tree -F $argv | wc -l) - $dir_count)
-                        eza --tree --icons --git $argv
-                        echo \n$dir_count "directories," $file_count "files"
-                    '';
-                description = "recreate tree command but with eza";
-            };
-            weather = {
-                body =
-                    # fish
-                    ''
-                        if test (count $argv) -eq 0
-                        	curl "wttr.in/College+Park"
-                        else
-                        	set location (string join '+' $argv)
-                        	curl "wttr.in/$location"
-                        end
-                    '';
-                description = "weather in terminal!";
-            };
             yy = {
-                body =
-                    # fish
-                    ''
-                        set -l tmp (mktemp -t "yazi-cwd.XXXXX")
-                        command yazi $argv --cwd-file="$tmp"
-                        if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-                        	builtin cd -- "$cwd"
-                        end
-                        command rm -f -- "$tmp"
-                    '';
+                body = builtins.readFile ./functions/yy.fish;
                 description = "yazi shell wrapper (change cwd using yazi)";
             };
         };
