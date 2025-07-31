@@ -126,8 +126,16 @@
         darwinModules = import ./nix/darwinModules;
         homeModules = import ./nix/homeModules;
 
-        formatter = forEachSystem (pkgs: import ./nix/formatter.nix {inherit pkgs;});
-        # devShells = forEachSystem (pkgs: import ./nix/devshell.nix {inherit pkgs;});
+        formatter = forEachSystem (pkgs:
+            import ./nix/formatter.nix {
+                inherit pkgs;
+                inherit inputs;
+            });
+        # devShells.default = forEachSystem (pkgs:
+        #     import ./nix/devshell.nix {
+        #         inherit pkgs;
+        #         inherit inputs;
+        #     });
 
         nixosConfigurations = {
             olorin = inputs.nixpkgs.lib.nixosSystem {
