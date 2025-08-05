@@ -7,6 +7,7 @@
 
         # Darwin specific
         ./env.nix
+        ./scripts.nix
         ./uni.nix
     ];
 }
