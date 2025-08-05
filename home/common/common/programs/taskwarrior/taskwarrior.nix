@@ -6,27 +6,39 @@
     programs = {
         taskwarrior = {
             enable = true;
-            package = pkgs.taskwarrior2;
+            package = pkgs.taskwarrior3;
             config = {
                 # settings
-                news.version = "2.6.0";
                 journal.time = true;
                 search.case.sensitive = false;
-                alias.clear = "!clear";
+                # alias.clear = "!clear";
 
                 # review tasks
-                uda.reviewed.type = "date";
-                uda.reviewed.label = "Reviewed";
-                report._reviewed.description = "Tasksh review report.  Adjust the filter to your needs.";
-                report._reviewed.columns = "uuid";
-                report._reviewed.sort = "reviewed+,modified+";
-                report._reviewed.filter = "( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )";
+                uda.reviewed = {
+                    type = "date";
+                    label = "Reviewed";
+                };
+                report = {
+                    _reviewed = {
+                        description = "Tasksh review report.  Adjust the filter to your needs.";
+                        filter = "( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )";
+                        sort = "reviewed+,modified+";
+                        columns = "uuid";
+                    };
+                };
 
                 # customized reports
-                report.next.filter = "status:pending -WAITING limit:page project.not:personal.someday";
-                report.ready.filter = "+READY project.not:personal.someday";
-                report.ls.columns = "id,start.active,depends.indicator,project,tags,recur.indicator,wait.remaining,scheduled.countdown,due.countdown,until.countdown,description";
-                report.ls.filter = "status:pending -WAITING project.not:personal.someday";
+                report = {
+                    next = {
+                        filter = "status:pending -WAITING limit:page project.not:personal.someday";
+                        columns = "id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency";
+                    };
+                    ready.filter = "+READY project.not:personal.someday";
+                    ls = {
+                        filter = "status:pending -WAITING project.not:personal.someday";
+                        columns = "id,start.active,depends.indicator,project,tags,recur.indicator,wait.remaining,scheduled.countdown,due.countdown,until.countdown,description";
+                    };
+                };
             };
             colorTheme = "dark-256";
         };
