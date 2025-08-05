@@ -9,7 +9,6 @@
             package = pkgs.taskwarrior3;
             config = {
                 # settings
-                journal.time = true;
                 search.case.sensitive = false;
                 # alias.clear = "!clear";
 
@@ -41,6 +40,10 @@
                 };
             };
             colorTheme = "dark-256";
+            dataLocation =
+                if pkgs.stdenv.isDarwin
+                then "~/Library/Mobile Documents/iCloud~com~mav~taskchamp/Documents/task"
+                else "~/.local/share/task";
         };
     };
 
