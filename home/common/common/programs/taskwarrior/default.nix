@@ -3,6 +3,6 @@
 }: {
     imports = [
         ./taskwarrior.nix
-        ./timewarrior.nix
+        # ./timewarrior.nix
     ];
 }
