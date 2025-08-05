@@ -112,6 +112,7 @@
                     inputs.lix-module.overlays.default
                     inputs.nur.overlays.default
                     inputs.nixos-apple-silicon.overlays.default
+                    inputs.devshell.overlays.default
                 ];
             };
 
@@ -131,11 +132,12 @@
                 inherit pkgs;
                 inherit inputs;
             });
-        # devShells.default = forEachSystem (pkgs:
-        #     import ./nix/devshell.nix {
-        #         inherit pkgs;
-        #         inherit inputs;
-        #     });
+        devShells = forEachSystem (pkgs: {
+            default = import ./nix/devshell.nix {
+                inherit pkgs;
+                inherit inputs;
+            };
+        });
 
         nixosConfigurations = {
             olorin = inputs.nixpkgs.lib.nixosSystem {
