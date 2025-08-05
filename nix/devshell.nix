@@ -5,4 +5,23 @@ pkgs.devshell.mkShell {
         {141}⚙️ dotfiles{reset} shell
         $(type -p menu &>/dev/null && menu)
     '';
+
+    commands = [
+        {
+            name = "olorin";
+            help = "rebuild and switch nix/hm configuration";
+            command = builtins.readFile ./scripts/olorin.fish;
+        }
+    ];
+
+    env = [
+        {
+            name = "machine";
+            eval = "$(hostname)";
+        }
+        {
+            name = "config_location";
+            eval = "$(git rev-parse --show-toplevel)";
+        }
+    ];
 }

@@ -1,7 +1,4 @@
-{
-    config,
-    ...
-}: {
+{config, ...}: {
     home = {
         sessionVariables = {
             # general env vars
@@ -9,7 +6,6 @@
             VISUAL = "nvim";
             PAGER = "less";
             GPG_TTY = "$(tty)";
-            MACHINE = "$(hostname)";
 
             # user dirs
             ## files
