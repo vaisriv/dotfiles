@@ -39,6 +39,7 @@
 
                 # Nix Artifacts
                 ".direnv"
+                ".data"
                 "result"
                 "result-*"
 
