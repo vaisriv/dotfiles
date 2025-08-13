@@ -42,6 +42,7 @@
                 ".data"
                 "result"
                 "result-*"
+                ".envrc.local"
 
                 # LaTeX aux/sync files
                 "**/.texaux"
