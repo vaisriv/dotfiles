@@ -16,6 +16,7 @@ in {
 
             default-root-container-layout = "tiles";
             default-root-container-orientation = "auto";
+            after-startup-command = ["layout tiles"];
 
             key-mapping.preset = "qwerty";
 
