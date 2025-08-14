@@ -20,7 +20,7 @@
 	# 	};
 	# };
 	home.file = {
-		".config/latexmk/latexmkrc" = {
+		"" = {
 			text = ''
 				$aux_dir = "./.texaux/";
 				$aux_out_dir_report = 1;
@@ -30,7 +30,6 @@
 				$show_time = 1;
 				$silent = 1;
 			'';
-			executable = false;
 		};
 	};
 }
