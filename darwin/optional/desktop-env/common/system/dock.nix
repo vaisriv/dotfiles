@@ -20,9 +20,5 @@
 			{ app = "/Applications/LibreOffice.app/"; }
 			{ app = "/Applications/Spotify.app/"; }
 		];
-		showhidden = true;
-		show-recents = false;
-		tilesize = 32;
-		magnification = false;
 	};
 }
