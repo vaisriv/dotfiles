@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     imports = [
         # Generic for all Hosts
         ../common

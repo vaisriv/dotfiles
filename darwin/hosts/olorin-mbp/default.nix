@@ -1,6 +1,4 @@
-{
-    ...
-}: let
+{...}: let
     hostname = "olorin-mbp";
 in {
     imports = [

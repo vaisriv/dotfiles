@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     system.defaults.dock = {
         appswitcher-all-displays = false;
         autohide = true;

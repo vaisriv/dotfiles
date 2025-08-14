@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     services.blueman = {
         enable = true;
     };

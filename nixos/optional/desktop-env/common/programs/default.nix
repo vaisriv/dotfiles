@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     imports = [
         # Programs needed for DM+WM
         ./pkgs.nix

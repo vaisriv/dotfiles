@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     # TODO: actually implement latexmk and its rc in home-manager
     # programs.latexmk = {
     # 	enable = true;

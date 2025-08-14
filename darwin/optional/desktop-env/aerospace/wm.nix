@@ -1,9 +1,6 @@
-{
-    ...
-}: let
+{...}: let
     ctrl = "ctrl";
     alt = "alt";
-    super = "cmd";
     shift = "shift";
 in {
     services.aerospace = {

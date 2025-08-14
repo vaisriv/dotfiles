@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     programs.yazi = {
         enableFishIntegration = false;
         settings = {

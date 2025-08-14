@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     imports = [
         ./atuin.nix
         ./bat.nix

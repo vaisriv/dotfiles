@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     imports = [
         # ./discord.nix
         ./librewolf.nix

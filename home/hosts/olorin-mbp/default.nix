@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     imports = [
         # Generic System config
         ../../common/darwin

@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     system = {
         defaults = {
             NSGlobalDomain = {

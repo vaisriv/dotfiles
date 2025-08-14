@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: let
+{pkgs, ...}: let
     catppuccin-fish-src = pkgs.fetchFromGitHub {
         owner = "catppuccin";
         repo = "fish";

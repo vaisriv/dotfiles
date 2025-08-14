@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     home = {
         sessionPath = [
             # add local bin to path because macos doesn't have it by default

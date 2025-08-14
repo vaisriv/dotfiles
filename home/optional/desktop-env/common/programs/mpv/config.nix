@@ -1,7 +1,4 @@
-{
-    config,
-    ...
-}: {
+{config, ...}: {
     programs.mpv.config = {
         ## Video
         profile = "high-quality";

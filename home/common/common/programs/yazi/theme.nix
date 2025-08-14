@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: let
+{pkgs, ...}: let
     yazi-flavors = pkgs.fetchFromGitHub {
         owner = "yazi-rs";
         repo = "flavors";

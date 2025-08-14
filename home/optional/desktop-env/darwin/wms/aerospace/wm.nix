@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     # programs.aerospace = {
     # 	enable = true;
     # };

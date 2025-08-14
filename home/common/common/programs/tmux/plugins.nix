@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     programs.tmux.plugins = with pkgs; [
         {
             plugin = tmuxPlugins.resurrect;

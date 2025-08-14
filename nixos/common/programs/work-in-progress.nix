@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     environment.systemPackages = with pkgs; [
         # apps to make home-manager configs for
         clipse

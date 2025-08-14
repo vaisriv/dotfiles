@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     # TODO: actually setup librewolf
     # programs.firefox = {
     #   enable = true;

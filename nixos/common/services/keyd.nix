@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     # Remap CAPS lock to ESC
     services.keyd = {
         enable = true;

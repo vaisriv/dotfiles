@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     imports = [
         ./karabiner-elements
     ];

@@ -1,6 +1,4 @@
-{
-    ...
-}: {
+{...}: {
     imports = [
         # WARN: Do not remove
         ./hardware-configuration.nix
