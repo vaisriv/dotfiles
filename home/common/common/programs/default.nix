@@ -8,6 +8,7 @@
         ./fd.nix
         ./fzf.nix
         ./git.nix
+        ./gh.nix
         ./glow.nix
         # ./helix.nix
         ./jq.nix
