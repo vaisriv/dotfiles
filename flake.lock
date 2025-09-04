@@ -569,11 +569,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1753296760,
-        "narHash": "sha256-bV3KiZoUIjPppKa8iGUA1G0/uJvOb5rCYm1GvTJMrgM=",
+        "lastModified": 1757095914,
+        "narHash": "sha256-r1w/kQr04aURKe8n+8X0Uf2pD4yakvB8ZeUMF66zkoE=",
         "owner": "vaisriv",
         "repo": "nvf-config",
-        "rev": "5be40ac6edf2eb3ef20ed05c8af9d0b0a11ba981",
+        "rev": "e1a0ea5c4865274801249210c0683ebf4aa11a68",
         "type": "github"
       },
       "original": {
