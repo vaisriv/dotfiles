@@ -39,8 +39,8 @@
         };
         shellAliases = {
             cat = "bat";
-            rg = "batgrep";
-            # rga = "batgrep --rga"; # WARN: currently broken, re-enabled when fixed: https://github.com/eth-p/bat-extras/issues/140
+            rgb = "batgrep";
+            # rgba = "batgrep --rga"; # WARN: currently broken, re-enabled when fixed: https://github.com/eth-p/bat-extras/issues/140
             man = "batman";
             l = "ls -la";
         };
