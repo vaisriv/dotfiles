@@ -7,11 +7,9 @@
         casks = [
             "adobe-creative-cloud"
             "autodesk-fusion"
-
-            # TODO: package and upstream to nixpkgs
+            "vitalsource-bookshelf"
+            "microsoft-teams"
             "citrix-workspace"
-
-            # WARN: currently broken on nix :)
             "mathpix-snipping-tool"
 
             # NOTE: installed manually:
