@@ -39,6 +39,7 @@
         };
         shellAliases = {
             cat = "bat";
+            rg = "rg --context=2";
             rgb = "batgrep";
             # rgba = "batgrep --rga"; # WARN: currently broken, re-enabled when fixed: https://github.com/eth-p/bat-extras/issues/140
             man = "batman";
