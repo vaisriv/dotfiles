@@ -41,5 +41,11 @@
             set -g allow-passthrough on
             set -ga update-environment TERM
             set -ga update-environment TERM_PROGRAM
+
+            # aliases for kill commands
+            set -s command-alias[11] "ks=kill-session"
+            set -s command-alias[12] "kills=kill-session"
+            set -s command-alias[13] "ksv=kill-server"
+            set -s command-alias[14] "killsv=kill-server"
         '';
 }
