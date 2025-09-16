@@ -17,7 +17,11 @@
                 glow completion fish | source
 
                 # fix zathura file completion
-                complete -c zathura -f -a "(__zathura_complete_files)"
+                complete -c zathura --force-files
+                complete -c pdf --force-files
+
+                # set up completion for tmuxs script
+                complete -c tmuxs --no-files -a '(tmux ls -F \#S)'
 
                 # enable bat-extras
                 eval (batpipe)
@@ -27,15 +31,6 @@
             pdf = {
                 body = "zathura $argv 2> /dev/null & disown";
             };
-            __zathura_complete_files = {
-                body = "__fish_complete_path";
-            };
-            # starship_transient_prompt_func = {
-            #     body = "starship module character";
-            # };
-            # starship_transient_rprompt_func = {
-            #     body = "starship module status -s $status && starship module cmd_duration -d $CMD_DURATION && starship module time && echo \" \"";
-            # };
         };
         shellAliases = {
             cat = "bat";
