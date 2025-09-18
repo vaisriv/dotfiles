@@ -155,11 +155,13 @@
                             backupFileExtension = "bak";
                             users.${username} = import ./home/hosts/olorin;
                             sharedModules = [
+                                inputs.nur.modules.homeManager.default
                                 inputs.stylix.homeModules.stylix
                             ];
                         };
                     }
 
+                    inputs.nur.modules.nixos.default
                     inputs.lix-module.nixosModules.default
                     inputs.nixos-apple-silicon.nixosModules.default
                 ];
@@ -179,11 +181,13 @@
                             backupFileExtension = "bak";
                             users.${username} = import ./home/hosts/tarindor;
                             sharedModules = [
+                                inputs.nur.modules.homeManager.default
                                 inputs.stylix.homeModules.stylix
                             ];
                         };
                     }
 
+                    inputs.nur.modules.nixos.default
                     inputs.lix-module.nixosModules.default
                 ];
             };
@@ -205,11 +209,13 @@
                             backupFileExtension = "bak";
                             users.${username} = import ./home/hosts/olorin-mbp;
                             sharedModules = [
+                                inputs.nur.modules.homeManager.default
                                 inputs.stylix.homeModules.stylix
                             ];
                         };
                     }
 
+                    inputs.nur.modules.darwin.default
                     inputs.lix-module.nixosModules.default
                 ];
             };
