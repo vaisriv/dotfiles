@@ -37,7 +37,7 @@
             # {app = "${pkgs.vesktop}/Applications/Vesktop.app/";} # nixpkgs
             {app = "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app/";} # nur
             {app = "${pkgs.wezterm}/Applications/Wezterm.app";} # home-manager
-            {app = "/Users/${username}/Applications/Uni/MATLAB_R2024b.app";} # manual
+            {app = "/Users/${username}/Applications/Uni/MATLAB_R2025b.app";} # manual
             {app = "${pkgs.vscodium}/Applications/VSCodium.app";} # nixpkgs
             {app = "${pkgs.libreoffice-bin}/Applications/LibreOffice.app/";} # nixpkgs
         ];
