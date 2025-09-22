@@ -9,6 +9,7 @@
             "autodesk-fusion"
             "vitalsource-bookshelf"
             "microsoft-teams"
+            "microsoft-powerpoint"
             "citrix-workspace"
             "mathpix-snipping-tool"
             "inkscape"
