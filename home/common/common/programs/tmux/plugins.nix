@@ -6,7 +6,7 @@
         {
             plugin = tmuxPlugins.catppuccin;
             extraConfig = ''
-                # set catppuccin colors
+                # window settings
                 set -g @catppuccin_window_right_separator "█ "
                 set -g @catppuccin_window_number_position "right"
                 set -g @catppuccin_window_middle_separator " | "
@@ -17,10 +17,14 @@
                 set -g @catppuccin_window_text "#W"
                 set -g @catppuccin_window_current_text "#W"
 
+                # status settings
                 set -g @catppuccin_status_modules_right "directory session"
                 set -g @catppuccin_status_left_separator "█"
                 set -g @catppuccin_status_right_separator "█"
+                set -g status-left-length 100
+                set -g status-right-length 100
 
+                # date settings
                 set -g @catppuccin_date_time_text "%Y-%m-%d %H:%M:%S"
             '';
         }
