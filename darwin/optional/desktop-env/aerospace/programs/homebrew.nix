@@ -6,14 +6,15 @@
         casks = [
             # TODO: package and upstream to nixpkgs
             "batfi" # battery management widget
+            "jdownloader" # download manager (alt)
             "jordanbaird-ice" # bar management
             "linearmouse" # per-mouse settings
             "motrix" # download manager
-            "jdownloader" # download manager (alt)
 
-            # WARN: currently broken on nix :)
+            # WARN: currently broken/out-of-date on nix :)
             "itsycal" # calendar/date bar widget
             "qview" # image viewer
+            "raycast" # launcher
 
             # NOTE: installed manually
             # "daisydisk"
