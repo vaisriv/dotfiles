@@ -1,6 +1,6 @@
 {...}: {
     imports = [
-        # ./discord.nix
+        ./discord.nix
         ./librewolf.nix
         ./mpv
         ./neovide.nix
