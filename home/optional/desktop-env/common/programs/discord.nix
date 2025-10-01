@@ -386,5 +386,5 @@
         };
     };
 
-    stylix.targets.vesktop.enable = false;
+    # stylix.targets.vesktop.enable = false;
 }
