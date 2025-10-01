@@ -12,7 +12,7 @@
             variant = "Etoile";
         };
     };
-    wallpaper = ../../../assets/wallpapers/catscii-rosewater.png;
+    wallpaper = ../../../assets/wallpapers/catscii-catppuccin_mocha.png;
 in {
     stylix = {
         enable = true;
