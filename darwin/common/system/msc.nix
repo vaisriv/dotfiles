@@ -11,7 +11,8 @@
             loginwindow = {
                 DisableConsoleAccess = false;
                 GuestEnabled = false;
-                LoginwindowText = "\\U03bb";
+                # LoginwindowText = "\\U03bb";
+                LoginwindowText = "λ";
                 PowerOffDisabledWhileLoggedIn = false;
                 RestartDisabled = false;
                 RestartDisabledWhileLoggedIn = false;
