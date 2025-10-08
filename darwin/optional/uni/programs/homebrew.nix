@@ -10,6 +10,7 @@
             "vitalsource-bookshelf"
             "microsoft-teams"
             "microsoft-powerpoint"
+            "microsoft-excel"
             "citrix-workspace"
             "mathpix-snipping-tool"
             "inkscape"
