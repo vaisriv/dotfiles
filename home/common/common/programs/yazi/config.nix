@@ -15,8 +15,7 @@
                     }
                     {
                         mime = "application/pdf";
-                        # use = ["pdf" "open"];
-                        use = ["open"];
+                        use = ["open" "pdf"];
                     }
                 ];
             };
