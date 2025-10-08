@@ -1,10 +1,14 @@
 #!/usr/bin/env fish
 
-set root_dir $argv[1]
+set -l root_dir $argv[1]
 if test -z "$root_dir"
     set root_dir "."
 end
-set file (fzf --walker-root=$root_dir)
+
+set -l file (fzf --walker-root=$root_dir)
 if test -n "$file"
-    cat "$file"
+    # cat "$file"
+    set -l escaped (string escape -- $file)
+    commandline -r -- "cat $escaped"
+    commandline -f repaint
 end
