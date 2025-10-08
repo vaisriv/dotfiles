@@ -9,18 +9,47 @@
             };
             open = {
                 prepend_rules = [
+                    # directories
                     {
-                        mime = "inode/directory";
-                        use = ["open" "play"];
+                        url = "*/";
+                        use = ["open" "edit" "play" "mpv" "browser" "reveal"];
                     }
+
+                    # pdfs
                     {
                         mime = "application/pdf";
-                        use = ["open" "pdf"];
+                        use = ["open" "pdf" "browser" "reveal"];
+                    }
+
+                    # media
+                    {
+                        mime = "{audio,image,video}/*";
+                        use = ["open" "play" "mpv" "browser" "reveal"];
+                    }
+
+                    # fallback
+                    {
+                        url = "*";
+                        use = ["open" "edit" "play" "mpv" "browser" "reveal"];
                     }
                 ];
             };
             opener = {
-                play = [
+                browser = [
+                    {
+                        desc = "Open in Browser";
+                        run = "open -a Velja \"$@\"";
+                        orphan = true;
+                        for = "macos";
+                    }
+                    {
+                        desc = "Open in Browser";
+                        run = "\${BROWSER:-librewolf} \"$@\"";
+                        orphan = true;
+                        for = "linux";
+                    }
+                ];
+                mpv = [
                     {
                         desc = "Play in MPV";
                         run = "mpv \"$@\"";
