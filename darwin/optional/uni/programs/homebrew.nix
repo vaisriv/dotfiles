@@ -18,6 +18,7 @@
             # NOTE: installed manually:
             # umd vpn - palo-alto globalprotect-openconnect # umd's custom build of palo-alt vpn
             # matlab # closed-source
+            # ti-nspire cas # closed-source
         ];
     };
 }
