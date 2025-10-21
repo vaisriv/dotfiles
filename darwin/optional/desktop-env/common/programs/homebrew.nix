@@ -16,6 +16,7 @@
 
         masApps = {
             "Bitwarden" = 1352778147;
+            "Spark Classic – Email App" = 1176895641;
         };
     };
 }
