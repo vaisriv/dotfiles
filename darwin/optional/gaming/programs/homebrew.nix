@@ -6,6 +6,7 @@
         casks = [
             "steam"
             "epic-games"
+            "parsec"
         ];
     };
 }
