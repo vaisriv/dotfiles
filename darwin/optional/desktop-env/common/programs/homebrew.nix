@@ -11,12 +11,12 @@
             # WARN: currently broken on nix :)
             "chromium" # alt browser
             "karabiner-elements" # per-keyboard settings
-            "mullvad-vpn" # vpn client
         ];
 
         masApps = {
             "Bitwarden" = 1352778147;
             "Spark Classic – Email App" = 1176895641;
+            "WireGuard" = 1451685025;
         };
     };
 }
