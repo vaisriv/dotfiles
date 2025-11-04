@@ -4,9 +4,20 @@
 
         settings = {
             discordBranch = "stable";
-            minimizeToTray = true;
+            checkUpdates = false;
+            hardwareAcceleration = true;
+            minimizeToTray = false;
+            tray = false;
+
+            appBadge = false;
             arRPC = true;
+            customTitleBar = false;
+            disableMinSize = true;
+            # splashBackground = "#000000";
+            # splashColor = "#ffffff";
             splashColor = "rgb(239, 239, 240)";
+            splashTheming = true;
+            staticTitle = true;
         };
 
         vencord = {
