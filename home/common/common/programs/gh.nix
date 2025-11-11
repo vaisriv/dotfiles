@@ -1,8 +1,5 @@
 {
-    config,
     pkgs,
-    username,
-    email,
     ...
 }: {
     programs = {
@@ -36,10 +33,12 @@
         gh-dash = {
             enable = true;
             settings = {
-                prSections = [{
-                    title = "My Pull Requests";
-                    filters = "is:open author:@me";
-                }];
+                prSections = [
+                    {
+                        title = "My Pull Requests";
+                        filters = "is:open author:@me";
+                    }
+                ];
             };
         };
     };
