@@ -12,7 +12,7 @@
             uid = 501;
             shell = pkgs.fish;
         };
-        knownUsers = [ "${username}" ];
+        knownUsers = ["${username}"];
     };
     system.primaryUser = "${username}";
 }

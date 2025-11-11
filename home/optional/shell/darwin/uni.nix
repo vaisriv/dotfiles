@@ -1,4 +1,8 @@
-{pkgs, username, ...}: {
+{
+    pkgs,
+    username,
+    ...
+}: {
     home = {
         sessionPath = [
             # add useful uni apps to path
