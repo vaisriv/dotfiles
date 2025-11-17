@@ -11,8 +11,8 @@
                 prepend_rules = [
                     # directories
                     {
-                        url = "*/";
-                        use = ["open" "edit" "play" "mpv" "browser" "reveal"];
+                        mime = "inode/directory";
+                        use = ["open" "edit" "mpv" "browser"];
                     }
 
                     # pdfs
