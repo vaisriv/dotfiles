@@ -11,7 +11,8 @@
             "/Applications/qView.app/Contents/MacOS" # image viewer
         ];
         sessionVariables = {
-            BROWSER = "velja";
+            # BROWSER = "velja";
+            BROWSER = "librewolf";
         };
     };
 
@@ -19,6 +20,9 @@
         shellAliases = {
             # velja browser picker
             velja = "open -a Velja";
+
+            # librewolf browser
+            librewolf = "open -a librewolf";
         };
     };
 }
