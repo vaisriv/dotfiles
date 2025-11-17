@@ -38,15 +38,9 @@
                 browser = [
                     {
                         desc = "Open in Browser";
-                        run = "open -a Velja \"$@\"";
-                        orphan = true;
-                        for = "macos";
-                    }
-                    {
-                        desc = "Open in Browser";
                         run = "\${BROWSER:-librewolf} \"$@\"";
                         orphan = true;
-                        for = "linux";
+                        for = "unix";
                     }
                 ];
                 mpv = [
