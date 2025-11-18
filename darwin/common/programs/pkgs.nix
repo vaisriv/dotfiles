@@ -24,6 +24,7 @@
         pngpaste
         poppler_utils
         presenterm
+        pv
         testdisk
         tokei
         viu
