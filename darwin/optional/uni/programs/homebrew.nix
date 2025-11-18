@@ -5,14 +5,14 @@
         ];
 
         casks = [
+            "mathpix-snipping-tool"
             "adobe-creative-cloud"
             "autodesk-fusion"
-            "vitalsource-bookshelf"
-            "microsoft-teams"
-            "microsoft-powerpoint"
-            "microsoft-excel"
             "citrix-workspace"
-            "mathpix-snipping-tool"
+            "microsoft-teams"
+            "microsoft-excel"
+            "microsoft-powerpoint"
+            "vitalsource-bookshelf"
             "inkscape"
 
             # NOTE: installed manually:

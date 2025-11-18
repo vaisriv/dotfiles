@@ -9,6 +9,11 @@
         jdk8
         jdk11
         jdk23
+
+        # docker
+        colima
+        docker
+        # xquartz
     ];
 
     system.activationScripts.postActivation.text = ''
