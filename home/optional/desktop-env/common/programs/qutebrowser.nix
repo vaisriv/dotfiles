@@ -12,7 +12,7 @@
             # };
         };
         searchEngines = {
-            DEFAULT = "https://unduck.astrophel.xyz/?q={}&default_bang=ddg";
+            DEFAULT = "https://unduck.vaisriv.com/?q={}&default_bang=ddg";
             ddg = "https://www.duckduckgo.com/search?hl=en&amp;q={}";
             g = "https://www.google.com/search?hl=en&amp;q={}";
             w = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
