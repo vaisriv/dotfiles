@@ -1,5 +1,5 @@
 {
-    username,
+    fullname,
     email,
     ...
 }: {
@@ -19,7 +19,7 @@
                     paging = "never";
                 };
             };
-            userName = username;
+            userName = fullname;
             userEmail = email;
             signing = {
                 signByDefault = true;
