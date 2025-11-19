@@ -118,7 +118,7 @@
 
         username = "vai";
         fullname = "Vai Srivastava";
-        email = "vai.sriv@icloud.com";
+        email = "vaisriv@icloud.com";
 
         specialArgs = {inherit self inputs username fullname email;};
     in {
