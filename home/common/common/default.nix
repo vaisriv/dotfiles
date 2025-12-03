@@ -8,7 +8,10 @@
         # Service Configs
         ./services
 
-        # Theming
+        # Nixpkgs Config
+        ./nixpkgs.nix
+
+        # Theming Config
         ./theming.nix
     ];
 }
