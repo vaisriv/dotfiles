@@ -1,6 +1,8 @@
-{...}: {
+{pkgs, ...}: {
+    # WARN: vesktop is kinda broken rn (as it bundles an old discord version)
+
     programs.vesktop = {
-        enable = true;
+        enable = false; # WARN: temp
 
         settings = {
             discordBranch = "stable";
@@ -398,4 +400,10 @@
     };
 
     stylix.targets.vesktop.enable = false;
+
+    # WARN: temp
+    home.packages = with pkgs; [
+        discord
+        vencord
+    ];
 }
