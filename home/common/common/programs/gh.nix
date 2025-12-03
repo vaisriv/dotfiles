@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     programs = {
         gh = {
             enable = true;
