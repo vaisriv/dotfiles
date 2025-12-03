@@ -11,6 +11,7 @@
             # WARN: currently broken on nix :)
             "chromium" # alt browser
             "karabiner-elements" # per-keyboard settings
+            "jellyfin-media-player" # media library viewer
         ];
 
         masApps = {
