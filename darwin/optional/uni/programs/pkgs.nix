@@ -3,7 +3,7 @@
         libreoffice-bin
         zotero
         zoom-us
-        nur.repos.natsukium.zen-browser
+        # nur.repos.natsukium.zen-browser
 
         # java
         jdk8

@@ -15,6 +15,9 @@
             "vitalsource-bookshelf"
             "inkscape"
 
+            # WARN: wants updates too often to be installed by nix
+            "zen"
+
             # NOTE: installed manually:
             # umd vpn - palo-alto globalprotect-openconnect # umd's custom build of palo-alt vpn
             # matlab # closed-source

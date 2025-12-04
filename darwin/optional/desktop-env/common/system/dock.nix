@@ -36,14 +36,16 @@
 
         # apps to show in dock
         persistent-apps = [
-            {app = "${pkgs.librewolf}/Applications/LibreWolf.app/";} # home-manager
+            {app = "${pkgs.librewolf}/Applications/LibreWolf.app";} # home-manager
             {app = "${pkgs.spotify}/Applications/Spotify.app";} # nixpkgs
-            # {app = "${pkgs.vesktop}/Applications/Vesktop.app/";} # nixpkgs
-            {app = "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app/";} # nur
+            # {app = "${pkgs.vesktop}/Applications/Vesktop.app";} # nixpkgs
+            # WARN: wants updates too often to be installed by nix
+            # {app = "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app";} # nur
+            {app = "/Applications/Zen.app";} # homebrew
             {app = "${pkgs.wezterm}/Applications/Wezterm.app";} # home-manager
             {app = "/Users/${username}/Applications/Uni/MATLAB_R2025b.app";} # manual
             {app = "${pkgs.vscodium}/Applications/VSCodium.app";} # nixpkgs
-            {app = "${pkgs.libreoffice-bin}/Applications/LibreOffice.app/";} # nixpkgs
+            {app = "${pkgs.libreoffice-bin}/Applications/LibreOffice.app";} # nixpkgs
         ];
     };
 }
