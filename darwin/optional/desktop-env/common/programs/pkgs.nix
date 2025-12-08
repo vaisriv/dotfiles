@@ -3,6 +3,7 @@
         # recommended
         iina # media/video player
         spotify # music
+        supersonic # music
         vscodium # backup text/code editor
 
         # optional
