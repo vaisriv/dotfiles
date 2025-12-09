@@ -7,6 +7,7 @@
         # cli/term tools
         asciinema
         asciinema-scenario
+        cloudflared
         deno
         dust
         ffmpeg
