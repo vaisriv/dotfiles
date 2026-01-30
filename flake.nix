@@ -109,7 +109,7 @@
                 config.allowUnfree = true;
                 overlays = [
                     # inputs.self.overlays.default
-                    inputs.lix-module.overlays.default
+                    # inputs.lix-module.overlays.default
                     inputs.nur.overlays.default
                     inputs.nixos-apple-silicon.overlays.default
                     inputs.devshell.overlays.default
@@ -162,7 +162,7 @@
                     }
 
                     inputs.nur.modules.nixos.default
-                    inputs.lix-module.nixosModules.default
+                    # inputs.lix-module.nixosModules.default
                     inputs.nixos-apple-silicon.nixosModules.default
                 ];
             };
@@ -188,7 +188,7 @@
                     }
 
                     inputs.nur.modules.nixos.default
-                    inputs.lix-module.nixosModules.default
+                    # inputs.lix-module.nixosModules.default
                 ];
             };
         };
@@ -216,7 +216,7 @@
                     }
 
                     inputs.nur.modules.darwin.default
-                    inputs.lix-module.nixosModules.default
+                    # inputs.lix-module.nixosModules.default
                 ];
             };
         };
