@@ -23,7 +23,7 @@
         pastel
         procs
         pngpaste
-        poppler_utils
+        poppler-utils
         presenterm
         pv
         testdisk

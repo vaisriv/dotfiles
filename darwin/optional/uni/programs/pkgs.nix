@@ -8,7 +8,7 @@
         # java
         jdk8
         jdk11
-        jdk23
+        jdk25
 
         # docker
         colima
@@ -21,6 +21,6 @@
         find /Library/Java/JavaVirtualMachines/ -type l -name "*.jdk" -delete
         ln -sf ${pkgs.jdk8}/Library/Java/JavaVirtualMachines/zulu-8.jdk /Library/Java/JavaVirtualMachines/zulu-8.jdk
         ln -sf ${pkgs.jdk11}/Library/Java/JavaVirtualMachines/zulu-11.jdk /Library/Java/JavaVirtualMachines/zulu-11.jdk
-        ln -sf ${pkgs.jdk23}/Library/Java/JavaVirtualMachines/zulu-23.jdk /Library/Java/JavaVirtualMachines/zulu-23.jdk
+        ln -sf ${pkgs.jdk25}/Library/Java/JavaVirtualMachines/zulu-25.jdk /Library/Java/JavaVirtualMachines/zulu-25.jdk
     '';
 }
