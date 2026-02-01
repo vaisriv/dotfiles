@@ -4,6 +4,8 @@
         ];
 
         casks = [
+            "finetune" # volume mixer
+
             # TODO: package and upstream to nixpkgs
             "altserver" # sideloading for ios
             "obs" # screen recording software
