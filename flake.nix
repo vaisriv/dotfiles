@@ -78,11 +78,11 @@
             };
         };
 
-        ## Custom Packages
+        # Custom Packages
+        ## nixpkgs
         vai-nixpkgs = {
             url = "github:vaisriv/nixpkgs";
         };
-
         ## neovim config (using nvf)
         nvf-config = {
             url = "github:vaisriv/nvf-config";
