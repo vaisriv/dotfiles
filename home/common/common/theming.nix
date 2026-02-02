@@ -44,10 +44,12 @@ in {
             };
         };
 
-        # targets.nvf = {
-        # 	enable = false;
-        # 	# plugin = "mini-base16";
-        # 	# transparentBackground = false;
-        # };
+        targets = {
+            # nvf = {
+            #     enable = false;
+            #     plugin = "mini-base16";
+            #     transparentBackground = false;
+            # };
+        };
     };
 }
