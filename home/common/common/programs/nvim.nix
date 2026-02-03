@@ -5,7 +5,7 @@
 }: {
     home = {
         packages = with pkgs; [
-            inputs.nvf-config.packages.${pkgs.system}.lua
+            inputs.nvf-config.packages.${pkgs.stdenv.hostPlatform.system}.lua
         ];
     };
 }

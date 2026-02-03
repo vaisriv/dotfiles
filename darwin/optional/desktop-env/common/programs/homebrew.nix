@@ -11,6 +11,7 @@
             "obs" # screen recording software
 
             # WARN: currently broken on nix :)
+            "librewolf" # browser
             "chromium" # alt browser
             "karabiner-elements" # per-keyboard settings
             "jellyfin-media-player" # media library viewer

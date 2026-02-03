@@ -16,12 +16,14 @@
 
             # Enable use of remote compilation caches
             extra-substituters = [
+                "https://nixpkgs.cachix.org"
                 "https://nixos-asahi.cachix.org"
-                "https://cache.lix.systems"
+                "https://nix-darwin.cachix.org"
             ];
             extra-trusted-public-keys = [
+                "nixpkgs.cachix.org-1:q91R6hxbwFvDqTSDKwDAV4T5PxqXGxswD8vhONFMeOE="
                 "nixos-asahi.cachix.org-1:CPH9jazpT/isOQvFhtAZ0Z18XNhAp29+LLVHr0b2qVk="
-                "cache.lix.systems:aBnZUw8zA7H35Cz2RyKFVs3H4PlGTLawyY5KRbvJR8o="
+                "nix-darwin.cachix.org-1:LxMyKzQk7Uqkc1Pfq5uhm9GSn07xkERpy+7cpwc006A="
             ];
         };
     };

@@ -30,6 +30,6 @@
         tokei
         viu
         wiki-tui
-        # inputs.vai-nixpkgs.legacyPackages.${pkgs.system}.mac-mpd-control
+        # inputs.vai-nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.mac-mpd-control
     ];
 }

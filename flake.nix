@@ -2,52 +2,40 @@
     description = "vai's nix configuration flake";
 
     inputs = {
-        # Nix
-        ## Nix Packages
-        nixpkgs.url = "github:nixos/nixpkgs";
-
-        ## Nix User Repository
+        # nix
+        ## nix packages
+        nixpkgs.url = "github:nixos/nixpkgs/release-25.11";
+        ## nix user package repository
         nur = {
             url = "github:nix-community/nur";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        ## Apple Silicon support
+        ## apple silicon support
         nixos-apple-silicon = {
-            url = "github:tpwrules/nixos-apple-silicon";
+            url = "github:nix-community/nixos-apple-silicon/release-25.11";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        ## Nix for MacOS
+        ## nix for macos
         nix-darwin = {
-            url = "github:lnl7/nix-darwin";
+            url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        ## Home Manager
+        ## home manager
         home-manager = {
-            url = "github:nix-community/home-manager";
+            url = "github:nix-community/home-manager/release-25.11";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        ## Nix Helper
+        ## nix helper
         nh = {
-            url = "github:nix-community/nh";
+            url = "github:nix-community/nh/v4.2.0";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        ## Better Nix Implementation - Lix
-        lix = {
-            url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
-            flake = false;
-        };
-
-        ## Lix Module
-        lix-module = {
-            url = "https://git.lix.systems/lix-project/nixos-module/archive/main.tar.gz";
+        ## stylix themeing
+        stylix = {
+            url = "github:nix-community/stylix/release-25.11";
             inputs = {
                 nixpkgs.follows = "nixpkgs";
-                lix.follows = "lix";
+                nur.follows = "nur";
             };
         };
 
@@ -68,17 +56,7 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        # Unstable Programs (not yet upstreamed in nixpkgs)
-        ## Stylix Themeing
-        stylix = {
-            url = "github:danth/stylix";
-            inputs = {
-                nixpkgs.follows = "nixpkgs";
-                nur.follows = "nur";
-            };
-        };
-
-        # Custom Packages
+        # custom packages
         ## nixpkgs
         vai-nixpkgs = {
             url = "github:vaisriv/nixpkgs";
@@ -108,8 +86,16 @@
                 inherit system;
                 config.allowUnfree = true;
                 overlays = [
+                    # lix
+                    (final: prev: {
+                        inherit (prev.lixPackageSets.stable)
+                            nixpkgs-review
+                            nix-eval-jobs
+                            nix-fast-build
+                            colmena;
+                    })
+
                     # inputs.self.overlays.default
-                    # inputs.lix-module.overlays.default
                     inputs.nur.overlays.default
                     inputs.nixos-apple-silicon.overlays.default
                     inputs.devshell.overlays.default
@@ -162,7 +148,6 @@
                     }
 
                     inputs.nur.modules.nixos.default
-                    # inputs.lix-module.nixosModules.default
                     inputs.nixos-apple-silicon.nixosModules.default
                 ];
             };
@@ -188,7 +173,6 @@
                     }
 
                     inputs.nur.modules.nixos.default
-                    # inputs.lix-module.nixosModules.default
                 ];
             };
         };
@@ -216,7 +200,6 @@
                     }
 
                     inputs.nur.modules.darwin.default
-                    # inputs.lix-module.nixosModules.default
                 ];
             };
         };

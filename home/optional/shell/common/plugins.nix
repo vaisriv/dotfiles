@@ -24,8 +24,9 @@
                 complete -c tmuxs --no-files -a '(tmux ls -F \#S)'
 
                 # enable bat-extras
-                eval (batpipe)
                 set -x BATDIFF_USE_DELTA true
+                # WARN: current batpipe version broken
+                # eval (batpipe)
             '';
         functions = {
             pdf = {

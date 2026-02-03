@@ -9,18 +9,6 @@
             lfs = {
                 enable = true;
             };
-            delta = {
-                enable = true;
-                options = {
-                    hyperlinks = true;
-                    hyperlinks-file-link-format = "lazygit-edit://{path}:{line}";
-                    line-numbers = true;
-                    navigate = true;
-                    paging = "never";
-                };
-            };
-            userName = fullname;
-            userEmail = email;
             signing = {
                 signByDefault = true;
                 key = "~/.ssh/personal.pub";
@@ -64,7 +52,11 @@
                 "Temporary Items"
                 ".apdisk"
             ];
-            extraConfig = {
+            settings = {
+                user = {
+                    name = fullname;
+                    email = email;
+                };
                 init = {
                     defaultBranch = "main";
                 };

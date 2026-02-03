@@ -8,10 +8,12 @@
         enable = true;
         settings = {
             git = {
-                paging = {
-                    colorArg = "always";
-                    pager = "delta";
-                };
+                pagers = [
+                    {
+                        pager = "${pkgs.delta}/bin/delta --dark --paging=never";
+                        colorArg = "never";
+                    }
+                ];
                 overrideGpg = true;
             };
         };

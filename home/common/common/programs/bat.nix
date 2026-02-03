@@ -15,7 +15,8 @@
         bat-extras.batdiff
         bat-extras.batgrep
         bat-extras.batman
-        bat-extras.batpipe
+        # WARN: current batpipe version broken
+        # bat-extras.batpipe
         bat-extras.prettybat
     ];
 }
