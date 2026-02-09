@@ -5,6 +5,7 @@
 
         casks = [
             "finetune" # volume mixer
+            "tailscale-app" # personal vpn
 
             # TODO: package and upstream to nixpkgs
             "altserver" # sideloading for ios
