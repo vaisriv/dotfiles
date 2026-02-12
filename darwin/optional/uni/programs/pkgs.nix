@@ -13,6 +13,7 @@
         # docker
         colima
         docker
+        podman
         # xquartz
     ];
 
