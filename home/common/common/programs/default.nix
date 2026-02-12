@@ -10,6 +10,7 @@
         ./git.nix
         ./gh.nix
         ./glow.nix
+        ./gpg.nix
         # ./helix.nix
         ./jq.nix
         ./latexmk.nix
