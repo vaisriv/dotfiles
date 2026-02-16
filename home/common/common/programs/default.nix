@@ -27,7 +27,7 @@
         ./taskwarrior
         ./tealdeer.nix
         ./tmux
-        # ./uv.nix
+        ./uv.nix
         ./yazi
         ./yt-dlp.nix
         ./zoxide.nix
