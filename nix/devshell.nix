@@ -10,7 +10,11 @@ pkgs.devshell.mkShell {
         {
             name = "olorin";
             help = "rebuild and switch nix/hm configuration";
-            command = builtins.readFile ./scripts/olorin.fish;
+            command = builtins.readFile ./scripts/olorin.bash;
+        }
+
+        {
+            package = pkgs.nh;
         }
     ];
 

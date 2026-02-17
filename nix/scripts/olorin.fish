@@ -1,15 +1,15 @@
 #!/usr/bin/env fish
 
-# WARN: these cases may be wrong, as i am only sure of macos' uname output
 switch (uname)
-    case nix nixos
-        nh os switch $config_location -H $machine
-
     case Darwin
         nh darwin switch $config_location -H $machine
 
-    case linux
-        nh home switch $config_location -H $machine
+    case Linux
+        if grep -qi NixOS /etc/os-release
+            nh os switch $config_location -H $machine
+        else
+            nh home switch $config_location -H $machine
+        end
 
     case '*'
         echo "Unrecognized/unsupported OS."
