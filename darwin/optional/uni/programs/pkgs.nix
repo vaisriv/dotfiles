@@ -10,9 +10,7 @@
         jdk11
         jdk25
 
-        # docker
-        colima
-        docker
+        # containers
         podman
         # xquartz
     ];
