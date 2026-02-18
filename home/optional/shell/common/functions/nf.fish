@@ -18,4 +18,3 @@ if test -n "$file"
     commandline -r -- "nvim $escaped"
     commandline -f repaint
 end
-

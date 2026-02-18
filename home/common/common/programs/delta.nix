@@ -1,6 +1,4 @@
 {
-    fullname,
-    email,
     ...
 }: {
     programs = {

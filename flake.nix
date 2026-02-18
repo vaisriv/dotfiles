@@ -87,12 +87,14 @@
                 config.allowUnfree = true;
                 overlays = [
                     # lix
-                    (final: prev: {
-                        inherit (prev.lixPackageSets.stable)
+                    (_final: prev: {
+                        inherit
+                            (prev.lixPackageSets.stable)
                             nixpkgs-review
                             nix-eval-jobs
                             nix-fast-build
-                            colmena;
+                            colmena
+                            ;
                     })
 
                     # inputs.self.overlays.default
