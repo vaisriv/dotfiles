@@ -1,4 +1,6 @@
-{...}: {
+{...}: let
+    hostname = "tarindor";
+in {
     imports = [
         # WARN: Do not remove
         ./hardware-configuration.nix
@@ -19,6 +21,10 @@
         ## Gaming
         # ../../optional/gaming/x86_64
     ];
+
+    networking = {
+        hostName = "${hostname}";
+    };
 
     system.stateVersion = "24.11";
 }

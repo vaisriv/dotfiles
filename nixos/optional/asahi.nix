@@ -16,10 +16,10 @@
 
     hardware = {
         asahi = {
-            withRust = true;
             setupAsahiSound = true;
-            useExperimentalGPUDriver = true;
-            experimentalGPUInstallMode = "replace";
+
+            extractPeripheralFirmware = false;
+            # peripheralFirmwareDirectory = ./firmware;
         };
         graphics.enable = true;
     };

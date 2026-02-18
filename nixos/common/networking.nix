@@ -1,11 +1,8 @@
 {
     username,
-    hostname,
     ...
 }: {
     networking = {
-        hostName = "${hostname}";
-
         networkmanager.enable = true;
         wireless.userControlled = {
             enable = true;

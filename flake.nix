@@ -126,55 +126,57 @@
         });
 
         nixosConfigurations = {
-            olorin = inputs.nixpkgs.lib.nixosSystem {
-                pkgs = pkgsFor "aarch64-linux";
+            # FIXME: disabled both nixosSystems, as i have not built/used them in over a year
 
-                inherit specialArgs;
-
-                modules = [
-                    ./nixos/hosts/olorin
-
-                    inputs.home-manager.nixosModules.home-manager
-                    {
-                        home-manager = {
-                            extraSpecialArgs = specialArgs;
-                            backupFileExtension = "bak";
-                            users.${username} = import ./home/hosts/olorin;
-                            sharedModules = [
-                                inputs.nur.modules.homeManager.default
-                                inputs.stylix.homeModules.stylix
-                            ];
-                        };
-                    }
-
-                    inputs.nur.modules.nixos.default
-                    inputs.nixos-apple-silicon.nixosModules.default
-                ];
-            };
-            tarindor = inputs.nixpkgs.lib.nixosSystem {
-                pkgs = pkgsFor "x86_64-linux";
-
-                inherit specialArgs;
-
-                modules = [
-                    ./nixos/hosts/tarindor
-
-                    inputs.home-manager.nixosModules.home-manager
-                    {
-                        home-manager = {
-                            extraSpecialArgs = specialArgs;
-                            backupFileExtension = "bak";
-                            users.${username} = import ./home/hosts/tarindor;
-                            sharedModules = [
-                                inputs.nur.modules.homeManager.default
-                                inputs.stylix.homeModules.stylix
-                            ];
-                        };
-                    }
-
-                    inputs.nur.modules.nixos.default
-                ];
-            };
+            # olorin = inputs.nixpkgs.lib.nixosSystem {
+            #     pkgs = pkgsFor "aarch64-linux";
+            #
+            #     inherit specialArgs;
+            #
+            #     modules = [
+            #         ./nixos/hosts/olorin
+            #
+            #         inputs.home-manager.nixosModules.home-manager
+            #         {
+            #             home-manager = {
+            #                 extraSpecialArgs = specialArgs;
+            #                 backupFileExtension = "bak";
+            #                 users.${username} = import ./home/hosts/olorin;
+            #                 sharedModules = [
+            #                     inputs.nur.modules.homeManager.default
+            #                     inputs.stylix.homeModules.stylix
+            #                 ];
+            #             };
+            #         }
+            #
+            #         inputs.nur.modules.nixos.default
+            #         inputs.nixos-apple-silicon.nixosModules.default
+            #     ];
+            # };
+            # tarindor = inputs.nixpkgs.lib.nixosSystem {
+            #     pkgs = pkgsFor "x86_64-linux";
+            #
+            #     inherit specialArgs;
+            #
+            #     modules = [
+            #         ./nixos/hosts/tarindor
+            #
+            #         inputs.home-manager.nixosModules.home-manager
+            #         {
+            #             home-manager = {
+            #                 extraSpecialArgs = specialArgs;
+            #                 backupFileExtension = "bak";
+            #                 users.${username} = import ./home/hosts/tarindor;
+            #                 sharedModules = [
+            #                     inputs.nur.modules.homeManager.default
+            #                     inputs.stylix.homeModules.stylix
+            #                 ];
+            #             };
+            #         }
+            #
+            #         inputs.nur.modules.nixos.default
+            #     ];
+            # };
         };
 
         darwinConfigurations = {

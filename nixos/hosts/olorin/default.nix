@@ -1,4 +1,6 @@
-{...}: {
+{...}: let
+    hostname = "olorin";
+in {
     imports = [
         # WARN: Do not remove
         ./hardware-configuration.nix
@@ -19,6 +21,10 @@
         ## Gaming
         ../../optional/gaming/aarch64
     ];
+
+    networking = {
+        hostName = "${hostname}";
+    };
 
     system.stateVersion = "24.11";
 }
