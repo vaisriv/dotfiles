@@ -64,7 +64,14 @@
         ## neovim config (using nvf)
         nvf-config = {
             url = "github:vaisriv/nvf-config";
-            inputs.nixpkgs.follows = "nixpkgs";
+            inputs = {
+                nixpkgs.follows = "nixpkgs";
+
+                # numtide follows
+                blueprint.follows = "blueprint";
+                devshell.follows = "devshell";
+                treefmt-nix.follows = "treefmt-nix";
+            };
         };
     };
 
@@ -82,27 +89,7 @@
         ];
         forEachSystem = f: nixpkgs.lib.genAttrs systems (system: f (pkgsFor system));
         pkgsFor = system:
-            import nixpkgs {
-                inherit system;
-                config.allowUnfree = true;
-                overlays = [
-                    # lix
-                    (_final: prev: {
-                        inherit
-                            (prev.lixPackageSets.stable)
-                            nixpkgs-review
-                            nix-eval-jobs
-                            nix-fast-build
-                            colmena
-                            ;
-                    })
-
-                    # inputs.self.overlays.default
-                    inputs.nur.overlays.default
-                    inputs.nixos-apple-silicon.overlays.default
-                    inputs.devshell.overlays.default
-                ];
-            };
+            import nixpkgs (import ./nixpkgs.nix {inherit inputs system;});
 
         username = "vai";
         fullname = "Vai Srivastava";
@@ -130,82 +117,121 @@
         nixosConfigurations = {
             # FIXME: disabled both nixosSystems, as i have not built/used them in over a year
 
-            # olorin = inputs.nixpkgs.lib.nixosSystem {
-            #     pkgs = pkgsFor "aarch64-linux";
+            # olorin = let
+            #     system = "aarch64-linux";
+            # in
+            #     inputs.nixpkgs.lib.nixosSystem {
+            #         pkgs = pkgsFor system;
             #
-            #     inherit specialArgs;
+            #         inherit specialArgs;
             #
-            #     modules = [
-            #         ./nixos/hosts/olorin
+            #         modules = [
+            #             ./nixos/hosts/olorin
             #
-            #         inputs.home-manager.nixosModules.home-manager
-            #         {
-            #             home-manager = {
-            #                 extraSpecialArgs = specialArgs;
-            #                 backupFileExtension = "bak";
-            #                 users.${username} = import ./home/hosts/olorin;
-            #                 sharedModules = [
-            #                     inputs.nur.modules.homeManager.default
-            #                     inputs.stylix.homeModules.stylix
-            #                 ];
-            #             };
-            #         }
+            #             inputs.home-manager.nixosModules.home-manager
+            #             {
+            #                 home-manager = {
+            #                     extraSpecialArgs = specialArgs;
+            #                     backupFileExtension = "bak";
             #
-            #         inputs.nur.modules.nixos.default
-            #         inputs.nixos-apple-silicon.nixosModules.default
-            #     ];
-            # };
-            # tarindor = inputs.nixpkgs.lib.nixosSystem {
-            #     pkgs = pkgsFor "x86_64-linux";
+            #                     useUserPackages = true;
+            #                     users.${username} = import ./home/hosts/olorin;
             #
-            #     inherit specialArgs;
+            #                     sharedModules = [
+            #                         inputs.nur.modules.homeManager.default
+            #                         inputs.stylix.homeModules.stylix
             #
-            #     modules = [
-            #         ./nixos/hosts/tarindor
+            #                         {
+            #                             nixpkgs = import ./nixpkgs.nix {
+            #                                 inherit inputs;
+            #                                 inherit system;
+            #                             };
+            #                         }
+            #                     ];
+            #                 };
+            #             }
             #
-            #         inputs.home-manager.nixosModules.home-manager
-            #         {
-            #             home-manager = {
-            #                 extraSpecialArgs = specialArgs;
-            #                 backupFileExtension = "bak";
-            #                 users.${username} = import ./home/hosts/tarindor;
-            #                 sharedModules = [
-            #                     inputs.nur.modules.homeManager.default
-            #                     inputs.stylix.homeModules.stylix
-            #                 ];
-            #             };
-            #         }
+            #             inputs.nur.modules.nixos.default
+            #             inputs.nixos-apple-silicon.nixosModules.default
+            #         ];
+            #     };
+            # tarindor = let
+            #     system = "x86_64-linux";
+            # in
+            #     inputs.nixpkgs.lib.nixosSystem {
+            #         pkgs = pkgsFor system;
             #
-            #         inputs.nur.modules.nixos.default
-            #     ];
-            # };
+            #         inherit specialArgs;
+            #
+            #         modules = [
+            #             ./nixos/hosts/tarindor
+            #
+            #             inputs.home-manager.nixosModules.home-manager
+            #             {
+            #                 home-manager = {
+            #                     extraSpecialArgs = specialArgs;
+            #                     backupFileExtension = "bak";
+            #
+            #                     useUserPackages = true;
+            #                     users.${username} = import ./home/hosts/tarindor;
+            #
+            #                     sharedModules = [
+            #                         inputs.nur.modules.homeManager.default
+            #                         inputs.stylix.homeModules.stylix
+            #
+            #                         {
+            #                             nixpkgs = import ./nixpkgs.nix {
+            #                                 inherit inputs;
+            #                                 inherit system;
+            #                             };
+            #                         }
+            #                     ];
+            #                 };
+            #             }
+            #
+            #             inputs.nur.modules.nixos.default
+            #         ];
+            #     };
         };
 
         darwinConfigurations = {
-            olorin-mbp = inputs.nix-darwin.lib.darwinSystem {
-                pkgs = pkgsFor "aarch64-darwin";
+            olorin-mbp = let
+                system = "aarch64-darwin";
+            in
+                inputs.nix-darwin.lib.darwinSystem {
+                    pkgs = pkgsFor system;
 
-                inherit specialArgs;
+                    inherit specialArgs;
 
-                modules = [
-                    ./darwin/hosts/olorin-mbp
+                    modules = [
+                        ./darwin/hosts/olorin-mbp
 
-                    inputs.home-manager.darwinModules.home-manager
-                    {
-                        home-manager = {
-                            extraSpecialArgs = specialArgs;
-                            backupFileExtension = "bak";
-                            users.${username} = import ./home/hosts/olorin-mbp;
-                            sharedModules = [
-                                inputs.nur.modules.homeManager.default
-                                inputs.stylix.homeModules.stylix
-                            ];
-                        };
-                    }
+                        inputs.home-manager.darwinModules.home-manager
+                        {
+                            home-manager = {
+                                extraSpecialArgs = specialArgs;
+                                backupFileExtension = "bak";
 
-                    inputs.nur.modules.darwin.default
-                ];
-            };
+                                useUserPackages = true;
+                                users.${username} = import ./home/hosts/olorin-mbp;
+
+                                sharedModules = [
+                                    inputs.nur.modules.homeManager.default
+                                    inputs.stylix.homeModules.stylix
+
+                                    {
+                                        nixpkgs = import ./nixpkgs.nix {
+                                            inherit inputs;
+                                            inherit system;
+                                        };
+                                    }
+                                ];
+                            };
+                        }
+
+                        inputs.nur.modules.darwin.default
+                    ];
+                };
         };
     };
 }
