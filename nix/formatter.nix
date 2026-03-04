@@ -9,14 +9,9 @@ inputs.treefmt-nix.lib.mkWrapper pkgs {
     # nix
     programs = {
         deadnix.enable = true;
-        alejandra.enable = true;
-    };
-    settings.formatter = {
-        alejandra = {
-            options = [
-                "--experimental-config"
-                "./nix/fmt/alejandra.toml"
-            ];
+        nixfmt = {
+            enable = true;
+            indent = 4;
         };
     };
 
