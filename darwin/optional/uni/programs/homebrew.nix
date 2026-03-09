@@ -7,7 +7,6 @@
         casks = [
             "mathpix-snipping-tool"
             "adobe-creative-cloud"
-            "autodesk-fusion"
             "citrix-workspace"
             "microsoft-teams"
             "microsoft-excel"
