@@ -13,6 +13,7 @@
         ffmpeg
         fx
         glow
+        grex
         gtrash
         gum
         hexyl
