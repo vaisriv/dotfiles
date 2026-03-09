@@ -14,13 +14,15 @@
             DOCUMENTS_DIR = "$HOME/files/documents";
             DOTFILES_DIR = "$HOME/files/dotfiles";
             DOWNLOADS_DIR = "$HOME/files/downloads";
-            MUSIC_DIR = "$HOME/files/music";
+            MEDIA_DIR = "$HOME/files/media";
             NOTES_DIR = "$HOME/files/notes";
-            PICTURES_DIR = "$HOME/files/pictures";
             PROJECTS_DIR = "$HOME/files/projects";
-            SCREENSHOTS_DIR = "$HOME/files/pictures/screenshots";
             TEMPLATES_DIR = "$HOME/files/templates";
-            VIDEOS_DIR = "$HOME/files/videos";
+            ## media
+            MUSIC_DIR = "${config.home.sessionVariables.MEDIA_DIR}/music";
+            PICTURES_DIR = "${config.home.sessionVariables.MEDIA_DIR}/pictures";
+            SCREENSHOTS_DIR = "${config.home.sessionVariables.MEDIA_DIR}/pictures/screenshots";
+            VIDEOS_DIR = "${config.home.sessionVariables.MEDIA_DIR}/videos";
 
             # xdg dirs
             ## homes
@@ -34,6 +36,7 @@
             XDG_DOWNLOADS_DIR = "${config.home.sessionVariables.DOWNLOADS_DIR}";
             XDG_TEMPLATES_DIR = "${config.home.sessionVariables.TEMPLATES_DIR}";
             ## media
+            XDG_MEDIA_DIR = "${config.home.sessionVariables.MEDIA_DIR}";
             XDG_MUSIC_DIR = "${config.home.sessionVariables.MUSIC_DIR}";
             XDG_PICTURES_DIR = "${config.home.sessionVariables.PICTURES_DIR}";
             XDG_VIDEOS_DIR = "${config.home.sessionVariables.VIDEOS_DIR}";
