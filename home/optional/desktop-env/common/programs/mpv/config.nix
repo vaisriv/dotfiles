@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 {
     programs.mpv.config = {
         ## Video
@@ -17,7 +17,7 @@
 
         ## Screenshots
         screenshot-format = "png";
-        screenshot-dir = "~/files/pictures/mpv";
+        screenshot-dir = "${config.home.sessionVariables.XDG_PICTURES_DIR}/mpv";
         screenshot-template = "%F-%p-%n";
 
         ## Language Priority
