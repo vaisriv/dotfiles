@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     imports = [
         # Generic System config
         ../../common/linux

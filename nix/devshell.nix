@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 pkgs.devshell.mkShell {
     name = "dotfiles";
     motd = ''

@@ -1,4 +1,5 @@
-{username, ...}: {
+{ username, ... }:
+{
     nix = {
         settings = {
             # Auto reuse pre-existing binaries/paths in nix-store

@@ -1,6 +1,8 @@
-{...}: let
+{ ... }:
+let
     hostname = "olorin-mbp";
-in {
+in
+{
     imports = [
         # Configs
         # Generic for all hosts

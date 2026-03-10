@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     programs.ncspot = {
         enable = true;
     };

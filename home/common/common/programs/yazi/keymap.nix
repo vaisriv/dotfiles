@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     programs.yazi.keymap = {
         mgr.prepend_keymap = [
             {
@@ -17,47 +18,71 @@
                 desc = "[L] Enter the child directory, or open the file";
             }
             {
-                on = ["p" "h"];
+                on = [
+                    "p"
+                    "h"
+                ];
                 run = "plugin toggle-pane min-preview";
                 desc = "[P]review [H]ide";
             }
             {
-                on = ["p" "t"];
+                on = [
+                    "p"
+                    "t"
+                ];
                 run = "plugin toggle-pane max-preview";
                 desc = "[P]review size [T]oggle";
             }
             {
-                on = ["f"];
+                on = [ "f" ];
                 run = "plugin jump-to-char";
                 desc = "Jump [f]orward to file with [<>] name";
             }
             {
-                on = ["g" "h"];
+                on = [
+                    "g"
+                    "h"
+                ];
                 run = "cd $HOME";
                 desc = "[G]o to [H]ome";
             }
             {
-                on = ["g" "c"];
+                on = [
+                    "g"
+                    "c"
+                ];
                 run = "cd $HOME/.config";
                 desc = "[G]o to [C]onfig";
             }
             {
-                on = ["g" "d"];
+                on = [
+                    "g"
+                    "d"
+                ];
                 run = "cd $DOWNLOADS_DIR";
                 desc = "[G]o to [D]ownloads";
             }
             {
-                on = ["g" "f"];
+                on = [
+                    "g"
+                    "f"
+                ];
                 run = "cd $FILES_DIR";
                 desc = "[G]o to [F]iles";
             }
             {
-                on = ["g" "p"];
+                on = [
+                    "g"
+                    "p"
+                ];
                 run = "cd $PICTURES_DIR";
                 desc = "[G]o to [P]ictures";
             }
             {
-                on = ["g" "u"];
+                on = [
+                    "g"
+                    "u"
+                ];
                 run = "cd $UNI_DIR";
                 desc = "[G]o to [U]ni";
             }

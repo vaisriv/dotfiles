@@ -75,163 +75,176 @@
         };
     };
 
-    outputs = inputs @ {
-        self,
-        nixpkgs,
-        ...
-    }: let
-        systems = [
-            "aarch64-linux"
-            "i686-linux"
-            "x86_64-linux"
-            "aarch64-darwin"
-            "x86_64-darwin"
-        ];
-        forEachSystem = f: nixpkgs.lib.genAttrs systems (system: f (pkgsFor system));
-        pkgsFor = system:
-            import nixpkgs (import ./nixpkgs.nix {inherit inputs system;});
+    outputs =
+        inputs@{
+            self,
+            nixpkgs,
+            ...
+        }:
+        let
+            systems = [
+                "aarch64-linux"
+                "i686-linux"
+                "x86_64-linux"
+                "aarch64-darwin"
+                "x86_64-darwin"
+            ];
+            forEachSystem = f: nixpkgs.lib.genAttrs systems (system: f (pkgsFor system));
+            pkgsFor = system: import nixpkgs (import ./nixpkgs.nix { inherit inputs system; });
 
-        username = "vai";
-        fullname = "Vai Srivastava";
-        email = "vaisriv@icloud.com";
+            username = "vai";
+            fullname = "Vai Srivastava";
+            email = "vaisriv@icloud.com";
 
-        specialArgs = {inherit self inputs username fullname email;};
-    in {
-        overlays = import ./nix/overlays;
-        nixosModules = import ./nix/nixosModules;
-        darwinModules = import ./nix/darwinModules;
-        homeModules = import ./nix/homeModules;
-
-        formatter = forEachSystem (pkgs:
-            import ./nix/formatter.nix {
-                inherit pkgs;
-                inherit inputs;
-            });
-        devShells = forEachSystem (pkgs: {
-            default = import ./nix/devshell.nix {
-                inherit pkgs;
-                inherit inputs;
+            specialArgs = {
+                inherit
+                    self
+                    inputs
+                    username
+                    fullname
+                    email
+                    ;
             };
-        });
+        in
+        {
+            overlays = import ./nix/overlays;
+            nixosModules = import ./nix/nixosModules;
+            darwinModules = import ./nix/darwinModules;
+            homeModules = import ./nix/homeModules;
 
-        nixosConfigurations = {
-            # FIXME: disabled both nixosSystems, as i have not built/used them in over a year
-
-            # olorin = let
-            #     system = "aarch64-linux";
-            # in
-            #     inputs.nixpkgs.lib.nixosSystem {
-            #         pkgs = pkgsFor system;
-            #
-            #         inherit specialArgs;
-            #
-            #         modules = [
-            #             ./nixos/hosts/olorin
-            #
-            #             inputs.home-manager.nixosModules.home-manager
-            #             {
-            #                 home-manager = {
-            #                     extraSpecialArgs = specialArgs;
-            #                     backupFileExtension = "bak";
-            #
-            #                     useUserPackages = true;
-            #                     users.${username} = import ./home/hosts/olorin;
-            #
-            #                     sharedModules = [
-            #                         inputs.nur.modules.homeManager.default
-            #                         inputs.stylix.homeModules.stylix
-            #
-            #                         {
-            #                             nixpkgs = import ./nixpkgs.nix {
-            #                                 inherit inputs;
-            #                                 inherit system;
-            #                             };
-            #                         }
-            #                     ];
-            #                 };
-            #             }
-            #
-            #             inputs.nur.modules.nixos.default
-            #             inputs.nixos-apple-silicon.nixosModules.default
-            #         ];
-            #     };
-            # tarindor = let
-            #     system = "x86_64-linux";
-            # in
-            #     inputs.nixpkgs.lib.nixosSystem {
-            #         pkgs = pkgsFor system;
-            #
-            #         inherit specialArgs;
-            #
-            #         modules = [
-            #             ./nixos/hosts/tarindor
-            #
-            #             inputs.home-manager.nixosModules.home-manager
-            #             {
-            #                 home-manager = {
-            #                     extraSpecialArgs = specialArgs;
-            #                     backupFileExtension = "bak";
-            #
-            #                     useUserPackages = true;
-            #                     users.${username} = import ./home/hosts/tarindor;
-            #
-            #                     sharedModules = [
-            #                         inputs.nur.modules.homeManager.default
-            #                         inputs.stylix.homeModules.stylix
-            #
-            #                         {
-            #                             nixpkgs = import ./nixpkgs.nix {
-            #                                 inherit inputs;
-            #                                 inherit system;
-            #                             };
-            #                         }
-            #                     ];
-            #                 };
-            #             }
-            #
-            #             inputs.nur.modules.nixos.default
-            #         ];
-            #     };
-        };
-
-        darwinConfigurations = {
-            olorin-mbp = let
-                system = "aarch64-darwin";
-            in
-                inputs.nix-darwin.lib.darwinSystem {
-                    pkgs = pkgsFor system;
-
-                    inherit specialArgs;
-
-                    modules = [
-                        ./darwin/hosts/olorin-mbp
-
-                        inputs.home-manager.darwinModules.home-manager
-                        {
-                            home-manager = {
-                                extraSpecialArgs = specialArgs;
-                                backupFileExtension = "bak";
-
-                                useUserPackages = true;
-                                users.${username} = import ./home/hosts/olorin-mbp;
-
-                                sharedModules = [
-                                    inputs.nur.modules.homeManager.default
-                                    inputs.stylix.homeModules.stylix
-
-                                    {
-                                        nixpkgs = import ./nixpkgs.nix {
-                                            inherit inputs;
-                                            inherit system;
-                                        };
-                                    }
-                                ];
-                            };
-                        }
-
-                        inputs.nur.modules.darwin.default
-                    ];
+            formatter = forEachSystem (
+                pkgs:
+                import ./nix/formatter.nix {
+                    inherit pkgs;
+                    inherit inputs;
+                }
+            );
+            devShells = forEachSystem (pkgs: {
+                default = import ./nix/devshell.nix {
+                    inherit pkgs;
+                    inherit inputs;
                 };
+            });
+
+            nixosConfigurations = {
+                # FIXME: disabled both nixosSystems, as i have not built/used them in over a year
+
+                # olorin = let
+                #     system = "aarch64-linux";
+                # in
+                #     inputs.nixpkgs.lib.nixosSystem {
+                #         pkgs = pkgsFor system;
+                #
+                #         inherit specialArgs;
+                #
+                #         modules = [
+                #             ./nixos/hosts/olorin
+                #
+                #             inputs.home-manager.nixosModules.home-manager
+                #             {
+                #                 home-manager = {
+                #                     extraSpecialArgs = specialArgs;
+                #                     backupFileExtension = "bak";
+                #
+                #                     useUserPackages = true;
+                #                     users.${username} = import ./home/hosts/olorin;
+                #
+                #                     sharedModules = [
+                #                         inputs.nur.modules.homeManager.default
+                #                         inputs.stylix.homeModules.stylix
+                #
+                #                         {
+                #                             nixpkgs = import ./nixpkgs.nix {
+                #                                 inherit inputs;
+                #                                 inherit system;
+                #                             };
+                #                         }
+                #                     ];
+                #                 };
+                #             }
+                #
+                #             inputs.nur.modules.nixos.default
+                #             inputs.nixos-apple-silicon.nixosModules.default
+                #         ];
+                #     };
+                # tarindor = let
+                #     system = "x86_64-linux";
+                # in
+                #     inputs.nixpkgs.lib.nixosSystem {
+                #         pkgs = pkgsFor system;
+                #
+                #         inherit specialArgs;
+                #
+                #         modules = [
+                #             ./nixos/hosts/tarindor
+                #
+                #             inputs.home-manager.nixosModules.home-manager
+                #             {
+                #                 home-manager = {
+                #                     extraSpecialArgs = specialArgs;
+                #                     backupFileExtension = "bak";
+                #
+                #                     useUserPackages = true;
+                #                     users.${username} = import ./home/hosts/tarindor;
+                #
+                #                     sharedModules = [
+                #                         inputs.nur.modules.homeManager.default
+                #                         inputs.stylix.homeModules.stylix
+                #
+                #                         {
+                #                             nixpkgs = import ./nixpkgs.nix {
+                #                                 inherit inputs;
+                #                                 inherit system;
+                #                             };
+                #                         }
+                #                     ];
+                #                 };
+                #             }
+                #
+                #             inputs.nur.modules.nixos.default
+                #         ];
+                #     };
+            };
+
+            darwinConfigurations = {
+                olorin-mbp =
+                    let
+                        system = "aarch64-darwin";
+                    in
+                    inputs.nix-darwin.lib.darwinSystem {
+                        pkgs = pkgsFor system;
+
+                        inherit specialArgs;
+
+                        modules = [
+                            ./darwin/hosts/olorin-mbp
+
+                            inputs.home-manager.darwinModules.home-manager
+                            {
+                                home-manager = {
+                                    extraSpecialArgs = specialArgs;
+                                    backupFileExtension = "bak";
+
+                                    useUserPackages = true;
+                                    users.${username} = import ./home/hosts/olorin-mbp;
+
+                                    sharedModules = [
+                                        inputs.nur.modules.homeManager.default
+                                        inputs.stylix.homeModules.stylix
+
+                                        {
+                                            nixpkgs = import ./nixpkgs.nix {
+                                                inherit inputs;
+                                                inherit system;
+                                            };
+                                        }
+                                    ];
+                                };
+                            }
+
+                            inputs.nur.modules.darwin.default
+                        ];
+                    };
+            };
         };
-    };
 }

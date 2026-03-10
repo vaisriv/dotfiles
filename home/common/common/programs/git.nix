@@ -2,7 +2,8 @@
     fullname,
     email,
     ...
-}: {
+}:
+{
     programs = {
         git = {
             enable = true;

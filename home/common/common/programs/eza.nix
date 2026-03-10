@@ -2,7 +2,8 @@
     config,
     pkgs,
     ...
-}: {
+}:
+{
     programs.eza = {
         enable = true;
         enableFishIntegration = true;
@@ -31,7 +32,7 @@
             enable = pkgs.stdenv.isDarwin;
 
             target = "Library/Application Support/eza/theme.yml";
-            source = (pkgs.formats.yaml {}).generate "eza-theme" config.programs.eza.theme;
+            source = (pkgs.formats.yaml { }).generate "eza-theme" config.programs.eza.theme;
         };
     };
 }

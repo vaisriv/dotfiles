@@ -1,6 +1,8 @@
-{...}: let
+{ ... }:
+let
     hostname = "tarindor";
-in {
+in
+{
     imports = [
         # WARN: Do not remove
         ./hardware-configuration.nix

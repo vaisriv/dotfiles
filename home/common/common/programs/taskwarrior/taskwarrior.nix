@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
     programs = {
         taskwarrior = {
             enable = true;
@@ -37,9 +38,10 @@
             };
             colorTheme = "dark-256";
             dataLocation =
-                if pkgs.stdenv.isDarwin
-                then "~/Library/Mobile Documents/iCloud~com~mav~taskchamp/Documents/task"
-                else "~/.local/share/task";
+                if pkgs.stdenv.isDarwin then
+                    "~/Library/Mobile Documents/iCloud~com~mav~taskchamp/Documents/task"
+                else
+                    "~/.local/share/task";
         };
     };
 

@@ -3,18 +3,20 @@
     lib,
     pkgs,
     ...
-}: let
+}:
+let
     cfg = config.programs.macchina;
-    tomlFormat = pkgs.formats.toml {};
-in {
+    tomlFormat = pkgs.formats.toml { };
+in
+{
     options.programs.macchina = {
         enable = lib.mkEnableOption "macchina";
 
-        package = lib.mkPackageOption pkgs "macchina" {};
+        package = lib.mkPackageOption pkgs "macchina" { };
 
         config = lib.mkOption {
             type = tomlFormat.type;
-            default = {};
+            default = { };
             example = lib.literalExpression ''
                 {}
             '';
@@ -28,7 +30,7 @@ in {
 
         theme = lib.mkOption {
             type = tomlFormat.type;
-            default = {};
+            default = { };
             example = lib.literalExpression ''
                 {}
             '';
@@ -42,9 +44,9 @@ in {
     };
 
     config = lib.mkIf cfg.enable {
-        home.packages = [cfg.package];
+        home.packages = [ cfg.package ];
 
-        xdg.configFile."macchina/config.toml" = lib.mkIf (cfg.settings != {}) {
+        xdg.configFile."macchina/config.toml" = lib.mkIf (cfg.settings != { }) {
             source = tomlFormat.generate "config.toml" cfg.settings;
         };
     };

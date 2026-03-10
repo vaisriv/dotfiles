@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     home = {
         sessionVariables = {
             # uni dirs

@@ -3,18 +3,20 @@
     lib,
     pkgs,
     ...
-}: let
+}:
+let
     cfg = config.programs.clipse;
-    jsonFormat = pkgs.formats.json {};
-in {
+    jsonFormat = pkgs.formats.json { };
+in
+{
     options.programs.clipse = {
         enable = lib.mkEnableOption "clipse";
 
-        package = lib.mkPackageOption pkgs "clipse" {};
+        package = lib.mkPackageOption pkgs "clipse" { };
 
         settings = lib.mkOption {
             type = jsonFormat.type;
-            default = {};
+            default = { };
             example = lib.literalExpression ''
                 {
                   "allowDuplicates": false,
@@ -62,9 +64,9 @@ in {
     };
 
     config = lib.mkIf cfg.enable {
-        home.packages = [cfg.package];
+        home.packages = [ cfg.package ];
 
-        xdg.configFile."clipse/config.json" = lib.mkIf (cfg.settings != {}) {
+        xdg.configFile."clipse/config.json" = lib.mkIf (cfg.settings != { }) {
             source = jsonFormat.generate "config.json" cfg.settings;
         };
     };

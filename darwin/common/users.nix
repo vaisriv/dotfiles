@@ -3,7 +3,8 @@
     fullname,
     pkgs,
     ...
-}: {
+}:
+{
     users = {
         users."${username}" = {
             home = "/Users/${username}";
@@ -12,7 +13,7 @@
             uid = 501;
             shell = pkgs.fish;
         };
-        knownUsers = ["${username}"];
+        knownUsers = [ "${username}" ];
     };
     system.primaryUser = "${username}";
 }

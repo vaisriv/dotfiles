@@ -2,7 +2,8 @@
     username,
     pkgs,
     ...
-}: {
+}:
+{
     users.mutableUsers = true;
     users.users."${username}" = {
         initialPassword = "${username}";

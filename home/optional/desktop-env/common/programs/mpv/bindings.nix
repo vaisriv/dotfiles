@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     programs.mpv.bindings = {
         MBTN_LEFT = "ignore";
         MBTN_LEFT_DBL = "cycle fullscreen";

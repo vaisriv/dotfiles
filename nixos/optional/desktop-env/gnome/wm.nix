@@ -1,3 +1,4 @@
-{...}: {
+{ ... }:
+{
     # GNOME install goes here
 }

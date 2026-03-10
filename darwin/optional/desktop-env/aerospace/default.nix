@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     imports = [
         # Generic for all DM+WM (gui apps, etc)
         ../common

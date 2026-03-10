@@ -2,7 +2,8 @@
     config,
     pkgs,
     ...
-}: let
+}:
+let
     flavor = "mocha";
     font = {
         name = "Iosevka";
@@ -13,7 +14,8 @@
         };
     };
     wallpaper = ../../../assets/wallpapers/catscii-catppuccin_mocha.png;
-in {
+in
+{
     stylix = {
         enable = true;
         image = "${wallpaper}";

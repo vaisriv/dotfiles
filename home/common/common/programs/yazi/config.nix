@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     programs.yazi = {
         enableFishIntegration = false;
         settings = {
@@ -12,25 +13,48 @@
                     # directories
                     {
                         mime = "inode/directory";
-                        use = ["open" "edit" "mpv" "browser"];
+                        use = [
+                            "open"
+                            "edit"
+                            "mpv"
+                            "browser"
+                        ];
                     }
 
                     # pdfs
                     {
                         mime = "application/pdf";
-                        use = ["open" "pdf" "browser" "reveal"];
+                        use = [
+                            "open"
+                            "pdf"
+                            "browser"
+                            "reveal"
+                        ];
                     }
 
                     # media
                     {
                         mime = "{audio,image,video}/*";
-                        use = ["open" "play" "mpv" "browser" "reveal"];
+                        use = [
+                            "open"
+                            "play"
+                            "mpv"
+                            "browser"
+                            "reveal"
+                        ];
                     }
 
                     # fallback
                     {
                         url = "*";
-                        use = ["open" "edit" "play" "mpv" "browser" "reveal"];
+                        use = [
+                            "open"
+                            "edit"
+                            "play"
+                            "mpv"
+                            "browser"
+                            "reveal"
+                        ];
                     }
                 ];
             };

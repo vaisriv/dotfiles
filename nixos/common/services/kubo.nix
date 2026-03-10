@@ -2,7 +2,8 @@
     config,
     username,
     ...
-}: {
+}:
+{
     # IPFS
     services.kubo = {
         enable = true;

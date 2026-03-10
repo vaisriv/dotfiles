@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
     # TODO: make home-manager module for macchina
     # programs.macchina = {
     #   enable = true;

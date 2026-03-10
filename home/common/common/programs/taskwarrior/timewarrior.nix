@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
     home.packages = with pkgs; [
         timewarrior
         python3 # idk why but it's required by timewarrior

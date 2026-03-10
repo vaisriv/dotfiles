@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     boot = {
         consoleLogLevel = 0;
         m1n1CustomLogo = ../../assets/bootlogo-m1n1-nixos.png;

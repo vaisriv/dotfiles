@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     services = {
         taskwarrior-sync = {
             enable = true;

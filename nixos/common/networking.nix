@@ -1,4 +1,5 @@
-{username, ...}: {
+{ username, ... }:
+{
     networking = {
         networkmanager.enable = true;
         wireless.userControlled = {
@@ -6,7 +7,10 @@
             group = "networkmanager";
         };
 
-        nameservers = ["1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one"];
+        nameservers = [
+            "1.1.1.1#one.one.one.one"
+            "1.0.0.1#one.one.one.one"
+        ];
     };
 
     users.users."${username}" = {
@@ -18,8 +22,11 @@
     services.resolved = {
         enable = true;
         dnssec = "true";
-        domains = ["~."];
-        fallbackDns = ["1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one"];
+        domains = [ "~." ];
+        fallbackDns = [
+            "1.1.1.1#one.one.one.one"
+            "1.0.0.1#one.one.one.one"
+        ];
         dnsovertls = "true";
     };
 

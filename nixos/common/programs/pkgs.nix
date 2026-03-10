@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
     environment.systemPackages = with pkgs; [
         # nix formatter
         # inputs.alejandra.defaultPackage.${system}

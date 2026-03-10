@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     imports = [
         # App and Program Configs
         ./programs

@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     programs.tmux = {
         baseIndex = 1;
         clock24 = true;

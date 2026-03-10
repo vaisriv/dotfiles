@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
     programs.foot = {
         enable = true;
         settings = {
@@ -23,7 +24,10 @@
             exec = "foot";
             icon = "foot";
             terminal = false;
-            categories = ["System" "TerminalEmulator"];
+            categories = [
+                "System"
+                "TerminalEmulator"
+            ];
         };
     };
 }

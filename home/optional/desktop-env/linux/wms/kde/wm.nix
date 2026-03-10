@@ -1,3 +1,4 @@
-{...}: {
+{ ... }:
+{
     # KDE settings here
 }

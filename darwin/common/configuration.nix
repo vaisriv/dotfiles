@@ -1,4 +1,5 @@
-{username, ...}: {
+{ username, ... }:
+{
     nix = {
         settings = {
             # Enable nix-comamnd and flakes
