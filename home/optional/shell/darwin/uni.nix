@@ -3,7 +3,7 @@
     home = {
         sessionPath = [
             # add useful uni apps to path
-            "/Users/${username}/Applications/Uni/MATLAB_R2025b.app/bin" # matlab gui/lang
+            "/Users/${username}/Applications/Manually Installed Apps/Uni/MATLAB_R2025b.app/bin" # matlab gui/lang
 
             # WARN: wants updates too often to be installed by nix
             # "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app/Contents/MacOS" # uni browser

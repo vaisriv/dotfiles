@@ -46,7 +46,7 @@
             # {app = "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app";} # nur
             { app = "/Applications/Zen.app"; } # homebrew
             { app = "${pkgs.wezterm}/Applications/Wezterm.app"; } # home-manager
-            { app = "/Users/${username}/Applications/Uni/MATLAB_R2025b.app"; } # manual
+            { app = "/Users/${username}/Applications/Manually Installed Apps/Uni/MATLAB_R2025b.app"; } # manual
             { app = "${pkgs.vscodium}/Applications/VSCodium.app"; } # nixpkgs
             { app = "${pkgs.libreoffice-bin}/Applications/LibreOffice.app"; } # nixpkgs
         ];
