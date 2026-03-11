@@ -11,9 +11,9 @@
         jdk11
         jdk25
 
-        # containers
+        # containers/vms
         podman
-        # xquartz
+        utm
     ];
 
     system.activationScripts.postActivation.text = ''
