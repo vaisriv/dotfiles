@@ -21,7 +21,7 @@
         ./ncmpcpp.nix
         ./ncspot.nix
         ./nh.nix
-        ./nvim.nix
+        ./neovim.nix
         ./ripgrep.nix
         ./rmpc.nix
         ./starship.nix
