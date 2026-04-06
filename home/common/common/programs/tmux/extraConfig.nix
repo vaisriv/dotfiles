@@ -17,6 +17,9 @@
             # set default wd
             bind M-c attach-session -c "#{pane_current_path}"
 
+            # allow osc52 clipboard
+            set -g set-clipboard on
+
             # open new window in current path
             bind C new-window -c "#{pane_current_path}"
 
