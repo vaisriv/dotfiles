@@ -246,5 +246,31 @@
                         ];
                     };
             };
+
+            homeConfigurations = {
+                ubuntu =
+                    let
+                        system = "aarch64-linux";
+                    in
+                    inputs.home-manager.lib.homeManagerConfiguration {
+                        pkgs = pkgsFor system;
+
+                        extraSpecialArgs = specialArgs;
+
+                        modules = [
+                            ./home/hosts/dev
+
+                            inputs.nur.modules.homeManager.default
+                            inputs.stylix.homeModules.stylix
+
+                            {
+                                nixpkgs = import ./nixpkgs.nix {
+                                    inherit inputs;
+                                    inherit system;
+                                };
+                            }
+                        ];
+                    };
+            };
         };
 }

@@ -1,7 +1,7 @@
 { ... }:
 {
     imports = [
-        # Generic for all Hosts
+        # Generic for all hosts
         ../common
 
         # App and Program Configs
@@ -9,8 +9,5 @@
 
         # Service Configs
         ./services
-
-        # Theming
-        ./theming.nix
     ];
 }

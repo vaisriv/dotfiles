@@ -4,7 +4,7 @@
     home = {
         sessionPath = [
             # add useful uni apps to path
-            "/usr/bin/MATLAB_R2024b/bin" # matlab gui/lang
+            "/usr/bin/MATLAB_R2025b/bin" # matlab gui/lang
         ];
         sessionVariables = {
             # needed for marp-cli

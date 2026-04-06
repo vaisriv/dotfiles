@@ -1,9 +1,13 @@
-{ username, ... }:
+{
+    pkgs,
+    ...
+}:
 {
     imports = [
         # Generic for all hosts
         ./common.nix
     ];
 
-    home.homeDirectory = "/home/${username}";
+    home.packages = with pkgs; [
+    ];
 }

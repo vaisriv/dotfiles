@@ -8,7 +8,7 @@ Linux)
     if grep -qi NixOS /etc/os-release; then
         nh os switch "$config_location" -H "$machine"
     else
-        nh home switch "$config_location" -H "$machine"
+        nh home switch "$config_location" -c "$machine"
     fi
     ;;
 *)

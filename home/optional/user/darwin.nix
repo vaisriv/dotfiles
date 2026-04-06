@@ -1,8 +1,9 @@
 { username, ... }:
 {
-    home = {
-        # User setup
-        inherit username;
-        homeDirectory = "/Users/${username}";
-    };
+    imports = [
+        # Generic for all hosts
+        ./common.nix
+    ];
+
+    home.homeDirectory = "/Users/${username}";
 }

@@ -1,0 +1,33 @@
+{
+    pkgs,
+    ...
+}:
+{
+    home.packages = with pkgs; [
+        # cli/term tools
+        asciinema
+        asciinema-scenario
+        cloudflared
+        cht-sh
+        dust
+        ffmpeg
+        fx
+        glow
+        grex
+        gtrash
+        gum
+        hexyl
+        hyperfine
+        lazysql
+        p7zip
+        pastel
+        procs
+        poppler-utils
+        presenterm
+        pv
+        testdisk
+        tokei
+        viu
+        wiki-tui
+    ];
+}

@@ -1,6 +1,6 @@
 { ... }:
 {
     imports = [
-        ./taskwarrior-sync.nix
+        # ./taskwarrior-sync.nix
     ];
 }

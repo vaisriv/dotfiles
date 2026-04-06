@@ -6,5 +6,8 @@
 
         # Service Configs
         ./services
+
+        # Theming Config
+        ./theming.nix
     ];
 }

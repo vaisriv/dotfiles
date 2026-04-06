@@ -1,6 +1,10 @@
 { config, ... }:
 {
     home = {
+        sessionPath = [
+            # add local bin to path
+            "$HOME/.local/bin"
+        ];
         sessionVariables = {
             # general env vars
             EDITOR = "nvim";
