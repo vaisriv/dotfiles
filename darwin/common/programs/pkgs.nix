@@ -9,7 +9,6 @@
         asciinema-scenario
         cloudflared
         cht-sh
-        deno
         dust
         ffmpeg
         fx
