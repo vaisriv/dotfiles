@@ -49,6 +49,11 @@
                 "Network Trash Folder"
                 "Temporary Items"
                 ".apdisk"
+
+                # Editor settings
+                ".claude"
+                "CLAUDE.md"
+                ".vscode"
             ];
             settings = {
                 user = {
