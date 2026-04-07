@@ -21,6 +21,7 @@
         ./ncmpcpp.nix
         ./ncspot.nix
         ./nh.nix
+        ./nix-init.nix
         ./neovim.nix
         ./ripgrep.nix
         ./rmpc.nix
