@@ -17,21 +17,16 @@
         ./latexmk.nix
         ./lazygit.nix
         ./macchina
-        # ./mpd.nix
-        ./ncmpcpp.nix
-        ./ncspot.nix
         ./nh.nix
         ./nix-init.nix
         ./neovim.nix
         ./ripgrep.nix
-        ./rmpc.nix
         ./starship.nix
         ./taskwarrior
         ./tealdeer.nix
         ./tmux
         ./uv.nix
         ./yazi
-        ./yt-dlp.nix
         ./zoxide.nix
     ];
 }
