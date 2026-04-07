@@ -458,11 +458,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775591923,
-        "narHash": "sha256-2wMDE3CkWxIKgPQp7lTgYeMNd687CB4X9evKPS5gVEo=",
+        "lastModified": 1775595441,
+        "narHash": "sha256-MKqbKXMaYOi5ihc+Y98PapKuxULLITNFQSn0puXkN5Q=",
         "owner": "vaisriv",
         "repo": "nvf-config",
-        "rev": "e8f6d6c37583b7996866cba95d04c50f2f296743",
+        "rev": "9c391081cf18eae44787e6583c4ab11320b5b70b",
         "type": "github"
       },
       "original": {
