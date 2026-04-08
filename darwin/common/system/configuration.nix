@@ -1,6 +1,4 @@
-{
-    ...
-}:
+{ ... }:
 {
     system = {
         # activationScripts are executed every time you boot the system or run `nixos-rebuild` / `darwin-rebuild`.

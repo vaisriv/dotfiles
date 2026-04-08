@@ -6,9 +6,7 @@
             force-colorization = false;
             style = "numbers,changes,header";
             italic-text = "always";
-            map-syntax = [
-                "*.ino:C++"
-            ];
+            map-syntax = [ "*.ino:C++" ];
         };
     };
 

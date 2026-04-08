@@ -1,13 +1,9 @@
-{
-    pkgs,
-    ...
-}:
+{ pkgs, ... }:
 {
     imports = [
         # Generic for all hosts
         ./common.nix
     ];
 
-    home.packages = with pkgs; [
-    ];
+    home.packages = with pkgs; [ ];
 }

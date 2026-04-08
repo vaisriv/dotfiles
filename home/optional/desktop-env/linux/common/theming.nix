@@ -1,8 +1,4 @@
-{
-    pkgs,
-    lib,
-    ...
-}:
+{ pkgs, lib, ... }:
 let
     flavor = "mocha";
     accent = "lavender";

@@ -1,9 +1,7 @@
 { ... }:
 {
     homebrew = {
-        brews = [
-            "pandoc"
-        ];
+        brews = [ "pandoc" ];
 
         casks = [
             "mathpix-snipping-tool"

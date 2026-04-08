@@ -72,11 +72,7 @@
     };
 
     outputs =
-        inputs@{
-            self,
-            nixpkgs,
-            ...
-        }:
+        inputs@{ self, nixpkgs, ... }:
         let
             systems = [
                 "aarch64-linux"

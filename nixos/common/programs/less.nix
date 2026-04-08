@@ -5,7 +5,5 @@
         lessopen = "|${pkgs.lesspipe}/bin/lesspipe.sh %s";
     };
 
-    environment.systemPackages = with pkgs; [
-        lesspipe
-    ];
+    environment.systemPackages = with pkgs; [ lesspipe ];
 }

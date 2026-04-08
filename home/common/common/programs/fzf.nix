@@ -24,9 +24,7 @@
         ];
         tmux = {
             enableShellIntegration = true;
-            shellIntegrationOptions = [
-                "-p 85,35"
-            ];
+            shellIntegrationOptions = [ "-p 85,35" ];
         };
     };
 }

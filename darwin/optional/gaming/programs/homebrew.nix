@@ -1,8 +1,7 @@
 { ... }:
 {
     homebrew = {
-        brews = [
-        ];
+        brews = [ ];
 
         casks = [
             "steam"

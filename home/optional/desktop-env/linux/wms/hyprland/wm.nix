@@ -23,9 +23,7 @@
                 # "mullvad"
             ];
 
-            monitor = [
-                ",2560x1440,auto,1.35"
-            ];
+            monitor = [ ",2560x1440,auto,1.35" ];
 
             cursor = {
                 no_hardware_cursors = 1;

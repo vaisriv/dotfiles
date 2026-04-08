@@ -27,8 +27,6 @@
         };
     };
     home = {
-        packages = with pkgs; [
-            mpc
-        ];
+        packages = with pkgs; [ mpc ];
     };
 }

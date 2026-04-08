@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}:
+{ pkgs, ... }:
 let
     flavor = "mocha";
     wallpaper = ../../../assets/wallpapers/catscii-catppuccin_mocha.png;

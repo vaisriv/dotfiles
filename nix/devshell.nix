@@ -13,9 +13,7 @@ pkgs.devshell.mkShell {
             command = builtins.readFile ./scripts/olorin.bash;
         }
 
-        {
-            package = pkgs.nh;
-        }
+        { package = pkgs.nh; }
     ];
 
     env = [

@@ -1,8 +1,4 @@
-{
-    font,
-    profilepic,
-    ...
-}:
+{ font, profilepic, ... }:
 {
     programs.hyprlock = {
         enable = true;

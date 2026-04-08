@@ -6,9 +6,7 @@
     # };
 
     home = {
-        packages = with pkgs; [
-            glow
-        ];
+        packages = with pkgs; [ glow ];
         file = {
             glow-config = {
                 enable = true;

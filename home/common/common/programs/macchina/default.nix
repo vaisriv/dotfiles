@@ -6,9 +6,7 @@
     # };
 
     home = {
-        packages = with pkgs; [
-            macchina
-        ];
+        packages = with pkgs; [ macchina ];
         file = {
             macchina-config = {
                 enable = true;

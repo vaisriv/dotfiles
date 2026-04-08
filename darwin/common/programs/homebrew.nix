@@ -12,17 +12,12 @@
         };
 
         # `brew tap`
-        taps = [
-            "homebrew/services"
-        ];
+        taps = [ "homebrew/services" ];
 
         # `brew install`
-        brews = [
-            "mas"
-        ];
+        brews = [ "mas" ];
 
         # `brew install --cask`
-        casks = [
-        ];
+        casks = [ ];
     };
 }

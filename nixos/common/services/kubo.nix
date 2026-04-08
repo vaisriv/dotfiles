@@ -1,8 +1,4 @@
-{
-    config,
-    username,
-    ...
-}:
+{ config, username, ... }:
 {
     # IPFS
     services.kubo = {
@@ -10,8 +6,6 @@
     };
 
     users.users."${username}" = {
-        extraGroups = [
-            config.services.kubo.group
-        ];
+        extraGroups = [ config.services.kubo.group ];
     };
 }

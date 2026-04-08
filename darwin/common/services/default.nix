@@ -1,6 +1,4 @@
 { ... }:
 {
-    imports = [
-        ./ipfs.nix
-    ];
+    imports = [ ./ipfs.nix ];
 }

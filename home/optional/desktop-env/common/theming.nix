@@ -1,16 +1,10 @@
-{
-    config,
-    pkgs,
-    ...
-}:
+{ config, pkgs, ... }:
 let
     font = {
         name = "Iosevka";
         nerd-package = pkgs.nerd-fonts.iosevka-term;
         sans-package = pkgs.iosevka-bin;
-        serif-package = pkgs.iosevka-bin.override {
-            variant = "Etoile";
-        };
+        serif-package = pkgs.iosevka-bin.override { variant = "Etoile"; };
     };
 in
 {

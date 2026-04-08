@@ -1,6 +1,4 @@
 { ... }:
 {
-    imports = [
-        ./claude-code.nix
-    ];
+    imports = [ ./claude-code.nix ];
 }

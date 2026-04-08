@@ -45,7 +45,5 @@
         };
     };
 
-    home.packages = with pkgs; [
-        tasksh
-    ];
+    home.packages = with pkgs; [ tasksh ];
 }

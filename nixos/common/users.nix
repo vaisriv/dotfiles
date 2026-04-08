@@ -1,16 +1,10 @@
-{
-    username,
-    pkgs,
-    ...
-}:
+{ username, pkgs, ... }:
 {
     users.mutableUsers = true;
     users.users."${username}" = {
         initialPassword = "${username}";
         isNormalUser = true;
-        extraGroups = [
-            "wheel"
-        ];
+        extraGroups = [ "wheel" ];
         shell = pkgs.fish;
     };
 }

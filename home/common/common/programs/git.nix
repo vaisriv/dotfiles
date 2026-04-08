@@ -1,8 +1,4 @@
-{
-    fullname,
-    email,
-    ...
-}:
+{ fullname, email, ... }:
 {
     programs = {
         git = {

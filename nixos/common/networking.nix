@@ -14,9 +14,7 @@
     };
 
     users.users."${username}" = {
-        extraGroups = [
-            "networkmanager"
-        ];
+        extraGroups = [ "networkmanager" ];
     };
 
     services.resolved = {

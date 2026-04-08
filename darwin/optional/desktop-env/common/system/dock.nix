@@ -1,8 +1,4 @@
-{
-    pkgs,
-    username,
-    ...
-}:
+{ pkgs, username, ... }:
 {
     system.defaults.dock = {
         appswitcher-all-displays = false;
