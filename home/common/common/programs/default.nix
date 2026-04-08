@@ -4,12 +4,13 @@
         ./atuin.nix
         ./bat.nix
         ./btop.nix
+        ./delta.nix
         ./direnv.nix
         ./eza.nix
         ./fd.nix
         ./fzf.nix
-        ./git.nix
         ./gh.nix
+        ./git.nix
         ./glow.nix
         ./gpg.nix
         # ./helix.nix
@@ -17,9 +18,9 @@
         ./latexmk.nix
         ./lazygit.nix
         ./macchina
+        ./neovim.nix
         ./nh.nix
         ./nix-init.nix
-        ./neovim.nix
         ./ripgrep.nix
         ./starship.nix
         ./taskwarrior
