@@ -21,6 +21,16 @@
             # Always warn when changes are uncommitted to git
             warn-dirty = true;
 
+            # Don't save unused build derivations in nix store (to save space)
+            keep-derivations = false;
+            keep-outputs = false;
+
+            # Automatically manage maximum concurrent nix jobs
+            max-jobs = "auto";
+
+            # Custom prompt for `nix-shell` and `nix develop`
+            bash-prompt-prefix = "(nix:$name)\\040";
+
             # Enable nix-comamnd and flakes
             experimental-features = [
                 "nix-command"
@@ -36,6 +46,9 @@
 
             # Enable use of remote compilation caches
             extra-substituters = [
+                # lix
+                "https://cache.lix.systems"
+
                 # nixos/nixpkgs
                 "https://nixpkgs.cachix.org"
                 "https://nix-community.cachix.org"
@@ -46,6 +59,9 @@
                 "https://pyproject-nix.cachix.org"
             ];
             extra-trusted-public-keys = [
+                # lix
+                "cache.lix.systems:aBnZUw8zA7H35Cz2RyKFVs3H4PlGTLawyY5KRbvJR8o="
+
                 # nixos/nixpkgs
                 "nixpkgs.cachix.org-1:q91R6hxbwFvDqTSDKwDAV4T5PxqXGxswD8vhONFMeOE="
                 "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
