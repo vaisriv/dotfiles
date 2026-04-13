@@ -5,7 +5,7 @@
         ../../common/linux
 
         # Standalone HM package list
-        ../../optional/standalone-pkgs/linux.nix
+        ../../optional/standalone/linux.nix
 
         # Shell Config
         ../../optional/shell/linux

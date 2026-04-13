@@ -2,7 +2,7 @@
 {
     imports = [
         # Generic for all hosts
-        ./common.nix
+        ./common
     ];
 
     home.packages = with pkgs; [ ];
