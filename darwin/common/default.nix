@@ -1,6 +1,9 @@
 { ... }:
 {
     imports = [
+        # Nix Config
+        ./nix-conf.nix
+
         # Programs
         ./programs
 

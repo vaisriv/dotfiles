@@ -3,16 +3,18 @@
     nix = {
         gc = {
             automatic = true;
-            dates = "daily";
+            interval = {
+                Weekday = 1;
+            };
             options = "--delete-older-than 7d";
         };
 
         # Auto reuse pre-existing binaries/paths in nix-store
-        settings.auto-optimise-store = true;
+        optimise.automatic = true;
     };
 
     imports = [
         # Common for all hosts
-        ../../../nix-conf.nix
+        ../../nix-conf.nix
     ];
 }
