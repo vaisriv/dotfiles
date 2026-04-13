@@ -1,17 +1,20 @@
 { ... }:
 {
     imports = [
-        # Configuration
-        ./configuration.nix
-
-        # Networking
-        ./networking.nix
-
         # Programs
         ./programs
 
         # Services
         ./services
+
+        # Networking
+        ./networking.nix
+
+        # System Settings
+        ./system.nix
+
+        # Shell
+        ./shell.nix
 
         # Users
         ./users.nix

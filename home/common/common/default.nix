@@ -3,6 +3,9 @@
     programs.home-manager.enable = true;
 
     imports = [
+        # Nix Config
+        ./nix-conf.nix
+
         # App and Program Configs
         ./programs
 

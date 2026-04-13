@@ -1,9 +1,6 @@
 { ... }:
 {
     imports = [
-        # Configuration
-        ./configuration.nix
-
         # Programs
         ./programs
 
