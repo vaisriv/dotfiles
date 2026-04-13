@@ -3,6 +3,17 @@
     nix = {
         package = pkgs.nix;
 
+        gc = {
+            # Automatically run the nix-store garbage collector
+            automatic = true;
+
+            # Run weekly (and force a run if it has been more than a week since the last run)
+            dates = "daily";
+            persistent = true; 
+
+            options = "--delete-older-than 7d";
+        };
+
         settings = {
             # Auto reuse pre-existing binaries/paths in nix-store
             auto-optimise-store = true;
