@@ -1,8 +1,6 @@
-{ pkgs, username, ... }:
+{ username, ... }:
 {
     nix = {
-        package = pkgs.nix;
-
         gc = {
             # Automatically run the nix-store garbage collector
             automatic = true;
