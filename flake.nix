@@ -8,12 +8,18 @@
         ## nix user package repository
         nur = {
             url = "github:nix-community/nur";
-            inputs.nixpkgs.follows = "nixpkgs";
+            inputs = {
+                nixpkgs.follows = "nixpkgs";
+                flake-parts.follows = "flake-parts";
+            };
         };
         ## apple silicon support
         nixos-apple-silicon = {
             url = "github:nix-community/nixos-apple-silicon/release-25.11";
-            inputs.nixpkgs.follows = "nixpkgs";
+            inputs = {
+                nixpkgs.follows = "nixpkgs";
+                flake-compat.follows = "flake-compat";
+            };
         };
         ## nix for macos
         nix-darwin = {
@@ -36,14 +42,37 @@
             inputs = {
                 nixpkgs.follows = "nixpkgs";
                 nur.follows = "nur";
+
+                # flake follows
+                systems.follows = "systems";
+                flake-parts.follows = "flake-parts";
             };
+        };
+
+        # common flake inputs
+        ## generic for supported systems
+        systems.url = "github:nix-systems/default";
+        ## flake compatibilty for versions of nix
+        flake-compat = {
+            url = "github:nixos/flake-compat";
+            flake = false;
+        };
+        ## modular (opinionated) nix flakes
+        flake-parts = {
+            url = "github:hercules-ci/flake-parts";
+            inputs.nixpkgs-lib.follows = "nixpkgs";
         };
 
         # flake tools (thanks numtide)
         ## flake blueprint
         blueprint = {
             url = "github:numtide/blueprint";
-            inputs.nixpkgs.follows = "nixpkgs";
+            inputs = {
+                nixpkgs.follows = "nixpkgs";
+
+                # flake follows
+                systems.follows = "systems";
+            };
         };
         ## nix-shell configuration
         devshell = {
@@ -57,11 +86,25 @@
         };
 
         # custom packages
+        nvf = {
+            url = "github:notashelf/nvf";
+            inputs = {
+                nixpkgs.follows = "nixpkgs";
+
+                # flake follows
+                systems.follows = "systems";
+                flake-parts.follows = "flake-parts";
+                flake-compat.follows = "flake-compat";
+            };
+        };
         ## neovim config (using nvf)
         nvf-config = {
             url = "github:vaisriv/nvf-config";
             inputs = {
                 nixpkgs.follows = "nixpkgs";
+
+                # flake follows
+                nvf.follows = "nvf";
 
                 # numtide follows
                 blueprint.follows = "blueprint";
@@ -74,14 +117,7 @@
     outputs =
         inputs@{ self, nixpkgs, ... }:
         let
-            systems = [
-                "aarch64-linux"
-                "i686-linux"
-                "x86_64-linux"
-                "aarch64-darwin"
-                "x86_64-darwin"
-            ];
-            forEachSystem = f: nixpkgs.lib.genAttrs systems (system: f (pkgsFor system));
+            forEachSystem = f: nixpkgs.lib.genAttrs (import inputs.systems) (system: f (pkgsFor system));
             pkgsFor = system: import nixpkgs (import ./nixpkgs.nix { inherit inputs system; });
 
             username = "vai";
