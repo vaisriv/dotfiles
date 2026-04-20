@@ -86,6 +86,7 @@
         };
 
         # custom packages
+        ## nvf nix+neovim module
         nvf = {
             url = "github:notashelf/nvf";
             inputs = {
@@ -104,12 +105,15 @@
                 nixpkgs.follows = "nixpkgs";
 
                 # flake follows
-                nvf.follows = "nvf";
+                systems.follows = "systems";
 
                 # numtide follows
                 blueprint.follows = "blueprint";
                 devshell.follows = "devshell";
                 treefmt-nix.follows = "treefmt-nix";
+
+                # nvf
+                nvf.follows = "nvf";
             };
         };
     };
