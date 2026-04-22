@@ -55,5 +55,6 @@
                 "pyproject-nix.cachix.org-1:UNzugsOlQIu2iOz0VyZNBQm2JSrL/kwxeCcFGw+jMe0="
             ];
         };
+        extraOptions = "!include nix.custom.conf";
     };
 }
