@@ -23,9 +23,7 @@
             extra-nix-path = "nixpkgs=flake:nixpkgs";
 
             # Allow user to modify system
-            extra-trusted-users = [
-                "${username}"
-            ];
+            extra-trusted-users = [ "${username}" ];
 
             # Enable use of remote compilation caches
             extra-substituters = [
