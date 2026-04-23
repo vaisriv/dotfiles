@@ -19,6 +19,7 @@
             experimental-features = [
                 "nix-command"
                 "flakes"
+                "flake-self-attrs"
             ];
             extra-nix-path = "nixpkgs=flake:nixpkgs";
 

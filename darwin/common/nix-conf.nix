@@ -1,6 +1,10 @@
-{ ... }:
+{ pkgs, ... }:
 {
     nix = {
+        # Use Lix!! :D
+        package = pkgs.lixPackageSets.git.lix;
+
+        # Set up Nix garbage collector
         gc = {
             automatic = true;
             interval = {

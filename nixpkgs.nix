@@ -7,11 +7,15 @@
     overlays = [
         # lix
         (_final: prev: {
-            inherit (prev.lixPackageSets.stable)
-                nixpkgs-review
+            inherit (prev.lixPackageSets.git)
                 nix-eval-jobs
                 nix-fast-build
+                nix-serve-ng
+                nix-update
+                nixpkgs-review
+                nixpkgs-reviewFull
                 colmena
+                nil
                 ;
         })
 

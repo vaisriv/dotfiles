@@ -1,6 +1,7 @@
 { ... }:
 {
     nix = {
+        # Set up Nix garbage collector
         gc = {
             automatic = true;
             dates = "daily";
