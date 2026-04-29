@@ -10,6 +10,7 @@
             "microsoft-teams"
             "microsoft-excel"
             "microsoft-powerpoint"
+            "microsoft-word"
             "vitalsource-bookshelf"
             "inkscape"
 
