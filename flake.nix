@@ -5,6 +5,7 @@
         # nix
         ## nix packages
         nixpkgs.url = "github:nixos/nixpkgs/release-25.11";
+        nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
         ## nix user package repository
         nur = {
             url = "github:nix-community/nur";
@@ -114,6 +115,21 @@
 
                 # nvf
                 nvf.follows = "nvf";
+            };
+        };
+        ## numtide llm-agents
+        llm-agents = {
+            url = "github:numtide/llm-agents.nix";
+            inputs = {
+                nixpkgs.follows = "nixpkgs-unstable";
+
+                # flake follows
+                systems.follows = "systems";
+                flake-parts.follows = "flake-parts";
+
+                # numtide follows
+                blueprint.follows = "blueprint";
+                treefmt-nix.follows = "treefmt-nix";
             };
         };
     };

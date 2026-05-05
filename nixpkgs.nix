@@ -23,6 +23,7 @@
         inputs.nur.overlays.default
         inputs.nixos-apple-silicon.overlays.default
         inputs.devshell.overlays.default
+        inputs.llm-agents.overlays.default
 
         # ISSUE:
         # mas overlay needed due to https://github.com/nix-darwin/nix-darwin/issues/1722
