@@ -10,6 +10,7 @@
             "jordanbaird-ice" # bar management
             "linearmouse" # per-mouse settings
             "motrix" # download manager
+            "ab-download-manager" # download manager (another alt)
 
             # WARN: currently broken/out-of-date on nix :)
             "itsycal" # calendar/date bar widget
@@ -19,6 +20,10 @@
             # NOTE: installed manually
             # "daisydisk"
             # "zathura-wrapper" # apple automator "app" to open pdfs with zathura
+        ];
+
+        taps = [
+            "amir1376/tap"
         ];
 
         masApps = {
