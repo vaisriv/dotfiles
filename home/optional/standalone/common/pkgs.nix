@@ -16,6 +16,7 @@
         hexyl
         hyperfine
         lazysql
+        localsend
         p7zip
         pastel
         procs
