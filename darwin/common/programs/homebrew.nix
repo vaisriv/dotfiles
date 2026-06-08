@@ -9,6 +9,10 @@
 
             # brew `zap`: uninstalls all formulae (and related files) not listed in config
             cleanup = "zap";
+
+            extraFlags = [
+                "--force-cleanup"
+            ];
         };
 
         # `brew tap`
