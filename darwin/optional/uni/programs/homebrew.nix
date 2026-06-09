@@ -4,6 +4,10 @@
         brews = [];
 
         casks = [
+            "defold"
+            "godot"
+            "krita"
+
             # WARN: closed source/unfree
             "mathpix-snipping-tool"
             "adobe-creative-cloud"
