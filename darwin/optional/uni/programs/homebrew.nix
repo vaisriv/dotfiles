@@ -13,13 +13,13 @@
             "microsoft-powerpoint"
             "microsoft-word"
             "vitalsource-bookshelf"
-            "inkscape"
 
             # WARN: wants updates too often to be installed by nix
             "zen"
 
             # WARN: currently broken on nixpkgs
-            # "xquartz"
+            "inkscape"
+            "xquartz"
 
             # NOTE: installed manually:
             # umd vpn - palo-alto globalprotect-openconnect # umd's custom build of palo-alt vpn
