@@ -4,7 +4,6 @@
         # recommended
         iina # media/video player
         spotify # music
-        # WARN: broken on unstable nixpkgs
         supersonic # music
         vscodium # backup text/code editor
 

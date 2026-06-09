@@ -2,6 +2,7 @@
 {
     environment.systemPackages = with pkgs; [
         libreoffice-bin
+        pandoc
         zotero
         zoom-us
         # nur.repos.natsukium.zen-browser

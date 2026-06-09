@@ -10,7 +10,6 @@
             "jordanbaird-ice" # bar management
             "linearmouse" # per-mouse settings
             "motrix" # download manager
-            "ab-download-manager" # download manager (another alt)
 
             # WARN: currently broken/out-of-date on nix :)
             "itsycal" # calendar/date bar widget

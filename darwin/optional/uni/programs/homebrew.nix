@@ -1,9 +1,10 @@
 { ... }:
 {
     homebrew = {
-        brews = [ "pandoc" ];
+        brews = [];
 
         casks = [
+            # WARN: closed source/unfree
             "mathpix-snipping-tool"
             "adobe-creative-cloud"
             "citrix-workspace"
@@ -18,7 +19,7 @@
             "zen"
 
             # WARN: currently broken on nixpkgs
-            "xquartz"
+            # "xquartz"
 
             # NOTE: installed manually:
             # umd vpn - palo-alto globalprotect-openconnect # umd's custom build of palo-alt vpn
