@@ -19,9 +19,11 @@
             "vitalsource-bookshelf"
 
             # WARN: wants updates too often to be installed by nix
+            "helium-browser"
             "zen"
 
             # WARN: currently broken on nixpkgs
+            "handy"
             "inkscape"
             "xquartz"
 

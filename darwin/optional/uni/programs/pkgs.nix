@@ -3,6 +3,7 @@
     environment.systemPackages = with pkgs; [
         libreoffice-bin
         pandoc
+        stirling-pdf
         zotero
         zoom-us
         # nur.repos.natsukium.zen-browser
