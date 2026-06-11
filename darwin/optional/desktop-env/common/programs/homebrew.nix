@@ -8,7 +8,7 @@
             "tailscale-app" # personal vpn
 
             # TODO: package and upstream to nixpkgs
-            "altserver" # sideloading for ios
+            "iloader" # sideloading for ios
             "obs" # screen recording software
             "balenaetcher" # image flasher
 
