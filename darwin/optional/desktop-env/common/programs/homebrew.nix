@@ -8,9 +8,9 @@
             "tailscale-app" # personal vpn
 
             # TODO: package and upstream to nixpkgs
+            "balenaetcher" # image flasher
             "iloader" # sideloading for ios
             "obs" # screen recording software
-            "balenaetcher" # image flasher
 
             # WARN: currently broken on nix :)
             "librewolf" # browser

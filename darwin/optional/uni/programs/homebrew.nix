@@ -10,13 +10,13 @@
 
             # WARN: closed source/unfree
             "mathpix-snipping-tool"
-            "adobe-creative-cloud"
             "citrix-workspace"
-            "microsoft-teams"
-            "microsoft-excel"
-            "microsoft-powerpoint"
-            "microsoft-word"
-            "vitalsource-bookshelf"
+            # "adobe-creative-cloud"
+            # "microsoft-teams"
+            # "microsoft-excel"
+            # "microsoft-powerpoint"
+            # "microsoft-word"
+            # "vitalsource-bookshelf"
 
             # WARN: wants updates too often to be installed by nix
             "helium-browser"
