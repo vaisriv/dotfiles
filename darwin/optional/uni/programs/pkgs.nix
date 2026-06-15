@@ -2,6 +2,7 @@
 {
     environment.systemPackages = with pkgs; [
         libreoffice-bin
+        darktable
         pandoc
         stirling-pdf
         zotero
