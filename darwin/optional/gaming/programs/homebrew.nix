@@ -7,6 +7,8 @@
             "steam"
             "epic-games"
             "parsec"
+            "prismlauncher"
+            "chatterino"
         ];
     };
 }
