@@ -2,6 +2,7 @@
 {
     programs.yazi = {
         enableFishIntegration = false;
+        shellWrapperName = "yy";
         settings = {
             mgr = {
                 sort_by = "natural";
