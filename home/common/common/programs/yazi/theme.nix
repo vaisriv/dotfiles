@@ -19,12 +19,22 @@ in
             filetype = {
                 rules = [
                     {
-                        name = "*/";
+                        url = "*";
+                        is = "orphan";
+                        fg = "red";
+                    }
+                    {
+                        url = "*/";
+                        is = "orphan";
+                        fg = "red";
+                    }
+                    {
+                        url = "*/";
                         is = "link";
                         fg = "#94e2d5";
                     }
                     {
-                        name = "*";
+                        url = "*";
                         is = "link";
                         fg = "#94e2d5";
                     }
