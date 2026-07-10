@@ -6,18 +6,18 @@
 
     overlays = [
         # lix
-        (_final: prev: {
-            inherit (prev.lixPackageSets.git)
-                nix-eval-jobs
-                nix-fast-build
-                nix-serve-ng
-                nix-update
-                nixpkgs-review
-                nixpkgs-reviewFull
-                colmena
-                nil
-                ;
-        })
+        # (_final: prev: {
+        #     inherit (prev.lixPackageSets.git)
+        #         nix-eval-jobs
+        #         nix-fast-build
+        #         nix-serve-ng
+        #         nix-update
+        #         nixpkgs-review
+        #         nixpkgs-reviewFull
+        #         colmena
+        #         nil
+        #         ;
+        # })
 
         # inputs
         inputs.nur.overlays.default
