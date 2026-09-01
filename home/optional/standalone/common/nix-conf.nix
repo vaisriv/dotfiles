@@ -2,7 +2,7 @@
 {
     nix = {
         # Use Lix!! :D
-        # package = pkgs.lixPackageSets.git.lix;
+        package = pkgs.lixPackageSets.git.lix;
     };
 
     imports = [

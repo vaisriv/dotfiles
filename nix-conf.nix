@@ -19,9 +19,9 @@
             experimental-features = [
                 "nix-command"
                 "flakes"
-                # "flake-self-attrs"
+                "flake-self-attrs"
             ];
-            # extra-nix-path = "nixpkgs=flake:nixpkgs";
+            extra-nix-path = "nixpkgs=flake:nixpkgs";
 
             # Allow user to modify system
             trusted-users = [ "${username}" ];
