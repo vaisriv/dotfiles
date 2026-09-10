@@ -20,6 +20,7 @@
         p7zip
         pastel
         procs
+        poppler
         poppler-utils
         presenterm
         pv

@@ -22,6 +22,7 @@
         pastel
         procs
         pngpaste
+        poppler
         poppler-utils
         presenterm
         pv
