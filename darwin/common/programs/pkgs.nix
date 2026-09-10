@@ -27,6 +27,7 @@
         pv
         testdisk
         tokei
+        ueberzugpp
         viu
         wiki-tui
     ];
