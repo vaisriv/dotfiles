@@ -10,7 +10,7 @@
         ./neovide.nix
         ./rmpc.nix
         # ./qutebrowser.nix
-        ./sioyek.nix
+        # ./sioyek.nix
         ./streamlink.nix
         ./wezterm.nix
         ./yt-dlp.nix
