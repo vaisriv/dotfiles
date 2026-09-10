@@ -9,8 +9,8 @@
             "/Applications/qView.app/Contents/MacOS" # image viewer
         ];
         sessionVariables = {
-            # BROWSER = "velja";
-            BROWSER = "librewolf";
+            BROWSER = "velja";
+            # BROWSER = "librewolf";
         };
     };
 
