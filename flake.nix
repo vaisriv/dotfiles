@@ -95,8 +95,6 @@
                 nixpkgs.follows = "nixpkgs";
 
                 # flake follows
-                systems.follows = "systems";
-                flake-parts.follows = "flake-parts";
                 flake-compat.follows = "flake-compat";
             };
         };
@@ -129,7 +127,6 @@
                 flake-parts.follows = "flake-parts";
 
                 # numtide follows
-                blueprint.follows = "blueprint";
                 treefmt-nix.follows = "treefmt-nix";
             };
         };
