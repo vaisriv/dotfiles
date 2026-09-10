@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     services.globalprotect = {
         enable = true;
     };

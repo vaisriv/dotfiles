@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     imports = [
         # NVIDIA Hardware Support
         ../../nvidia.nix

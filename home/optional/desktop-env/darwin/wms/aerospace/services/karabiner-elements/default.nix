@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     home.file = {
         karabiner-elements-config = {
             enable = true;

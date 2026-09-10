@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     programs.tmux.extraConfig =
         # conf
         ''

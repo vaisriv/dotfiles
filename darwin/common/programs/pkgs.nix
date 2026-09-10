@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
     environment.systemPackages = with pkgs; [
         # cli/term tools
         asciinema

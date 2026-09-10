@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     programs.fish = {
         shellAliases = {
             # new versions of old tools

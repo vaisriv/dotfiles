@@ -1,5 +1,4 @@
-{ username, ... }:
-{
+{ username, ... }: {
     services.transmission = {
         enable = true;
         openRPCPort = false;

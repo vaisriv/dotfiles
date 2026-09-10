@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     homebrew = {
         brews = [ ];
 
@@ -21,9 +20,7 @@
             # "zathura-wrapper" # apple automator "app" to open pdfs with zathura
         ];
 
-        taps = [
-            "amir1376/tap"
-        ];
+        taps = [ "amir1376/tap" ];
 
         masApps = {
             "Command X" = 6448461551; # cut (and paste) functionality in Finder

@@ -1,5 +1,4 @@
-{ pkgs, username, ... }:
-{
+{ pkgs, username, ... }: {
     environment.systemPackages = with pkgs; [ wayvnc ];
 
     services.openssh = {

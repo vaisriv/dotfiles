@@ -1,4 +1,3 @@
-{ ... }:
-{
+{ ... }: {
     # GNOME settings here
 }

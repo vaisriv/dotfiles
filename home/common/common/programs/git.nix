@@ -1,5 +1,4 @@
-{ fullname, email, ... }:
-{
+{ fullname, email, ... }: {
     programs = {
         git = {
             enable = true;

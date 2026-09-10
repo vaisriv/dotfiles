@@ -1,4 +1,1 @@
-{ ... }:
-{
-    imports = [ ./keyd.nix ];
-}
+{ ... }: { imports = [ ./keyd.nix ]; }

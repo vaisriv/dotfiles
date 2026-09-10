@@ -1,5 +1,4 @@
-{ pkgs, username, ... }:
-{
+{ pkgs, username, ... }: {
     system.defaults.dock = {
         appswitcher-all-displays = false;
         autohide = true;
@@ -37,7 +36,7 @@
             # {app = "${pkgs.librewolf}/Applications/LibreWolf.app";} # home-manager
             { app = "/Applications/LibreWolf.app"; } # homebrew
             { app = "${pkgs.spotify}/Applications/Spotify.app"; } # nixpkgs
-            {app = "${pkgs.vesktop}/Applications/Vesktop.app";} # nixpkgs
+            { app = "${pkgs.vesktop}/Applications/Vesktop.app"; } # nixpkgs
             # WARN: wants updates too often to be installed by nix
             # {app = "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app";} # nur
             { app = "/Applications/Zen.app"; } # homebrew

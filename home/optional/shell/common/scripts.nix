@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     home = {
         file = {
             # tmux session manager

@@ -1,5 +1,4 @@
-{ lib, ... }:
-{
+{ lib, ... }: {
     programs.starship = {
         enable = true;
         enableInteractive = true;

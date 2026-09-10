@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     programs.yazi.keymap = {
         mgr.prepend_keymap = [
             {

@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     services.logind = {
         powerKey = "hybrid-sleep";
         powerKeyLongPress = "poweroff";

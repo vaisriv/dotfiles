@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     imports = [
         # Generic for all Linux
         ../../common

@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     programs.fish = {
         functions = {
             cf = {

@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     imports = [
         # Apple Silicon Support
         ../../asahi.nix

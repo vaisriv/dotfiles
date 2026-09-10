@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
     # TODO: make home-manager module for glow
     # programs.glow = {
     #   enable = true;

@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     nix = {
         # Set up Nix garbage collector
         gc = {

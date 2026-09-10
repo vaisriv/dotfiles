@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     home = {
         file = {
             # taskchamp sync

@@ -1,5 +1,4 @@
-{ config, ... }:
-{
+{ config, ... }: {
     home = {
         sessionPath = [
             # add local bin to path

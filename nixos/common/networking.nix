@@ -1,5 +1,4 @@
-{ username, ... }:
-{
+{ username, ... }: {
     networking = {
         networkmanager.enable = true;
         wireless.userControlled = {

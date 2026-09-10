@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     # Greeter
     services.greetd = {
         enable = true;

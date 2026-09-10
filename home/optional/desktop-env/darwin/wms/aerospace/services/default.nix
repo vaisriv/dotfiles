@@ -1,4 +1,1 @@
-{ ... }:
-{
-    imports = [ ./karabiner-elements ];
-}
+{ ... }: { imports = [ ./karabiner-elements ]; }

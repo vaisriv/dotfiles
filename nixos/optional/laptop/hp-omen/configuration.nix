@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     boot = {
         consoleLogLevel = 0;
         loader = {

@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     programs.yazi = {
         enableFishIntegration = false;
         shellWrapperName = "yy";

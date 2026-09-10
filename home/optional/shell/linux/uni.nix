@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
     # TODO: make sure these are the right paths lol
     home = {
         sessionPath = [

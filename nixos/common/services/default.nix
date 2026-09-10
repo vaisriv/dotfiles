@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     imports = [
         ./keyd.nix
         ./kubo.nix

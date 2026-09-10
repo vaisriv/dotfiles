@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     programs.fish = {
         interactiveShellInit =
             # fish

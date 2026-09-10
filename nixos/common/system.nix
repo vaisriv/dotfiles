@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     system = {
         # Enable weekly automatic updates
         autoUpgrade = {

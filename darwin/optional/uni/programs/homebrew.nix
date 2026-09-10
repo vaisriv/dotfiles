@@ -1,7 +1,6 @@
-{ ... }:
-{
+{ ... }: {
     homebrew = {
-        brews = [];
+        brews = [ ];
 
         casks = [
             "defold"

@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     home = {
         sessionPath = [
             # add useful apps to path

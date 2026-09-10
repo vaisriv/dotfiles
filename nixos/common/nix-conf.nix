@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
     nix = {
         # Use Lix!! :D
         package = pkgs.lixPackageSets.git.lix;

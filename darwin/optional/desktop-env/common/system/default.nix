@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     imports = [
         ./bar.nix
         ./dock.nix

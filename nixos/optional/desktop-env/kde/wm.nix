@@ -1,4 +1,3 @@
-{ ... }:
-{
+{ ... }: {
     # KDE install goes here
 }

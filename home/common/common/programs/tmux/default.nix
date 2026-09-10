@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     programs.tmux.enable = true;
     imports = [
         ./config.nix

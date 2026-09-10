@@ -1,5 +1,4 @@
-{ ... }:
-{
+{ ... }: {
     programs.yazi.initLua =
         # lua
         ''

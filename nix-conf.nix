@@ -1,5 +1,4 @@
-{ username, ... }:
-{
+{ username, ... }: {
     nix = {
         settings = {
             # Always warn when changes are uncommitted to git

@@ -1,4 +1,1 @@
-{ ... }:
-{
-    imports = [ ./globalprotect.nix ];
-}
+{ ... }: { imports = [ ./globalprotect.nix ]; }
