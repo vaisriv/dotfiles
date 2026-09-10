@@ -13,6 +13,6 @@
         ./streamlink.nix
         ./wezterm.nix
         ./yt-dlp.nix
-        # ./zathura.nix
+        ./zathura.nix
     ];
 }
