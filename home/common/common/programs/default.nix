@@ -14,6 +14,7 @@
         ./gpg.nix
         # ./helix.nix
         ./jq.nix
+        ./jujutsu.nix
         ./latexmk.nix
         ./lazygit.nix
         ./macchina
