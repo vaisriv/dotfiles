@@ -1,11 +1,21 @@
-{ config, ... }: {
+{ config, pkgs, inputs, ... }: {
     programs.rio = {
         enable = true;
 
+        # WARN: overriding to unstable version (rio v0.5.28 as of 2026/09/24) as release-26.05 version (rio v0.4.7) had a bug on macos where rio wraps all calls to launch a shell with `/usr/bin/login`, forcing a login-session every time, even if `shell.program` is manually set in the config (fixed in rio v0.5.7)
+        package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.rio;
+
         settings = {
+            shell = {
+                # manually set shell so shell is not opened as a login-session (see #L5)
+                program = "${pkgs.fish}/bin/fish";
+                # args = [];
+            };
+
             option-as-alt = "both";
             copy-on-select = true;
             bell.visual = true;
+            # confirm-before-quit = false;
 
             theme = "catppuccin-mocha";
         };
