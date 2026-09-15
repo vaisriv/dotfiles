@@ -24,10 +24,10 @@ in
             };
             emoji = config.stylix.fonts.sansSerif;
             sizes = {
-                applications = 14;
+                applications = 16;
                 desktop = 12;
                 popups = 12;
-                terminal = 14;
+                terminal = 16;
             };
         };
     };

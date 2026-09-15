@@ -40,7 +40,7 @@
             # WARN: wants updates too often to be installed by nix
             # {app = "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app";} # nur
             { app = "/Applications/Zen.app"; } # homebrew
-            { app = "${pkgs.wezterm}/Applications/Wezterm.app"; } # home-manager
+            { app = "${pkgs.rio}/Applications/Rio.app"; } # home-manager
             { app = "/Users/${username}/Applications/ManuallyInstalled/Uni/MATLAB_R2025b.app"; } # manual
             { app = "${pkgs.vscodium}/Applications/VSCodium.app"; } # nixpkgs
             { app = "${pkgs.libreoffice-bin}/Applications/LibreOffice.app"; } # nixpkgs
