@@ -1,10 +1,10 @@
 { pkgs, ... }: {
     # TODO: actually setup librewolf
-    # programs.firefox = {
+    # programs.librewolf = {
     #   enable = true;
     #   package = pkgs.librewolf;
     # };
     home.packages = with pkgs; [
-        # librewolf
+        librewolf
     ];
 }

@@ -12,12 +12,12 @@
             # };
         };
         searchEngines = {
-            DEFAULT = "https://unduck.vaisriv.com/?q={}&default_bang=ddg";
-            ddg = "https://www.duckduckgo.com/search?hl=en&amp;q={}";
-            g = "https://www.google.com/search?hl=en&amp;q={}";
-            w = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
-            aw = "https://wiki.archlinux.org/?search={}";
-            nw = "https://wiki.nixos.org/index.php?search={}";
+            DEFAULT = "https://unduck.net/?q={}&default_bang=ddg";
+            # ddg = "https://www.duckduckgo.com/search?hl=en&amp;q={}";
+            # g = "https://www.google.com/search?hl=en&amp;q={}";
+            # w = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
+            # aw = "https://wiki.archlinux.org/?search={}";
+            # nw = "https://wiki.nixos.org/index.php?search={}";
         };
     };
 }

@@ -2,7 +2,7 @@
     imports = [
         ./discord.nix
         # ./ghostty.nix
-        # ./librewolf.nix
+        ./librewolf.nix
         ./mpd.nix
         ./mpv
         ./ncmpcpp.nix
