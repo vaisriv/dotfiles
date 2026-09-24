@@ -1,7 +1,6 @@
 { ... }: {
     imports = [
         ./discord.nix
-        # ./ghostty.nix
         ./librewolf.nix
         ./mpd.nix
         ./mpv
@@ -10,11 +9,14 @@
         ./neovide.nix
         ./rio.nix
         ./rmpc.nix
-        # ./qutebrowser.nix
-        # ./sioyek.nix
         ./streamlink.nix
-        # ./wezterm.nix
         ./yt-dlp.nix
         ./zathura.nix
+
+        # old configs, not currently in use
+        # ./ghostty.nix
+        # ./qutebrowser.nix
+        # ./sioyek.nix
+        # ./wezterm.nix
     ];
 }
