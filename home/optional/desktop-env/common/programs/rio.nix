@@ -17,6 +17,27 @@
             bell.visual = true;
             # confirm-before-quit = false;
 
+            hints.rules = [
+                {
+                    regex = ''(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-\u009F<>"\s{-}\\^⟨⟩`]+'';
+                    hyperlinks = true;
+                    post-processing = true;
+                    persist = false;
+
+                    action.command = "open";
+
+                    mouse = {
+                        enabled = true;
+                        mods = [ "Shift" ]; # Use Shift key instead
+                    };
+
+                    binding = {
+                        key = "O";
+                        mods = [ "Control" "Shift" ];
+                    };
+                }
+            ];
+
             theme = "catppuccin-mocha";
         };
 
