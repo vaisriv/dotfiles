@@ -125,6 +125,29 @@
         "type": "github"
       }
     },
+    "charmbracelet": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs-unstable"
+        ],
+        "treefmt-nix": [
+          "treefmt-nix"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790584371,
+        "narHash": "sha256-gfJ21itQEJFLygy7m48uOr4F0/jvpZshDGq2DL5uFOc=",
+        "owner": "charmbracelet",
+        "repo": "nur",
+        "rev": "61c2bfd8a012cdef7d7b02850a5bf1676fa71ea9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "charmbracelet",
+        "repo": "nur",
+        "type": "github"
+      }
+    },
     "devshell": {
       "inputs": {
         "nixpkgs": [
@@ -479,6 +502,7 @@
     "root": {
       "inputs": {
         "blueprint": "blueprint",
+        "charmbracelet": "charmbracelet",
         "devshell": "devshell",
         "flake-compat": "flake-compat",
         "flake-parts": "flake-parts",

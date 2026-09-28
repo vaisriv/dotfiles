@@ -130,6 +130,16 @@
                 treefmt-nix.follows = "treefmt-nix";
             };
         };
+        ## charmbracelet repository
+        charmbracelet = {
+            url = "github:charmbracelet/nur";
+            inputs = {
+                nixpkgs.follows = "nixpkgs-unstable";
+
+                # numtide follows
+                treefmt-nix.follows = "treefmt-nix";
+            };
+        };
     };
 
     outputs =
@@ -198,6 +208,7 @@
                 #                     sharedModules = [
                 #                         inputs.nur.modules.homeManager.default
                 #                         inputs.stylix.homeModules.stylix
+                #                         inputs.charmbracelet.homeModules.crush
                 #
                 #                         {
                 #                             nixpkgs = import ./nixpkgs.nix {
@@ -236,6 +247,7 @@
                 #                     sharedModules = [
                 #                         inputs.nur.modules.homeManager.default
                 #                         inputs.stylix.homeModules.stylix
+                #                         inputs.charmbracelet.homeModules.crush
                 #
                 #                         {
                 #                             nixpkgs = import ./nixpkgs.nix {
@@ -277,6 +289,7 @@
                                     sharedModules = [
                                         inputs.nur.modules.homeManager.default
                                         inputs.stylix.homeModules.stylix
+                                        inputs.charmbracelet.homeModules.crush
 
                                         {
                                             nixpkgs = import ./nixpkgs.nix {
@@ -308,6 +321,7 @@
 
                             inputs.nur.modules.homeManager.default
                             inputs.stylix.homeModules.stylix
+                            inputs.charmbracelet.homeModules.crush
 
                             {
                                 nixpkgs = import ./nixpkgs.nix {
