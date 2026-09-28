@@ -58,11 +58,23 @@
                 init = {
                     defaultBranch = "main";
                 };
+                push = {
+                    autoSetupRemote = true;
+                };
                 pull = {
                     rebase = false;
                 };
+                checkout = {
+                    defualtRemote = "origin";
+                };
+                diff = {
+                    algorithm = "histogram";
+                };
                 merge = {
-                    conflictstyle = "diff3";
+                    conflictstyle = "zdiff3";
+                };
+                rerere = {
+                    enabled = true;
                 };
                 gpg = {
                     format = "ssh";
