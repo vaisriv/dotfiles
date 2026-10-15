@@ -23,5 +23,5 @@ in
     };
     system.defaults.smb.NetBIOSName = "${hostname}";
 
-    system.stateVersion = 6;
+    system.stateVersion = 7;
 }
