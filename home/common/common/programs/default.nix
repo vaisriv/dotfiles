@@ -19,6 +19,7 @@
         ./lazygit.nix
         ./less.nix
         ./macchina
+        ./man.nix
         ./neovim.nix
         ./nh.nix
         ./nix-init.nix
