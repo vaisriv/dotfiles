@@ -17,6 +17,7 @@
         ./jujutsu.nix
         ./latexmk.nix
         ./lazygit.nix
+        ./less.nix
         ./macchina
         ./neovim.nix
         ./nh.nix
