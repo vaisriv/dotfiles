@@ -13,5 +13,5 @@
         ../../optional/desktop-env/linux/wms/hyprland
     ];
 
-    home.stateVersion = "24.11";
+    home.stateVersion = "26.05";
 }
