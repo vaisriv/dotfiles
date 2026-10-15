@@ -3,6 +3,7 @@
         # cli/term tools
         asciinema
         asciinema-scenario
+        bitwarden-cli
         cloudflared
         cht-sh
         dust
