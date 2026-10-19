@@ -10,8 +10,9 @@
             # WARN: closed source/unfree
             "mathpix-snipping-tool"
             "citrix-workspace"
+            "slack"
             # "adobe-creative-cloud"
-            # "microsoft-teams"
+            "microsoft-teams"
             # "microsoft-excel"
             # "microsoft-powerpoint"
             # "microsoft-word"
