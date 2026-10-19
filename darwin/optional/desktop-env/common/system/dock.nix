@@ -1,6 +1,6 @@
 {
+    config,
     pkgs,
-    inputs,
     username,
     ...
 }:
@@ -38,21 +38,15 @@
 
         # apps to show in dock
         persistent-apps = [
-            { app = "${pkgs.librewolf}/Applications/LibreWolf.app"; } # home-manager
+            { app = "/Users/${username}/Applications/Home Manager Apps/LibreWolf.app"; } # home-manager
             # WARN: wants updates too often to be installed by nix
             # {app = "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app";} # nur
             { app = "/Applications/Zen.app"; } # homebrew
-            # WARN: overriding to unstable version (see ../../../../../home/optional/desktop-env/common/programs/rio.nix:L5)
-            # { app = "${pkgs.rio}/Applications/Rio.app"; } # home-manager
-            {
-                app = "${
-                    inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.rio
-                }/Applications/Rio.app";
-            } # home-manager
+            { app = "/Users/${username}/Applications/Home Manager Apps/Rio.app"; } # home-manager
             { app = "/Users/${username}/Applications/ManuallyInstalled/Uni/MATLAB_R2025b.app"; } # manual
             { app = "${pkgs.vscodium}/Applications/VSCodium.app"; } # nixpkgs
             { app = "${pkgs.spotify}/Applications/Spotify.app"; } # nixpkgs
-            { app = "${pkgs.vesktop}/Applications/Vesktop.app"; } # nixpkgs
+            { app = "/Users/${username}/Applications/Home Manager Apps/Vesktop.app"; } # home-manager
         ];
     };
 }
