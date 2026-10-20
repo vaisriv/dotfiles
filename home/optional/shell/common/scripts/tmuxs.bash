@@ -2,7 +2,8 @@
 
 # Check if the user has supplied a session name
 if [ "$#" -ne 1 ]; then
-    tmux ls
+    # tmux ls
+    tmux attach -t 0
 else
     SESSION_NAME="$1"
 

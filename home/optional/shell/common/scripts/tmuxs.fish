@@ -2,7 +2,8 @@
 
 # Check if the user has supplied a session name
 if test (count $argv) -ne 1
-    tmux ls
+    # tmux ls
+    tmux attach -t 0
 else
     set SESSION_NAME $argv[1]
 
