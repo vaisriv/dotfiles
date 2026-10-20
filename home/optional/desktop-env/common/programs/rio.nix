@@ -21,7 +21,7 @@
             option-as-alt = "both";
             copy-on-select = true;
             bell.visual = true;
-            # confirm-before-quit = false;
+            confirm-before-quit = false;
 
             hints.rules = [
                 {
