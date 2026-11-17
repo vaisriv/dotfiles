@@ -4,6 +4,7 @@
         ./bat.nix
         ./btop.nix
         ./delta.nix
+        ./devenv.nix
         ./direnv.nix
         ./eza.nix
         ./fd.nix

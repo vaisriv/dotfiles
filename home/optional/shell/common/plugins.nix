@@ -27,6 +27,10 @@
                 set -x BATDIFF_USE_DELTA true
                 # WARN: current batpipe version broken
                 # eval (batpipe)
+
+                # WARN: temporary, see ../../../common/common/programs/devenv.nix#L2
+                # manually load devenv 
+                devenv hook fish | source
             '';
         functions = {
             pdf = {
